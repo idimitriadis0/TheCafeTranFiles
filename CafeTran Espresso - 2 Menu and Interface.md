@@ -202,7 +202,9 @@ Common to all tabs are the following items:
 ![New project configuration > Document settings](https://i.imgur.com/dj2I51V.png)
 
 **Source language** = Here you can select or adjust the source language for the project. This field is prepopulated according to the source language chosen in the Dashboard.
+
 **Target language** = Here you can select or adjust the target language for the project. This field is prepopulated according to the target language chosen in the Dashboard.
+
 **File type** = This is were you select or adjust the file type for your document(s). CafeTran detects the file type when you add a document or drag and drop it on the Dashboard or select it from the initial dialog (or Document button).
 
 For more information on the supported (and unsupported) file types, see the [CafeTran Espresso - File formats](http://xl8.link/ct-formats) reference document.
@@ -254,9 +256,9 @@ CafeTran’s translation interface is highly customizable. For more information,
  - **Previous page** = Navigate to the previous page of segment pairs in the grid.
  - **Next page** = Navigate to the next page of segment pairs in the grid.
  - **Last page** = Navigate to the last page of segment pairs in the grid.
-Note: The number of segments per page can be set in Preferences >  General > Project page size (units) field.
-**Documents** = Open a dialog listing all project source documents, and choose which one to actively display within CafeTran. This icon is only displayed if the project contains (or contained) more than one document.
-**Segments filter** = Toggle the usage of the segments filter, which enables displaying only the segment pairs matching the criteria specified in the Filter menu above. This icon is only displayed if a filter is active.
+ Note: The number of segments per page can be set in Preferences >  General > Project page size (units) field.
+- **Documents** = Open a dialog listing all project source documents, and choose which one to actively display within CafeTran. This icon is only displayed if the project contains (or contained) more than one document.
+- **Segments filter** = Toggle the usage of the segments filter, which enables displaying only the segment pairs matching the criteria specified in the Filter menu above. This icon is only displayed if a filter is active.
 
 ## Source segment editor icons
 
@@ -510,19 +512,19 @@ The Quick search bar can be displayed/hidden via Edit > Quick search, via the de
 
 Note: The quickest search is done through the defined **Default scope** shortcut (you can set in in the Preferences or check it in Edit > Find at cursor > Default scope). You can define which resources will be queried via the Default scope in the Advanced search (Find and replace) window (Ctlr [or Cmd] + F shortcut).
 
-**Back** = Navigate “back” in the currently-selected resource tab (as in a web browser).
-**Forward** = Navigate “forward” in the currently-selected resource tab (as in a web browser).
-**Resources** = Search selected web resource (or all researches, if Resources > Simultaneous web search) for contents of current selection in the source segment editor.
-**Machine Tr.** = Search machine translation for contents of current selection in the source segment editor.
-**Project source** = Search project source segments for contents of current selection in the source segment editor.
-**Project target** = Search project target segments for contents of current selection in the source segment editor.
-**TM source** = Search memory source segments for contents of current selection in the source segment editor.
-**TM target** = Search memory target segments for contents of current selection in the source segment editor.
-**Desktop** = Launch a desktop tool search. Only displayed if this option is set in Preferences > Desktop search tool.
-**Glossaries** = Search glossaries for contents of current selection in the source segment editor.
-**TR source** = Search Total Recall source segments for contents of current selection in the source segment editor.
+- **Back** = Navigate “back” in the currently-selected resource tab (as in a web browser).
+- **Forward** = Navigate “forward” in the currently-selected resource tab (as in a web browser).
+- **Resources** = Search selected web resource (or all researches, if Resources > Simultaneous web search) for contents of current selection in the source segment editor.
+- **Machine Tr.** = Search machine translation for contents of current selection in the source segment editor.
+- **Project source** = Search project source segments for contents of current selection in the source segment editor.
+- **Project target** = Search project target segments for contents of current selection in the source segment editor.
+- **TM source** = Search memory source segments for contents of current selection in the source segment editor.
+- **TM target** = Search memory target segments for contents of current selection in the source segment editor.
+- **Desktop** = Launch a desktop tool search. Only displayed if this option is set in Preferences > Desktop search tool.
+- **Glossaries** = Search glossaries for contents of current selection in the source segment editor.
+- **TR source** = Search Total Recall source segments for contents of current selection in the source segment editor.
 Note: This option is only for searching a Total Recall database opened via Total Recall > Memory tables submenu. Total Recall TMs are searchable via TM source/TM target.
-**TR target** = Search Total Recall target segments for contents of current selection in the source segment editor.
+- **TR target** = Search Total Recall target segments for contents of current selection in the source segment editor.
 Note: This option is only for searching a Total Recall database opened via Total Recall > Memory tables submenu. Total Recall TMs are searchable via TM source/TM target.
 
 ## Advanced Search (Find and Replace) window
@@ -934,7 +936,7 @@ Set the colors of various CafeTran interface elements.
 
 Additionally:
 
-**View > > Colors > Hide memory match colors in the source segment** and **View > > Colors > Hide glossary match colors in the source segment** help remove the (green and yellow-orange) colors in the Source segment editors for TM/fragment matches and Glossary matches respectively.
+**View > Colors > Hide memory match colors in the source segment** and **View > Colors > Hide glossary match colors in the source segment** help remove the (green and yellow-orange) colors in the Source segment editors for TM/fragment matches and Glossary matches respectively.
 
 ### View > Font submenu
 
