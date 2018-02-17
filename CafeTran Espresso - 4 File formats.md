@@ -1595,9 +1595,9 @@ If you own a Wordfast Pro 5 license, you can use this CAT tool to create project
 
 ## LIST OF CHANGES
 
-20171127 File creation
-20171203 Added section for e-books (EPUB, MOBI, AZW), and information about Memsource tags.
-20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
+- 20171127 File creation
+- 20171203 Added section for e-books (EPUB, MOBI, AZW), and information about Memsource tags.
+- 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
 
 ## Feedback
 

@@ -214,8 +214,8 @@ Note: Total Recall does not process tags.
 
 ## List of changes
 
-20171117 File creation
-20180217 Migrated from Classeur.io to GitHub.com
+- 20171117 File creation
+- 20180217 Migrated from Classeur.io to GitHub.com
 
 ## Feedback
 

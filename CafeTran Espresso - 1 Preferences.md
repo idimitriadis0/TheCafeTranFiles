@@ -1847,9 +1847,9 @@ Also in View > Font submenu.
 
 ## LIST OF CHANGES
 
-20171107 File creation
-20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
-20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
+- 20171107 File creation
+- 20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
+- 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
 
 ## Feedback
 
