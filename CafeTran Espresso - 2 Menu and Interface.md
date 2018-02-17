@@ -1,83 +1,6 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [Interface](#interface)
-	- [Project Dashboard](#project-dashboard)
-		- [Dashboard menu options](#dashboard-menu-options)
-			- [Dashboard menu options > Project type submenu](#dashboard-menu-options-project-type-submenu)
-		- [Dashboard's Resources](#dashboards-resources)
-			- [Local resources](#local-resources)
-			- [TM-Town resources](#tm-town-resources)
-	- [New project/Project configuration dialog](#new-projectproject-configuration-dialog)
-		- [Document settings tab](#document-settings-tab)
-		- [Memory & glossary tab](#memory-glossary-tab)
-		- [Project properties tab](#project-properties-tab)
-		- [Filter options tab](#filter-options-tab)
-	- [Main translation interface](#main-translation-interface)
-	- [Segments grid icons](#segments-grid-icons)
-	- [Source segment editor icons](#source-segment-editor-icons)
-		- [Source segment editor context menu](#source-segment-editor-context-menu)
-	- [Target segment editor icons](#target-segment-editor-icons)
-		- [Target segment editor context menu](#target-segment-editor-context-menu)
-	- [Matchboard (and Matchbar)](#matchboard-and-matchbar)
-		- [Marchboard context menu](#marchboard-context-menu)
-	- [Tabbed panel](#tabbed-panel)
-		- [Tabbed panel tab context menu](#tabbed-panel-tab-context-menu)
-		- [Memory context menu and Options](#memory-context-menu-and-options)
-		- [Glossary context menu](#glossary-context-menu)
-		- [MT engines context menu](#mt-engines-context-menu)
-		- [Google MT context menu](#google-mt-context-menu)
-		- [ProZ tab and context menu](#proz-tab-and-context-menu)
-		- [TM-Town tab and context menu](#tm-town-tab-and-context-menu)
-	- [Quick search bar](#quick-search-bar)
-	- [Advanced Search (Find and Replace) window](#advanced-search-find-and-replace-window)
-- [Menu items](#menu-items)
-	- [Project](#project)
-		- [Project > Statistics submenu](#project-statistics-submenu)
-		- [Project > Export and exchange submenu](#project-export-and-exchange-submenu)
-	- [Edit](#edit)
-		- [Edit > Find at cursor submenu](#edit-find-at-cursor-submenu)
-		- [Edit > Target segment submenu](#edit-target-segment-submenu)
-	- [View](#view)
-		- [View > Window layout submenu](#view-window-layout-submenu)
-		- [View > Segment editors submenu](#view-segment-editors-submenu)
-		- [View > Themes submenu](#view-themes-submenu)
-		- [View > Colors submenu](#view-colors-submenu)
-		- [View > Font submenu](#view-font-submenu)
-		- [View > Tabs submenu](#view-tabs-submenu)
-		- [View > Toolbars submenu](#view-toolbars-submenu)
-	- [Action](#action)
-		- [Action > Tags submenu](#action-tags-submenu)
-		- [Action > Skip submenu](#action-skip-submenu)
-	- [Translate](#translate)
-	- [Filter](#filter)
-		- [Filter > Matches submenu](#filter-matches-submenu)
-	- [QA](#qa)
-		- [QA > Word lists submenu](#qa-word-lists-submenu)
-		- [QA > Check all window](#qa-check-all-window)
-	- [Task](#task)
-		- [Task > Frequent words submenu](#task-frequent-words-submenu)
-		- [Task > TMX memory submenu](#task-tmx-memory-submenu)
-	- [Resources](#resources)
-		- [Add/Edit resource window](#addedit-resource-window)
-		- [Resources > Notepad submenu](#resources-notepad-submenu)
-		- [Resources > Non-translatable fragments submenu](#resources-non-translatable-fragments-submenu)
-		- [Resources > Text shortcuts submenu](#resources-text-shortcuts-submenu)
-		- [Resources >  Abbreviations submenu](#resources-abbreviations-submenu)
-	- [Memory](#memory)
-		- [Memory > Import submenu](#memory-import-submenu)
-		- [Memory > Export submenu](#memory-export-submenu)
-		- [New fragment window](#new-fragment-window)
-	- [Glossary](#glossary)
-		- [New glossary window](#new-glossary-window)
-		- [New term window](#new-term-window)
-	- [Total Recall](#total-recall)
-		- [Total Recall > Import submenu](#total-recall-import-submenu)
-	- [Help](#help)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
-
-<!-- /TOC -->!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
+- [CAFETRAN ESPRESSO - MENU AND INTERFACE](#cafetran-espresso-menu-and-interface)
 - [Interface](#interface)
 	- [Project Dashboard](#project-dashboard)
 		- [Dashboard menu options](#dashboard-menu-options)
@@ -155,6 +78,8 @@
 	- [Feedback](#feedback)
 
 <!-- /TOC -->
+
+# CAFETRAN ESPRESSO - MENU AND INTERFACE
 
 *Updated for CafeTran Espresso 2018 - Forerunner - 20171130 (build 2017122201)*
 
@@ -1815,11 +1740,11 @@ Buttons:
 
 ## LIST OF CHANGES
 
-20171112 File creation
-20171116 Updated for Yeddi #27
-20171129 Added explanations for several context menus, TM-Town, ProZ.com and New term and fragment windows.
-20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
-20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
+- 20171112 File creation
+- 20171116 Updated for Yeddi #27
+- 20171129 Added explanations for several context menus, TM-Town, ProZ.com and New term and fragment windows.
+- 20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
+- 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
 
 ## Feedback
 
