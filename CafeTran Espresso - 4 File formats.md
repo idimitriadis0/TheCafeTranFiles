@@ -246,10 +246,9 @@ Note: MS Excel files containing macros **.xlsm** are also handled via this filte
 
 When you choose the **Excel filter**, you have access to the following Filter options:
 
- - **Import source column**: allows you to specify from which column to import source text
- - **Import target column**: allows you to specify from which column you wish to import content in the translated segments
- - **Export column**: allows you to specify to which column you want to export your translation
-<!--- TODO update information --->
+ - **Import source column**: allows you to specify from which column(s) to import source text
+ - **Import target column**: allows you to specify from which column(s) you wish to import content in the translated segments. Note: If you define two Excel columns for import separately (in two Import fields of the filter), the second column is to be imported for the review of the existing translation. Only existing rows (not empty cells) will be imported if you define an Import target column. If you specify two import columns separately, leave the export column empty.
+ - **Export column**: allows you to specify to which column(s) you want to export your translation
 
 #### Tagged MS Excel (.xlsx)
 
@@ -1169,7 +1168,7 @@ Those wishing to translate SRT files in CafeTran should prepare them in another 
 
 ### EPUB / MOBI / AZW / e-book
 
-*This has not been tested extensively. Report issues as described in the Feedback section of this document*
+*Report any issues as described in the Feedback section of this document*
 
 #### EPUB
 
@@ -1603,4 +1602,4 @@ If you own a Wordfast Pro 5 license, you can use this CAT tool to create project
 
 You can send me feedback via a [ProZ message](https://www.proz.com/?sp=mailsend&eid_s=2042360). Please start your subject with the name of the document: “CafeTran - File formats”.
 
-<!--- TODO suggest file formats: srt, po, tiff, sgv --->
+<!--- TODO suggest file formats: srt, po, tiff --->
