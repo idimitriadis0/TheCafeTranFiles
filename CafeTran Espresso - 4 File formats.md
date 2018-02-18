@@ -1221,7 +1221,7 @@ https://www.mobileread.com/forums/showthread.php?t=243216
 
 #### IBOOKS
 
-The .i-books format is created with the free iBooks Author E-book layout software from Apple Inc.. This proprietary format is based on the EPUB standard, with some differences in the CSS tags used in an ibooks format file, thus making it incompatible with the EPUB specification
+The .ibooks format is created with the free iBooks Author E-book layout software from Apple Inc.. This proprietary format is based on the EPUB standard, with some differences in the CSS tags used in an ibooks format file, thus making it incompatible with the EPUB specification
 
 An option to handle iBooks would be to use [iBooks Author](https://www.apple.com/ibooks-author/) (OS X only) to export from IBOOKS to EPUB format, perform the EPUB translation as described above, then create a new iBooks Author file and import the translated .ePub into it for finalizing and publishing (since iBooks Author only opens iBooks Author projects, .i-books).
 
