@@ -402,7 +402,8 @@ This sets the number of translation units (segments) that are displayed in the S
 
 Note: Limiting the number of displayed segments in one “page” is one of the ways to help running CT more efficiently in battery mode.
 
-Related links: [Running CafeTran in the Battery Mode](https://cafetran.freshdesk.com/support/solutions/articles/6000113091-running-cafetran-in-the-battery-mode)e
+Related links:
+[Running CafeTran in the Battery Mode](https://cafetran.freshdesk.com/support/solutions/articles/6000113091-running-cafetran-in-the-battery-mode)
 
 ### Segment Timer:
 
@@ -1063,7 +1064,7 @@ Related links:
 
 ![MT services pane](https://i.imgur.com/N8mGMWg.png)
 
-This pane features option related to Machine Translation. Individual options can also be set via the MT context menu (see [CafeTran Espresso - Menu and Interface](http://xl8.link/ct-menu).
+This pane features option related to Machine Translation. Individual options can also be set via the MT context menu (see “CafeTran Espresso - Menu and Interface”).
 
 ### Mask non-translatable fragments
 

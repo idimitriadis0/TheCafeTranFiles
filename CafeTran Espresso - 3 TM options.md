@@ -29,7 +29,7 @@ Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL
 
 *Shortened link to this document:*
 
-Note: Some memory-related settings can be found in Edit > [Preferences](http://xl8.link/ct-preferences) [Options] > Memory.
+Note: Some memory-related settings can be found in Edit > Preferences (Options) > Memory.
 
 ## TM context menu options
 
@@ -87,7 +87,7 @@ The TM options dialog offers many important settings for your Translation Memori
 
 In CafeTran, TMX translation memories can be used for storing segments, fragments/terms, or both.
 
-**Segments memory** = Checkbox. If enabled, the translation memory stores the segments (Translation Units or TUs) of the project you work on as they are added to memory (see related Actions menu items and Target segment editor buttons in [CafeTran Menu and Interface](http://xl8.link/ct-menu)).
+**Segments memory** = Checkbox. If enabled, the translation memory stores the segments (Translation Units or TUs) of the project you work on as they are added to memory (see related Actions menu items and Target segment editor buttons in “CafeTran Menu and Interface”).
 
 With this setting ON, the TMX acts as a standard Translation Memory.
 
@@ -105,7 +105,7 @@ Note: If a memory is set as Read-only, you may not access its Options, unless yo
 
 You can either use it in conjunction with Segments memory option, for storing entire segments and fragments in the same TM, or separately, for example for storing fragments that can be reused across projects.
 
-If this option is ON, the fragment TM will be offered as an option to store fragments as you add them (see related Actions menu items and Target segment editor buttons in [CafeTran Menu and Interface](http://xl8.link/ct-menu)).
+If this option is ON, the fragment TM will be offered as an option to store fragments as you add them (see related Actions menu items and Target segment editor buttons in “CafeTran Menu and Interface”).
 
 **Fragments consistency check** = If enabled, the option allows you to check for segment pairs that do not have terms consistent with entries in this translation memory, when running the QA > Fragments consistency check (Memory) check.
 
@@ -113,7 +113,7 @@ If this option is ON, the fragment TM will be offered as an option to store frag
 
 To overcome this issue of huge memories, you can perform the preliminary memory matching of the whole source document so that the matches will be available instantly, without any delay.
 
-Also see Preferences > Memory > Switch to preliminary matching threshold in [CafeTran Preferences](http://xl8.link/ct-preferences).
+Also see Preferences > Memory > Switch to preliminary matching threshold in “CafeTran Preferences”.
 
 Related links:
 [Preliminary Memory Matching](https://cafetran.freshdesk.com/support/solutions/articles/6000059860-preliminary-memory-matching)

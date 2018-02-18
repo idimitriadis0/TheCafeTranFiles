@@ -426,7 +426,7 @@ Intercompatibility (both in and out) is an important CafeTran Espresso feature. 
 
 - The final export of the translation to the original target language document is generally done by the client who created the translation project in his/her tool (or, in some cases, by the translator, if he uses the same tool). This cannot be achieved in CafeTran for external projects. The same goes for translation preview (Project > Preview current document).
 - CafeTran does not handle the segmentation phase as this takes place at the bilingual file creation. Project Managers usually send such files segmented properly with the target language specified. If you receive and open an unsegmented file, CafeTran will show a warning message. Then, please consult with your client to receive the segmented file.
-- Likewise, CafeTran offers its progressive spit/merge segments feature for native bilingual files only. However, CafeTran Espresso now allows for virtual joining of segments in external projects. The feature allows to join segments in segments’ editor and rearrange their contents comfortably. As soon as the joined segments leave the editor, their number is the same as before joining but their respective text contents is changed (rearranged), hence the virtual aspect of this feature. Use this new feature with care making sure that boundary (opening and closing) tags between joined segments are in place.
+- Likewise, CafeTran offers its progressive spit/merge segments feature for native bilingual files only. However, CafeTran Espresso supports virtual joining of segments in external projects. The feature allows to join segments in segments’ editor and rearrange their contents comfortably. As soon as the joined segments leave the editor, their number is the same as before joining but their respective text contents is changed (rearranged), hence the virtual aspect of this feature. Use this new feature with care making sure that boundary (opening and closing) tags between joined segments are in place.
 - Instead of creating a Project folder, copying the source documents and generating a segmented native XLIFF (as it happens for native projects), CafeTran edits the external bilingual files directly at their own directory location. Make sure you have a copy if needed.
 - If Project memory and/or Project glossary are checked in the Dashboard, the ProjectTM.tmx and ProjectTerms.txt files are conveniently created and placed at the same working folder (in native projects, these files are generated in the newly created Project folder).
 - Supported packages (.sdlppx, .mqxlz) are expanded and edited at the working folder location.
@@ -722,7 +722,7 @@ Déjà Vu X3 Professional can export External View files to RTF and XLIFF. Proof
 CafeTran can handle External View files, with some limitations, although it cannot be used to translate Satellite files and Pack & Go packages, as explained below.
 
 Related links:
-[Déjà Vu - External View](https://atrilsolutions.zendesk.com/hc/en-us/sections/201606291-External-View) (Contains seemingly outdated information about XLIFF availability in Déjà Vu X3 Professional, as opposed to Déjà Vu X3 Workgroup edition).
+[Déjà Vu - External View](https://atrilsolutions.zendesk.com/hc/en-us/sections/201606291-External-View)   (Contains seemingly outdated information about XLIFF availability in Déjà Vu X3 Professional, as opposed to Déjà Vu X3 Workgroup edition).
 
 **Known limitations:**
 
@@ -786,8 +786,7 @@ Déjà Vu uses DBMDB access database files for its native TMs and can import or 
 
 Related links:
 [Déjà Vu - How To Export A Translation Memory To TMX](https://atrilsolutions.zendesk.com/hc/en-us/articles/115004332365-How-to-export-a-Translation-Memory-to-TMX)
-[Déjà Vu - How To Use A TMX File In Déjà Vu
-](https://atrilsolutions.zendesk.com/hc/en-us/articles/205379992-How-to-use-a-TMX-file-in-D%C3%A9j%C3%A0-Vu)
+[Déjà Vu - How To Use A TMX File In Déjà Vu](https://atrilsolutions.zendesk.com/hc/en-us/articles/205379992-How-to-use-a-TMX-file-in-D%C3%A9j%C3%A0-Vu)
 
 #### Déjà Vu TBs (.dvtdb)
 
@@ -1582,7 +1581,6 @@ If you own a Déjà Vu license, you can use this CAT tool to create projects whi
 Related links:
 [Déjà Vu - Supported File Formats](https://atrilsolutions.zendesk.com/hc/en-us/articles/205383202-Supported-File-Formats)
 Déjà Vu - [Supported Formats And How To Use Them](https://atrilsolutions.zendesk.com/hc/en-us/sections/201686442-Supported-formats-and-how-to-use-them)
-
 
 ### Wordfast Pro 5
 
