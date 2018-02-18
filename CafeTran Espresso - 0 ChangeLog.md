@@ -191,7 +191,6 @@ The new build of CTE 2018 Forerunner (**2018010801**) is available for download 
 
 Remove target segments feature: One needs to progress with external xliff files cautiously since they internal translation unit structure is often non-standard and not so obvious. With today’s build (**2018010901**) of the CTE 2018 Forerunner update, you can try the “Remove target segments” function on your mqxliff files.
 
-
 ## 2017 - Yeddi Update 27 - 20171114
 
 - Compacted tool bars in the Dashboard to gain vertical space.

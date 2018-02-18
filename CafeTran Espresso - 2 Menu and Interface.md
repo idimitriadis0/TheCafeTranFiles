@@ -81,7 +81,7 @@
 
 # CAFETRAN ESPRESSO - MENU AND INTERFACE
 
-*Updated for CafeTran Espresso 2018 - Forerunner - 20171130 (build 2017122201)*
+*Updated for CafeTran Espresso 2018 - Akua (build 20180118)*
 
 A trip to CafeTran’s interface and menus.
 
@@ -256,7 +256,7 @@ CafeTran’s translation interface is highly customizable. For more information,
  - **Previous page** = Navigate to the previous page of segment pairs in the grid.
  - **Next page** = Navigate to the next page of segment pairs in the grid.
  - **Last page** = Navigate to the last page of segment pairs in the grid.
- Note: The number of segments per page can be set in Preferences >  General > Project page size (units) field.
+Note: The number of segments per page can be set in Preferences >  General > Project page size (units) field.
 - **Documents** = Open a dialog listing all project source documents, and choose which one to actively display within CafeTran. This icon is only displayed if the project contains (or contained) more than one document.
 - **Segments filter** = Toggle the usage of the segments filter, which enables displaying only the segment pairs matching the criteria specified in the Filter menu above. This icon is only displayed if a filter is active.
 
@@ -306,6 +306,8 @@ CafeTran’s translation interface is highly customizable. For more information,
  9. **Add term to glossary** = Create a new glossary entry. Any highlighted portion of the source/target segments will be preset in the resulting “New term” dialog.
  10. **Add segment note** = Add an annotation about this segment; it will appear below the segment in the grid pane, marked with an “N”.
  11. **Select segment status** = Drop-down menu. Choose a segment status for the translated segments. Choices: Translate, Check, Lock, Version. Default: Translate.
+
+Note: Since CTE 2018 Forerunner (build **2018010801**), CafeTran Espresso allows **virtual joining of segments in external projects** (thoses created in other tools). The feature allows to join segments in segments’ editor and rearrange their contents comfortably. As soon as the joined segments leave the editor, their number is the same as before joining but their respective text contents is changed (rearranged), hence the virtual aspect of this feature. Use this new feature with care making sure that boundary (opening and closing) tags between joined segments are in place.
 
 ### Target segment editor context menu
 

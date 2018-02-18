@@ -1,7 +1,5 @@
 # TheCafeTranFiles
 
-The CafeTranFiles are reference documents intended for [CafeTran Espresso](https://www.cafetran.com/) users.
-
-CafeTran Espresso is a cross-platform CAT tool for translators.
+TheCafeTranFiles are reference documents intended for translators who use the cross-platform CAT tool [CafeTran Espresso](https://www.cafetran.com/).
 
 Please head to our [Wiki](https://github.com/idimitriadis0/TheCafeTranFiles/wiki) to view the reference documents.

@@ -131,7 +131,7 @@
 
 # CAFETRAN ESPRESSO - FILE FORMATS
 
-*Updated for CafeTran Espresso 2018 - Forerunner - 20171130 (build 2017122201)*
+*Updated for CafeTran Espresso 2018 - Akua (build 20180118)*
 
 This document aims to cover natively supported file formats in CafeTran, provide compatibility information for external bilingual projects (files and packages), and discuss solutions to handle not yet supported file types.
 
@@ -427,7 +427,7 @@ Intercompatibility (both in and out) is an important CafeTran Espresso feature. 
 
 - The final export of the translation to the original target language document is generally done by the client who created the translation project in his/her tool (or, in some cases, by the translator, if he uses the same tool). This cannot be achieved in CafeTran for external projects. The same goes for translation preview (Project > Preview current document).
 - CafeTran does not handle the segmentation phase as this takes place at the bilingual file creation. Project Managers usually send such files segmented properly with the target language specified. If you receive and open an unsegmented file, CafeTran will show a warning message. Then, please consult with your client to receive the segmented file.
-- Likewise, CafeTran offers its progressive spit/merge segments feature for native bilingual files only.
+- Likewise, CafeTran offers its progressive spit/merge segments feature for native bilingual files only. However, CafeTran Espresso now allows for virtual joining of segments in external projects. The feature allows to join segments in segments’ editor and rearrange their contents comfortably. As soon as the joined segments leave the editor, their number is the same as before joining but their respective text contents is changed (rearranged), hence the virtual aspect of this feature. Use this new feature with care making sure that boundary (opening and closing) tags between joined segments are in place.
 - Instead of creating a Project folder, copying the source documents and generating a segmented native XLIFF (as it happens for native projects), CafeTran edits the external bilingual files directly at their own directory location. Make sure you have a copy if needed.
 - If Project memory and/or Project glossary are checked in the Dashboard, the ProjectTM.tmx and ProjectTerms.txt files are conveniently created and placed at the same working folder (in native projects, these files are generated in the newly created Project folder).
 - Supported packages (.sdlppx, .mqxlz) are expanded and edited at the working folder location.

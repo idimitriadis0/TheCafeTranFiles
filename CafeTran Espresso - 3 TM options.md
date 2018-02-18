@@ -21,7 +21,7 @@
 
 # CAFETRAN ESPRESSO - Translation Memories options
 
-*Updated for CafeTran Espresso 2018 - Forerunner - 20171130 [build 2017122201]*
+*Updated for CafeTran Espresso 2018 - Akua (build 20180118)*
 
 This document offers an overview of CafeTran’s Translation Memory options.
 
