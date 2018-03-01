@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2018 - Akua Update 1](#2018-akua-update-1)
 	- [2018 - Akua - 20180118](#2018-akua-20180118)
 	- [2018 - Forerunner - 20171130](#2018-forerunner-20171130)
 	- [2017 - Yeddi Update 27 - 20171114](#2017-yeddi-update-27-20171114)
@@ -80,7 +81,7 @@
 	- [Arwen (Released on March 2013)](#arwen-released-on-march-2013)
 	- [Frodo (Released on February 2013)](#frodo-released-on-february-2013)
 	- [Bilbo (Released on January 2013)](#bilbo-released-on-january-2013)
-	- [CafeTran Espresso - Hobbit (Released on December 2012)](#cafetran-espresso-hobbit-released-on-december-2012)
+	- [Hobbit (Released on December 2012)](#hobbit-released-on-december-2012)
 
 <!-- /TOC -->
 
@@ -92,6 +93,13 @@ Keep track of the latest CafeTran developments.
 Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](http://beijer.uk) and [Hans Lenting](http://www.niederlaendisch.nl/).*
 
 Shortened link to this document:
+
+## 2018 - Akua Update 1
+
+- Easier selection of a single translation memory from the list of loaded TMs in the Memory menu for various tasks. The user does not need to select the TM tab first to indicate the specific TM.
+- Recognition of .xhtml file extension for HTML filter.
+- Uniform color for search buttons in the search bar.
+- In "Shorten match information" option of the Matchboard, the length of the shortened resource name is increased to 4 characters.
 
 ## 2018 - Akua - 20180118
 
