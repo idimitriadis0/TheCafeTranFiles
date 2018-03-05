@@ -101,6 +101,8 @@ Shortened link to this document:
 - Uniform color for search buttons in the search bar.
 - In "Shorten match information" option of the Matchboard, the length of the shortened resource name is increased to 4 characters.
 
+ The 4-letter short names for MT services are in the new build (*2018030401*). The build also lets the user change the color of the Search bar at the top of the UI via View > Colors > Searchbar color menu.
+
 ## 2018 - Akua - 20180118
 
 *Important! The update features some improvements to MS Word filter. Please complete all your Word translation projects in your current CafeTran version before updating.*
