@@ -101,7 +101,9 @@ Shortened link to this document:
 - Uniform color for search buttons in the search bar.
 - In "Shorten match information" option of the Matchboard, the length of the shortened resource name is increased to 4 characters.
 
- The 4-letter short names for MT services are in the new build (*2018030401*). The build also lets the user change the color of the Search bar at the top of the UI via View > Colors > Searchbar color menu.
+The 4-letter short names for MT services are in the new build (*2018030401*). The build also lets the user change the color of the Search bar at the top of the UI via View > Colors > Searchbar color menu.
+
+The new build (*2018030502*) of update 1 is available. It improves Ms PowerPoint filter by including diagrams' data for translation. Please perform the update as described in the announcement above. If you are in the middle of PowerPoint document translation, please update after you finish your current project.
 
 ## 2018 - Akua - 20180118
 
