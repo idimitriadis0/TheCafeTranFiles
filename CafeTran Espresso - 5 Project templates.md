@@ -62,19 +62,29 @@ Since project templates store content accessible through the Dashboard, as well 
 - **Actions from the Dashboard:**  Many template-related settings are directly accessible via the Dashboard, which acts as a template editor.
 
   - **Resources:** You can choose which resources will be selected by default. If you have many web resources, are working in multiple language combinations, or want to use client-specific recources, you can also remove non-relevant resources and add those that you wish to use.
+
   To remove a web resource or a TM/glossary (except the Project memory/glossary), right-click on it and select "Remove from the Dashboard".
+
   To add a TM or glossary, use the "Add memory" and "Add glossary" buttons. You can also add TMs by drag-and-dropping the TMX file.
+
   To add web resources, you need to either close the Dashboard (Dashboard menu > Close Dashboard) or open an existing project, and open the resources you wish to add (Resources > Web). You can also create new web resources from here (Resources > Add web resource). After opening the resource(s) you wish to add to the Dashboard, close the Project (Project > Close project). The opened/added resources will now be present in the Dashboard.
+
   - **Language pairs:** Select the default source and target languages you wish to use for the template.
+
   - **Rate:**  You can set your rate from the Dashboard menu (Dashboard > Choose your rate) or from the Statistics in an open project
+
   - **Workflow:**  If you wish to create a template for a specific workflow, select the workflow in Dashboard menu > Project type before saving the template. The Dashboard reverts to the default workflow (Translate a document) when you close a project.
 
 - **Actions from an open project:** In addition to the above actions, you can save the template after closing a project which features the desired settings (if no project has the required characteristics, you can simply create an dummy one).
 
   - From an open project (or by closing the Dashboard), you can **add web resources** to the Dashboard (all open resources will be displayed there upon closing the project), see explanations above (Actions from the Dashboard > Resources).
+
   - Appearance settings (such as **theme, window layout and colors**) can be set from the View menu.
+
   - The **docked, joined or floating state of tabs** is also remembered when you save a template, which can be very convenient. However, note that the tabs order cannot be saved, and the different tabs may need to be rearranged on each new project. If a joined or docked resource is missing, the joined or docked resources are displayed separately in the tabbed pane.
+
   - The default **project location** and the **source file directory** saved in the template are those of the last open/created project.
+
   - **Rate** can also be set via the Statistics (Project > Statistics).
 
 ## SOME USAGE EXAMPLES
