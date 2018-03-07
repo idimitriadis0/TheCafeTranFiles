@@ -65,13 +65,9 @@ Since project templates store content accessible through the Dashboard, as well 
   To remove a web resource or a TM/glossary (except the Project memory/glossary), right-click on it and select "Remove from the Dashboard".
   To add a TM or glossary, use the "Add memory" and "Add glossary" buttons. You can also add TMs by drag-and-dropping the TMX file.
   To add web resources, you need to either close the Dashboard (Dashboard menu > Close Dashboard) or open an existing project, and open the resources you wish to add (Resources > Web). You can also create new web resources from here (Resources > Add web resource). After opening the resource(s) you wish to add to the Dashboard, close the Project (Project > Close project). The opened/added resources will now be present in the Dashboard.
-
   - **Language pairs:** Select the default source and target languages you wish to use for the template.
-
   - **Rate:**  You can set your rate from the Dashboard menu (Dashboard > Choose your rate) or from the Statistics in an open project
-
   - **Workflow:**  If you wish to create a template for a specific workflow, select the workflow in Dashboard menu > Project type before saving the template. The Dashboard reverts to the default workflow (Translate a document) when you close a project.
-
 
 - **Actions from an open project:** In addition to the above actions, you can save the template after closing a project which features the desired settings (if no project has the required characteristics, you can simply create an dummy one).
 
