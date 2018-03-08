@@ -1398,9 +1398,9 @@ Note: If you have trouble using the internal PDF viewer, you should try using an
 
 **Resources > Add image** = Add a new resource such as a web site or an image.
 
-**Resources > Add web resource** = Opens a window to add a new resource such as a web site or an image.
+**Resources > Add web resource** = Opens a window to add a new resource such as a web site or an image. See "Web resources suggestions" in the section below.
 
-**Resources > Import web resource info** = Import web resource settings shared by another user of CafeTran.
+**Resources > Import web resource info** = Import web resource settings shared by another CafeTran user (.res files).
 
 **Resources > Edit resource info** = Opens a window to edit the configuration of the currently-selected resource.
 
@@ -1421,6 +1421,12 @@ This is the window that allows you to add or edit a web resource information. If
  - **Style:** Button, editable drop-down menu. In this optional field you can provide the path to your preferred CSS StyleSheet to change the colors or fonts of the internal browser. If you choose System browser in this menu, you will view the search results in the external default web browser.
  - **POST method:** Checkbox. An alternative method, used more rarely for some web resources.
  - **Block JavaScript:** Checkbox. This option if for web resources to deal with a few web pages (usually with numerous ads) which may cause hanging of the whole application. Sometimes, blocking JavaScript may interfere with page functionality.
+
+**Web resources suggestions**
+
+To quickly access a list of bilingual and monolingual web resources to add in CafeTran, you can use the [IntelliWebSearch Search Database](http://www.intelliwebsearch.com/findsearch.asp). Add the "Start" and "Finish" strings to the "Address start" and "Address end" fields when creating a new resource and that is mostly it.
+
+Choosing short names when saving the web resources will help keep each tab length to a minimum (example: "GWS" for Google web search or "LingueeENFR" for English to French Linguee queries), thus allowing to fit more resources in one line of the tabbed pane.
 
 Related links:
 [Adding a Web Resource - Based on Examples](https://cafetran.freshdesk.com/support/solutions/articles/6000110248-adding-a-web-resource-based-on-examples)
