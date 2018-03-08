@@ -474,7 +474,7 @@ If you right-click within the ProZ.com tab, you can access its context menu opti
 - **Show term information** = If enabled, result will display additional information regarding the category and language pair.
 
 Related links:
-[Signing in to ProZ.com account](https://cafetran.freshdesk.com/support/solutions/articles/6000158973-signing-in-to-proz-com-account)
+[Signing in to ProZ.com account](https://cafetran.freshdesk.com/support/solutions/articles/6000158973-signing-in-to-proz-com-account),
 [Proz.com Term Search Integration](https://cafetran.freshdesk.com/support/solutions/articles/6000118360-proz-com-term-search-integration)
 
 ### TM-Town tab and context menu
@@ -1424,12 +1424,18 @@ This is the window that allows you to add or edit a web resource information. If
 
 **Web resources suggestions**
 
-To quickly access a list of bilingual and monolingual web resources to add in CafeTran, you can use the [IntelliWebSearch Search Database](http://www.intelliwebsearch.com/findsearch.asp). Add the "Start" and "Finish" strings to the "Address start" and "Address end" fields when creating a new resource and that is mostly it.
+To quickly access a list of bilingual and monolingual web resources to add in CafeTran, you can use the [IntelliWebSearch Search Database](http://www.intelliwebsearch.com/findsearch.asp). Add the "Start" and "Finish" strings to the "Address start" and "Address end" fields when creating a new resource.
 
-Choosing short names when saving the web resources will help keep each tab length to a minimum (example: "GWS" for Google web search or "LingueeENFR" for English to French Linguee queries), thus allowing to fit more resources in one line of the tabbed pane.
+You can also use the free browser [SlimBrowser](https://www.slimbrowser.net/) (Windows) or [Slimboat](https://www.slimjet.com/slimboat/) (Windows, Mac, GNU/Linux) to determine the start and end fields of a web resource you wish to add. To do so:
+1. Open the Internet resource in the browser.
+2. Point the mouse at the form search field.
+3. Select the Search engines drop-down box (at the right-hand side)
+4. Choose "Create your own search engine" command and take note of the start and end fields.
+
+Choosing short names when saving the web resources will help keep each tab's length to a minimum (example: "GWS" for Google web search or "ENFRLing" for English to French Linguee queries), thus allowing to fit more resources in one line of the tabbed pane.
 
 Related links:
-[Adding a Web Resource - Based on Examples](https://cafetran.freshdesk.com/support/solutions/articles/6000110248-adding-a-web-resource-based-on-examples)
+[Adding a Web Resource - Based on Examples](https://cafetran.freshdesk.com/support/solutions/articles/6000110248-adding-a-web-resource-based-on-examples),
 [Working with Internet Resources](https://cafetran.freshdesk.com/support/solutions/folders/6000058184)
 
 
