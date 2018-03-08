@@ -62,7 +62,7 @@ Since project templates store content accessible through the Dashboard, as well 
 - **Actions from the Dashboard:**  Many template-related settings are directly accessible via the Dashboard, which acts as a template editor.
 
   - **Resources:**
-    - You can choose which resources will be selected by default. If you have many web resources, are working in multiple language combinations, or want to use client-specific recources, you can also remove non-relevant resources and add those that you wish to use.
+    - You can choose which resources will be selected by default. If you have many web resources, are working in multiple language combinations, or want to use client-specific resources, you can also remove non-relevant resources and add those that you wish to use.
     - To remove a web resource or a TM/glossary (except the Project memory/glossary), right-click on it and select "Remove from the Dashboard".
     - To add a TM or glossary, use the "Add memory" and "Add glossary" buttons. You can also add TMs by drag-and-dropping the TMX file.
     - To add web resources, you need to either close the Dashboard (Dashboard menu > Close Dashboard) or open an existing project, and open the resources you wish to add (Resources > Web). You can also create new web resources from here (Resources > Add web resource). After opening the resource(s) you wish to add to the Dashboard, close the Project (Project > Close project). The opened/added resources will now be present in the Dashboard.
