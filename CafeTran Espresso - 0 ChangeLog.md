@@ -1,68 +1,69 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
-	- [2018 - Akua Update 1](#2018-akua-update-1)
-	- [2018 - Akua - 20180118](#2018-akua-20180118)
-	- [2018 - Forerunner - 20171130](#2018-forerunner-20171130)
-	- [2017 - Yeddi Update 27 - 20171114](#2017-yeddi-update-27-20171114)
-	- [2017 - Yeddi Update 26 - 20171110](#2017-yeddi-update-26-20171110)
-	- [2017 - Yeddi Update 25 - 20171023](#2017-yeddi-update-25-20171023)
-	- [2017 - Yeddi Update 24- 20171016](#2017-yeddi-update-24-20171016)
-	- [2017 - Yeddi Update 23 - 20171010](#2017-yeddi-update-23-20171010)
-	- [2017 - Yeddi Update 22 - 20171001](#2017-yeddi-update-22-20171001)
-	- [2017 - Yeddi Update 21 - 20170901](#2017-yeddi-update-21-20170901)
-	- [2017 - Yeddi Update 20 - 20170824](#2017-yeddi-update-20-20170824)
-	- [2017 - Yeddi Update 19 - 20170708](#2017-yeddi-update-19-20170708)
-	- [2017 - Yeddi Update 18 - 20170731](#2017-yeddi-update-18-20170731)
-	- [2017 - Yeddi Update 17 - 20170726](#2017-yeddi-update-17-20170726)
-	- [2017 - Yeddi Update 16 - 20170705](#2017-yeddi-update-16-20170705)
-	- [2017 - Yeddi Update 15 - 20170627](#2017-yeddi-update-15-20170627)
-	- [2017 - Yeddi Update 14 - 20170615](#2017-yeddi-update-14-20170615)
-	- [2017 - Yeddi Update 13 - 20170609](#2017-yeddi-update-13-20170609)
-	- [2017 - Yeddi Update 12 - 20170531](#2017-yeddi-update-12-20170531)
-	- [2017 - Yeddi Update 11 - 20170524](#2017-yeddi-update-11-20170524)
-	- [2017 - Yeddi Update 10 - 20170517](#2017-yeddi-update-10-20170517)
-	- [2017 - Yeddi Update 9 - 20170508](#2017-yeddi-update-9-20170508)
-	- [2017 - Yeddi Update 8 - 20170426](#2017-yeddi-update-8-20170426)
-	- [2017 - Yeddi Update 7 - 20170419](#2017-yeddi-update-7-20170419)
-	- [2017 - Yeddi Update 6 - 20170410](#2017-yeddi-update-6-20170410)
-	- [2017 - Yeddi Update 5 - 20170330](#2017-yeddi-update-5-20170330)
-	- [2017 - Yeddi Update 4 - 20170325](#2017-yeddi-update-4-20170325)
-	- [2017 - Yeddi Update 3 - 20170310](#2017-yeddi-update-3-20170310)
-	- [2017 - Yeddi Update 2 - 20170302](#2017-yeddi-update-2-20170302)
-	- [2017 - Yeddi Update 1 - 20170221](#2017-yeddi-update-1-20170221)
+	- [2018 Akua Update 2 (20180312)](#2018-akua-update-2-20180312)
+	- [2018 Akua Update 1 (20180301)](#2018-akua-update-1-20180301)
+	- [2018 Akua (20180118)](#2018-akua-20180118)
+	- [2018 Forerunner (20171130)](#2018-forerunner-20171130)
+	- [2017 Yeddi Update 27 (20171114)](#2017-yeddi-update-27-20171114)
+	- [2017 Yeddi Update 26 (20171110)](#2017-yeddi-update-26-20171110)
+	- [2017 Yeddi Update 25 (20171023)](#2017-yeddi-update-25-20171023)
+	- [2017 Yeddi Update 24 (20171016)](#2017-yeddi-update-24-20171016)
+	- [2017 Yeddi Update 23 (20171010)](#2017-yeddi-update-23-20171010)
+	- [2017 Yeddi Update 22 (20171001)](#2017-yeddi-update-22-20171001)
+	- [2017 Yeddi Update 21 - 20170901](#2017-yeddi-update-21-20170901)
+	- [2017 Yeddi Update 20 (20170824)](#2017-yeddi-update-20-20170824)
+	- [2017 Yeddi Update 19 (20170708)](#2017-yeddi-update-19-20170708)
+	- [2017 Yeddi Update 18 (20170731)](#2017-yeddi-update-18-20170731)
+	- [2017 Yeddi Update 17 (20170726)](#2017-yeddi-update-17-20170726)
+	- [2017 Yeddi Update 16 (20170705)](#2017-yeddi-update-16-20170705)
+	- [2017 Yeddi Update 15 (20170627)](#2017-yeddi-update-15-20170627)
+	- [2017 Yeddi Update 14 (20170615)](#2017-yeddi-update-14-20170615)
+	- [2017 Yeddi Update 13 (20170609)](#2017-yeddi-update-13-20170609)
+	- [2017 Yeddi Update 12 (20170531)](#2017-yeddi-update-12-20170531)
+	- [2017 Yeddi Update 11 - 20170524](#2017-yeddi-update-11-20170524)
+	- [2017 Yeddi Update 10 (20170517)](#2017-yeddi-update-10-20170517)
+	- [2017 Yeddi Update 9 (20170508)](#2017-yeddi-update-9-20170508)
+	- [2017 Yeddi Update 8 (20170426)](#2017-yeddi-update-8-20170426)
+	- [2017 Yeddi Update 7 (20170419)](#2017-yeddi-update-7-20170419)
+	- [2017 Yeddi Update 6 (20170410)](#2017-yeddi-update-6-20170410)
+	- [2017 Yeddi Update 5 (20170330)](#2017-yeddi-update-5-20170330)
+	- [2017 Yeddi Update 4 (20170325)](#2017-yeddi-update-4-20170325)
+	- [2017 Yeddi Update 3 (20170310)](#2017-yeddi-update-3-20170310)
+	- [2017 Yeddi Update 2 (20170302)](#2017-yeddi-update-2-20170302)
+	- [2017 Yeddi Update 1 (20170221)](#2017-yeddi-update-1-20170221)
 	- [2017 Yeddi - 20170201](#2017-yeddi-20170201)
-	- [2017 Harbinger - RC 4 - 20170103](#2017-harbinger-rc-4-20170103)
-	- [2017 Harbinger - RC 3 - 20161222](#2017-harbinger-rc-3-20161222)
-	- [2017 Harbinger - RC 2 - 20161212](#2017-harbinger-rc-2-20161212)
-	- [2017 Harbinger - RC 1 - 20161205](#2017-harbinger-rc-1-20161205)
-	- [2016 Ichiro - Update 27 - 20161128](#2016-ichiro-update-27-20161128)
-	- [2016 Ichiro - Update 26 - 20161118](#2016-ichiro-update-26-20161118)
-	- [2016 Ichiro - Update 25 - 20161109](#2016-ichiro-update-25-20161109)
-	- [2016 Ichiro - Update 24 - 20161102](#2016-ichiro-update-24-20161102)
-	- [2016 Ichiro - Update 23 - 20161027](#2016-ichiro-update-23-20161027)
-	- [2016 Ichiro - Update 22- 20161022](#2016-ichiro-update-22-20161022)
-	- [2016 Ichiro - Update 21 - 20161017](#2016-ichiro-update-21-20161017)
-	- [2016 Ichiro - Update 20 - 20161010](#2016-ichiro-update-20-20161010)
-	- [2016 Ichiro - Update 19- 20161003](#2016-ichiro-update-19-20161003)
-	- [2016 Ichiro - Update 18- 20160916](#2016-ichiro-update-18-20160916)
-	- [2016 Ichiro - Update 17 - 20160907](#2016-ichiro-update-17-20160907)
-	- [2016 Ichiro - Update 16 - 20160831](#2016-ichiro-update-16-20160831)
-	- [2016 Ichiro - Update 15 - 20160823](#2016-ichiro-update-15-20160823)
-	- [2016 Ichiro - Update 14 - 20160809](#2016-ichiro-update-14-20160809)
-	- [2016 Ichiro - Update 13 - 20160802](#2016-ichiro-update-13-20160802)
-	- [2016 Ichiro - Update 12 - 20160726](#2016-ichiro-update-12-20160726)
-	- [2016 Ichiro - Update 11 - 20160715](#2016-ichiro-update-11-20160715)
-	- [2016 Ichiro - Update 10 - 20160610](#2016-ichiro-update-10-20160610)
-	- [2016 Ichiro - Update 9 - 20160606](#2016-ichiro-update-9-20160606)
-	- [2016 Ichiro - Update 8- 20160519](#2016-ichiro-update-8-20160519)
-	- [2016 Ichiro - Update 7 - 20160505](#2016-ichiro-update-7-20160505)
-	- [2016 Ichiro - Update 6 - 20160422](#2016-ichiro-update-6-20160422)
-	- [2016 Ichiro - Update 5 - 20160411](#2016-ichiro-update-5-20160411)
-	- [2016 Ichiro - Update 4 - 20160328](#2016-ichiro-update-4-20160328)
-	- [2016 Ichiro - Update 3 - 20160317](#2016-ichiro-update-3-20160317)
-	- [2016 Ichiro - Update 2- 20160310](#2016-ichiro-update-2-20160310)
-	- [2016 Ichiro - Update 1 - 20160205](#2016-ichiro-update-1-20160205)
+	- [2017 Harbinger RC 4 (20170103)](#2017-harbinger-rc-4-20170103)
+	- [2017 Harbinger RC 3 (20161222)](#2017-harbinger-rc-3-20161222)
+	- [2017 Harbinger RC 2 (20161212)](#2017-harbinger-rc-2-20161212)
+	- [2017 Harbinger RC 1 (20161205)](#2017-harbinger-rc-1-20161205)
+	- [2016 Ichiro Update 27 (20161128)](#2016-ichiro-update-27-20161128)
+	- [2016 Ichiro Update 26 (20161118)](#2016-ichiro-update-26-20161118)
+	- [2016 Ichiro Update 25 (20161109)](#2016-ichiro-update-25-20161109)
+	- [2016 Ichiro Update 24 (20161102)](#2016-ichiro-update-24-20161102)
+	- [2016 Ichiro Update 23 (20161027)](#2016-ichiro-update-23-20161027)
+	- [2016 Ichiro Update 22 (20161022)](#2016-ichiro-update-22-20161022)
+	- [2016 Ichiro Update 21 (20161017)](#2016-ichiro-update-21-20161017)
+	- [2016 Ichiro Update 20 (20161010)](#2016-ichiro-update-20-20161010)
+	- [2016 Ichiro Update 19 (20161003)](#2016-ichiro-update-19-20161003)
+	- [2016 Ichiro Update 18 (20160916)](#2016-ichiro-update-18-20160916)
+	- [2016 Ichiro Update 17 (20160907)](#2016-ichiro-update-17-20160907)
+	- [2016 Ichiro Update 16 (20160831)](#2016-ichiro-update-16-20160831)
+	- [2016 Ichiro Update 15 (20160823)](#2016-ichiro-update-15-20160823)
+	- [2016 Ichiro Update 14 (20160809)](#2016-ichiro-update-14-20160809)
+	- [2016 Ichiro Update 13 (20160802)](#2016-ichiro-update-13-20160802)
+	- [2016 Ichiro Update 12 (20160726)](#2016-ichiro-update-12-20160726)
+	- [2016 Ichiro Update 11 (20160715)](#2016-ichiro-update-11-20160715)
+	- [2016 Ichiro Update 10 (20160610)](#2016-ichiro-update-10-20160610)
+	- [2016 Ichiro Update 9 (20160606)](#2016-ichiro-update-9-20160606)
+	- [2016 Ichiro Update 8 (20160519)](#2016-ichiro-update-8-20160519)
+	- [2016 Ichiro Update 7 (20160505)](#2016-ichiro-update-7-20160505)
+	- [2016 Ichiro Update 6 (20160422)](#2016-ichiro-update-6-20160422)
+	- [2016 Ichiro Update 5 - 20160411](#2016-ichiro-update-5-20160411)
+	- [2016 Ichiro Update 4 (20160328)](#2016-ichiro-update-4-20160328)
+	- [2016 Ichiro Update 3 (20160317)](#2016-ichiro-update-3-20160317)
+	- [2016 Ichiro Update 2 (20160310)](#2016-ichiro-update-2-20160310)
+	- [2016 Ichiro Update 1 (20160205)](#2016-ichiro-update-1-20160205)
 	- [2016 Ichiro - 20160119](#2016-ichiro-20160119)
 	- [Imported from previous ChangeLog (2013-07-01 - 2015-11-28)](#imported-from-previous-changelog-2013-07-01-2015-11-28)
 	- [2016 Harbinger – 2015-11-28](#2016-harbinger-2015-11-28)
@@ -94,7 +95,15 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 Shortened link to this document:
 
-## 2018 - Akua Update 1
+**Important! Please complete all your translation projects in your current CafeTran version before updating.**
+
+## 2018 Akua Update 2 (20180312)
+
+- Adjustment to transfer the translation from Ms Bing Translator web page due to its recent change.
+- New "Transfer MT from web page" button in the source segment toolbar.  It transfers the translation from the selected Machine Translation web page (e.g DeepL, Google Translate, Bing Translator).
+- Locked segment can be exported to translation memories either vie Project > Export and exchange > To TMX memory or via Memory > Import > Import segments from project.
+
+## 2018 Akua Update 1 (20180301)
 
 - Easier selection of a single translation memory from the list of loaded TMs in the Memory menu for various tasks. The user does not need to select the TM tab first to indicate the specific TM.
 - Recognition of .xhtml file extension for HTML filter.
@@ -105,7 +114,7 @@ The 4-letter short names for MT services are in the new build (*2018030401*). Th
 
 The new build (*2018030502*) of update 1 is available. It improves Ms PowerPoint filter by including diagrams' data for translation. Please perform the update as described in the announcement above. If you are in the middle of PowerPoint document translation, please update after you finish your current project.
 
-## 2018 - Akua - 20180118
+## 2018 Akua (20180118)
 
 *Important! The update features some improvements to MS Word filter. Please complete all your Word translation projects in your current CafeTran version before updating.*
 
@@ -134,7 +143,7 @@ This is a product of all-year development with numerous additions. It goes witho
 The new build (**2018013001**) is available for download that improves parallel loading of multiple resources at the project’s start.
 
 
-## 2018 - Forerunner - 20171130
+## 2018 Forerunner (20171130)
 
 *Important! The update features some improvements to MS Word filter. Please complete all your Word translation projects in your current CafeTran version before updating.*
 
@@ -203,7 +212,7 @@ The new build of CTE 2018 Forerunner (**2018010801**) is available for download 
 
 Remove target segments feature: One needs to progress with external xliff files cautiously since they internal translation unit structure is often non-standard and not so obvious. With today’s build (**2018010901**) of the CTE 2018 Forerunner update, you can try the “Remove target segments” function on your mqxliff files.
 
-## 2017 - Yeddi Update 27 - 20171114
+## 2017 Yeddi Update 27 (20171114)
 
 - Compacted tool bars in the Dashboard to gain vertical space.
 - View > Toolbars > Hide help tips also hides the workflow tips at the bottom of the Dashboard.
@@ -216,7 +225,7 @@ Additional builds:
 
 - Latest build 2017111601 fixes the behavior of copy and paste shortcut that transfers text to adjust to DeepL’s new web interface.
 
-## 2017 - Yeddi Update 26 - 20171110
+## 2017 Yeddi Update 26 (20171110)
 
 - Optional creation of Project Memory and/or Project Glossary while opening projects created in other tools. ProjectTM.tmx and/or ProjectTerms.txt files are created at the location of the project.
 - Two new tasks - “Remove notes” and “Remove alternative translations”.
@@ -232,7 +241,7 @@ The new build of update 26 (201711101) is available for download with the follow
 - added the “Quick search” icon to the source editor toolbar to toggle Search bar on/off.
 - fixed tabs border issue in the GTK theme appearing with the background grid on.
 
-## 2017 - Yeddi Update 25 - 20171023
+## 2017 Yeddi Update 25 (20171023)
 
 - Dragging of tabs with resources to change their position in the user interface.
 - Fixed an issue with transparency of docked tabs in transparent themes.
@@ -246,7 +255,7 @@ The new build of update 25 (2017102701) is available for download with the follo
 - simultaneous translating with the supported Machine Translation web resources (via the browser interface).
 - The Alt+V keyboard shortcut transferring MT from web page works for docked web MT resources too.
 
-## 2017 - Yeddi Update 24- 20171016
+## 2017 Yeddi Update 24 (20171016)
 
 - Binding of MT editors on web pages such as Google Translate, Bing Translator, DeepL. See the binding option in Edit > Bind external editor and choose an editor in Edit > Preferences > General tab > External editor box. This new binding feature is dependent on the external website. If its web page or address changes, binding with the editor on that page will stop working.
 - Action to transfer the MT result from a web page to the target segment - see the menu Translate > Transfer MT from web page. This transfer action (via the keyboard shortcut) can also be used when editors binding is off.
@@ -261,7 +270,7 @@ The new build of update 24 (2017101802) is available for download with the follo
 - Matchboard option to hide terms and fragments - after right-clicking on the Matchboard panel.
 - Fixed a long text display in a pop-up info message when opening some sdlxliff files.
 
-## 2017 - Yeddi Update 23 - 20171010
+## 2017 Yeddi Update 23 (20171010)
 
 - Masking of non-translatable fragments for MT online services. The feature is on by default and can be deactivated in Edit > Preferences > MT services tab. All non-translatable fragments longer than 3 characters are masked before being submitted for Machine Translation - both via API and the Web interface. You can see the masking effect in MT tabs. The unmasked translation result is displayed in the Matchboard and after the transfer to the target segment. The masking feature does not work with the right-click “Create TMX memory” MT function.
 - A new “Find in page” keyboard shortcut in the Edit menu to search for word occurrences on a web page.
@@ -277,7 +286,7 @@ The new build of update 23 (2017101201) is available for download with the follo
 - Added Euroglot as a web resource (see the Resources > Web menu) to CafeTran interface. This online resource requires login but there is a 10 minute free trial as too.
 
 
-## 2017 - Yeddi Update 22 - 20171001
+## 2017 Yeddi Update 22 (20171001)
 
 - The update 22 is the first CafeTran version that runs either on Java 8 or the latest Java 9.
 - Removed support for the outdated Java 7.
@@ -288,7 +297,7 @@ The new build of update 22 (2017100301) is available for download with the follo
 - Fixed an undo/redo editor’s issue related to Java 9 update.
 - Handling TMX translation memories which have the external Document Type Definition (DTD) set.
 
-## 2017 - Yeddi Update 21 - 20170901
+## 2017 Yeddi Update 21 - 20170901
 
 - Added DeepL Machine Translation online service as a web resource (see the menu Resources > Web > DeepL).
 - The Translate button in the source segment toolbar copies the source segment (or selection) to the internal web browser to look up the segment or the selected phrase in the Machine Translation web resource which is currently selected in the tab.
@@ -318,8 +327,7 @@ The new build of update 21 (2017092701) is available for download with the follo
 - Block to load multiple memory files which have the same name.
 - Interface font size for 1400-1900 resolution screens is two points larger by default.
 
-
-## 2017 - Yeddi Update 20 - 20170824
+## 2017 Yeddi Update 20 (20170824)
 
 - Improved handling of comments in non-CafeTran projects.
 - Memory fuzzy matches can be edited from the Matchboard directly via the right-click at the yellow link.
@@ -330,12 +338,12 @@ The new build (2017082901) of update 20 is available.
 - Double-clicking on an auto-completion phrase inserts the phrase into the target segment editor.
 
 
-## 2017 - Yeddi Update 19 - 20170708
+## 2017 Yeddi Update 19 (20170708)
 
 - Instant transfer of the selected text from the target segment editor to the Search box.
 - Mouse or keyboard selection of a glossary match in the alphabetical Match bar pops up all the additional fields in the glossary entry.
 
-## 2017 - Yeddi Update 18 - 20170731
+## 2017 Yeddi Update 18 (20170731)
 
 The update 18 brings the following improvements:
 - A keyboard shortcut for “Delete segment” in translation memory edit mode.
@@ -346,7 +354,7 @@ The update 18 brings the following improvements:
 
 In today’s build of update 18 - 2017080101, the Document note opens automatically in CafeTran’s projects. Also, when you quit the program and your note has been edited, CafeTran asks in you wish to save it. Please download and apply the update 18 again.
 
-## 2017 - Yeddi Update 17 - 20170726
+## 2017 Yeddi Update 17 (20170726)
 
 The update 17 includes some fixes and improvements released in the recent builds such as:
 - Fuzzy match auto-correction.
@@ -361,7 +369,7 @@ The QA checks above share the same fuzziness as is set in the “Do not match”
 
 Furthermore, clicking at the number of occurrences of the phrase in the Frequent words list searches for the phrase in the Project’s source segments. It can be useful if you wish to see the full context or filter out all the segments containing a frequent phrase.
 
-## 2017 - Yeddi Update 16 - 20170705
+## 2017 Yeddi Update 16 (20170705)
 
 * The glossary option in Preferences to display the longest matches only.
 * Sorting by length filter action.
@@ -383,7 +391,7 @@ There is a new build of update 16 (2017072001) available. It improves and adds t
 * Clearer translation memory info tips when hovering the mouse over a hit in the Dashboard or TM pane.
 * Sorting matches by length in the Matchboard - the option available after right clicking at the Matchboard pane.
 
-## 2017 - Yeddi Update 15 - 20170627
+## 2017 Yeddi Update 15 (20170627)
 
 * **Automatic fragments adjustment.** This a new and experimental feature which picks fragments/terms from the current segment and updates their priority on the fly. It can also adjust to some slight changes in the fragments (e.g. plural forms) creating virtual fragment pairs if their do not exist in your resources. The feature should be very helpful when there are still good matches coming from low quality/priority resources to use in auto-assembling. Then, CafeTran will enhance their status automatically for the current project. Furthermore, it detects term’s synonym usage adjusting its priority automatically.
 * Translation Memories panel in the Dashboard can hold up to 100 TMs now.
@@ -397,7 +405,7 @@ The user has been able to replace an automatically inserted translation by right
 The new feature seems to be a fully automated version of this translation/priority replacement feature, which is enhanced by including hits and near-same matches. Is it?
 That’s correct. There is no need for the right-click manual action now.
 
-## 2017 - Yeddi Update 14 - 20170615
+## 2017 Yeddi Update 14 (20170615)
 
 * Changed the size of the Autocompletion panel depending on the screen resolution.
 Adjusted the size of some buttons for UHD screens in Metal look and feel.
@@ -413,7 +421,7 @@ The new build of update 14 (2017062001) is available for download with the follo
 - Clearer user interface font for lower-resolution screens in Nimbus look and feel.
 - Correct display of the Matching type option in TM options panel.
 
-## 2017 - Yeddi Update 13 - 20170609
+## 2017 Yeddi Update 13 (20170609)
 
 Summary of changes added in the recent builds:
 
@@ -429,14 +437,14 @@ New features:
 * “Improve auto-assembling with Machine Translation” option can be accessed quickly via the right-click at the MT pane.
 * Clicking at “Translate selected fragment” link in the Machine Translation pane shows the original MT result if “Improve auto-assembling with Machine Translation” option is selected.
 
-## 2017 - Yeddi Update 12 - 20170531
+## 2017 Yeddi Update 12 (20170531)
 
 * The translation results from all MT services are remembered for each segment in the running project to access them fast again (e.g. when reviewing the translation).
 * Adding non-translatable terms either from the source or target box in the New term dialog.
 
 The new build (2017060102) of update 12 is available for download. The file chooser does not hide the main interface now as it caused a major issue with choosing files for alignment. Please follow the steps described in the announcement post above to update your installation with the new build.
 
-## 2017 - Yeddi Update 11 - 20170524
+## 2017 Yeddi Update 11 - 20170524
 
 * Storing the source document location and rate information in the Project template.
 * New TMX memory task in the Task menu called “Split TMX units”. It splits translation units at a character or a phrase - set separately for source and target segments.
@@ -448,14 +456,14 @@ Search and replace panel is not set as “always on top” now.
 Auto-assembling for MT in Preferences after this update:
 The feature has been adjusted to the new API as the previous implementation caused some issues. Now you can choose either of the two options - with improved MT version or unchanged MT result, but not both at the same time.
 
-## 2017 - Yeddi Update 10 - 20170517
+## 2017 Yeddi Update 10 (20170517)
 
 The update 10 is a maintenance update summing up a few builds released after the update 9. * Furthermore, the following fixes and improvements have been made:
 * “Replace all” also does the replacement in the target segment being edited. YES
 * Auto-correction (via CTRL+Space shortcut) of a spelling mistake at the cursor position instead of the position at the last red-underlined word.
 * Fixed an issue with the MS Excel filter when the translator uses an MS Excel glossary as a resource.
 
-## 2017 - Yeddi Update 9 - 20170508
+## 2017 Yeddi Update 9 (20170508)
 
 * **Project templates**. This update adds the templates feature which stores in a template file the selected CafeTran resources from the Dashboard (Total Recall memories, TMX translation memories, glossaries and Web resources), language pair, windows layout and colors to use for a new project. See the new menu button next to the language pair boxes in the Dashboard to save or load project templates.
 * **Total Recall memories with segments in regional variants of a given language are recognized automatically** in the projects with a different variant for the same language.
@@ -472,7 +480,7 @@ The new build of update 9 is available (2017051101) with two minor changes:
 * keeping target segment editor’s contents when joining current empty target segment with the next non-empty target segment.
 
 
-## 2017 - Yeddi Update 8 - 20170426
+## 2017 Yeddi Update 8 (20170426)
 
 * Switch to the new Google Cloud Translation API which uses the neural machine translation model.
 * **Navigation between documents in the glue mode. See the “Documents” button in the grid toolbar.**
@@ -480,7 +488,7 @@ The new build of update 9 is available (2017051101) with two minor changes:
 
 The new build (2017042703) of update 8 is available. It makes the keyboard shortcuts for **merging and hiding tags undetermined by default ** as they caused issues with typing some international characters. The user can set them in Preferences > Keyboard shortcuts tab. The build does not change your existing (already set before) shortcuts for the two actions.
 
-## 2017 - Yeddi Update 7 - 20170419
+## 2017 Yeddi Update 7 (20170419)
 
 * The option for changing UI font size in the View > Font menu.
 * **Automatic refresh of the current segment at hiding/merging tags.**
@@ -489,7 +497,7 @@ The new build (2017042703) of update 8 is available. It makes the keyboard short
 * **New QA features with word lists**: Find and replace source/target segments. They make it possible to preform multiple replacements both in the source and target segments in a single action. The replacement list is in the simple text format where the searched word is followed by the equals sign '=' and the replacement word. For example: cat=dog.
 * A 'Version' status for the current segment in the target segment toolbar. It allows for a simple form of segment versioning. When the Version status is selected, CafeTran stores automatically the previous translation of the current segment in the alternative translation list. Alternative translations are marked as “A” in the segments grid and can be accessed after the right-click at the source segment editor. The feature is for translation projects created in CafeTran Espresso.
 
-## 2017 - Yeddi Update 6 - 20170410
+## 2017 Yeddi Update 6 (20170410)
 
 * New Auto-propagation option - **Auto-propagation forward only.**
 * **In the Filter view, hold CTRL key while clicking the Filter button to stay at the last filtered segment after return to the Normal view**.
@@ -499,7 +507,7 @@ The new build (2017042703) of update 8 is available. It makes the keyboard short
 
 And while in the Filtered view, CafeTran displays the red F in the project segments table.
 
-## 2017 - Yeddi Update 5 - 20170330
+## 2017 Yeddi Update 5 (20170330)
 
 * Fixed scope of the search to a single document in the unglue mode.
 * Consistent naming of the exported target documents in the glue mode.
@@ -508,7 +516,7 @@ And while in the Filtered view, CafeTran displays the red F in the project segme
 * If skipping locked segments is active, the search function omits such segment too.
 * **Added “Block JavaScript” option** for web resources to deal with a few web pages (usually with numerous ads) which may cause hanging of the whole application.
 
-## 2017 - Yeddi Update 4 - 20170325
+## 2017 Yeddi Update 4 (20170325)
 
 * Removed single-digit non-translatables from the F4 list.
 * The auto-completion keyboard shortcuts start from 1.
@@ -517,7 +525,7 @@ And while in the Filtered view, CafeTran displays the red F in the project segme
 * Added the option to **block auto-propagation to other documents in the project.**
 * Switch to the new Microsoft Azure API for Microsoft Translate MT service.
 
-## 2017 - Yeddi Update 3 - 20170310
+## 2017 Yeddi Update 3 (20170310)
 
 * Improved mixing of custom formatting with transferred formatting.
 * Fixed calculation of the translation speed per minute in the statistics.
@@ -526,7 +534,7 @@ And while in the Filtered view, CafeTran displays the red F in the project segme
 * **Added “Show term information” right-click option to the display of ProZ.com and TM-Town.com search results. **
 * **Added the horizontal/vertical docking tabs option to enhance the personal adjustment of the user interface.** It is available in the menu after right-clicking at the tab title. You will need to undock the currently-docked tabs before applying this new option.
 
-## 2017 - Yeddi Update 2 - 20170302
+## 2017 Yeddi Update 2 (20170302)
 
 * **Added the locked segment status for CafeTran projects.** The locking segment status works in non-CafeTran projects for the current session only. It does not interfere with the segments locked in other tools.
 * Two new tasks to lock and unlock filtered segments in CafeTran projects.
@@ -543,7 +551,7 @@ There is an interesting side-effect to this feature. It enables really fast sele
 
 Double-shift in the source pane, double-shift in the target pane and add the pair to your resource.
 
-## 2017 - Yeddi Update 1 - 20170221
+## 2017 Yeddi Update 1 (20170221)
 
 * The Matchboard displays multiple exact matches and the name of the TM being the source of the exact match.
 * Corrected the order of imported stories in Adobe Indesign IDML file filter (only for new translation projects).
@@ -573,7 +581,7 @@ CafeTran Espresso 2017 Yeddi has been released today. The new version provides t
 * Auto-tagger: inserting matches along with formatting tags in the target segment.
 
 
-## 2017 Harbinger - RC 4 - 20170103
+## 2017 Harbinger RC 4 (20170103)
 
 * The alternative connection to **Yandex Translate MT service** - see the option in Edit > Preferences > MT services tab. Required the API key from Yandex.com after the registration.
 * Experimental filter for **xliff 2.0 files**.
@@ -597,14 +605,14 @@ Preliminary matching can work as the second-level filter, comparing the source s
 So, the result of TR + PM can be a very light resource, hence a much quicker retrieval.
 
 
-## 2017 Harbinger - RC 3 - 20161222
+## 2017 Harbinger RC 3 (20161222)
 
 * **New Term/Fragment dialog got a button to add a new entry without closing the dialog.** It enables translators to add multiple TM/glossary entries at a time.
 * The refreshed dark and white eye-friendly texture themes (menu View > Themes). Image background transparent dark/bright themes are there to reduce eye strain and allow brightness adjustment with the slider in the source segment toolbar.
 * Polished Nimbus look and feel becomes default on Windows and Linux systems. It does not replace your current look and feel. You will need to choose it in Preferences > Appearance tab if you wish to try it.
 * **New option: View > Tabs > Bottom tabs placement.**
 
-## 2017 Harbinger - RC 2 - 20161212
+## 2017 Harbinger RC 2 (20161212)
 
 * Improved automatic transfer of term’s surrounding tags with complex tagging in non-CafeTran projects.
 * Fixed the display of the glossary matches with source-side synonyms.
@@ -613,14 +621,14 @@ So, the result of TR + PM can be a very light resource, hence a much quicker ret
 * Fixed an issue in the Release Candidate 1 with opening the memory via the Memory menu. The matches were only shown when the TM was opened via the Dashboard.
 * **This update also includes an experimental feature of synchronizing CafeTran’s target segment editor with some external editors**. It may be particularly useful to the users who enjoy some advanced editing functions in their favorite editing environment. It allows getting the best of both worlds. The details and list of the currently supported editors are shown in this article [https://cafetran.freshdesk.com/solution/articles/6000162841-target-segment-editors](https://cafetran.freshdesk.com/solution/articles/6000162841-target-segment-editors). The feedback from the users who also translate (or dictate) in external editors is welcomed.
 
-## 2017 Harbinger - RC 1 - 20161205
+## 2017 Harbinger RC 1 (20161205)
 
 * **A glossary can contain non-translatable fragments only - see the option when you add a new glossary**.
 * Auto-completion fragments from TMs and glosssaries are sorted by their quality now.
 * Unchecking the alphabetic sorting in the Matchboard lets CafeTran sort them in the mixed mode - first by quality followed by (multiple) matches for the same source.
 * Trimming double-spaces when transferring matches to the target segment (e.g in the Machine Translation results).
 
-## 2016 Ichiro - Update 27 - 20161128
+## 2016 Ichiro Update 27 (20161128)
 
 * Fuzzy matches Auto-correction with non-translatable fragments.
 * **Auto-tagger**: inserting matches along with formatting tags in the target segment.
@@ -630,12 +638,12 @@ So, the result of TR + PM can be a very light resource, hence a much quicker ret
 * **Auto-completion also works when deleting characters via the Backspace key.**
 * Check for invalid characters in the project name.
 
-## 2016 Ichiro - Update 26 - 20161118
+## 2016 Ichiro Update 26 (20161118)
 
 * Switch to the horizontal Total Recall Dashboard panel split when the main window gets very narrow.
 * Flow layout of resource names in the Dashboard panels to use the available space better and fit more resources in the panels without scrolling.
 
-## 2016 Ichiro - Update 25 - 20161109
+## 2016 Ichiro Update 25 (20161109)
 
 * Long matches in the Matchboard switch to the vertical display to save the space.
 * Matchboard’s right-click option to shorten match information in the grid.
@@ -671,7 +679,7 @@ The second build of this update brought back the ability to select the source se
  Third build (2016111701):
  The new build of update 25 (2016111701) fixes the Dashboard visual issue where the window is too narrow to display the resource names properly. Then CafeTran switches Dashboard orientation. It also arranges the Dashboard panels space better. If you do not want to wait for the next update, please download and install the update 25 again.
 
-## 2016 Ichiro - Update 24 - 20161102
+## 2016 Ichiro Update 24 (20161102)
 
 1. Sizing and highlighting improvements to the Matchboard.
 2. Added the following options to the Matchboard:
@@ -689,7 +697,7 @@ Sorting of the Matchboard results broke the display of target language synonyms 
 
 The additional option to hide the MT results from the Matchboard has just been added as well.
 
-## 2016 Ichiro - Update 23 - 20161027
+## 2016 Ichiro Update 23 (20161027)
 
 1. Fixed the non-translatable highlighting issue in the source segments containing tags.
 2. The rollover undocking icons are placed directly in the docked panels instead of the status bar.
@@ -697,7 +705,7 @@ The additional option to hide the MT results from the Matchboard has just been a
 
 Both the dynamic adjustment of the tab docked at the segment editor and docking tabs to the segments grid should work okay now. Please download and apply the same update 23 again.
 
-## 2016 Ichiro - Update 22- 20161022
+## 2016 Ichiro Update 22 (20161022)
 
 1. Fixed sorting of the glossary matches in the order of appearance for CJK languages when the Prefix option is on.
 2. Listing non-translatables (F4 keyboard shortcut) in the order of appearance.
@@ -708,7 +716,7 @@ and the reported issues fixed later in update 21 as well:
 - the spell checker gets deactivated when the user switches to a target language with no spell-checking dictionary available for it.
 - the actual name of the new memory is shown (instead of “New TM”) when creating it in the Dashboard.
 
-## 2016 Ichiro - Update 21 - 20161017
+## 2016 Ichiro Update 21 (20161017)
 
 This update fixes mainly some reported visual issues and improves a few features:
 
@@ -726,7 +734,7 @@ Based on your immediate feedback, I pushed a few changes to the last update 21:
 * the spell checker gets deactivated when the user switches to a target language with no spell-checking dictionary available for it.
 * the actual name of the new memory is shown (instead of “New TM”) when creating it in the Dashboard.
 
-## 2016 Ichiro - Update 20 - 20161010
+## 2016 Ichiro Update 20 (20161010)
 
 What’s new:
 
@@ -752,7 +760,7 @@ The new Matchboard groups all the matches for the current segment including the 
 
 If the matches for one word/phrase are of the same type, the set priority of the resource is taken into account.
 
-## 2016 Ichiro - Update 19- 20161003
+## 2016 Ichiro Update 19 (20161003)
 
 1. This update provides the implementation of contextual Total Recall system working with the alternative MySQL database. This is a recommended solution for a central database system serving numerous clients on the network or with the storage and recall of very large translation memories consisting of several million segments. Please see this article for connection details.
 2. Fixed an issue with hidden rows in Ms Excel files filter.
@@ -762,7 +770,7 @@ If the matches for one word/phrase are of the same type, the set priority of the
 6. Fixed a reported minor issue when the user creates a new translation memory in the Dashboard. The file chooser to save this memory appears later on during the translation. It shouldn’t as the file has already been saved during its creation.
 7. The correct recognition of Ms Word .docm files containing macros. There is no need to rename them manually now.
 
-## 2016 Ichiro - Update 18- 20160916
+## 2016 Ichiro Update 18 (20160916)
 
 - Convenient Total Recall access directly from the Dashboard.
 - Removed the remaining space at the end of the segment after Drag & Drop in the 'Automatic space adjustment' function.
@@ -774,14 +782,14 @@ Since the above term can be untranslatable, you don’t provide its translation 
 
 I lowered the resolution of my computer to 1280 to check and the toolbar texts took too much space indeed. The fix is available. Please download again and reapply the update 18 and it should be okay now.
 
-## 2016 Ichiro - Update 17 - 20160907
+## 2016 Ichiro Update 17 (20160907)
 
 - The ability to open the recently-supported .mqxlz files via Drag & Drop on the Dashboard panel.
 - Increased the maximum font point size of the adjustable interface elements to 50 - for convenient adjustment in high resolutions screens.
 - Added the “Prefix matching” matching option for glossaries.
 - Proper handling of synonyms/alternative terms and other fields in tab-delimited text files opened via the Memory interface (menu Memory > Open memory…)
 
-## 2016 Ichiro - Update 16 - 20160831
+## 2016 Ichiro Update 16 (20160831)
 
  The size and state of the Dashboard panels is maintained when you close the project.
 - Added support for .mqxlz files. These are zipped .mqxliff files which previously needed to be unzipped and zipped back after the translation. Now, these actions can be performed directly in CafeTran.
@@ -791,7 +799,7 @@ I lowered the resolution of my computer to 1280 to check and the toolbar texts t
 
 Tmx files and tab-delimited files have been loaded into CafeTran via two separate user interfaces, namely, Memory and Glossary. This led to some confusion and raised a question why to keep the two separate. Ideally, there should be no such a distinction so there is a development effort to let users load and present any type of terminology and translation memory matches via one singe interface from various sources/file types. This can be already done via the Memory > Open memory… menu. The Memory interface does not support regular expressions but I believe that 99% percent of the users do not use such complex structures in their entries. For them, using one common interface could be simpler and more intuitive. No matter where you keep the whole segments, longer fragments and terms (in a tmx file or tab-delimited text file or Total Recall database), they can be loaded into the working Memory and matched the same way.
 
-## 2016 Ichiro - Update 15 - 20160823
+## 2016 Ichiro Update 15 (20160823)
 
  Resizable TMs/Glossaries/Resources panels in the Project Dashboard.
 - Coffee house style for the Project Dashboard.
@@ -802,7 +810,7 @@ Tmx files and tab-delimited files have been loaded into CafeTran via two separat
 
 You may have used some smaller screen such as 11 inches MacBook Air? Anyway, I have corrected some UI elements of the Project Dashboard for such screens. Please reapply this update.
 
-## 2016 Ichiro - Update 14 - 20160809
+## 2016 Ichiro Update 14 (20160809)
 
 - lowered fuzzy match calculation when the matched words are present in the segment in a different order.
 - translation consistency check - an issue in the similar segments with different numbers only and the Autopropagation option on. Such segments were falsely reported as inconsistent.
@@ -813,7 +821,7 @@ You may have used some smaller screen such as 11 inches MacBook Air? Anyway, I h
 - another color for the assembled result in the Match bar to distinguish it easier from the TM fuzzy match results.
 - a modified “Image background - bright” shaded theme.
 
-## 2016 Ichiro - Update 13 - 20160802
+## 2016 Ichiro Update 13 (20160802)
 
 - increased font size of some interface elements for high resolution screens.
 - the display of the found segments in the project segments pane during the search in multiple documents.
@@ -822,7 +830,7 @@ You may have used some smaller screen such as 11 inches MacBook Air? Anyway, I h
 - a new dark theme inspired by the Dracula Look and Feel.
 - added the ability to edit or delete comments, add project’s representative words in the new ProZ.com project sharing feature “What are you working on?”. Now the users can also include images and photos describing their current project’s context such as a nice work place or the subject of the translation.
 
-## 2016 Ichiro - Update 12 - 20160726
+## 2016 Ichiro Update 12 (20160726)
 
 The Ichiro update 12 focuses on CafeTran interface to the new service available for ProZ.com and TM-Town.com users. It enables translators to share the information about their translation projects interactively. CafeTran users can view and post messages via CafeTran without the need to switch to their web browsers. There is also a filter option to view posts coming only from other CafeTran users and reply to such posts. Although ProZ.com emphasizes the promotional aspect of this feature for translators as well as the ability to track their projects history, designing the chat-like interface I focused on the social side of it. Hopefully, in the near future, translators will also be able to share the photos straight from CafeTran’s interface i.e. to show their picturesque translation scenery or the cafe where they enjoy having lunch, and perhaps invite other translators working nearby, in a sort of CafeTran spirit. As it is a new feature, I would be happy to receive any feedback on using it in CafeTran. Thanks!
 
@@ -831,7 +839,7 @@ Other improvements in this update:
 - Minor interface changes such as margins, borders to columns and the look of the buttons in ProZ.com and TM-Town interface.
 - Increased the size of the Autocompletion pop-up panel for high resolution screens.
 
-## 2016 Ichiro - Update 11 - 20160715
+## 2016 Ichiro Update 11 (20160715)
 
 The Ichiro update 11 brings numerous improvements and fixes a few known issues:
 - Fixed a rounding issue in the translation speed display of the Statistics panel.
@@ -847,7 +855,7 @@ The Ichiro update 11 brings numerous improvements and fixes a few known issues:
 - Added the “What are you working on right now” dialog to ProZ.com interface to share information about your current project and promote the work you do. It will also let you track your project history over time. The ProZ.com users can see the shared information after clicking the #Nowxl8ing button in the ProZ.com service tab.
 - Added the third option for “Surround with characters” feature.
 
-## 2016 Ichiro - Update 10 - 20160610
+## 2016 Ichiro Update 10 (20160610)
 
 - The matches in the Match bar display the name of the resource they come from.
 - For source languages without the word separator, the ordering of the matches in the Match bar is based on their order of appearance in the source segment.
@@ -855,7 +863,7 @@ The Ichiro update 11 brings numerous improvements and fixes a few known issues:
 
 I left the CT running for more than one hour and noticed that speed per minute in the Statistics was reset after each next hour instead of summing the minutes. It has just been fixed so please reapply the above update. The current CafeTran build is 2016061001.
 
-## 2016 Ichiro - Update 9 - 20160606
+## 2016 Ichiro Update 9 (20160606)
 
  The Ichiro update 9 adds to CafeTran’s interface KudoZ questions and answers of the Proz.com service:
 
@@ -865,7 +873,7 @@ I left the CT running for more than one hour and noticed that speed per minute i
 4. KudoZ Q&A display preferences dialog - after the right-click at the Proz pane.
 5. Minor Dashboard interface improvements.
 
-## 2016 Ichiro - Update 8- 20160519
+## 2016 Ichiro Update 8 (20160519)
 
 The Ichiro update 8 offers the following:
 - The new interface for the Frequent Words feature. It is faster, more intuitive and scalable for large projects.
@@ -874,13 +882,13 @@ The Ichiro update 8 offers the following:
 - Fixed the synonym separator issue in the display of glossary entries.
 - Fixed the Preferences panel display when the text in the “Characters for removal” field is long.
 
-## 2016 Ichiro - Update 7 - 20160505
+## 2016 Ichiro Update 7 (20160505)
 
 The Ichiro update 7 offers the following:
 - Updated list of supported languages for Google Translate, MyMemory MT and Microsoft Translator Machine Translation services.
 - Fixed an minor issue with the filtering of AutoCad files on layers. The layer selection box did not pick for filtering the last layer in the list of layers.
 
-## 2016 Ichiro - Update 6 - 20160422
+## 2016 Ichiro Update 6 (20160422)
 
 The Ichiro update 6 offers the following improvements:
 
@@ -889,7 +897,7 @@ The Ichiro update 6 offers the following improvements:
 - Machine Translation services and Web services can be turned on/off directly in the Project Dashboard > Resources panel. They are also marked with different colors to distinguish them from the Web resources access via the internal web browser.
 - The Project field, if activated in Preferences > Definitions, displays the name of the current project in the “New term” or “New fragment” dialogs.
 
-## 2016 Ichiro - Update 5 - 20160411
+## 2016 Ichiro Update 5 - 20160411
 
 The Ichiro update 5 brings the improvements to the Match bar:
 
@@ -899,7 +907,7 @@ The Ichiro update 5 brings the improvements to the Match bar:
 
 The update 5 also fixes the TMX file path issue in the TMX edit mode on the Linux system.
 
-## 2016 Ichiro - Update 4 - 20160328
+## 2016 Ichiro Update 4 (20160328)
 
 he Ichiro update 4 brings the following improvements and changes:
 
@@ -917,7 +925,7 @@ A minor issue with the display of the pop-up matches has occurred in the latest 
 
 I also missed mentioning one new feature present in update 4 - the ability to replace the currently-translated document with its another version. See the menu Project > Replace document. For example, it may be useful when the client corrects something in the document and sends it to you again after you are half way with the translation of the previous version of the document.
 
-## 2016 Ichiro - Update 3 - 20160317
+## 2016 Ichiro Update 3 (20160317)
 
 The Ichiro update 3 brings the following improvements and changes:
 
@@ -930,7 +938,7 @@ The Ichiro update 3 brings the following improvements and changes:
 
 The optional fuzzy matching did not change anything in the way the matching engine works. If CT does not get the match in the usual way, it falls back to fuzzy matching by comparing word stems. This feature can be turned off in Edit > Options > Glossary tab > Look up word stems box.
 
-## 2016 Ichiro - Update 2- 20160310
+## 2016 Ichiro Update 2 (20160310)
 
 The Ichiro update 2 has the following improvements and changes:
 
@@ -945,7 +953,7 @@ The Ichiro update 2 has the following improvements and changes:
 
 It looks like the CT crash with Linguee web resource on Mac is caused by an ad popping up at the Linguee page. The fix is in the works.
 
-## 2016 Ichiro - Update 1 - 20160205
+## 2016 Ichiro Update 1 (20160205)
 
 The Ichiro update 1 has the following improvements and changes:
 
