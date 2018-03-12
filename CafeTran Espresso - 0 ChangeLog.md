@@ -21,7 +21,7 @@
 	- [2017 Yeddi Update 14 (20170615)](#2017-yeddi-update-14-20170615)
 	- [2017 Yeddi Update 13 (20170609)](#2017-yeddi-update-13-20170609)
 	- [2017 Yeddi Update 12 (20170531)](#2017-yeddi-update-12-20170531)
-	- [2017 Yeddi Update 11 - 20170524](#2017-yeddi-update-11-20170524)
+	- [2017 Yeddi Update 11 (20170524)](#2017-yeddi-update-11-20170524)
 	- [2017 Yeddi Update 10 (20170517)](#2017-yeddi-update-10-20170517)
 	- [2017 Yeddi Update 9 (20170508)](#2017-yeddi-update-9-20170508)
 	- [2017 Yeddi Update 8 (20170426)](#2017-yeddi-update-8-20170426)
@@ -59,7 +59,7 @@
 	- [2016 Ichiro Update 8 (20160519)](#2016-ichiro-update-8-20160519)
 	- [2016 Ichiro Update 7 (20160505)](#2016-ichiro-update-7-20160505)
 	- [2016 Ichiro Update 6 (20160422)](#2016-ichiro-update-6-20160422)
-	- [2016 Ichiro Update 5 - 20160411](#2016-ichiro-update-5-20160411)
+	- [2016 Ichiro Update 5 (20160411)](#2016-ichiro-update-5-20160411)
 	- [2016 Ichiro Update 4 (20160328)](#2016-ichiro-update-4-20160328)
 	- [2016 Ichiro Update 3 (20160317)](#2016-ichiro-update-3-20160317)
 	- [2016 Ichiro Update 2 (20160310)](#2016-ichiro-update-2-20160310)
@@ -444,7 +444,7 @@ New features:
 
 The new build (2017060102) of update 12 is available for download. The file chooser does not hide the main interface now as it caused a major issue with choosing files for alignment. Please follow the steps described in the announcement post above to update your installation with the new build.
 
-## 2017 Yeddi Update 11 - 20170524
+## 2017 Yeddi Update 11 (20170524)
 
 * Storing the source document location and rate information in the Project template.
 * New TMX memory task in the Task menu called “Split TMX units”. It splits translation units at a character or a phrase - set separately for source and target segments.
@@ -897,7 +897,7 @@ The Ichiro update 6 offers the following improvements:
 - Machine Translation services and Web services can be turned on/off directly in the Project Dashboard > Resources panel. They are also marked with different colors to distinguish them from the Web resources access via the internal web browser.
 - The Project field, if activated in Preferences > Definitions, displays the name of the current project in the “New term” or “New fragment” dialogs.
 
-## 2016 Ichiro Update 5 - 20160411
+## 2016 Ichiro Update 5 (20160411)
 
 The Ichiro update 5 brings the improvements to the Match bar:
 
