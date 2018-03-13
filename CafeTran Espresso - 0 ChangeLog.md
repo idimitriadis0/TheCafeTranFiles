@@ -103,6 +103,8 @@ Shortened link to this document:
 - New "Transfer MT from web page" button in the source segment toolbar.  It transfers the translation from the selected Machine Translation web page (e.g DeepL, Google Translate, Bing Translator).
 - Locked segment can be exported to translation memories either vie Project > Export and exchange > To TMX memory or via Memory > Import > Import segments from project.
 
+The new build (*2018031301*) of update 2 is available. It adds the surrounding tags insertion at the transfer of non-translatable fragments to the target segment via F4 pop-up panel.
+
 ## 2018 Akua Update 1 (20180301)
 
 - Easier selection of a single translation memory from the list of loaded TMs in the Memory menu for various tasks. The user does not need to select the TM tab first to indicate the specific TM.
