@@ -105,6 +105,8 @@ Shortened link to this document:
 
 The new build (*2018031301*) of update 2 is available. It adds the surrounding tags insertion at the transfer of non-translatable fragments to the target segment via F4 pop-up panel.
 
+The new build (*2018031501*) of update 2 is available with the following: Automatic recognition of segment words preceded by the curly apostrophe.  The user needs to remove the curly apostrophe from the "Do not match" list in Edit > Preferences >  Memory tab to have it matched.
+
 ## 2018 Akua Update 1 (20180301)
 
 - Easier selection of a single translation memory from the list of loaded TMs in the Memory menu for various tasks. The user does not need to select the TM tab first to indicate the specific TM.
