@@ -264,6 +264,8 @@ Note: The number of segments per page can be set in Preferences >  General > Pro
 
 ![Source segment editor icons](https://i.imgur.com/8sTCuZy.png)
 
+<!--- TODO 20180315 Add "Transfer MT from web page" button --->
+
  1. **Quick search** = Toggle the Quick search bar on/off.
  2. **Increase font size** = Increase the font size in the source and target segment editors.
  3. **Decrease font size** = Decrease the font size in the source and target segment editors.
@@ -276,6 +278,7 @@ Note: The number of segments per page can be set in Preferences >  General > Pro
  10. **Undo** = Undo the previous edit actions in the target segment.
  11. **Redo** = Redo the undone edit actions in the target segment.
  12. **Translate selected segment** = Repeat resource search for full source segment, or for a highlighted portion.
+ 13. **Transfer MT from web page** [Green up arrow, not shown] = Transfer the MT target result from the web page interface to the target segment editor.
 
 ### Source segment editor context menu
 
@@ -345,7 +348,7 @@ The Matchboard can be docked or floated as any other tab.
 
 ### Marchboard context menu
 
-![Marchboard context menu](https://i.imgur.com/JPV385W.png)
+![Matchboard context menu](https://i.imgur.com/ybuxCeZ.png)
 
 You can select which results and matches to display in the Matchboard, along with some sorting options and an option to shorten match information.
 
@@ -650,7 +653,7 @@ Suggestion: This is a nice option to keep enabled as it provides better sense of
 
 ### Project > Export and exchange submenu
 
-![Project > Export and exchange submenu](https://i.imgur.com/h2BP9rg.png)
+![Project > Export and exchange submenu](https://i.imgur.com/p2cZL9r.png)
 
 Here you can export your documents, export and import bilingual documents, and convert to various formats for exchange or save a package.
 
@@ -659,6 +662,8 @@ Here you can export your documents, export and import bilingual documents, and c
 **Project > Export and exchange > Export all documents** = Export translated copies of all documents in the current project.
 
 **Project > Export and exchange > Export current document with notes** = Export a translated copy of the currently-active document, and include any segment notes in the exported document.
+
+**Project > Export > Export all documents with notes** = Export translated copies of all documents in the current project, including any segment notes.
 
 **Project > Include source segments in notes** = Toggle whether or not a copy of the source segment is included in exported segment notes.
 
@@ -676,7 +681,7 @@ Note: If you import a bilingual document with notes. Notes are updated according
 
 **Project > Convert** = The following Convert actions allow you to save a copy of the current project in a specific format. CafeTran projects are saved in XLIFF format by default.
 
-**Project > (Convert) To TMX** = Save all segment pairs as a TMX translation memory. The exported TMX takes into account the filtered segments.
+**Project > (Convert) To TMX memory** = Save all segment pairs (including Locked segments) as a TMX translation memory. The exported TMX takes into account the filtered segments.
 
 **Project > (Convert) To Package** = Save all elements of the current project in a .ctp CafeTran package file. This file can be opened by drag-and-dropping it onto the Project Dashboard.
 
@@ -920,19 +925,37 @@ Hidden if already set to Vertical.
 
 ![View > Themes submenu](https://i.imgur.com/2Movlv0.png)
 
-General interface color schemes for CafeTran. Changing theme will require a program restart.
+General interface themes for CafeTran (in addition to the Look and feel theme chosen in Preferences > Appearance). Changing a theme will require a program restart.
 
 Additionally :
 
 **View > Themes > Replace document colors** =  If you check this option, CafeTran ignores display of the source document text colors in the segments grid pane.
 
+Related links:
+[Themes](https://cafetran.freshdesk.com/support/solutions/articles/6000115530-themes)
 <!--- TODO LATER, link to usage --->
 
 ### View > Colors submenu
 
-![View > Colors submenu](https://i.imgur.com/YcPbLwH.png)
+![View _ Colors submenu](https://i.imgur.com/D2ZE2e8.png)
 
 Set the colors of various CafeTran interface elements.
+
+- Background: Click on a pane, then change the background color for that pane.
+- Font color: Set the text font color.
+- Selection: Set the background color when highlighting text.
+- Segment color
+- Term match color
+- Term match font color
+- Subsegment match color
+- Subsegment match font color
+- No subsegment match color
+- No subsegment match font color
+- Tags color
+- Non-translatable fragments
+- Toolbars color
+- Searchbar color
+- Set default colors: Reset the colors to default.
 
 <!--- TODO LATER, link to usage --->
 
@@ -1132,7 +1155,7 @@ Define which segments will be skipped while traversing through the segment pairs
 
 ![Filter menu](https://i.imgur.com/22ysuNW.png)
 
-![Filter menu](https://i.imgur.com/T7D4C5h.png)
+<!--- TODO 20180315 --->
 
 **Filter > Segments filter** = Toggle the usage of the segments filter, which enables displaying only the segment pairs matching the criteria below. Can also be done via the dedicated shortcut and the FIlter icon in the Segments grid.
 
@@ -1153,6 +1176,8 @@ Define which segments will be skipped while traversing through the segment pairs
 **Filter > Unchecked segments** = Include segments which have not been QA’ed/checked.
 
 **Filter > Matches** = **Submenu**. Filter according to match type (see subsegment list below).
+
+<!--- TODO 20180315 --->
 
 **Filter > Non-translatable segments** = Include non-translatable segments.
 
@@ -1544,7 +1569,7 @@ See also “CafeTran Preferences > Memory server”.
 
 **Memory > Save all memories** = Save all open translation memories to disk.
 
-**Memory > Save memory** = Save the currently-selected translation memory in the tabbed pane to disk.
+**Memory > Save memory** = Save the currently-selected translation memory in the tabbed pane to disk. This opens a dialog allowing you to choose which memory to save.
 
 **Memory > Save memory as** = Save the currently-selected translation memory in the tabbed pane to disk, with the filename specified.
 
@@ -1562,7 +1587,7 @@ Import various file formats as a usable translation memory.
 
 **Memory > Import preliminary matching memory** = Import a preliminary matching memory file created with the Memory-> Export-> Export preliminary matching memory… menu option.
 
-**Memory > Import segments from project** = Import segments from the project to the selected translation memory.
+**Memory > Import segments from project** = Import segments from the project to the selected translation memory. This opens a dialog allowing you to choose which memory to use.
 
 Suggestion: This stands as an excellent maintenance step to perform at the end of a project. It ensures the project memory is completely up-to-date.
 
@@ -1761,6 +1786,7 @@ Buttons:
 - 20171129 Added explanations for several context menus, TM-Town, ProZ.com and New term and fragment windows.
 - 20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
 - 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
+- 20180315 Updated
 
 ## Feedback
 

@@ -160,7 +160,7 @@ What’s new:
 - deleting segments in the Alignment workflow.
 - keeping the newline characters in sdlxliff segments.
 - set the 2000 character limit for the automatic look-up of the current segment to avoid delays.
-- export to bilingual Words documents from external projects.
+- export to bilingual Word documents from external projects.
 - distinguishing between 100% translated units and approved/checked segments in sdlxliff projects.
 - connection to Youdao MT online resource via the web browser interface.
 - option to add invisible characters in the form of Unicode numbers to the “Do not match” list.
@@ -179,7 +179,7 @@ The new build of CTE 2018 Forerunner (**2017120601**) is available for download 
 
 Also, in older builds, CT always joined existing segments ignoring any changes in the target segment editor. In the recent builds, it takes changes in the editor into account before the Join segment action if the target segment is new (not created yet).
 
-*Before the latest update, CafeTran sometimes merged some complex formatting across segments. For example, if one segment finished bolded and underlined, the following segment might continue with that double formatting even though bold was dropped leaving only the underlined part. This has been improved.
+Before the latest update, CafeTran sometimes merged some complex formatting across segments. For example, if one segment finished bolded and underlined, the following segment might continue with that double formatting even though bold was dropped leaving only the underlined part. This has been improved.
 
 In the latest build of CafeTran 2018 - Forerunner version (**2017120901**), the font of the status column is larger to be able to click at the segment number and activate it more easily.
 

@@ -1062,7 +1062,7 @@ Related links:
 
 ## MT SERVICES
 
-![MT services pane](https://i.imgur.com/N8mGMWg.png)
+![MT services pane](https://i.imgur.com/mRPowS3.png)
 
 This pane features option related to Machine Translation. Individual options can also be set via the MT context menu (see “CafeTran Espresso - Menu and Interface”).
 
@@ -1071,6 +1071,10 @@ This pane features option related to Machine Translation. Individual options can
 Checkbox, OFF by default
 
 All non-translatable fragments longer than 3 characters are masked before being submitted for Machine Translation - both via API and the Web interface. You can see the masking effect in MT tabs. The unmasked translation result is displayed in the Matchboard and after the transfer to the target segment. The masking feature does not work with the right-click “Create TMX memory” MT function.
+
+### Team high-priority fragments only
+
+This option allows you to limit the Team feature (see below) to the high-priority fragments (such as those coming from translation memories or glossaries with High priority).
 
 ### Team auto-assembling with machine translation
 
@@ -1228,7 +1232,7 @@ Polish (pl-PL)
 
 ## KEYBOARD SHORTCUTS
 
-![Keyboard shortcuts pane](https://i.imgur.com/SkhNJpa.png)
+![Keyboard shortcuts pane](https://i.imgur.com/AZMdk2p.png)
 
 This pane is where you can review or set most keyboard shortcuts CafeTran uses.
 
@@ -1272,7 +1276,7 @@ Add your translation of this segment to your translation memories, and move on t
 
 Also in action menu.
 
-**Add segment to memory and go to next untranslated segment**	Ctrl+Shift+Down
+**Add segment to memory and go to next untranslated segment**	Ctrl+Enter
 
 Add your translation of this segment to your translation memories and move on to the next untranslated segment in the source document.
 
@@ -1296,7 +1300,7 @@ Add a selected fragment of the segment to text shortcuts. It will create a text 
 
 Also in Resources > Text shortcuts submenu.
 
-**Add term to glossary**	Ctrl+Shift+G
+**Add term to glossary**	Alt+G
 
 Create a new glossary entry. Any highlighted portion of the source/target segments will be preset in the resulting “New term” dialog.
 
@@ -1364,7 +1368,7 @@ Switch keyboard focus to the opposite of the currently-focused pane.
 
 Also in View >Segment editors submenu.
 
-**Default scope**	Ctrl+Enter
+**Default scope**	Ctrl+Shift+G
 
 Search all resources for contents of selection in source segment editor.
 
@@ -1398,7 +1402,7 @@ Export a translated copy of only the document currently-active in the CafeTran i
 
 Also in Project > Export and exchange  submenu.
 
-**Find in page**	Alt+F
+**Find in page**	Ctrl+Alt+F
 
 Perform the search for a word in the loaded web page and highlight the result.
 
@@ -1428,7 +1432,7 @@ Search glossaries for contents of current selection in the source segment editor
 
 Also in Edit > Find at cursor submenu and through the dedicated  Glossaries button in the Quick search bar.
 
-**Hide segment boundary tags**	Ctrl+Alt+U
+**Hide segment boundary tags**	[Not defined]
 
 Hide starting and ending tags for the current segment.
 
@@ -1486,7 +1490,7 @@ Also in Edit > Target segment submenu.
 
 Also in Edit > Target segment submenu and context menu (right click) in the target language box.
 
-**Join segments**
+**Join segments** Alt+Up
 
 Merge the contents of the next source segment into the currently-selected segment. The next segment will also be eliminated.
 
@@ -1528,7 +1532,7 @@ Search memory target segments for contents of current selection in the source se
 
 Also in Edit > Find at cursor submenu and through the dedicated TM source button in the Quick search bar.
 
-**Merge adjacent tags**	Ctrl+Alt+O
+**Merge adjacent tags**	[Not defined]
 
 Merge adjacent tags and treat them as one tag.
 
@@ -1718,13 +1722,13 @@ Select the previous resource tab.
 
 Also in View menu.
 
-**Show alternative spelling**	Context Menu
+**Show alternative spelling**	Ctrl+Shift+S
 
  Display a list of possible alternate spellings or replacements for the word immediately surrounding or preceding the cursor.
 
 Also in Edit menu and with right click or context menu button on red underlined word.
 
-**Split segment**
+**Split segment** Alt+S
 
  Split the currently-selected segment into two. The segment will be split at the current cursor location in the source segment editor above.
 
@@ -1851,6 +1855,7 @@ Also in View > Font submenu.
 - 20171107 File creation
 - 20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
 - 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
+- 20180315 Updated
 
 ## Feedback
 
