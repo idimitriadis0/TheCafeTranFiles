@@ -152,7 +152,7 @@ Depending on your needs, you might need to Show more menus.
 
 Just go to View > and select which you wish to have displayed or hidden.
 
-And that concludes part 1.
+And that concludes part I.
 
 ## PART 2 | Taking it further
 
@@ -172,7 +172,7 @@ Still, there are some Preferences you might wish to set up soon:
 
 **Preferences > General > Segmentation**
 
-Defining the segmentation rules which will be applied for a given project is an important consideration. Check out the available options. The default (Sentence) is fine for basic needs, but you may want to explore more advanced (SRX) solutions. Recommendation: Check out the Suggestion section under [Segmentation](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#segmentation) in the “Preferences” reference document.
+Defining the segmentation rules which will be applied for a given project is an important consideration. Check out the available options. The default (Sentence) is fine for basic needs, but you may want to explore more advanced (SRX) solutions. Recommendation: Review the Suggestion section under [Segmentation](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#segmentation) in the “Preferences” reference document.
 
 **Preferences > Memory > Java Memory size (MB)**
 
@@ -196,7 +196,7 @@ Keyboard shortcuts speed up things greatly.   And the point of using a CAT tool 
 
 At one point, you should take a moment to go through the various available shortcuts. There are a lot of them! Most (if not all) are found in the Preferences > Keyboard shortcuts.
 
-If any is not self expalanatory, you can check the [Keyboard shortcuts](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#keyboard-shortcuts) section of the “Prefenreces” reference file to find out what it does.
+If any is not self expalanatory, you can check the [Keyboard shortcuts](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#keyboard-shortcuts) section of the Preferences reference file to find out what it does.
 
 You might wish to customize some as well.
 
@@ -213,13 +213,13 @@ You will certainly want to learn more about CafeTran’s translation interface a
 
 Many actions are accessible via shortcuts as well. Some menus give access to additional handy options. Take some time to cycle through them.
 
-By default, help tips are shown on the bottom left when you hover a menu or a UI element.
+By default, help tips are shown at the bottom left when you hover a menu or a UI element.
 
 To dive deeper info Menus, see the reference document “[Menus and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface)”.
 
 **Resources > Web**
 
-Speaking of Menus, being able to query various Web resources from within CafeTran’s interface is a great advantage, since your eyes stay near your source and target segments at all times.
+Speaking of Menus, being able to query various Web resources from within CafeTran’s interface is a great advantage.
 
 If you wish to use this feature, you’ll want to add and organize web resources relevant for your language combinations and subject matter. Here, you will find explanations and [suggestions on adding web resources](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#addedit-resource-window).
 
@@ -240,13 +240,13 @@ Places to visit:
 
 **Termbases for fragments vs glossaries?**
 
-CafeTran memories do not only store segments. They can also be used to store fragments and be used as Termbases. Fragments or subsegments are parts of segments and phrases. They can consist of one or more terms (which in turn can consist of one or more words). In such case, using a Memory for storing both segments and fragments (see TM options above), can be all you need. You can also set up a different Memory meant to store only fragments.
+CafeTran memories do not only store segments. They can also store fragments and be used as Termbases. Fragments or subsegments are parts of segments and phrases. They can consist of one or more terms (which in turn can consist of one or more words). In such a case, using a Memory for storing both segments and fragments (see TM options above) can be all you need. You can also set up a separate Memory meant to store fragments only.
 
-Another way of tackling the terminology is to use Glossaries. In CafeTran, Glossaries are simple tab-delimited text files for storing terms.
+Another way of tackling terminology is to use Glossaries. In CafeTran, Glossaries are simple tab-delimited text files for storing terms.
 
-Both approaches have their advantages, fervent adepts or detractors.
+Both approaches have their advantages and disadvantages, fervent adepts and detractors.
 
-You will find your own (possibly hybrid approach) regarding that.
+You will find your own (possibly hybrid approach) on that front.
 
 ### TEMPLATES
 
@@ -254,7 +254,7 @@ CafeTran offers a templates feature which stores a variety of settings in templa
 
 Saving and loading templates is accessible via the Dashboard menu.
 
-This can be bery convenient, especially if you happen to work on different language pairs or wish to be able to quickly swap resources and (various) settings from one project to another.
+This can be very convenient, especially if you happen to work on different language pairs or wish to  quickly swap resources and (various) settings from one project to another.
 
 If so, check out the reference document on [Project templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
 
@@ -263,3 +263,13 @@ If so, check out the reference document on [Project templates](https://github.co
 CafeTran handles many file formats natively and allows you to work on external project as well. For file types not directly supported, there are (almost) always solutions. All this is covered in the [File formats](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/4-File-formats) reference document.
 
 Of special interest if you intend to work on external bilingual files and packages (SDL Trados, MemoQ, Wordfast, etc.): Read the General notes in the [External Projects](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/4-File-formats#external-projects) section, as well as the section dedicated on the related CAT tool.
+
+And that concludes part II. This should give you a good head start!
+
+## LIST OF CHANGES
+
+- 20180316 File creation
+
+## Feedback
+
+You can send me feedback via a [ProZ message](https://www.proz.com/?sp=mailsend&eid_s=2042360). Please start your subject with the name of the document: “CafeTran - Getting comfortable.
