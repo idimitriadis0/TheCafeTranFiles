@@ -236,8 +236,8 @@ CafeTran offers a web resources feature which allows you to use and query variou
 Note: This choice can also be set individually per each web resource.
 
 Related links:
-[Searching Internet Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000110245-searching-internet-resources)
-[Adding a Web Resource - Based on Examples](https://cafetran.freshdesk.com/support/solutions/articles/6000110248-adding-a-web-resource-based-on-examples)
+[Searching Internet Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000110245-searching-internet-resources),
+[Adding a Web Resource - Based on Examples](https://cafetran.freshdesk.com/support/solutions/articles/6000110248-adding-a-web-resource-based-on-examples),
 [Web Resources in the System Browser](https://cafetran.freshdesk.com/support/solutions/articles/6000110761-web-resources-in-the-system-browser-)
 
 ### External editor:
@@ -247,7 +247,7 @@ Drop-down menu: Choice between Clipboard binding , Atom, BBEdit, Bing Translator
 The functionality of CafeTran’s target segment editor can be further extended by binding it with an external text editor. Some specialized editors offer additional functions that can enhance the editing experience. For example, a dictation application can be tuned to work best only with certain text editors. You can also use the edit box of a Machine Translation Web page as an external editor.
 
 Related links:
-[Target Segment Editors](https://cafetran.freshdesk.com/support/solutions/articles/6000162841-target-segment-editors)
+[Target Segment Editors](https://cafetran.freshdesk.com/support/solutions/articles/6000162841-target-segment-editors),
 [Voice Translating](https://cafetran.freshdesk.com/support/solutions/folders/6000225250)
 
 ### Desktop search tool:
@@ -488,7 +488,7 @@ Available choices: Ms Word, OpenOffice, Text, Default: MS Word
 This option concerns the **Translate a paper document** workflow, available from the Dashboard. In this workflow, you can translate short paper documents, scanned documents or image files. The option allows you to choose the export format CafeTran will use.
 
 Related links:
-[Translation of Paper Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000111789-translation-of-paper-documents)
+[Translation of Paper Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000111789-translation-of-paper-documents),
 [Translation of Scanned Images](https://cafetran.freshdesk.com/support/solutions/articles/6000111566-translation-of-scanned-images)
 
 ### Auto-save
@@ -861,7 +861,7 @@ Default value: 1024
 
 Here you can define the amount of RAM allocated to CafeTran’s operation.
 
-Note that with very large resources, for example translation memories or glossaries 100 MB or more in size, it may be advisable to increase the amount of RAM made available to CafeTran in Java. Consider increasing the default value from 1024 to 2048, for example. Restart the program to apply the new Java memory settings.
+Note that with very large resources, for example translation memories or glossaries 100 MB or more in size, it may be advisable to increase the amount of RAM made available to CafeTran in Java. Consider increasing the default value from 1024 to 2048 (or more), for example. Restart the program to apply the new Java memory settings.
 
 ### Switch to preliminary matching threshold:
 
@@ -1086,8 +1086,8 @@ Related links:
 ### Online MT engines
 
 Related links:
-[Machine Translation with MT Services](https://cafetran.freshdesk.com/support/solutions/articles/6000186536-machine-translation-with-mt-services)
-[Machine Translation with MT Web Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000186533-machine-translation-with-mt-web-resources)
+[Machine Translation with MT Services](https://cafetran.freshdesk.com/support/solutions/articles/6000186536-machine-translation-with-mt-services),
+[Machine Translation with MT Web Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000186533-machine-translation-with-mt-web-resources),
 [Translating Confidential Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000163344-translating-confidential-documents)
 
 **Checkbox:**
@@ -1105,7 +1105,7 @@ If this option is enabled, CafeTran makes a query and displays the machine trans
 Note: You can stop or enable automatic MT search for each MT engine separately, via the context menu (right click) > Stop automatic MT service.
 
 Related links:
-[Machine Translation](https://cafetran.freshdesk.com/support/solutions/folders/6000058185) (Solutions category)
+[Machine Translation](https://cafetran.freshdesk.com/support/solutions/folders/6000058185) (Solutions category),
 [Translating Confidential Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000163344-translating-confidential-documents)
 
 #### Google Translate:
@@ -1128,7 +1128,7 @@ Link:
 
 #### MyMemory:
 
-MyMemory API parameters: Enter a valid Translated.net account email.
+MyMemory API parameters: Enter a valid [Translated.net](https://www.translated.net/en/) account email.
 
 Free, anonymous usage is limited to 1000 words/day.
 If you provide a valid email (“de” parameter), you enjoy 10,000 words/day.
@@ -1178,9 +1178,10 @@ This enables you to:
 After the first successful login, CafeTran will connect to ProZ.com automatically at the start.
 
 Related links:
-[Signing in to ProZ.com account](https://cafetran.freshdesk.com/support/solutions/articles/6000158973-signing-in-to-proz-com-account)
-[Automatic Search of ProZ.com Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000175423-automatic-search-of-proz-com-resources)
-[Proz.com Term Search Integration](https://cafetran.freshdesk.com/support/solutions/articles/6000118360-proz-com-term-search-integration)
+[Signing in to ProZ.com account](https://cafetran.freshdesk.com/support/solutions/articles/6000158973-signing-in-to-proz-com-account),
+[Automatic Search of ProZ.com Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000175423-automatic-search-of-proz-com-resources),
+[Proz.com Term Search Integration](https://cafetran.freshdesk.com/support/solutions/articles/6000118360-proz-com-term-search-integration),
+[ProZ.com options in CafeTran](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#proz-tab-and-context-menu)
 
 ### WIWO automatic pop-up dialog
 
@@ -1197,7 +1198,7 @@ TM-Town is a web service for translators helping them match with their clients. 
 Note: TM-Town Professional annual plan is included in ProZ.com Plus membership package.
 
 Related links:
-[Connect to TM-Town](https://cafetran.freshdesk.com/support/solutions/articles/6000115945-connect-to-tm-town)
+[Connect to TM-Town](https://cafetran.freshdesk.com/support/solutions/articles/6000115945-connect-to-tm-town),
 [CafeTran Espresso Integration](https://www.tm-town.com/blog/cafetran-espresso-integration) (TM-Town)
 
 ## APPEARANCE

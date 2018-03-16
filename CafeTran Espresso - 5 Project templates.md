@@ -73,7 +73,7 @@ Since project templates store content accessible through the Dashboard, as well 
 
   - **Workflow:**  If you wish to create a template for a specific workflow, select the workflow in Dashboard menu > Project type before saving the template. The Dashboard reverts to the default workflow (Translate a document) when you close a project.
 
-- **Actions from an open project:** In addition to the above actions, you can save the template after closing a project which features the desired settings (if no project has the required characteristics, you can simply create an dummy one).
+- **Actions from an open project:** In addition to the above actions, you can save the template after closing a project which features the desired settings (if no project has the required characteristics, you can simply create an dummy one). Note: To save all related settings, it is preferable to Quit CafeTran, reopen the program, then save the Template.
 
   - From an open project (or by closing the Dashboard), you can **add web resources** to the Dashboard (all open resources will be displayed there upon closing the project), see explanations above (Actions from the Dashboard > Resources).
 

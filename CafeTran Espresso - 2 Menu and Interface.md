@@ -241,7 +241,19 @@ For example, the screenshot above shows the **Excel filter** options:
 
 ![CafeTran’s translation interface](https://i.imgur.com/EOIUVW9.png)
 
-CafeTran’s translation interface is highly customizable. For more information, see
+CafeTran’s translation interface is highly customizable.
+
+Here's a quick overview of the main UI elements:
+
+<!--- TODO 20180316 --->
+- **Menu**: Access CafeTran's menu.
+- **Segments grid**: This is where all the segmented text elements from the source file(s) are shown in sequenced order (or according to the Search and Filter options).
+- **Source and Target segment editors**:  The current Source and Target text boxes where you edit your translation.
+- **Tabbed pane**: The tabbed pane holds various sets of resources such as Translation memories, Glossaries, MT engines and web resources. Tabs can be reordered, docked to a specific pane, joined together or floated.
+    - **Matchboard**: An important CafeTran feature, the Matchboard conveniently aggregates matches/results from various resources (memory segments and fragments, glossary entries, Machine Translation suggestions, etc.) in one place. Technically, it is still a Tab, so you can dock it anywhere, just like one.
+- **Quick Search bar**: Found at the top, just below the Menu, it allows you to quickly query different resources and conduct various searches (these can be launched via keyboard shortcuts as well) in Project or TM Source and Target segments, glossaries, MT engines, web resources, etc. Additional search and filtering settings (and the all important Find and Replace operations) are accessible via the standard Ctrl+F (or Cmd+F) command, which brings up the (Advanced) Search window. More filtering actions can be performed via the Filter menu.
+
+For more information, read on or see the
 [User Interface](https://cafetran.freshdesk.com/support/solutions/folders/6000058196) Solutions category.
 
 <!--- TODO Add link to usage document --->
@@ -285,14 +297,14 @@ Note: The number of segments per page can be set in Preferences >  General > Pro
 ![Source segment editor context menu](https://i.imgur.com/vf7ehQ2.png)
 
  - **Ask KudoZ question** = Ask a KudoZ (ProZ terminology) question directly via CafeTran. Requires a ProZ.con sign-in.
- - **Ask selection to non-translatable fragments** =
- - **Add selection to abbreviations**=
- - **Bookmark segment** =
- - **New note** =
- - **New alternative translation** =
- - **Checked segment** =
- - **Locked segment** =
- - **Auto-propagation** =
+ - **Ask selection to non-translatable fragments** = Quickly add the selected text to the Non-translatables file. Non-translatables can be easily transferred via the F4 menu.
+ - **Add selection to abbreviations** = Quickly add the selected text to the Abbreviations file. Abbreviations are also used for adjusting segmentation (this allows to seamlessly join together segments that would otherwise split at an abbreviation because of segmentation rules).
+ - **Bookmark segment** = Bookmark a segment for easy later access. It adds a "B" red letter besides the segment on the Grid when you leave the segment. Bookmarked segments can be accessed via the Filter menu.
+ - **New note** = Add a segment note (comment).
+ - **New alternative translation** = Add an alternative translation for this segment. This may also stop auto-propagation.
+ - **Checked segment** = Set the segment as Checked.
+ - **Locked segment** = Set the segment as Locked.
+ - **Auto-propagation** = Uncheck this to disable auto-propagation of this segment and other segments with the exact source text. The red "nP" sign is added besides the segment.
 
 ## Target segment editor icons
 
@@ -1457,7 +1469,7 @@ You can also use the free browser [SlimBrowser](https://www.slimbrowser.net/) (W
 3. Select the Search engines drop-down box (at the right-hand side)
 4. Choose "Create your own search engine" command and take note of the start and end fields.
 
-Choosing short names when saving the web resources will help keep each tab's length to a minimum (example: "GWS" for Google web search or "ENFRLing" for English to French Linguee queries), thus allowing to fit more resources in one line of the tabbed pane.
+Choosing short names when saving the web resources will help keep each tab's length to a minimum (example: "GWS" for Google web search), thus allowing to fit more resources in one line of the tabbed pane.
 
 Related links:
 [Adding a Web Resource - Based on Examples](https://cafetran.freshdesk.com/support/solutions/articles/6000110248-adding-a-web-resource-based-on-examples),
