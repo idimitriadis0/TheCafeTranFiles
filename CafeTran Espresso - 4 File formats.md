@@ -131,7 +131,7 @@
 
 # CAFETRAN ESPRESSO - FILE FORMATS
 
-*Updated for CafeTran Espresso 2018 - Akua (build 20180118)*
+*Updated for CafeTran Espresso 2018 - Akua Update 2 (build 2018031501)*
 
 This document aims to cover natively supported file formats in CafeTran, provide compatibility information for external bilingual projects (files and packages), and discuss solutions to handle not yet supported file types.
 
@@ -307,6 +307,8 @@ Suggestions:
 - Since this file type does not yet support filter options, if the text to be translated is not displayed or filtered in CafeTran, you might need to use an external tool (such as Memsource, memoQ, Okapi Framework, etc.) to prepare the XML file (see tools in Solutions section).
 
 #### HTML
+
+This filter also handles XHTML files.
 
 Notes:
 

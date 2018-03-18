@@ -1,6 +1,6 @@
 # CAFETRAN ESPRESSO 2018 - GETTING COMFORTABLE
 
-*Updated for CafeTran Espresso 2018 - Akua*
+*Updated for CafeTran Espresso 2018*
 
 Customizing CafeTran. An introduction.
 

@@ -149,7 +149,7 @@
 
 # CAFETRAN ESPRESSO - PREFERENCES
 
-*Updated for CafeTran Espresso 2018 - Akua (build 20180118)*
+*Updated for CafeTran Espresso 2018 - Akua Update 2 (build 2018031501)*
 
 This reference document offers a tour of CafeTran’s Preferences (Options) and describes each item’s function, providing some additional information along the way.
 

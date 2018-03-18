@@ -81,7 +81,7 @@
 
 # CAFETRAN ESPRESSO - MENU AND INTERFACE
 
-*Updated for CafeTran Espresso 2018 - Akua (build 20180118)*
+*Updated for CafeTran Espresso 2018 - Akua Update 2 (build 2018031501)*
 
 A trip to CafeTran’s interface and menus.
 
