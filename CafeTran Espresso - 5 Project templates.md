@@ -85,6 +85,23 @@ Since project templates store content accessible through the Dashboard, as well 
 
   - **Rate** can also be set via the Statistics (Project > Statistics).
 
+
+So, in short:
+
+**To save the project settings in Templates**:
+  - Open a project with the resources you'd like to use and set the translation interface as you wish to reuse it.
+  - Quit CafeTran and reopen the program.
+  - In the Dashboard, check that all resources you wish to reuse are present, and that they are ticked.
+  - Dashboard menu button > Save project template.
+
+**To update an existing Template**:
+- Dashboard menu button > Project templates > select the one you wish to load.
+- Open a project, Quit CafeTran and save the template with the same file name.
+
+You can use your file manager to access the templates folder, rename you XML files and organize them in subfolders if you wish so.
+
+Advanced users may tweak XML settings by editing the XML file directly, but this is not recommended. Just use CafeTran Espresso to create and save templates.
+
 ## SOME USAGE EXAMPLES
 
 As it can be easily understood, templates are versatile and can be used in a number a ways. Here are some usage examples (these can be combined, of course):
