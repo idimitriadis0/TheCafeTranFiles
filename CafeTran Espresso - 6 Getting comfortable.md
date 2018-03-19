@@ -215,7 +215,7 @@ Many actions are accessible via shortcuts as well. Some menus give access to add
 
 By default, help tips are shown at the bottom left when you hover a menu or a UI element.
 
-To dive deeper info Menus, see the reference document “[Menus and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface)”.
+To dive deeper info Menus, see the reference document “[Menu and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface)”.
 
 **Resources > Web**
 
