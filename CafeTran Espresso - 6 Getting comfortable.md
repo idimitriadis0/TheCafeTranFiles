@@ -120,7 +120,7 @@ Do you prefer your Source/Target segment editors horizontal instead of vertical?
 
 This degree of layout/appearance customizability is rarely found in other CAT tools, so use it to your advantage!
 
-*Usage example: since I work on a laptop and tend to give much space to the resources in the tabbed pane, I prefer to use the Window layout 2.*
+*Usage example: since I work on a laptop and tend to give much space to the resources in the tabbed pane, I prefer to use the Window layout 2, with the Matchboard docked under the segment editors.*
 
 ### Translation interface and Panes
 
@@ -130,7 +130,7 @@ At this point, you might be asking yourself: What does each pane do? Let’s see
 
 - **The Segments Grid**: This is where all the segmented text elements from the source file(s) are shown in sequenced order (or according to the Search and Filter options).
 - **The Source and Target segment editors**: The current Source and Target text boxes where you edit your translation. We’re at the heart of the action!
-- **The Tabbed pane**: The tabbed pane holds various sets of resources such as Translation memories, Glossaries, MT engines and web resources. Tabs can be reordered, docked to a specific pane, joined together or floated. At nauseum.
+- **The Tabbed pane**: The tabbed pane holds various sets of resources such as Translation memories, Glossaries, MT engines and web resources. Tabs can be reordered, docked to a specific pane, joined together or floated.
   - **The Matchboard**: An important CafeTran feature, the Matchboard conveniently aggregates matches/results from various resources (memory segments and fragments, glossary entries, Machine Translation suggestions, etc.) in one place. Technically, it is still a Tab, so you can dock it anywhere, just like one. Ideally, it should be close to your segment editors, and visible at all times.
 - **The Quick Search bar**: Found at the top, just below the Menu, it allows you to quickly query different resources and conduct various searches (these can be launched via keyboard shortcuts as well) in Project or TM Source and Target segments, glossaries, MT engines, web resources, etc. Additional search and filtering settings (and the all important Find and Replace operations) are accessible via the standard Ctrl+F (or Cmd+F) command, which brings up the (Advanced) Search window. More filtering actions can be performed via the Filter menu.
 
@@ -250,7 +250,7 @@ You will find your own (possibly hybrid approach) on that front.
 
 ### TEMPLATES
 
-CafeTran offers a templates feature which stores a variety of settings in template file for easy reuse in new projects.
+CafeTran offers a templates feature which stores a variety of settings in template files for easy reuse in new projects.
 
 Saving and loading templates is accessible via the Dashboard menu.
 
@@ -260,7 +260,7 @@ If so, check out the reference document on [Project templates](https://github.co
 
 ### FILE FORMATS
 
-CafeTran handles many file formats natively and allows you to work on external project as well. For file types not directly supported, there are (almost) always solutions. All this is covered in the [File formats](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/4-File-formats) reference document.
+CafeTran handles many file formats natively and allows you to work on external projects as well. For file types not directly supported, there are (almost) always solutions. All this is covered in the [File formats](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/4-File-formats) reference document.
 
 Of special interest if you intend to work on external bilingual files and packages (SDL Trados, MemoQ, Wordfast, etc.): Read the General notes in the [External Projects](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/4-File-formats#external-projects) section, as well as the section dedicated on the related CAT tool.
 
