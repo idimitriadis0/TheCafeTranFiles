@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2018 Akua Update 3 (20180323)](#2018-akua-update-3-20180323)
 	- [2018 Akua Update 2 (20180312)](#2018-akua-update-2-20180312)
 	- [2018 Akua Update 1 (20180301)](#2018-akua-update-1-20180301)
 	- [2018 Akua (20180118)](#2018-akua-20180118)
@@ -93,9 +94,14 @@ Keep track of the latest CafeTran developments.
 *This ChangeLog is being curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
 Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](http://beijer.uk) and [Hans Lenting](http://www.niederlaendisch.nl/).*
 
-Shortened link to this document:
+<!--- TODO Shortened link to this document: --->
 
 **Important! Please complete all your translation projects in your current CafeTran version before updating.**
+
+## 2018 Akua Update 3 (20180323)
+
+- Access to DeepL Pro Machine Translation service via its API key. See this option in Edit > Preferences > MT services tab.
+- Displaying match score information for the target segments included .txml translation projects.
 
 ## 2018 Akua Update 2 (20180312)
 
