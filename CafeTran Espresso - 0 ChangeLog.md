@@ -103,15 +103,19 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - Access to DeepL Pro Machine Translation service via its API key. See this option in Edit > Preferences > MT services tab.
 - Displaying match score information for the target segments included .txml translation projects.
 
+The new build (**2018032401**) of update 3 is available with the following:
+
+- Displaying match percentage for the target segments included in .mqxliff translation projects.
+
 ## 2018 Akua Update 2 (20180312)
 
 - Adjustment to transfer the translation from Ms Bing Translator web page due to its recent change.
 - New "Transfer MT from web page" button in the source segment toolbar.  It transfers the translation from the selected Machine Translation web page (e.g DeepL, Google Translate, Bing Translator).
 - Locked segment can be exported to translation memories either vie Project > Export and exchange > To TMX memory or via Memory > Import > Import segments from project.
 
-The new build (*2018031301*) of update 2 is available. It adds the surrounding tags insertion at the transfer of non-translatable fragments to the target segment via F4 pop-up panel.
+The new build (**2018031301**) of update 2 is available. It adds the surrounding tags insertion at the transfer of non-translatable fragments to the target segment via F4 pop-up panel.
 
-The new build (*2018031501*) of update 2 is available with the following: Automatic recognition of segment words preceded by the curly apostrophe.  The user needs to remove the curly apostrophe from the "Do not match" list in Edit > Preferences >  Memory tab to have it matched.
+The new build (**2018031501**) of update 2 is available with the following: Automatic recognition of segment words preceded by the curly apostrophe.  The user needs to remove the curly apostrophe from the "Do not match" list in Edit > Preferences >  Memory tab to have it matched.
 
 ## 2018 Akua Update 1 (20180301)
 
@@ -122,7 +126,7 @@ The new build (*2018031501*) of update 2 is available with the following: Automa
 
 The 4-letter short names for MT services are in the new build (*2018030401*). The build also lets the user change the color of the Search bar at the top of the UI via View > Colors > Searchbar color menu.
 
-The new build (*2018030502*) of update 1 is available. It improves Ms PowerPoint filter by including diagrams' data for translation. Please perform the update as described in the announcement above. If you are in the middle of PowerPoint document translation, please update after you finish your current project.
+The new build (**2018030502**) of update 1 is available. It improves Ms PowerPoint filter by including diagrams' data for translation. Please perform the update as described in the announcement above. If you are in the middle of PowerPoint document translation, please update after you finish your current project.
 
 ## 2018 Akua (20180118)
 
