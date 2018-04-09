@@ -1,6 +1,8 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2018 Akua Update 5 (20180409)](#2018-akua-update-5-20180409)
+	- [2018 Akua Update 4 (20180330)](#2018-akua-update-4-20180330)
 	- [2018 Akua Update 3 (20180323)](#2018-akua-update-3-20180323)
 	- [2018 Akua Update 2 (20180312)](#2018-akua-update-2-20180312)
 	- [2018 Akua Update 1 (20180301)](#2018-akua-update-1-20180301)
@@ -97,6 +99,21 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 <!--- TODO Shortened link to this document: --->
 
 **Important! Please complete all your translation projects in your current CafeTran version before updating.**
+
+##  2018 Akua Update 5 (20180409)
+
+- Option to turn off the "greedy" exact matching for translation memories - see it in the TM options panel. With this option off, CafeTran does not stop the search at the found exact match(es) for the current segment, but it continues looking for fuzzy matches and fragments. Switching on this option is not recommended for slower computers and huge translation memories.
+- Automatic removal of the misspelled words from the Auto-completion list.
+- Splitting and joining of adjacent segments in the Filter mode as well.
+- Adjustments to the MS Word filter.
+
+## 2018 Akua Update 4 (20180330)
+
+- Added the right-click pop-up menu to Frequent words feature with the minimal and maximal fragment length settings.
+- Frequent words feature is activated automatically at the start of the project when "Extract frequent words from current segment" option is on.
+- Resizing of the Preferences dialog is remembered now.
+- Repeated segments in the filter are sorted in the order of their occurrence.
+- Project Template files are selected directly via the File Chooser.
 
 ## 2018 Akua Update 3 (20180323)
 
