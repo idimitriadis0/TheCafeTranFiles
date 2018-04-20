@@ -107,6 +107,15 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - Splitting and joining of adjacent segments in the Filter mode as well.
 - Adjustments to the MS Word filter.
 
+The new build (**2018041101**) of update 5 is available. It adds the support for Java 10.
+
+The new build (**2018041901**) of update 5 is available with the following fixes and changes:
+
+- option to omit setting of the Translated status for target segments during the export to sdlrpx package.
+- option to show only the first segment in the "Repeated and propagated segments" filter.
+- clicking at the Exact match in the TM tab replaces the current target segment with the Exact match.
+- fixed trimming of leading and trailing spaces at the transfer of the auto-assembling result.
+
 ## 2018 Akua Update 4 (20180330)
 
 - Added the right-click pop-up menu to Frequent words feature with the minimal and maximal fragment length settings.
