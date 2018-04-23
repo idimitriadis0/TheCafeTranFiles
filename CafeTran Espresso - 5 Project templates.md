@@ -1,4 +1,3 @@
-
 # CAFETRAN ESPRESSO - PROJECT TEMPLATES
 
 *Updated for CafeTran Espresso 2018*
