@@ -6,7 +6,7 @@ An explanation of the project templates feature in CafeTran Espresso 2018.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN/EL>FR translator).*
 
-*Shortened link to this document:*
+<!--- *Shortened link to this document:* --->
 
 ## TEMPLATES - A PRESENTATION
 

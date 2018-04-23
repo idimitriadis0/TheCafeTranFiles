@@ -155,7 +155,7 @@ This reference document offers a tour of CafeTran’s Preferences (Options) and 
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
 
-Shortened link to this document:
+<!--- Shortened link to this document: --->
 
 ## ACCESSING PREFERENCES (OPTIONS)
 

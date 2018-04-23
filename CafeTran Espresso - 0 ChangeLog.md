@@ -96,7 +96,7 @@ Keep track of the latest CafeTran developments.
 *This ChangeLog is being curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
 Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](http://beijer.uk) and [Hans Lenting](http://www.niederlaendisch.nl/).*
 
-<!--- TODO Shortened link to this document: --->
+<!--- Shortened link to this document: --->
 
 **Important! Please complete all your translation projects in your current CafeTran version before updating.**
 

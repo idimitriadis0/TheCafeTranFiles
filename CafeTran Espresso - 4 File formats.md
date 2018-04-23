@@ -137,7 +137,7 @@ This document aims to cover natively supported file formats in CafeTran, provide
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
 
-*Shortened link to this document:*
+<!--- *Shortened link to this document:* --->
 
 ## SUPPORTED FILE FORMATS AND WORKFLOWS
 

@@ -89,7 +89,7 @@ This is heavily based and builds upon texts CafeTran displays in the help bar at
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
 
-*Shortened link to this document:*
+<!--- *Shortened link to this document:* --->
 
 # Interface
 

@@ -27,7 +27,7 @@ This document offers an overview of CafeTran’s Translation Memory options.
 
 Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
 
-*Shortened link to this document:*
+<!--- *Shortened link to this document:* --->
 
 Note: Some memory-related settings can be found in Edit > Preferences (Options) > Memory.
 
