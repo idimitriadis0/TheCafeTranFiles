@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2018 Akua Update 6 (20180427)](#2018-akua-update-6-20180427)
 	- [2018 Akua Update 5 (20180409)](#2018-akua-update-5-20180409)
 	- [2018 Akua Update 4 (20180330)](#2018-akua-update-4-20180330)
 	- [2018 Akua Update 3 (20180323)](#2018-akua-update-3-20180323)
@@ -99,6 +100,11 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 <!--- Shortened link to this document: --->
 
 **Important! Please complete all your translation projects in your current CafeTran version before updating.**
+
+## 2018 Akua Update 6 (20180427)
+
+- Approved segment status - see the status selection box in the target segment toolbar. - Approved segments are marked with the red border around the status cell in the grid. The new segment status maps to "Translated" status in the external sdlxliff files. There is also a new filter for "Approved" and "Not approved" segments.
+- Updated target segment editor bindings to web editors on the refreshed MT websites.
 
 ##  2018 Akua Update 5 (20180409)
 
