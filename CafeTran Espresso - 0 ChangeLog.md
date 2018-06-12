@@ -1,6 +1,10 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2018 Akua Update 10 (20180612)](#2018-akua-update-10-20180612)
+	- [2018 Akua Update 9 (20180604)](#2018-akua-update-9-20180604)
+	- [2018 Akua Update 8 (20180521)](#2018-akua-update-8-20180521)
+	- [2018 Akua Update 7 (20180504)](#2018-akua-update-7-20180504)
 	- [2018 Akua Update 6 (20180427)](#2018-akua-update-6-20180427)
 	- [2018 Akua Update 5 (20180409)](#2018-akua-update-5-20180409)
 	- [2018 Akua Update 4 (20180330)](#2018-akua-update-4-20180330)
@@ -94,6 +98,8 @@
 
 Keep track of the latest CafeTran developments.
 
+To get notified about new CafeTran updates, use the "Follow" button in the [CafeTran News page](https://cafetran.freshdesk.com/support/discussions/forums/6000148195).
+
 *This ChangeLog is being curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
 Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](http://beijer.uk) and [Hans Lenting](http://www.niederlaendisch.nl/).*
 
@@ -101,10 +107,54 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Please complete all your translation projects in your current CafeTran version before updating.**
 
+## 2018 Akua Update 10 (20180612)
+
+- Check for the maximum difference in length between source and target segments (menu QA > Length difference check).
+- Check for the maximum number of characters in the target segments (menu QA > Maximum segment length check).
+- Check for the consistency of non-translatable fragments in the source and target segments (menu QA > Non-translatable fragments check).
+
+## 2018 Akua Update 9 (20180604)
+
+- The status of the current segment in Layout 6 Compact is displayed in the corner of the editor.
+- Clicking at the segment status label in the Filter view switches back to the normal (unfiltered) view.
+- A keyboard shortcut (CTRL+SHIFT+H) to hide editor toolbars if needed.
+- Improved sorting of resources in the Dashboard.
+- Saving of "Replace punctuation characters" and "Replace characters at source transfer" options in Project Templates.
+
+The new build (**2018060601**) of update 9 is available. The right-click Matchboard option "Shorten match information" is further enhanced by reducing the resource name to two letters and omitting the percentage symbol next to fuzzy matches. The change saves some more vertical space in the Matchboard, which is important for smaller screens.
+
+## 2018 Akua Update 8 (20180521)
+
+- The frequently-requested layout that integrates editors and the grid - see View > Window Layout > Layout 6 Compact. Although it is recommended for reviewing your translations, some translators might wish to use it for translating too, as it is a popular layout in other tools.
+- QA > Initial capitalization check catches the false positives that start with numbers.
+
+The new build (**2018052201**) of update 8 is available. There is a slight change in highlighting of the current segment status for the new Layout 6 Compact. Now, the status marking of the currently-edited segment is limited to its status box only. The previous highlighting of the whole row gave the impression that the edited segment was empty.
+
+There is a new build (**2018052301**) of update 8 available.  In this update, the search back and forward arrows are moved from the top search bar to the search field below. The change allows for narrowing the main window for even more compact view. For example:
+
+1. Set the View > Window layout >  Layout 6 Compact and undock the Matchboard to the tabs below.
+2. Switch the editors orientation to the vertical one, unchecking View > Segment editors > Horizontal segment editors.
+3. Resize the main windows as much as you can to see how compact CafeTran can be.
+
+There is a new build (**2018052501**) of update 8 available. It changes the filters by showing the standalone space at the start of some formatting tags, instead of hiding it inside the tag as before.
+
+Important! Please finish all the projects before applying this update to CafeTran's filters. Otherwise, the export to the target language document may fail in the projects started with the previous updates.
+
+A new build (**2018052801**) of update 8 is available. There is a slight change to the Layout 6 Compact. The status of the currently-edited segment in this layout is shown in the grid's toolbar now. It saves some horizontal space in the grid just above the editors.
+
+## 2018 Akua Update 7 (20180504)
+
+- Added two window layouts for higher resolution screens - see the menu View > Window layout > Layout 4 and 5 Desktop. Layout 4 is the default for new CafeTran installation on high resolution screens while Layout 5 resembles, more or less, panels arrangement found in some other CAT tools.
+
+The new build (**2018050701**) of update 7 is available. It adds the option to block auto-propagation from locked segments - see it in Edit > Preferences > Auto-propagation tab.
+
 ## 2018 Akua Update 6 (20180427)
 
 - Approved segment status - see the status selection box in the target segment toolbar. - Approved segments are marked with the red border around the status cell in the grid. The new segment status maps to "Translated" status in the external sdlxliff files. There is also a new filter for "Approved" and "Not approved" segments.
 - Updated target segment editor bindings to web editors on the refreshed MT websites.
+- Added import of Multiterm XML glossaries - see the Memory > Import menu.
+
+The new build (**2018042801**) of update 6 is available. It lets you import converted Multiterm XML glossaries via the Memory > Import menu.
 
 ##  2018 Akua Update 5 (20180409)
 
