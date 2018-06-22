@@ -224,6 +224,8 @@ For .doc, .xls and .ppt formats, check the Unsupported formats section below.
 
 Note: MS Word files containing macros **.docm** are also handled via this filter (although the file type might need to be selected manually).
 
+Hidden content is not imported into CafeTran, which can be an effective solution for filtering out content that you don't wish to translate. Just remember to unmask hidden content when done.
+
 #### MS Word OCR (.docx/xml)
 
 CafeTran offers a special filter to handle MS Word documents after OCR, which clears the source text of unnecessary formatting tags.
@@ -253,6 +255,8 @@ When you choose the **Excel filter**, you have access to the following Filter op
  - **Import source column**: allows you to specify from which column(s) to import source text
  - **Import target column**: allows you to specify from which column(s) you wish to import content in the translated segments. Note: If you define two Excel columns for import separately (in two Import fields of the filter), the second column is to be imported for the review of the existing translation. Only existing rows (not empty cells) will be imported if you define an Import target column. If you specify two import columns separately, leave the export column empty.
  - **Export column**: allows you to specify to which column(s) you want to export your translation
+
+Note: CafeTran imports only visible (not hidden) columns, rows or sheets. Hiding these in Excel before starting a project allows you to filter out content that you don't wish to translate.
 
 #### Tagged MS Excel (.xlsx)
 
@@ -462,6 +466,8 @@ In addition to the general notes above, please consider the following **known li
 - Alternative translations work for the current session only in Studio projects. If they interfere with SDL Trados, you can try removing them via Task > Remove alternative translations in CafeTran.
 
 **Segment status:**
+
+<!--- TODO Update the below content after testing again --->
 
 - Translated segments in SDL Trados get the Approved status in CafeTran.
 - CafeTran's Approved status maps to Translated status in the .sdxliff files.

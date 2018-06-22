@@ -23,19 +23,19 @@
 
 *Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
 
+This document offers an overview of CafeTran’s Translation Memory options.
+
+Some memory-related settings can be found in [Edit > Preferences (Options) > Memory](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#memory).
+
+You can find additional information on [Working with Translation Memories](https://cafetran.freshdesk.com/support/solutions/folders/6000058172) In the official CafeTran Knowledge Base (Solutions).
+
+*Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
+
 *This file receives regular updates every two-three months*
 
 *If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
-This document offers an overview of CafeTran’s Translation Memory options.
-
-Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
-
 <!--- *Shortened link to this document:* --->
-
-Note: Some memory-related settings can be found in Edit > Preferences (Options) > Memory.
-
-You can find additional information on [Working with Translation Memories](https://cafetran.freshdesk.com/support/solutions/folders/6000058172) in the official CafeTran knowledge base (Solutions).
 
 ## TM context menu options
 

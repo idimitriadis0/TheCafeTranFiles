@@ -85,15 +85,15 @@
 
 *Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
 
-*This file receives regular updates every two-three months*
-
-*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
-
 A trip to CafeTran’s interface and menus.
 
 This is heavily based and builds upon texts CafeTran displays in the help bar at the bottom of the program’s window (if the help tips option is enabled in View >Toolbars submenu).
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
+
+*This file receives regular updates every two-three months*
+
+*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
 <!--- *Shortened link to this document:* --->
 
@@ -297,7 +297,7 @@ Note: The number of segments per page can be set in Preferences > General > Proj
  10. **Undo** = Undo the previous edit actions in the target segment.
  11. **Redo** = Redo the undone edit actions in the target segment.
  12. **Translate selected segment** = Repeat resource search for full source segment, or for a highlighted portion.
- 13. **Transfer MT from web page** [Green up arrow, not shown] = Transfer the MT target result from the web page interface to the target segment editor.
+ 13. **Transfer MT from web page** = Transfer the MT target result from the web page interface to the target segment editor.
 
 ### Source segment editor context menu
 
@@ -817,7 +817,7 @@ For more information on the Default scope, see the Quick search bar and the Adva
 
 **Edit > Target segment > Bold** = Wrap selected text with bold tags.
 
-<!---TODO LATER explain how to manually write those tags--->
+<!---TODO LATER explain how to manually write these tags--->
 
 **Edit > Target segment > Italic** = Wrap selected text with italics tags.
 

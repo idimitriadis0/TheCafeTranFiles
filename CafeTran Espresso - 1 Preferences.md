@@ -156,13 +156,13 @@
 
 *Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
 
-*This file receives regular updates every two-three months*
-
-*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
-
 This reference document offers a tour of CafeTran’s Preferences (Options) and describes each item’s function, providing some additional information along the way.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
+
+*This file receives regular updates every two-three months*
+
+*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
 <!--- Shortened link to this document: --->
 

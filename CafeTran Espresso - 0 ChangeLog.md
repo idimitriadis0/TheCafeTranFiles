@@ -100,8 +100,10 @@ Keep track of the latest CafeTran developments.
 
 To get notified about new CafeTran updates, use the "Follow" button in the [CafeTran News page](https://cafetran.freshdesk.com/support/discussions/forums/6000148195).
 
-*This ChangeLog is being curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
+*The ChangeLog is being curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
 Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](http://beijer.uk) and [Hans Lenting](http://www.niederlaendisch.nl/).*
+
+*This document is being updated with every CafeTran update announcement*
 
 <!--- Shortened link to this document: --->
 
