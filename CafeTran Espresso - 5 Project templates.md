@@ -1,3 +1,14 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [CAFETRAN ESPRESSO - PROJECT TEMPLATES](#cafetran-espresso-project-templates)
+	- [TEMPLATES - A PRESENTATION](#templates-a-presentation)
+	- [CREATING, MANAGING AND USING TEMPLATES](#creating-managing-and-using-templates)
+	- [SOME USAGE EXAMPLES](#some-usage-examples)
+	- [LIST OF CHANGES](#list-of-changes)
+	- [Feedback](#feedback)
+
+<!-- /TOC -->
+
 # CAFETRAN ESPRESSO - PROJECT TEMPLATES
 
 *Updated for CafeTran Espresso 2018*
@@ -34,6 +45,7 @@ In their current form, project templates store information such as:
     - The windows layout
     - Various color settings (found in View > Colors)
 - Billing information (applied rate for Statistics)
+- "Replace punctuation characters" and "Replace characters at source transfer" options
 
 To find out exactly what information is being stored in a project template, just create a project template in the Dashboard and open the resulting XML file with a text editor. Each line which includes <code>entry key="" value=""</code> represents a setting. There is no need to manually edit the XML files to use the templates feature.
 
@@ -45,9 +57,9 @@ Template-related actions are accessible via the Dashboard menu button:
 
 The two dropdown menu items related to templates are:
 
-![Templates menu](https://i.imgur.com/U6uyilA.png)
+![Templates menu](https://i.imgur.com/sDnZ6OX.png)
 
-- **Project templates** = **Submenu**. This is where all your saved project templates will appear. By simply selecting a submenu item, you load that project template. The project templates submenu is displayed once you have saved at least one template.
+- **Open project templates** = Open an already saved project template. You will be asked to select which template file to open.
 - **Save project template** = Save a project template as an .xml file. You will be asked to select a location (and file name). The Save dialogue filters only .xml files. You can save changes to an existing project template by saving it under the same file name.
 
 It is up to you to organize your .xml template files as you like.
@@ -68,9 +80,9 @@ Since project templates store content accessible through the Dashboard, as well 
 
   - **Language pairs:** Select the default source and target languages you wish to use for the template.
 
-  - **Rate:**  You can set your rate from the Dashboard menu (Dashboard > Choose your rate) or from the Statistics in an open project
+  - **Rate:** You can set your rate from the Dashboard menu (Dashboard > Choose your rate) or from the Statistics in an open project
 
-  - **Workflow:**  If you wish to create a template for a specific workflow, select the workflow in Dashboard menu > Project type before saving the template. The Dashboard reverts to the default workflow (Translate a document) when you close a project.
+  - **Workflow:** If you wish to create a template for a specific workflow, select the workflow in Dashboard menu > Project type before saving the template. The Dashboard reverts to the default workflow (Translate a document) when you close a project.
 
 - **Actions from an open project:** In addition to the above actions, you can save the template after closing a project which features the desired settings (if no project has the required characteristics, you can simply create an dummy one). Note: To save all related settings, it is preferable to Quit CafeTran, reopen the program, then save the Template.
 
@@ -115,6 +127,7 @@ As it can be easily understood, templates are versatile and can be used in a num
 ## LIST OF CHANGES
 
 - 20180307 File creation
+- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 
 ## Feedback
 

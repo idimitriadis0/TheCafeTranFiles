@@ -1,8 +1,36 @@
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [CAFETRAN ESPRESSO 2018 - GETTING COMFORTABLE](#cafetran-espresso-2018-getting-comfortable)
+	- [PART I | TAKING A TOUR](#part-i-taking-a-tour)
+		- [Intro](#intro)
+		- [New dummy project](#new-dummy-project)
+		- [Look and Feel & Large icons](#look-and-feel-large-icons)
+		- [Themes](#themes)
+		- [Colors](#colors)
+		- [Dashboard theme](#dashboard-theme)
+		- [Font face and size](#font-face-and-size)
+		- [Window layout](#window-layout)
+		- [Translation interface and Panes](#translation-interface-and-panes)
+		- [Detached windows](#detached-windows)
+		- [Toolbars](#toolbars)
+	- [PART 2 | Taking it further](#part-2-taking-it-further)
+		- [TAMING THE PREFERENCES](#taming-the-preferences)
+		- [TAMING THE INTERFACE AND MENUS](#taming-the-interface-and-menus)
+		- [MEMORIES AND TERMBASES/GLOSSARIES](#memories-and-termbasesglossaries)
+		- [TEMPLATES](#templates)
+		- [FILE FORMATS](#file-formats)
+	- [LIST OF CHANGES](#list-of-changes)
+	- [Feedback](#feedback)
+
+<!-- /TOC -->
+
 # CAFETRAN ESPRESSO 2018 - GETTING COMFORTABLE
 
 *Updated for CafeTran Espresso 2018*
 
 Customizing CafeTran. An introduction.
+
+For additional introductory and knowledge-base articles, please visit the official [Knowledge base](https://cafetran.freshdesk.com/support/solutions) (Solutions). Especially, the [User interface](https://cafetran.freshdesk.com/support/solutions/folders/6000058196) section offers more information about customizing CafeTran's interface to your liking.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
 
@@ -51,7 +79,7 @@ CafeTran needs to be restarted for these new settings to take effect.
 
 Appearance can be refined further with Themes and Colors, so let’s do that next.
 
-<!--- TODO  (we'll also see some examples of Look and Feel, Themes and window Layout in action). --->
+<!--- TODO (we'll also see some examples of Look and Feel, Themes and window Layout in action). --->
 ### Themes
 
 ![View > Themes submenu](https://i.imgur.com/2Movlv0.png)
@@ -104,11 +132,11 @@ Remember, you can easily make the source and target editor segment text bigger o
 
 ### Window layout
 
-![View > Window layout submenu](https://i.imgur.com/fvyhk7K.png)
+![View > Window layout submenu](https://i.imgur.com/svkHea5.png)
 
 Let’s now focus on the Window layout.
 
-Depending on the project/workflow type, your screen resolution or your own preference, you might want to switch between the three available layout options. Try them out instantly!
+Depending on the project/workflow type, your screen resolution or your own preference, you might want to switch between the six available layout options. Try them out instantly, no restart required!
 
 Each layout has its reversed, mirror-like variant.
 
@@ -120,13 +148,13 @@ Do you prefer your Source/Target segment editors horizontal instead of vertical?
 
 This degree of layout/appearance customizability is rarely found in other CAT tools, so use it to your advantage!
 
-*Usage example: since I work on a laptop and tend to give much space to the resources in the tabbed pane, I prefer to use the Window layout 2, with the Matchboard docked under the segment editors.*
-
 ### Translation interface and Panes
 
 At this point, you might be asking yourself: What does each pane do? Let’s see:
 
 ![CafeTran’s translation interface](https://i.imgur.com/EOIUVW9.png)
+
+<!--- TODO change the screenshot? --->
 
 - **The Segments Grid**: This is where all the segmented text elements from the source file(s) are shown in sequenced order (or according to the Search and Filter options).
 - **The Source and Target segment editors**: The current Source and Target text boxes where you edit your translation. We’re at the heart of the action!
@@ -160,6 +188,8 @@ This was a pretty quick tour. By now, you should have a better idea of how to be
 
 Below, you’ll find some additional pointers and considerations to take it further.
 
+Also, be sure to check CafeTran's official [Knowledge base](https://cafetran.freshdesk.com/support/solutions) (Solutions).
+
 ### TAMING THE PREFERENCES
 
 CafeTran comes with sane default settings, so you don’t have to change much to get started.
@@ -192,7 +222,7 @@ Want to query the KudoZ and other ProZ terminology resources while staying in Ca
 
 **Preferences > Keyboard shortcuts**
 
-Keyboard shortcuts speed up things greatly.   And the point of using a CAT tool is to make your work efficient (and enjoyable), right?
+Keyboard shortcuts speed up things greatly. And the point of using a CAT tool is to make your work efficient (and enjoyable), right?
 
 At one point, you should take a moment to go through the various available shortcuts. There are a lot of them! Most (if not all) are found in the Preferences > Keyboard shortcuts.
 
@@ -254,7 +284,7 @@ CafeTran offers a templates feature which stores a variety of settings in templa
 
 Saving and loading templates is accessible via the Dashboard menu.
 
-This can be very convenient, especially if you happen to work on different language pairs or wish to  quickly swap resources and (various) settings from one project to another.
+This can be very convenient, especially if you happen to work on different language pairs or wish to quickly swap resources and (various) settings from one project to another.
 
 If so, check out the reference document on [Project templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
 
@@ -269,6 +299,7 @@ And that concludes part II. This should give you a good head start!
 ## LIST OF CHANGES
 
 - 20180316 File creation
+- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 
 ## Feedback
 

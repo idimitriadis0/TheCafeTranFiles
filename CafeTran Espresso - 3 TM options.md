@@ -21,7 +21,11 @@
 
 # CAFETRAN ESPRESSO - Translation Memories options
 
-*Updated for CafeTran Espresso 2018 - Akua Update 2 (build 2018031501)*
+*Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
+
+*This file receives regular updates every two-three months*
+
+*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
 This document offers an overview of CafeTran’s Translation Memory options.
 
@@ -30,6 +34,8 @@ Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL
 <!--- *Shortened link to this document:* --->
 
 Note: Some memory-related settings can be found in Edit > Preferences (Options) > Memory.
+
+You can find additional information on [Working with Translation Memories](https://cafetran.freshdesk.com/support/solutions/folders/6000058172) in the official CafeTran knowledge base (Solutions).
 
 ## TM context menu options
 
@@ -79,7 +85,7 @@ Quickly check or change the priority level for the TM, which can also be set via
 
 ## TM options
 
-![Memory options window](https://i.imgur.com/VL163V5.png)
+![Memory options window](https://i.imgur.com/NgRXi7r.png)
 
 The TM options dialog offers many important settings for your Translation Memories.
 
@@ -152,10 +158,12 @@ If the inflection of a word is too high for automatic prefix matching you can en
 
 **Match case** = Checkbox. If enabled, CafeTran takes into account the text case when looking for matches, differentiating identical Translation Units that only differ in case type (uppercase or lowercase).
 
+**Greedy exact matches** = Checkbox. With this option enabled, CafeTran does not stop the search at the found exact match(es) for the current segment, but it continues looking for fuzzy matches and fragments. Switching on this option is not recommended for slower computers and huge translation memories.
+
 **Duplicates option** = Drop-down menu. Choices: Keep all duplicates, Keep newer duplicates, Keep old duplicates. Default: Keep newer duplicates.
 <!--- TODO Igor add text for this option? --->
 
- -  **Keep all duplicates** = Select this if you want CafeTran to keep both newer and older identical source segments in the memory.
+ - **Keep all duplicates** = Select this if you want CafeTran to keep both newer and older identical source segments in the memory.
  - **Keep newer duplicates** = Select this if you want CafeTran to overwrite old Translation Units (segments) when you add a new translation for the same TU.
  - **Keep old duplicates** = Select this if you want CafeTran to ignore new identical source Translation Units which are already present in the memory.
 
@@ -216,6 +224,7 @@ Note: Total Recall does not process tags.
 
 - 20171117 File creation
 - 20180217 Migrated from Classeur.io to GitHub.com
+- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 
 ## Feedback
 

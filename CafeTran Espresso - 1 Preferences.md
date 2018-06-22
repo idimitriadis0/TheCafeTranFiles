@@ -76,6 +76,7 @@
 		- [Auto-propagation of numbers](#auto-propagation-of-numbers)
 		- [Auto-propagation of non-translatable fragments](#auto-propagation-of-non-translatable-fragments)
 		- [Auto-propagation forward only](#auto-propagation-forward-only)
+		- [Auto-propagation from locked segments](#auto-propagation-from-locked-segments)
 	- [GLOSSARY](#glossary)
 		- [Alternatives entries separator:](#alternatives-entries-separator)
 		- [Trim](#trim)
@@ -117,6 +118,8 @@
 		- [Request dialog,](#request-dialog)
 	- [QA](#qa)
 		- [Terms consistency check:](#terms-consistency-check)
+		- [Length difference check (%):](#length-difference-check-)
+		- [Maximum segment length (chars):](#maximum-segment-length-chars)
 		- [Prefix marching (%):](#prefix-marching-)
 		- [Regular expression:](#regular-expression)
 		- [Whole words:](#whole-words)
@@ -125,7 +128,9 @@
 	- [MT SERVICES](#mt-services)
 		- [Mask non-translatable fragments](#mask-non-translatable-fragments)
 		- [Team auto-assembling with machine translation](#team-auto-assembling-with-machine-translation)
+		- [Team high-priority fragments only](#team-high-priority-fragments-only)
 		- [Online MT engines](#online-mt-engines)
+			- [DeepL:](#deepl)
 			- [Google Translate:](#google-translate)
 			- [MS Translator:](#ms-translator)
 			- [MyMemory:](#mymemory)
@@ -149,7 +154,11 @@
 
 # CAFETRAN ESPRESSO - PREFERENCES
 
-*Updated for CafeTran Espresso 2018 - Akua Update 2 (build 2018031501)*
+*Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
+
+*This file receives regular updates every two-three months*
+
+*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
 This reference document offers a tour of CafeTran’s Preferences (Options) and describes each item’s function, providing some additional information along the way.
 
@@ -242,7 +251,7 @@ Related links:
 
 ### External editor:
 
-Drop-down menu: Choice between Clipboard binding , Atom, BBEdit, Bing Translator, DeepL, Google Translate, Jarte, Notepad++. Default: Clipboard binding.
+Drop-down menu: Choice between Clipboard binding, Atom, BBEdit, Bing Translator, DeepL, Google Translate, Jarte, Notepad++. Default: Clipboard binding.
 
 The functionality of CafeTran’s target segment editor can be further extended by binding it with an external text editor. Some specialized editors offer additional functions that can enhance the editing experience. For example, a dictation application can be tuned to work best only with certain text editors. You can also use the edit box of a Machine Translation Web page as an external editor.
 
@@ -297,12 +306,12 @@ Sentence, Paragraph, Tag, Word, Document segmentation rules are not editable and
 
 #### Segmentation editor, segmentation rules:
 
-If you select Rules.srx (or other srx files from the drop-down menu), “Segmentation” becomes “**Segmentation editor**” and an additional drop-down menu appears (**Segmentation rules**), allowing you to select which source language rules you wish to apply.
+If you select Rules.srx (or other SRX files from the drop-down menu), “Segmentation” becomes “**Segmentation editor**” and an additional drop-down menu appears (**Segmentation rules**), allowing you to select which source language rules you wish to apply.
 
 CafeTran supports the SRX standard and offers the possibility to edit SRX files (which are used to specify the break rules and the exception rules on a per language basis). The Default rules take precedence over any other rules.
 
 SRX files are stored in *cafetran/rules/segmentation* folder.
-This is where you will find the Rules.srx file and where you can add other srx files as well.
+This is where you will find the Rules.srx file and where you can add other SRX files as well.
 
 **Editing segmentation rules:**
 
@@ -578,6 +587,8 @@ Three available field pairs.
 
 These field pairs allow you to set characters you wish to replace during source transfer.
 
+Note: This replacement option is a helper to "Transfer numbers to matches" feature. It lets your replace the defined characters in a numerical expression during the transfer from the source to the target segment.
+
 ### Auto-completion (start at, word length):
 
 Checkbox, ON by default
@@ -652,7 +663,12 @@ Note: This also affects the Matchboard behavior.
 
 Checkbox, ON by default
 
-Here’s the developer’s explanation: This functions character is dynamically picking the recently used match for a fragment/term or its synonym as the one with top priority to use in subsequent segments (both in auto-assembling and MT improvement). It can also adjust the basic form of a fragment (e.g. sunny day) to the one you actually use in the segment (e.g. sunny days) provided that change is slight - in the form of the regular noun, in this example. Then, CT will use the adjusted fragment in the subsequent segments. So let’s say CT suggests a correct virtual TM fragment (hit) by analyzing the context but your top priority glossary inserts another suggestion (e.g. basic form). If you use the virtual fragment in the current segment, CT will enhance the priority of this virtual fragment to use in the subsequent segments.
+This dynamic feature sets the top priority for the recently used fragment/term or its synonym to use it subsequently both in Auto-assembling and Machine Translation improvement. It can also adjust the basic form of a fragment (e.g. sunny day) to the one you actually use in the segment (e.g sunny days) provided that the change is slight (e.g. to the form of the regular noun). Then, CT will use the adjusted fragment in the subsequent segments. Let's assume CafeTran suggests correctly a translation memory (TM) fragment by analyzing its context. However, your high priority glossary inserts another suggestion (e.g. the basic form) for the same source fragment. If you use the TM fragment in the current segment, CafeTran will enhance the priority of this TM fragment to use it in the next segments as well.
+
+The feature recognises your recent usage of the term or fragment synonyms and adjusts their priority automatically to use the synonym subsequently in auto-assembling. The users who do not rely much on the set priorities for their glossary terms or TM fragments should benefit from it.
+
+Related link:
+[Automatic Fragments Adjustment](https://cafetran.freshdesk.com/support/solutions/articles/6000175426-automatic-fragments-adjustment)
 
 ### Insert target only
 
@@ -699,7 +715,7 @@ If enabled, auto-assembling replaces the punctuation characters as set in the fi
 
 ## AUTO-PROPAGATION
 
-![Auto-propagation pane](https://i.imgur.com/s52CzJM.png)
+![Auto-propagation pane](https://i.imgur.com/kkIAiLL.png)
 
 This pane lets you enable or disable various Auto-propagation options.
 
@@ -742,6 +758,12 @@ If this option is ON, auto-propagation works also for segments that only differ 
 Checkbox, ON by default
 
 If this option is ON, backward auto-propagation is disabled.
+
+### Auto-propagation from locked segments
+
+Checkbox.
+
+You can choose whether to block or enable auto0propaggation from locked segments.
 
 ## GLOSSARY
 
@@ -832,7 +854,7 @@ Checkbox. ON by default
 
 CafeTran will enable terms consistency check for attached glossaries for this QA step (see QA pane/menu for more information).
 
-NOTE: You can enable/disable this option per each glossary via the context menu  (right click) > Terms consistency check.
+NOTE: You can enable/disable this option per each glossary via the context menu (right click) > Terms consistency check.
 
 ### Skip new term window (shortcut)
 
@@ -863,6 +885,10 @@ Here you can define the amount of RAM allocated to CafeTran’s operation.
 
 Note that with very large resources, for example translation memories or glossaries 100 MB or more in size, it may be advisable to increase the amount of RAM made available to CafeTran in Java. Consider increasing the default value from 1024 to 2048 (or more), for example. Restart the program to apply the new Java memory settings.
 
+Related links:
+[Slowing Down or Exiting Unexpectedly
+](https://cafetran.freshdesk.com/support/solutions/articles/6000160241-slowing-down-or-exiting-unexpectedly)
+
 ### Switch to preliminary matching threshold:
 
 Default value: 50,000
@@ -871,7 +897,7 @@ Here you can set the number of segments after which TMX or Total Recall memories
 
 Developers explanation: After you load a translation memory either from TMX files or from Total Recall, CafeTran performs an automatic matching. The currently-translated segment is matched automatically against this translation memory to produce the results of matching. As your translation memory is getting bigger and bigger over time and reaches thousands of segments, the automatic matching may get slower as the current source segment is matched against that large amount of translation memory segments. To overcome this issue of huge memories, you can perform the preliminary memory matching of the whole source document so that the matches will be available instantly, without any delay. The preliminary memory matching may take a while but you do not have to wait until it completes because matches for each next source segment are available right after the segment is processed. It means that you can translate at your own human pace while the preliminary matching is taking place in the background.
 
-Note:  Preliminary matching workflow option can also be chosen from the Memory options > Workflow integration > Preliminary memory matching.
+Note: The preliminary matching workflow option can also be chosen from the Memory options > Workflow integration > Preliminary memory matching.
 
 Note 2: You can disable the switch to preliminary matching by changing the threshold to a very high value, like 2,500,000.
 
@@ -974,7 +1000,7 @@ Default value: ,.。:;!¡?¿[]{}()"«»‘’“”„‚
 
 CafeTran ignores the (punctuation) characters entered here while searching for matches of the source segments in Translation Memories and Glossaries.
 
-Note: You can also add spaces and characters as Unicode code here. For example, to match segments that start with an invisible space a.k.a. zero-width space (invisible in the source segment section, but visible when copied in the search box), you can use Unicode code U+200B.
+Note: You can also add spaces and characters as Unicode code here. For example, to match segments that start with an invisible space aka zero-width space (invisible in the source segment section, but visible when copied in the search box), you can use Unicode code U+200B.
 
 ### Compare with target segment:
 
@@ -1015,7 +1041,7 @@ Related links:
 
 ## QA
 
-![QA pane](https://i.imgur.com/FNOzbmI.png)
+![QA pane](https://i.imgur.com/5Z1zQGZ.png)
 
 This pane features options related to CafeTran’s QA function (see QA menu).
 
@@ -1024,6 +1050,18 @@ This pane features options related to CafeTran’s QA function (see QA menu).
 Drop-down menu. Choices: Prefix marching or Exact matching. Default: Prefix matching
 
 Select a method to check for the consistent usage of terms during the Quality Assurance phase. When the Prefix matching method is chosen, CafeTran analyzes prefixes of the used terms. In the Exact matching method, the program checks for the usage consistency of whole terms.
+
+### Length difference check (%):
+
+Drop-down menu. Choices: 0 to 100 (by increments of 5). Default: 50
+
+Check for the maximum difference in length between source and target segments.
+
+### Maximum segment length (chars):
+
+Default value: 1000
+
+Check for the maximum number of characters in the target segments.
 
 ### Prefix marching (%):
 
@@ -1062,19 +1100,15 @@ Related links:
 
 ## MT SERVICES
 
-![MT services pane](https://i.imgur.com/mRPowS3.png)
+![MT services pane](https://i.imgur.com/nPpj3A7.png)
 
-This pane features option related to Machine Translation. Individual options can also be set via the MT context menu (see “CafeTran Espresso - Menu and Interface”).
+This pane features options related to Machine Translation. Individual options can also be set via the MT context menu (see [CafeTran Espresso - Menu and Interface]{https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface}).
 
 ### Mask non-translatable fragments
 
 Checkbox, OFF by default
 
 All non-translatable fragments longer than 3 characters are masked before being submitted for Machine Translation - both via API and the Web interface. You can see the masking effect in MT tabs. The unmasked translation result is displayed in the Matchboard and after the transfer to the target segment. The masking feature does not work with the right-click “Create TMX memory” MT function.
-
-### Team high-priority fragments only
-
-This option allows you to limit the Team feature (see below) to the high-priority fragments (such as those coming from translation memories or glossaries with High priority).
 
 ### Team auto-assembling with machine translation
 
@@ -1083,7 +1117,13 @@ CafeTran lets you adjust MT results with its own Auto-assembling function, repla
 Related links:
 [Auto-assembling with Machine Translation](https://cafetran.freshdesk.com/support/solutions/articles/6000160533-auto-assembling-with-machine-translation)
 
+### Team high-priority fragments only
+
+This option allows you to limit the Team feature (see below) to the high-priority fragments (such as those coming from translation memories or glossaries with High priority).
+
 ### Online MT engines
+
+Here, you can enter the API keys to various MT services. Please note that CafeTran can also conduct free MT searches via its web interface (including DeepL, Google Translate, Microsoft [Bing] Translator and Youdao MT). The API access is recommended, however, for confidentiality reasons whenever possible, since different privacy terms often apply.
 
 Related links:
 [Machine Translation with MT Services](https://cafetran.freshdesk.com/support/solutions/articles/6000186536-machine-translation-with-mt-services),
@@ -1108,9 +1148,18 @@ Related links:
 [Machine Translation](https://cafetran.freshdesk.com/support/solutions/folders/6000058185) (Solutions category),
 [Translating Confidential Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000163344-translating-confidential-documents)
 
+#### DeepL:
+
+DeepL API key: Enter your [DeepL Pro](https://www.deepl.com/pro.html) API key.
+
+This is a paid translation API.
+
+Link:
+[https://www.deepl.com/pro.html](https://www.deepl.com/pro.html)
+
 #### Google Translate:
 
-Google API key: Enter your Google Translate API key
+Google API key: Enter your Google Translate API key.
 
 This is a paid translation API.
 
@@ -1119,7 +1168,7 @@ Link:
 
 #### MS Translator:
 
-Microsoft API key: Enter your MS Translator API key
+Microsoft API key: Enter your MS Translator API key.
 
 Free tier offers 2M free characters per month. Paid tiers and options exist for more characters per month, if needed.
 
@@ -1172,7 +1221,7 @@ This enables you to:
 
 - Conduct KudoZ terms searches (manually or automatically) [Free ProZ account]
 - File new KudoZ questions [Free ProZ account]
-- Use “What I am working on” feature (See WIWO option below)  [Free ProZ account]
+- Use “What I am working on” feature (See WIWO option below) [Free ProZ account]
 - Enjoy Full (not Trial) access to CafeTran [ProZ Plus account]
 
 After the first successful login, CafeTran will connect to ProZ.com automatically at the start.
@@ -1245,7 +1294,7 @@ Clicking any item of the list opens a **keyboard shortcuts window,** which allow
 
 Don’t be afraid to customize them to your liking.
 
-Below, you will find the default keyboard shortcuts (in GNU/Linux and Windows, defaults, they are different for OS X), along with their explanation:
+Below, you will find the default keyboard shortcuts (in GNU/Linux and Windows, since they are different for OS X), along with their explanation:
 
 **Add checked segment to memory and go to next segment**	Ctrl+Shift+Enter
 
@@ -1275,19 +1324,19 @@ Also in Action menu.
 
 Add your translation of this segment to your translation memories, and move on to the next segment in the source document.
 
-Also in action menu.
+Also in Action menu.
 
 **Add segment to memory and go to next untranslated segment**	Ctrl+Enter
 
 Add your translation of this segment to your translation memories and move on to the next untranslated segment in the source document.
 
-Also in action menu.
+Also in Action menu.
 
 **Add selection to abbreviations**	Ctrl+Shift+M
 
 Add a selected fragment of the segment to abbreviations.
 
-Also in Resources >  Abbreviations submenu.
+Also in Resources > Abbreviations submenu.
 
 **Add selection to non-translatable fragments**	Alt+P
 
@@ -1401,7 +1450,7 @@ Also in Project menu.
 
 Export a translated copy of only the document currently-active in the CafeTran interface.
 
-Also in Project > Export and exchange  submenu.
+Also in Project > Export and exchange submenu.
 
 **Find in page**	Ctrl+Alt+F
 
@@ -1431,7 +1480,7 @@ Also in View menu.
 
 Search glossaries for contents of current selection in the source segment editor.
 
-Also in Edit > Find at cursor submenu and through the dedicated  Glossaries button in the Quick search bar.
+Also in Edit > Find at cursor submenu and through the dedicated Glossaries button in the Quick search bar.
 
 **Hide segment boundary tags**	[Not defined]
 
@@ -1444,6 +1493,12 @@ Also in Action > Tags submenu.
 Hide all the tags in the current source segment.
 
 Also in Action > Tags submenu.
+
+**Hide toolbars** Ctrl+Shift+H
+
+Hide all toolbars in the CafeTran Espresso interface.
+
+Also in View > Toolbars submenu.
 
 **Insert auto-assembling**	Alt+4
 
@@ -1687,7 +1742,7 @@ Also in Resources > Non-translatable fragments submenu.
 
 Cycle through possible alternate spellings or replacements for the word immediately preceding the cursor.
 
-Also in Edit menu.
+Also in Edit menu. See [Auto-correction of Misspelled Words](https://cafetran.freshdesk.com/support/solutions/articles/6000112706-auto-correction-of-misspelled-words).
 
 **Request focus in target segment editor**	Ctrl+Shift+F12
 
@@ -1785,17 +1840,23 @@ Transfer the current tag in the list of tags from the source segment to the targ
 
 Also in Action > Tags submenu.
 
-**Transfer Google MT**	Alt+K
+**Transfer DeepL MT** Alt+E
+
+Transfer DeepL MT result to the target segment editor.
+
+Also in Translate menu.
+
+**Transfer Google MT** Alt+K
 
 Transfer Google Translate MT result to the target segment editor.
 
-Not found elsewhere.
+Also in Translate menu.
 
 **Transfer Microsoft MT**	Alt+J
 
 Transfer Microsoft Translator MT result to the target segment editor.
 
-Not found elsewhere.
+Also in Translate menu.
 
 **Transfer MT from web page**	Alt+V
 
@@ -1807,7 +1868,7 @@ Also in Translate menu.
 
 Transfer MyMemory MT result to the target segment editor.
 
-Not found elsewhere.
+Also in Translate menu.
 
 **Transfer source segment**	Alt+I
 
@@ -1815,11 +1876,11 @@ Transfer the (selected) source segment editor contents directly to the target se
 
 Also in Translate menu.
 
-**Transfer Yandex MT**	Alt+Y
+**Transfer Yandex MT** Alt+Y
 
 Transfer Yandex Translate MT result to the target segment editor.
 
-Not found elsewhere.
+Also in Translate menu.
 
 **Translate selected fragment**	Alt+Enter
 
@@ -1857,6 +1918,7 @@ Also in View > Font submenu.
 - 20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
 - 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
 - 20180315 Updated
+- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 
 ## Feedback
 

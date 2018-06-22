@@ -113,6 +113,10 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - Check for the maximum number of characters in the target segments (menu QA > Maximum segment length check).
 - Check for the consistency of non-translatable fragments in the source and target segments (menu QA > Non-translatable fragments check).
 
+The new build (**2018061501**) of update 10 is available. It adds the editor's support for the Windows context menu key found on some keyboards.
+
+The issue with double percentage symbol for context matches in the Matchboard is fixed in the latest build (**2018062001**).
+
 ## 2018 Akua Update 9 (20180604)
 
 - The status of the current segment in Layout 6 Compact is displayed in the corner of the editor.
