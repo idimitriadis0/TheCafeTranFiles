@@ -846,7 +846,7 @@ NOTE: You can manually enable/disable this option per each glossary via the cont
 
 Checkbox. ON by default.
 
-If enabled, CafeTran use word stemming when querying for glossary matches.
+If enabled, CafeTran use word stemming when querying for glossary matches. CafeTran provides stemming based on the Hunspell dictionary.
 
 ### Terms consistency check:
 
@@ -1012,7 +1012,7 @@ If enabled, CafeTran shows a comparison of the memory match with the target segm
 
 Checkbox, ON by default
 
-If enabled, CafeTran use word stemming when querying for Translation Memory matches.
+If enabled, CafeTran use word stemming when querying for Translation Memory matches. CafeTran provides stemming based on the Hunspell dictionary.
 
 ## MEMORY SERVER
 
