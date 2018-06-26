@@ -59,6 +59,7 @@
 		- [QA > Check all window](#qa-check-all-window)
 	- [Task](#task)
 		- [Task > Frequent words submenu](#task-frequent-words-submenu)
+			- [Task > Frequent words context menu](#task-frequent-words-context-menu)
 		- [Task > TMX memory submenu](#task-tmx-memory-submenu)
 	- [Resources](#resources)
 		- [Add/Edit resource window](#addedit-resource-window)
@@ -1412,7 +1413,7 @@ Note: The "Remove target segments" feature is designed to work with CafeTran pro
 
 ![Task > Frequent words submenu](https://i.imgur.com/05cp38p.png)
 
-This feature allows you to perform a statistical analysis based on word frequency. A right click brings a pop-up menu for setting the minimal and maximal fragment length. Frequent words feature is activated automatically at the start of the project when "Extract frequent words from current segment" option is on.
+This feature allows you to perform a statistical analysis based on word frequency. Additionally to the Task > Frequent words submenu options explained below, a right click inside the Frequent words tab brings a pop-up menu setting the minimal and maximal fragment length (see Task > Frequent words context menu below). Frequent words feature is activated automatically at the start of the project when "Extract frequent words from current segment" option is on.
 
 **Task > Frequent words sorted by frequency** = Calculate the most frequent words in the source document, according to below criteria, and display results in a new tab, sorted by frequency. This may take a while.
 
@@ -1428,6 +1429,18 @@ This feature allows you to perform a statistical analysis based on word frequenc
 
 Related links:
 [Extract Frequent Words from the Current Segment](https://cafetran.freshdesk.com/support/solutions/articles/6000113301-extract-frequent-words-from-the-current-segment), [Extract Frequent Words from the Project](https://cafetran.freshdesk.com/support/solutions/articles/6000113306-extract-frequent-words-from-the-project).
+
+#### Task > Frequent words context menu
+
+![Task > Frequent words context menu](https://i.imgur.com/0wIp4R8.png)
+
+You can access the following Frequent words options by right clicking inside the Frequent words tab.
+
+**Minimal fragment length** = Set the minimum number of characters per fragment.
+
+**Maximal fragment length** = Set the maximum number of characters per fragment.
+
+**Extract frequent words from current segment** = Toggle frequent word display for only the currently-selected segment (all segment pairs are still searched).
 
 ### Task > TMX memory submenu
 
