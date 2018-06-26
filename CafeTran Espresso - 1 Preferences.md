@@ -820,7 +820,7 @@ Checkbox, OFF by default
 
 If this option is enabled, it introduces automatic fuzziness to your glossary matches.
 
-Note: As the “Prefix length” option is shared with TM fragments, you can adjust the prefix length in the options for the memory (e.g. after right clicking at the memory pane). You will need to reload the glossary after turning on/off the Prefix matching option.
+Note: As the “Prefix length” option is shared with TM fragments, you can adjust the prefix length in the options for the memory (e.g. after right clicking at the memory pane). You will need to reload the glossary after turning on/off the Prefix matching option. See the [TM options](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/3-TM-options#options) document for more information on the prefix length.
 
 ### Sort matches alphabetically
 
