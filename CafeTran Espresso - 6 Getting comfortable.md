@@ -58,7 +58,7 @@ OK, let’s start getting comfortable.
 
 ### Look and Feel & Large icons
 
-First, go to Preferences (Options) > Appearance.
+First, go to Edit > Preferences (Options) > Appearance.
 
 Depending on your computer, you might want to uncheck the **Large icons**.
 
@@ -212,7 +212,7 @@ Since resources are loaded in RAM, if you have 8 GB RAM or more, you can safely 
 
 **Preferences > MT services**
 
-If you’d like to receive Machine Translation suggestions while working on your translations, you’ll probably want to set up the available [MT services](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#mt-services) (Google Translate, MS Translator, MyMemory and Yandex.Translate).
+If you’d like to receive Machine Translation suggestions while working on your translations, you’ll probably want to set up the available [MT services](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#mt-services) (DeepL, Google Translate, Microsoft Translator, MyMemory and Yandex.Translate).
 
 Some MT services can also be queried via their web interface, straight from within CafeTran. Depending on your language pairs, check out DeepL, Google Translate, Bing Translator and Youdao, in Resources > Web (or enable them from the Dashboard).
 
