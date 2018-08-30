@@ -147,6 +147,7 @@
 		- [Monochromatic icons](#monochromatic-icons)
 		- [Interface language:](#interface-language)
 	- [KEYBOARD SHORTCUTS](#keyboard-shortcuts)
+		- [Miscellaneous keyboard shortcuts](#miscellaneous-keyboard-shortcuts)
 	- [LIST OF CHANGES](#list-of-changes)
 	- [Feedback](#feedback)
 
@@ -154,9 +155,9 @@
 
 # CAFETRAN ESPRESSO - PREFERENCES
 
-*Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
+*Updated for CafeTran Espresso 2018 - Akua Update 11 (build 2018082501)*
 
-This reference document offers a tour of CafeTran’s Preferences (Options) and describes each item’s function, providing some additional information along the way.
+This reference document offers a tour of CafeTran’s Preferences (Options) and describes each item’s function, providing additional information along the way.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
 
@@ -444,7 +445,7 @@ Clicking these buttons lets you select a TXT file which contains a list a subjec
 
 Blank fields by default.
 
-You can set column/field names for your Glossaries/Termbases (using default names such as, Context, Subject, Notes, Reference, etc.). As long as those fields/column names are left blank, they will not appear in the glossary/termbase entries you create, keeping things simple as the default behavior.
+You can set column/field names for your Glossaries/Termbases (using default names such as, Context, Subject, Notes, Reference, etc.). As long as those fields/column names are left blank, they will not appear in the glossary/termbase entries you create, keeping things simple as the default behaviour.
 
 Note: If you set multiple columns for your glossary, you may want to consider choosing the Vertical display in its context menu (right click) for better readability.
 
@@ -481,7 +482,7 @@ You may need to remove unnecessary languages/variants if you use various languag
 Related links:
 [Multilingual Glossaries](https://cafetran.freshdesk.com/support/solutions/articles/6000113541-multilingual-glossaries)
 
-<!---Modification: improve default behavior--->
+<!---Modification: improve default behaviour--->
 
 ## WORKFLOW
 
@@ -538,7 +539,7 @@ Checkbox, OFF by default
 
 Drop-down menu: Choices: Look up, Translate, Segment. Default: Look up
 
-This option specifies the behavior in case **Edit > Clipboard sensitive** menu option is ON.
+This option specifies the behaviour in case **Edit > Clipboard sensitive** menu option is ON.
 
 **Look up**: the clipboard contents are looked up automatically in CafeTran’s resources.
 **Translate**: the clipboard contents are translated automatically with the translation memories and glossaries.
@@ -557,7 +558,7 @@ If this option is ON, CafeTran removes the newline character from the pasted tex
 
 Checkbox, ON by default
 
-If this option is ON, CafeTran selects whole words even if you make a partial selection in the source or target segments. The option is quite convenient as it speeds up text selection, since mouse selection does not need to be precise. Uncheck if the behavior is unwanted.
+If this option is ON, CafeTran selects whole words even if you make a partial selection in the source or target segments. The option is quite convenient as it speeds up text selection, since mouse selection does not need to be precise. Uncheck if the behaviour is unwanted.
 
 ### Automatic memory matching:
 
@@ -596,7 +597,9 @@ Two fields, Default values: Start at: 3 and word length: 7 respectively.
 
 The checkbox allows you to enable or disable Auto-completion function.
 
-Auto-completion is a CafeTran feature that uses text from various sources (Project segments, Memories [matches, fuzzies, hits], Glossaries, MT results, etc.). As you type, CafeTran will often bring up the auto-completion menu, which allows you to quickly complete the word instead of typing it. The auto-completion function is automatically triggered if enabled, and if there is a space following the cursor. If there is a character in the right side of the cursor, you can still manually bring the auto-completion menu with the Ctrl+Down arrow (default) keyboard shortcut.
+Auto-completion is a CafeTran feature that uses text from various sources (Project segments, Memories [segment or fragment matches, fuzzies, hits], Glossaries, MT results, etc.). As you type the first characters of a word, CafeTran will often bring up the auto-completion menu, which allows you to quickly complete the word instead of typing it. The auto-completion function is automatically triggered if enabled, and if there is a space following the cursor. If there is a character in the right side of the cursor, you can still manually bring the auto-completion menu with the Ctrl+Down arrow (default) keyboard shortcut. Press enter to use the auto-complete suggestion. Selection can be done via the up or down arrow keys, as well as by double-clicking the desired suggestion.
+
+Note: You can remove a highlighted suggestion by using the **Remove from auto-completion list** keyboard shortcut.
 
 **Start at:** minimum number of typed characters to trigger the Auto-completion function.
 
@@ -657,7 +660,7 @@ If this option is ON, CafeTran tries to repair fuzzy matches, replacing the diff
 
 Fuzzy match auto-correction also works if the start and/or the end of the current segment is missing in the fuzzy match, and there are matches in TM, glossary or nontranslatables for those missing parts.
 
-Note: This also affects the Matchboard behavior.
+Note: This also affects the Matchboard behaviour.
 
 ### Automatic fragments adjustment
 
@@ -665,7 +668,7 @@ Checkbox, ON by default
 
 This dynamic feature sets the top priority for the recently used fragment/term or its synonym to use it subsequently both in Auto-assembling and Machine Translation improvement. It can also adjust the basic form of a fragment (e.g. sunny day) to the one you actually use in the segment (e.g sunny days) provided that the change is slight (e.g. to the form of the regular noun). Then, CT will use the adjusted fragment in the subsequent segments. Let's assume CafeTran suggests correctly a translation memory (TM) fragment by analyzing its context. However, your high priority glossary inserts another suggestion (e.g. the basic form) for the same source fragment. If you use the TM fragment in the current segment, CafeTran will enhance the priority of this TM fragment to use it in the next segments as well.
 
-The feature recognises your recent usage of the term or fragment synonyms and adjusts their priority automatically to use the synonym subsequently in auto-assembling. The users who do not rely much on the set priorities for their glossary terms or TM fragments should benefit from it.
+The feature recognizes your recent usage of the term or fragment synonyms and adjusts their priority automatically to use the synonym subsequently in auto-assembling. The users who do not rely much on the set priorities for their glossary terms or TM fragments should benefit from it.
 
 Related link:
 [Automatic Fragments Adjustment](https://cafetran.freshdesk.com/support/solutions/articles/6000175426-automatic-fragments-adjustment)
@@ -719,7 +722,7 @@ If enabled, auto-assembling replaces the punctuation characters as set in the fi
 
 This pane lets you enable or disable various Auto-propagation options.
 
-Auto-propagation is the process whereby the translation from one segment is applied to other segments that have similar source content.
+Auto-propagation is the process whereby the translation from one segment is applied to other segments that have identical source content.
 
 Note: You can disable Auto-propagation for a specific segment via right-clicking at the source segment editor and unchecking Auto-propagation checkbox (the segment is marked as “nP” in the Grid). For non-CafeTran projects, this option works for the current session only.
 
@@ -1112,7 +1115,7 @@ All non-translatable fragments longer than 3 characters are masked before being 
 
 ### Team auto-assembling with machine translation
 
-CafeTran lets you adjust MT results with its own Auto-assembling function, replacing terms and fragments with the ones that you prefer, that is, found in your translation memories and glossaries.
+CafeTran lets you adjust MT results with its own Auto-assembling function, replacing terms and fragments with the ones that you prefer, that is, those found in your translation memories and glossaries.
 
 Related links:
 [Auto-assembling with Machine Translation](https://cafetran.freshdesk.com/support/solutions/articles/6000160533-auto-assembling-with-machine-translation)
@@ -1294,7 +1297,7 @@ Clicking any item of the list opens a **keyboard shortcuts window,** which allow
 
 Don’t be afraid to customize them to your liking.
 
-Below, you will find the default keyboard shortcuts (in GNU/Linux and Windows, since they are different for OS X), along with their explanation:
+Below, you will find the default keyboard shortcuts (in GNU/Linux and Windows, since they are different for OS X), along with their explanation. An additional section lists shortcuts found elsewhere:
 
 **Add checked segment to memory and go to next segment**	Ctrl+Shift+Enter
 
@@ -1718,6 +1721,8 @@ Also in Edit > Target segment submenu.
 
 Remove the highlighted suggestion from the auto-completion drop-down list. Just navigate to the suggestion you wish to remove (using the up or down arrow keys, or via a single left click) and press Ctrl+Shift+R.
 
+Note: Misspelled words are automatically removed from the auto-complete list.
+
 Not found elsewhere.
 
 **Remove tags**	Ctrl+Shift+Slash
@@ -1911,6 +1916,20 @@ Also in View > Font submenu.
 **Zoom -** (Ctrl+Shift+Y)	Ctrl+Shift+Y
 
 Also in View > Font submenu.
+
+### Miscellaneous keyboard shortcuts
+
+The below miscellaneous shortcuts are not listed in the Keyboard shortcut Preferences, although they may be present in various Menus and Interface elements.
+
+**Toggle right to left typing** Ctrl+Shift+O
+
+Switch between left to right and right to left typing.
+
+**Hide toolbars** Ctrl+Shift+H
+
+Hide all toolbars in the CafeTran Espresso interface. Toggles visibility for the segment editor toolbars.
+
+Found in View > Toolbars > Hide toolbars.
 
 ## LIST OF CHANGES
 

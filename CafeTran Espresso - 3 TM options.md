@@ -21,7 +21,7 @@
 
 # CAFETRAN ESPRESSO - Translation Memories options
 
-*Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
+*Updated for CafeTran Espresso 2018 - Akua Update 11 (build 2018082501)*
 
 This document offers an overview of CafeTran’s Translation Memory options.
 
@@ -77,7 +77,7 @@ Quickly check or change the priority level for the TM, which can also be set via
 
 **Compare with target segment** = If enabled, this option shows the red “Different translation” warning in the TM tab for Exact matches. It can also be set for individual TMs after the right-click.
 
-**Recall memory**= Save the currently selected translation memory in a Total Recall database table. Also available through Memory > Recall memory.
+**Recall memory**= Recall the contents of the selected database table to this translation memory in the lexical context of the current project. Also available through Memory > Recall memory. This is the same as selecting a Total Recall table to recall from the Dashboard.
 
 **Store memory in Total Recall** = Save the currently selected translation memory in a Total Recall database table. Also available through Memory > Store memory in Total Recall.
 
@@ -139,9 +139,16 @@ Note: Clicking anywhere in the Language pair section inverts the chosen language
 
 **Workflow integration** = Drop-down menu. Choices: Automatic, Preliminary memory matching, Manual. Default: Automatic.
 
+- **Automatic** = After you load a translation memory either from TMX files or from Total Recall, CafeTran performs the automatic matching. The currently-translated segment is matched automatically against this translation memory to produce the results of matching.
+- **Preliminary memory matching** = As your translation memory is getting bigger and bigger over time and reaches thousands of segments, the automatic matching may get slower as the current source segment is matched against that large amount of translation memory segments. To overcome this issue of huge memories, you can perform the preliminary memory matching of the whole source document so that the matches will be available instantly, without any delay. The preliminary memory matching may take a while but you do not have to wait until it completes because matches are available right after the segment is processed. It means that you can translate at your own human pace while the preliminary matching is taking place in the background.
+- **Manual** = The memory is not being matched against your current-translated segment, but you can conduct manual concordance searches in source or target memory entries.
+
+Related links:
+[Preliminary Memory Matching](https://cafetran.freshdesk.com/support/solutions/articles/6000059860-preliminary-memory-matching)
+
 **Matching type** = Drop-down menu. Choices: Fuzzy & hits, Fuzzy, Fuzzy without word separator. Default: Fuzzy & hits.
 
-- **Fuzzy & hits** = With this option, CafeTran analyzes source segments on a word basis (fuzzy matching), and performs statistical analysis of subsegments to determine their translation (fragment matches aka Hits).
+- **Fuzzy & hits** = With this option, CafeTran analyzes source segments on a word basis (fuzzy matching), and performs statistical analysis of subsegments to determine their translation (fragment matches aka Hits). See an explanation of [Fragment Hits](https://cafetran.freshdesk.com/support/solutions/articles/6000088087-fragment-hits).
 - **Fuzzy** = With this option, CafeTran only performs fuzzy matching analysis. Disabling subsegment analysis speeds up the matching process.
 - **Fuzzy without word separator**= With this option, CafeTran analyzes source segments on a character basis, which is suitable for languages without a word boundary (e.g. Chinese or Japanese).
 

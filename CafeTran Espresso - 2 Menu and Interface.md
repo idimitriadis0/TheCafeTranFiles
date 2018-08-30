@@ -1,11 +1,11 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CAFETRAN ESPRESSO - MENU AND INTERFACE](#cafetran-espresso-menu-and-interface)
-- [Interface](#interface)
+- [1. Interface](#1-interface)
 	- [Project Dashboard](#project-dashboard)
 		- [Dashboard menu options](#dashboard-menu-options)
 			- [Dashboard menu options > Project type submenu](#dashboard-menu-options-project-type-submenu)
-		- [Dashboard's Resources](#dashboards-resources)
+		- [Dashboard’s Resources](#dashboards-resources)
 			- [Local resources](#local-resources)
 			- [TM-Town resources](#tm-town-resources)
 	- [New project/Project configuration dialog](#new-projectproject-configuration-dialog)
@@ -31,7 +31,7 @@
 		- [TM-Town tab and context menu](#tm-town-tab-and-context-menu)
 	- [Quick search bar](#quick-search-bar)
 	- [Advanced Search (Find and Replace) window](#advanced-search-find-and-replace-window)
-- [Menu items](#menu-items)
+- [2. Menu items](#2-menu-items)
 	- [Project](#project)
 		- [Project > Statistics submenu](#project-statistics-submenu)
 		- [Project > Export and exchange submenu](#project-export-and-exchange-submenu)
@@ -84,7 +84,7 @@
 
 # CAFETRAN ESPRESSO - MENU AND INTERFACE
 
-*Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
+*Updated for CafeTran Espresso 2018 - Akua Update 11 (build 2018082501)*
 
 A trip to CafeTran’s interface and menus.
 
@@ -98,7 +98,7 @@ This is heavily based and builds upon texts CafeTran displays in the help bar at
 
 <!--- *Shortened link to this document:* --->
 
-# Interface
+# 1. Interface
 
 ## Project Dashboard
 
@@ -116,7 +116,7 @@ The Dashboard is the first screen you see when you launch CafeTran. This is wher
 
 **Start new project (New)** = Button. (Select language pair first, and then:) Click to start the creation of the new project.
 
-You will be asked to browse to a source document (or folder containing the source documents if you have checked the option "Multiple document project" in the Dashboard menu). Alternatively, you can simply Drag and drop the document or folder on the Dashboard.
+You will be asked to browse to a source document (or folder containing the source documents if you have checked the option “Multiple document project” in the Dashboard menu). Alternatively, you can simply Drag and drop the document or folder on the Dashboard.
 
 This will open the New project configuration dialog (see below).
 
@@ -128,7 +128,7 @@ This will open the New project configuration dialog (see below).
  - **Open project** = Select the (CafeTran) XLIFF file you wish to open. Allows you to open not listed CT projects.
  - **Open project folder** = Select the project folder you wish to open. Allows you to open not listed CT project folders.
 
-Note: If you haven't created a project yet, this button is not displayed.
+Note: If you haven’t created a project yet, this button is not displayed.
 
 **Dashboard menu button** = This is a button you will use much, since it allows you to access additional project options and settings (see below for Dashboard menu options).
 
@@ -149,7 +149,7 @@ Suggestion: Create a “templates” folder in *cafetran* or *cafetran/projects*
 - **Remove working language pair** = All source and target languages you select in the Dashboard’s corresponding drop-down menus are added at the very start of the available language/language variant list, so that you can easily re-use your working languages. If you wish to remove a working language pair, set the pair you want to remove in the drop-down menus, and then use this option.
 - **Coffeehouse theme** = Toggle the alternative Dashboard theme.
 - **Preferences** = Open CafeTran’s Preferences/Options
-- **Close Dashboard** = Close the Dashboard and show CafeTran's main translation interface and menus, with no projects loaded.
+- **Close Dashboard** = Close the Dashboard and show CafeTran’s main translation interface and menus, with no projects loaded.
 
 <!--- TODO Save project template, add more details here for this important feature --->
 
@@ -174,7 +174,7 @@ This workflow allows you to automatically or manually align two documents and pr
 
 When you select a specific workflow, the basic workflow steps are outlined in the bottom section of the Dashboard.
 
-### Dashboard's Resources
+### Dashboard’s Resources
 
 #### Local resources
 
@@ -184,7 +184,7 @@ The **Dashboard** also allows you to select various resource types: **Translatio
 
 #### TM-Town resources
 
-If you enable TM Town (see Preferences > Web services), CafeTran also displays a new tab, allowing you to check TM-Town's available resources and options (via the context menu).
+If you enable TM Town (see Preferences > Web services), CafeTran also displays a new tab, allowing you to check TM-Town’s available resources and options (via the context menu).
 
 ## New project/Project configuration dialog
 
@@ -251,10 +251,10 @@ For example, the screenshot above shows the **Excel filter** options:
 
 CafeTran’s translation interface is highly customizable.
 
-Here's a quick overview of the main UI elements:
+Here’s a quick overview of the main UI elements:
 
 <!--- TODO EXPAND --->
-- **Menu**: Access CafeTran's menu.
+- **Menu**: Access CafeTran’s menu.
 - **Segments grid**: This is where all the segmented text elements from the source file(s) are shown in sequenced order (or according to the Search and Filter options). (See also [Segments Grid](https://cafetran.freshdesk.com/support/solutions/articles/6000111992-segments-grid))
 - **Source and Target segment editors**: The current Source and Target text boxes where you edit your translation.
 - **Tabbed pane**: The tabbed pane holds various sets of resources such as Translation memories, Glossaries, MT engines and web resources. Tabs can be reordered, docked to a specific pane, joined together or floated (See also [Docking and Joining tabs](https://cafetran.freshdesk.com/support/solutions/articles/6000114632-docking-and-joining-tabs)).
@@ -289,7 +289,7 @@ Note: The number of segments per page can be set in Preferences > General > Proj
  1. **Quick search** = Toggle the Quick search bar on/off.
  2. **Increase font size** = Increase the font size in the source and target segment editors.
  3. **Decrease font size** = Decrease the font size in the source and target segment editors.
- 4. **Change case** = Cycles through multiple capitalization schemes for the target segment: “first upper-cased”, all lower-case, all upper-case.
+ 4. **Change case** = Cycles through multiple capitalization schemes for the target segment: first upper-cased, all lower-case, all upper-case.
  5. **Change to title case** = Capitalizes the first letter of each word within the target segment.
  6. **Show invisible characters** = Display non-printable characters, such as spaces and line breaks.
  7. **Cut** = Cut currently-selected text to clipboard.
@@ -307,12 +307,12 @@ Note: The number of segments per page can be set in Preferences > General > Proj
  - **Ask KudoZ question** = Ask a KudoZ (ProZ terminology) question directly via CafeTran. Requires a ProZ.con sign-in.
  - **Ask selection to non-translatable fragments** = Quickly add the selected text to the Non-translatables file. Non-translatables can be easily transferred via the F4 menu.
  - **Add selection to abbreviations** = Quickly add the selected text to the Abbreviations file. Abbreviations are also used for adjusting segmentation (this allows to seamlessly join together segments that would otherwise split at an abbreviation because of segmentation rules).
- - **Bookmark segment** = Bookmark a segment for easy later access. It adds a "B" red letter besides the segment on the Grid when you leave the segment. Bookmarked segments can be accessed via the Filter menu.
+ - **Bookmark segment** = Bookmark a segment for easy later access. It adds a “B” red letter besides the segment on the Grid when you leave the segment. Bookmarked segments can be accessed via the Filter menu.
  - **New note** = Add a segment note (comment).
  - **New alternative translation** = Add an alternative translation for this segment. This may also stop auto-propagation.
  - **Checked segment** = Set the segment as Checked.
  - **Locked segment** = Set the segment as Locked.
- - **Auto-propagation** = Uncheck this to disable auto-propagation of this segment and other segments with the exact source text. The red "nP" sign is added besides the segment.
+ - **Auto-propagation** = Uncheck this to disable auto-propagation of this segment and other segments with the exact source text. The red “nP” sign is added besides the segment.
 
 ## Target segment editor icons
 
@@ -324,7 +324,7 @@ Note: The number of segments per page can be set in Preferences > General > Proj
  4. **Join segments** = Merge the contents of the next source segment into the currently-selected segment. The next segment will also be eliminated.
  5. **Split segments** = Split the currently-selected segment into two. The segment will be split at the current cursor location in the source segment editor above.
  6. **Transfer to target segment editor** = Transfer the contents of the source segment editor (or the current selection) directly to the target segment editor.
- 7. **Mouse tag placement** = When enabled, tags can be added to the target segment simply by left-clicking where you’d like to place a tag.
+ 7. **Mouse tag placement** = When enabled, tags can be added to the target segment simply by left-clicking where you’d like to place a tag. If you select a word or a word string, it is enclosed by two tags.
  8. **Add fragment to memory** = Create a new translation memory fragment. Any highlighted portion of the source/target segments will be preset in the resulting “New fragment” dialog.
  9. **Add term to glossary** = Create a new glossary entry. Any highlighted portion of the source/target segments will be preset in the resulting “New term” dialog.
  10. **Add segment note** = Add an annotation about this segment; it will appear below the segment in the grid pane, marked with an “N”.
@@ -338,7 +338,7 @@ Note: Since CTE 2018 Forerunner (build **2018010801**), CafeTran Espresso allows
 
 Accessible via right click or the context menu keyboard shortcut.
 
- 1. **Change case** = Cycles through multiple capitalization schemes for the target segment: “first upper-cased”, all lower-case, all upper-case.
+ 1. **Change case** = Cycles through multiple capitalization schemes for the target segment: first upper-cased, all lower-case, all upper-case.
  2. **Change to title case** = Capitalizes the first letter of each word within the target segment.
  3. **Undo** = Undo the previous edit actions in the target segment.
  4. **Redo** = Redo the undone edit actions in the target segment.
@@ -351,7 +351,7 @@ Accessible via right click or the context menu keyboard shortcut.
  11. **Subscript** = Wrap selected text with subscript tags.
  12. **Superscript** = Wrap selected text with superscript tags.
  13. **Alternative spellings** = If you open the context menu while on a word underlined by the spell checker, you also get alternative spelling suggestions.
- 14. **Add to dictionary** = Last option adds the word to the custom user's spelling dictionary.
+ 14. **Add to dictionary** = Last option adds the word to the custom user’s spelling dictionary.
 
 ## Matchboard (and Matchbar)
 
@@ -455,7 +455,7 @@ This is the context menu you get when right-clicking inside a glossary tab. It a
 
 Note: Some of the MT-related preferences can be set in Preferences > MT services.
 
- - **Translate** = Machine translate the entire segment or source text selection. This can also be done via the link button "Translate selected segment" and, although this time for all MT engines, not just one, via the Machine Translation button in the Quick Search bar and in Edit > Find at cursor > MT services (as well as the associated shortcut).
+ - **Translate** = Machine translate the entire segment or source text selection. This can also be done via the link button “Translate selected segment” and, although this time for all MT engines, not just one, via the Machine Translation button in the Quick Search bar and in Edit > Find at cursor > MT services (as well as the associated shortcut).
  - **Stop automatic MT service** = Stops the automatic querying of the specific MT service. MT queries can still be launched manually/individually. You can do that to stop MT for confidential documents or according to an NDA agreement. See also [Translating Confidential Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000163344-translating-confidential-documents).
  - **Team auto-assembling with machine translation** = CafeTran lets you adjust MT results with its own Auto-assembling function, replacing terms and fragments with the ones that you prefer, that is, found in your translation memories and glossaries. This options helps you toggle the feature. See also [Auto-assembling with Machine Translation](https://cafetran.freshdesk.com/support/solutions/articles/6000160533-auto-assembling-with-machine-translation).
  - **Automatic transfer to target segments** = Automatically transfer the MT result when you visit an empty target segment.
@@ -486,11 +486,11 @@ If you right-click within the ProZ.com tab, you can access its context menu opti
 - **Target language specified** = Limit the queries to the target language set for the current project.
 - **KudoZ** = Enable the search within [KudoZ questions](https://www.proz.com/kudoz/), the translation term help network.
 - **KudoZ open glossary** = Enable search within the [KudoZ open glossary](https://www.proz.com/glossary-translations/), a browsable archive of KudoZ terms.
-- **Personal glossaries** = Enable search within ProZ users' [public personal glossaries](https://www.proz.com/personal-glossaries/all).
+- **Personal glossaries** = Enable search within ProZ users’ [public personal glossaries](https://www.proz.com/personal-glossaries/all).
 - **Glosspost** = Enable search within [Glosspost](https://www.proz.com/glosspost), a searchable database of glossary URLs.
 - **Glossary-building KudoZ** = Enable search within [GBK](https://www.proz.com/?sp=kog_glossary), a glossary of terms posted for translation selectively by Glossary-building ProZ staff and members.
 - **Wikiwords** = Enable search within [Wikiwords](https://www.wikiwords.org/), a collaborative project to create a dictionary of all terms in all languages.
-- **Match exact fragments automatically** = By default, CafeTran can display KudoZ terminology and other ProZ.com resources after you select a source term in the current segment and click the Resources button in the Search bar. If you wish the program to submit the whole segment for terms scanning, just right-click the ProZ.com tabbed pane and select "Match exact fragments automatically" option. Then you should see all the found terms both in the ProZ.com pane and the Matchboard to transfer them fast to the current target segment. They are also put into the auto-completion list while typing in the source segment editor. See also [Automatic Search of ProZ.com Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000175423-automatic-search-of-proz-com-resources).
+- **Match exact fragments automatically** = By default, CafeTran can display KudoZ terminology and other ProZ.com resources after you select a source term in the current segment and click the Resources button in the Search bar. If you wish the program to submit the whole segment for terms scanning, just right-click the ProZ.com tabbed pane and select “Match exact fragments automatically” option. Then you should see all the found terms both in the ProZ.com pane and the Matchboard to transfer them fast to the current target segment. They are also put into the auto-completion list while typing in the source segment editor. See also [Automatic Search of ProZ.com Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000175423-automatic-search-of-proz-com-resources).
 - **Match entire phrase** = Only return results for exact matches (either entire phrase or entire selected source text).
 - **KudoZ questions preferences** = Opens the KudoZ questions preferences dialog, allowing you to define additional options.
 - **Show ProZ.com user** = Displays the ProZ-com user informations (which is the default tab view).
@@ -599,7 +599,7 @@ The options found here are also applied to the Quick search bar.
  - **Match case** = Checkbox. Search results will need to match case.
  - **Preserve case with replacement** = Checkbox. The case will be preserved when replacing text.
  - **Extract reg. expected results** = Checkbox. Extract regular expression results lists the matches caught during the regular expression search.
- - **Segment numbers** = Checkbox. If this is checked, you can go to a specific segment in your document by typing its nember in the Quick search box or by clicking Find in the Find and replace window. If you select a range of numbers (e.g. 1-100), you filter the specified segment numbers. This allows you to run other search/replace operations on the selected segments, or other actions, such as changing their status through the Task menu.
+ - **Segment numbers** = Checkbox. If this is checked, you can go to a specific segment in your document by typing its nember in the Quick search box or by clicking Find in the Find and replace window. If you select a range of numbers (e.g. 1–100), you filter the specified segment numbers. This allows you to run other search/replace operations on the selected segments, or other actions, such as changing their status through the Task menu.
  - **Multiple filter** = Checkbox. Allows you to keep the filtered results, in one resource type and query another resource type (by selecting it via the corresponding radio button on the right side panel).
  - **Search operators (| +)** = Radio button. Checked by default. You can use + (AND) and | (OR) logical operators in your searches.
  - **Regular expression** = Interpret search input as a regular expression.
@@ -608,7 +608,7 @@ The options found here are also applied to the Quick search bar.
 Related links:
 [Search and Replace](https://cafetran.freshdesk.com/support/solutions/articles/6000110206-search-and-replace), [Searching](https://cafetran.freshdesk.com/support/solutions/folders/6000232747), [Filter on a Searched Word](https://cafetran.freshdesk.com/support/solutions/articles/6000115941-filter-on-a-searched-word).
 
-# Menu items
+# 2. Menu items
 
 ## Project
 
@@ -739,7 +739,7 @@ This feature can also be used as an alternative to Project > Export as bilingual
 
 **Edit > Record/list selected words** = Toggle word recording. While recording, pressing F5 will save the selected word to a list for later reference. Pressing F5 with no selection will list the saved words.
 
-Note: Can used to record words that have to be checked with the client. After you click "Finish mouse selection recording", "Selected words" tab appears. Then choose Resources > Save resource to save the list of selected words to the text file.
+Note: Can used to record words that have to be checked with the client. After you click “Finish mouse selection recording”, “Selected words” tab appears. Then choose Resources > Save resource to save the list of selected words to the text file.
 
 **Edit > Edit source segments** = Toggle whether to allow editing source segments.
 
@@ -828,7 +828,7 @@ For more information on the Default scope, see the Quick search bar and the Adva
 
 **Edit > Target segment > Superscript** = Wrap selected text with superscript tags.
 
-**Edit > Target segment > Change case** = Cycles through multiple capitalization schemes for the target segment: “first upper-cased”, all lower-case, all upper-case.
+**Edit > Target segment > Change case** = Cycles through multiple capitalization schemes for the target segment: first upper-cased, all lower-case, all upper-case.
 
 Also through Change case icon in Source segment editors.
 
@@ -1052,7 +1052,7 @@ Many of the items found in this submenu are also available in the Tabbed panel c
 
 ### View > Toolbars submenu
 
-![View > Toolbars submenu](https://i.imgur.com/4RMoaG0.png)
+![View > Toolbars submenu](https://i.imgur.com/DraxoCX.png)
 
 **View > Toolbars > Reverse source segment toolbar** = Toggle whether the source segment toolbar is displayed on the top or bottom of the source segment editor.
 
@@ -1064,11 +1064,9 @@ Many of the items found in this submenu are also available in the Tabbed panel c
 
 **View > Toolbars > Hide help tips** = Hide the help tips. This also hides the workflow tips at the bottom of the Dashboard.
 
-
 ## Action
 
 ![Action menu](https://i.imgur.com/sQ4dp6I.png)
-
 
 **Action > Add segment to memory and go to next segment** = Add your translation of this segment to your translation memories, and move on to the next segment in the source document.
 
@@ -1110,7 +1108,7 @@ Operations related to segment tags.
 
 **Action > Tags > Mouse tag placement auto-deactivation** = Turn off mouse tag placement for the current segment once all tags have been placed.
 
-**Action > Tags > List tags** = Display a pop-up list of all tags in the source segment. Click a tag in the list or type a tag number followed by the Esc key to transfer the tag.
+**Action > Tags > List tags** = Display a pop-up list of all tags in the source segment. Click a tag in the list or type a tag number followed by the Esc key to transfer the tag. Note: List tags also enables you to see the exact type of a tag. See the tool tip over each tag in the list.
 
 **Action > Tags > Transfer current tag** = Transfer the current tag in the list of tags from the source segment to the target segment.
 
@@ -1193,7 +1191,7 @@ Define which segments will be skipped while traversing through the segment pairs
 
 ## Filter
 
-![Filter menu](https://i.imgur.com/dqMcakJ.png)
+![Filter menu](https://i.imgur.com/PRIUZ5E.png)
 
 **Filter > Segments filter** = Toggle the usage of the segments filter, which enables displaying only the segment pairs matching the criteria below. Can also be done via the dedicated shortcut and the FIlter icon in the Segments grid.
 
@@ -1220,6 +1218,8 @@ Define which segments will be skipped while traversing through the segment pairs
 **Filter > Segments with letters** = Include segments that contain letters.
 
 **Filter > Segments with no letters** = Include segments that do not contain letters.
+
+**Filter > Segments with numbers** = Include segments that contain numbers.
 
 **Filter > Bookmarked segments** = Include segments which have been bookmarked.
 
@@ -1258,21 +1258,21 @@ Define which segments will be skipped while traversing through the segment pairs
 
 ![Filter > Matches submenu](https://i.imgur.com/f9p4Luj.png)
 
-**Filter > Exact and context matches** = Include segments which have exact or context matches.
+**Filter > Matches > Exact and context matches** = Include segments which have exact or context matches.
 
-**Filter > Context matches (101%, 102%)** = Include segments with at least a 101% context match (either the preceding or succeeding segment is an exact match).
+**Filter > Matches > Context matches (101%, 102%)** = Include segments with at least a 101% context match (either the preceding or succeeding segment is an exact match).
 
-**Filter > Context matches (102%**) = Include segments with a 102% context match (both the preceding and succeeding segments are exact matches).
+**Filter > Matches > Context matches (102%**) = Include segments with a 102% context match (both the preceding and succeeding segments are exact matches).
 
-**Filter > No exact and context matches** = Include segments which have neither exact nor context matches.
+**Filter > Matches > No exact and context matches** = Include segments which have neither exact nor context matches.
 
-**Filter > No context matches (101%, 102%)** = Include segments without a 101% or 102% context match (neither the preceding nor succeeding segment is an exact match).
+**Filter > Matches > No context matches (101%, 102%)** = Include segments without a 101% or 102% context match (neither the preceding nor succeeding segment is an exact match).
 
-**Filter > No context matches (102%)** = Include segments without a 102% context match (one of the preceding and succeeding segments is not an exact match).
+**Filter > Matches > No context matches (102%)** = Include segments without a 102% context match (one of the preceding and succeeding segments is not an exact match).
 
 ## QA
 
-![QA menu](https://i.imgur.com/ja9FKZc.png)
+![QA menu](https://i.imgur.com/k6uEyfB.png)
 
 CafeTran offers a rich QA feature that allows you to check your translation to catch and correct various types of mistakes. Results are conveniently filtered, categorized and highlighted. Some QA-related settings are found in the Preferences > QA tab.
 
@@ -1319,9 +1319,11 @@ Related links:
 
 **QA > Double words check** = Check for target segments that have double words, e.g. “had had”.
 
-**QA > Length difference check** = Check for the maximum difference in length between source and target segments. This check can be configured in Preferences > QA.
+**QA > Length difference check (%)** = Check for the maximum percentage difference in length between source and target segments. This check can be configured in Preferences > QA.
 
-**QA > Maximum segment lenght check** = Check for the maximum number of characters in the target segments. This check can be configured in Preferences > QA.
+**QA > Length difference check (chars)** = Check for the maximum characters difference in length between source and target segments. This check can be configured in Preferences > QA.
+
+**QA > Maximum segment length check** = Check for the maximum number of characters in the target segments. This check can be configured in Preferences > QA.
 
 **QA > Check all** = Run all available QA checks. Opens the QA Check all window, which allows you to select which QA steps to run in one operation (see below).
 
@@ -1345,17 +1347,19 @@ Word lists are text files containing a word per-line. These options allow search
 
 ### QA > Consistency checks submenu
 
+![QA > Consistency checks submenu](https://i.imgur.com/l90IJpi.png)
+
 <!--- TODO Check which options ask to select the TMs and add this information --->
 
 These QA items allow you to conduct various consistency checks.
 
-**QA > Translation consistency check** = Check for segment pairs that have the same source segment, but have a differing target segment translations.
+**QA > Consistency checks > Translation consistency check** = Check for segment pairs that have the same source segment, but have a differing target segment translations.
 
-**QA > Fragments consistency check (Memory)** = Check for segment pairs that do not have terms consistent with entries in your translation memories.
+**QA > Consistency checks > Fragments consistency check (Memory)** = Check for segment pairs that do not have terms consistent with entries in your translation memories.
 
-**QA > Terms consistency check (Glossary)** = Check for segment pairs that do not have terms consistent with entries in your glossaries.
+**QA > Consistency checks > Terms consistency check (Glossary)** = Check for segment pairs that do not have terms consistent with entries in your glossaries.
 
-**QA > Translation conformity check** = Check for segment pairs that do not have translations consistent with entries in your translation memories. You will be asked to
+**QA > Consistency checks > Translation conformity check** = Check for segment pairs that do not have translations consistent with entries in your translation memories. You will be asked to
 
 ### QA > Check all window
 
@@ -1363,7 +1367,7 @@ These QA items allow you to conduct various consistency checks.
 
 The QA check all window allows you to select which QA steps to run in one operation. Results are conveniently filtered, categorized and highlighted.
 
-It can be run via QA > Check all or through the "Perform QA before exporting" dialog button when pressing the Export or Finalize buttons.
+It can be run via QA > Check all or through the “Perform QA before exporting” dialog button when pressing the Export or Finalize buttons.
 
 ## Task
 
@@ -1383,11 +1387,11 @@ It can be run via QA > Check all or through the "Perform QA before exporting" di
 
 **Task > Remove target segments** = Remove the contents of all target segments. This cannot be undone!
 
-Note: The "Remove target segments" feature is designed to work with CafeTran project files. It may or may not work for unknown xliff files created in other translation tools.
+Note: The “Remove target segments” feature is designed to work with CafeTran project files. It may or may not work for unknown xliff files created in other translation tools.
 
 **Task > Remove target segments the same as source** = Remove the contents of all target segments that are exact matches of their corresponding source segments. This cannot be undone!
 
-Note: The "Remove target segments" feature is designed to work with CafeTran project files. It may or may not work for unknown xliff files created in other translation tools.
+Note: The “Remove target segments” feature is designed to work with CafeTran project files. It may or may not work for unknown xliff files created in other translation tools.
 
 **Task > Remove notes** = Remove all notes and comments from the project. This cannot be undone!
 
@@ -1399,7 +1403,7 @@ Note: The "Remove target segments" feature is designed to work with CafeTran pro
 
 **Task > Set checked status for target segments** = Set “Checked” segment status for all segments. This status can also be applied to filtered segments only.
 
-**Task > Set approved (translated) status for target segments** = Set "Translated" segment status for all segments. This status can also be applied to filtered segments only.
+**Task > Set approved (translated) status for target segments** = Set “Translated” segment status for all segments. This status can also be applied to filtered segments only.
 
 **Task > Lock segments** = Lock segments in the project or set view context (e.g. set by a filter). Lock segments are excluded from any editing actions or other processing.
 
@@ -1413,19 +1417,19 @@ Note: The "Remove target segments" feature is designed to work with CafeTran pro
 
 ![Task > Frequent words submenu](https://i.imgur.com/05cp38p.png)
 
-This feature allows you to perform a statistical analysis based on word frequency. Additionally to the Task > Frequent words submenu options explained below, a right click inside the Frequent words tab brings a pop-up menu setting the minimal and maximal fragment length (see Task > Frequent words context menu below). Frequent words feature is activated automatically at the start of the project when "Extract frequent words from current segment" option is on.
+This feature allows you to perform a statistical analysis based on word frequency. Additionally to the Task > Frequent words submenu options explained below, a right click inside the Frequent words tab brings a pop-up menu setting the minimal and maximal fragment length (see Task > Frequent words context menu below). Frequent words feature is activated automatically at the start of the project when “Extract frequent words from current segment” option is on.
 
-**Task > Frequent words sorted by frequency** = Calculate the most frequent words in the source document, according to below criteria, and display results in a new tab, sorted by frequency. This may take a while.
+**Task > Frequent words > Frequent words sorted by frequency** = Calculate the most frequent words in the source document, according to below criteria, and display results in a new tab, sorted by frequency. This may take a while.
 
-**Task > Frequent words sorted by length** = Calculate the most frequent words in the source document, according to below criteria, and display results in a new tab, sorted by word length. This may take a while.
+**Task > Frequent words > Frequent words sorted by length** = Calculate the most frequent words in the source document, according to below criteria, and display results in a new tab, sorted by word length. This may take a while.
 
-**Task > Frequent words sorted alphabetically** = Calculate the most frequent words in the source document, according to below criteria, and display results in a new tab, sorted alphabetically. This may take a while.
+**Task > Frequent words > Frequent words sorted alphabetically** = Calculate the most frequent words in the source document, according to below criteria, and display results in a new tab, sorted alphabetically. This may take a while.
 
-**Task > Extract frequent words from current segment** = Toggle frequent word display for only the currently-selected segment (all segment pairs are still searched).
+**Task > Frequent words > Extract frequent words from current segment** = Toggle frequent word display for only the currently-selected segment (all segment pairs are still searched).
 
-**Task > Show only unkown frequent words** = Ignore words that are present in any active translation memory or glossary.
+**Task > Frequent words > Show only unkown frequent words** = Ignore words that are present in any active translation memory or glossary.
 
-**Task > Add frequent words to glossary** = Toggle adding frequent words to glossaries instead of translation memories.
+**Task > Frequent words > Add frequent words to glossary** = Toggle adding frequent words to glossaries instead of translation memories.
 
 Related links:
 [Extract Frequent Words from the Current Segment](https://cafetran.freshdesk.com/support/solutions/articles/6000113301-extract-frequent-words-from-the-current-segment), [Extract Frequent Words from the Project](https://cafetran.freshdesk.com/support/solutions/articles/6000113306-extract-frequent-words-from-the-project).
@@ -1448,23 +1452,23 @@ You can access the following Frequent words options by right clicking inside the
 
  Here you can run various maintenance tasks on the selected TMX memory.
 
-**Task > Remove duplicate TMX units** = Remove duplicate translation units from the TMX memory.
+**Task > TMX memory > Remove duplicate TMX units** = Remove duplicate translation units from the TMX memory.
 
-**Task > Remove TMX units with duplicate source segments** = Remove translation units with duplicate source segments from the TMX memory.
+**Task > TMX memory > Remove TMX units with duplicate source segments** = Remove translation units with duplicate source segments from the TMX memory.
 
-**Task > Remove TMX units with source=target** = Remove translation units with source segments the same as target segments from the TMX memory.
+**Task > TMX memory > Remove TMX units with source=target** = Remove translation units with source segments the same as target segments from the TMX memory.
 
-**Task > Remove TMX units with no letters** = Remove the translation units which do not contain any letters from the TMX memory.
+**Task > TMX memory > Remove TMX units with no letters** = Remove the translation units which do not contain any letters from the TMX memory.
 
-**Task > Remove filtered TMX units** = Remove the translation units which have been filtered from the TMX memory.
+**Task > TMX memory > Remove filtered TMX units** = Remove the translation units which have been filtered from the TMX memory.
 
-**Task > Replace TMX internal tags with space** = Replace internal tags in the TMX translation units with spaces.
+**Task > TMX memory > Replace TMX internal tags with space** = Replace internal tags in the TMX translation units with spaces.
 
-**Task > Split TMX units** = Split the translation units in the TMX memory at the defined position in the source and target segment.
+**Task > TMX memory > Split TMX units** = Split the translation units in the TMX memory at the defined position in the source and target segment.
 
-**Task > Set property for TMX units** = Set a specified property for translation units in the TMX memory.
+**Task > TMX memory > Set property for TMX units** = Set a specified property for translation units in the TMX memory.
 
-**Task > Remove property from TMX units** = Remove a specified property from translation units in the TMX memory.
+**Task > TMX memory > Remove property from TMX units** = Remove a specified property from translation units in the TMX memory.
 
 ## Resources
 
@@ -1506,7 +1510,7 @@ Note: If you have trouble using the internal PDF viewer, you should try using an
 
 **Resources > Add image** = Add a new resource such as a website or an image.
 
-**Resources > Add web resource** = Opens a window to add a new resource such as a website or an image. See "Web resources suggestions" in the section below.
+**Resources > Add web resource** = Opens a window to add a new resource such as a website or an image. See “Web resources suggestions” in the section below.
 
 **Resources > Import web resource info** = Import web resource settings shared by another CafeTran user (.res files).
 
@@ -1521,8 +1525,8 @@ Note: If you have trouble using the internal PDF viewer, you should try using an
 This is the window that allows you to add or edit a web resource information. If you add a new resource, it will ask you where you want to save the .res configuration file.
 
  - **Internet address:** If you enter a URL in this field, this will be opened at the web resource opening. Can serve to conduct searches FROM WITHIN the web resource interface itself (In that case, to prevent the selected text from being copied to the target segment editor, press the Ctrl or Cmd key on your keyboard]. If you intend to set Address start and end fields, you can leave it empty, although the two approaches can be combined.
- - **Address start:** If you want to query a web resource via CafeTran's interface (for example, via the Resources search in the Quick search bar or its shortcut, as well as the Default scope keyboard shortcut, if Default scope is set to Resources in the Search window [Ctrl/Cmd+F]), you will need to enter the part of the resource's URL that precedes the search KEYWORD(S). This depends on each specific web resource. Example: For Wordreference from English to French term searches, you need add: [http://www.wordreference.com/enfr/](http://www.wordreference.com/enfr/). A simple way of finding out is to launch a query in a browser for the resource you want to use and study the URL of the result. The part before the word(s) you searched will be used here. See Suggestions below for more ideas on how to find out what you need to add here for a given web resource.
- - **Address end:** Here you need to add the part of the resource's URL that follows the search KEYWORD(s). This depends on each specific web resource. Often, you don't need to add anything.
+ - **Address start:** If you want to query a web resource via CafeTran’s interface (for example, via the Resources search in the Quick search bar or its shortcut, as well as the Default scope keyboard shortcut, if Default scope is set to Resources in the Search window [Ctrl/Cmd+F]), you will need to enter the part of the resource’s URL that precedes the search KEYWORD(S). This depends on each specific web resource. Example: For Wordreference from English to French term searches, you need add: [http://www.wordreference.com/enfr/](http://www.wordreference.com/enfr/). A simple way of finding out is to launch a query in a browser for the resource you want to use and study the URL of the result. The part before the word(s) you searched will be used here. See Suggestions below for more ideas on how to find out what you need to add here for a given web resource.
+ - **Address end:** Here you need to add the part of the resource’s URL that follows the search KEYWORD(s). This depends on each specific web resource. Often, you don’t need to add anything.
  - **Page start:** Page start and end fields are entirely optional. When you load a web page from the Internet, it may contain a lot of unnecessary information. You can filter the page and get only what you really need. In the start field you enter the text from which the page starts offering relevant information. CafeTran will start displaying the page from that text.
  - **Page end:** In the end field, you can set the last text that CafeTran will display.
  - **Encoding:** Set the page encoding. Default: UTF-8.
@@ -1532,15 +1536,15 @@ This is the window that allows you to add or edit a web resource information. If
 
 **Web resources suggestions**
 
-To quickly access a list of bilingual and monolingual web resources to add in CafeTran, you can use the [IntelliWebSearch Search Database](http://www.intelliwebsearch.com/findsearch.asp). Add the "Start" and "Finish" strings to the "Address start" and "Address end" fields when creating a new resource.
+To quickly access a list of bilingual and monolingual web resources to add in CafeTran, you can use the [IntelliWebSearch Search Database](http://www.intelliwebsearch.com/findsearch.asp). Add the “Start” and “Finish” strings to the “Address start” and “Address end” fields when creating a new resource.
 
 You can also use the free browser [SlimBrowser](https://www.slimbrowser.net/) (Windows) or [Slimboat](https://www.slimjet.com/slimboat/) (Windows, Mac, GNU/Linux) to determine the start and end fields of a web resource you wish to add. To do so:
 1. Open the Internet resource in the browser.
 2. Point the mouse at the form search field.
 3. Select the Search engines drop-down box (at the right-hand side)
-4. Choose "Create your own search engine" command and take note of the start and end fields.
+4. Choose “Create your own search engine” command and take note of the start and end fields.
 
-Choosing short names when saving the web resources will help keep each tab's length to a minimum (example: "GWS" for Google web search), thus allowing to fit more resources in one line of the tabbed pane.
+Choosing short names when saving the web resources will help keep each tab’s length to a minimum (example: “GWS” for Google web search), thus allowing to fit more resources in one line of the tabbed pane.
 
 Related links:
 [Adding a Web Resource - Based on Examples](https://cafetran.freshdesk.com/support/solutions/articles/6000110248-adding-a-web-resource-based-on-examples),
@@ -1628,9 +1632,9 @@ See Segmentation options in “CafeTran Preferences > General”.
 
 **Memory > New memory** = Open the “New memory” dialog.
 
-**Memory > Open memory** = Browse for an existing translation memory file.
+**Memory > Open memory** = Browse for an existing translation memory file to open.
 
-**Memory > Open memories folder** = Merge all translation memory files in a folder into one translation memory.
+**Memory > Open memories folder** = Merge all translation memory files in a folder into one translation memory and open it in CafeTran. See also [Joining Translation Memories](https://cafetran.freshdesk.com/support/solutions/articles/6000176661-joining-translation-memories).
 
 **Memory > Join memory** = Choose and join another translation memory to the currently-selected translation memory. The two memories will be merged into one translation memory.
 
@@ -1656,7 +1660,7 @@ See also “CafeTran Preferences > Memory server”.
 
 **Memory > Save memory as** = Save the currently-selected translation memory in the tabbed pane to disk, with the filename specified.
 
-**Memory > Recall memory** = Save the currently-selected translation memory in a Total Recall database table.
+**Memory > Recall memory** = Recall the contents of the selected database table to this translation memory in the lexical context of the current project.
 
 **Memory > Store memory in Total Recall** = Save the currently-selected translation memory in a Total Recall database table.
 
@@ -1664,37 +1668,39 @@ See also “CafeTran Preferences > Memory server”.
 
 ### Memory > Import submenu
 
-![Memory > Import submenu](https://i.imgur.com/UfLHUxm.png)
+![Memory > Import submenu](https://i.imgur.com/Oiise3B.png)
 
 Import various file formats as a usable translation memory.
 
-**Memory > Import preliminary matching memory** = Import a preliminary matching memory file created with the Memory-> Export-> Export preliminary matching memory… menu option.
+**Memory > Import > Import preliminary matching memory** = Import a preliminary matching memory file created with the Memory-> Export-> Export preliminary matching memory… menu option.
 
-**Memory > Import segments from project** = Import segments from the project to the selected translation memory. This opens a dialog allowing you to choose which memory to use.
+**Memory > Import > Import segments from project** = Import segments from the project to the selected translation memory. This opens a dialog allowing you to choose which memory to use.
 
 Suggestion: This stands as an excellent maintenance step to perform at the end of a project. It ensures the project memory is completely up-to-date.
 
-**Memory > Import glossary** = Import entries from the selected glossary to the translation memory.
+**Memory > Import > Import glossary** = Import entries from the selected glossary to the translation memory.
 
 Suggestion:
 The entries are added to the imported to the last added TM. This feature will be improved in the future. For now, use Memory > Import tab delimited memory instead.
 Reference: [https://cafetran.freshdesk.com/support/discussions/topics/6000050974](https://cafetran.freshdesk.com/support/discussions/topics/6000050974)
 
-**Memory > Import MS Excel memory** = Import entries from the MS Excel file to the translation memory.
+**Memory > Import > Import MS Excel memory** = Import entries from the MS Excel file to the translation memory.
 
-**Memory > Import TBX terminology** = Import entries from the TBX terminology file to the translation memory.
+**Memory > Import > Import TBX terminology** = Import entries from the TBX terminology file to the translation memory.
 
-**Memory > Import tab delimited memory** = Import segments from the tab-delimited memory file to the selected translation memory.
+**Memory > Import > Import tab delimited memory** = Import segments from the tab-delimited memory file to the selected translation memory.
 
 This allows you to import Wordfast TMs, but can also serve to import CafeTran Glossary entries to the selected TM.
 
-**Memory > Import SDLTM memory** = Import segments from the SDLTM memory file to the selected translation memory (in TMX format).
+**Memory > Import > Import SDLTM memory** = Import segments from the SDLTM memory file to the selected translation memory (in TMX format).
 
-**Memory > Import Multiterm XML glossary** = Import converted SDL Multiterm XML glossaries to the selected translation memory.
+**Memory > Import > Import SDLTB termbase** = Import converted SDLTB termbase to the selected translation memory (in TMX format).
 
-**Memory > Import MAC OS X glossaries** = Import entries from the Mac OS X glossary file to the selected translation memory.
+**Memory > Import > Import Multiterm XML termbase** = Import converted SDL Multiterm XML termbase to the selected translation memory.
 
-**Memory > Import bitext memory** = Import segments from the Bitext file to the selected translation memory.
+**Memory > Import > Import MAC OS X glossaries** = Import entries from the Mac OS X glossary file to the selected translation memory.
+
+**Memory > Import > Import bitext memory** = Import segments from the Bitext file to the selected translation memory.
 
 ### Memory > Export submenu
 
@@ -1702,9 +1708,11 @@ This allows you to import Wordfast TMs, but can also serve to import CafeTran Gl
 
 Various translation memory export functions.
 
-**Memory > Export preliminary matching memory** = Export preliminary memory matching results to the TMX translation memory file.
+**Memory > Export > Export preliminary matching memory** = Export preliminary memory matching results to the TMX translation memory file.
 
-**Memory > Export segments to glossary** = Export entries from the translation memory to the selected glossary.
+**Memory > Export > Export segments to glossary** = Export entries from the translation memory to the selected glossary.
+
+Note: This allows you, for example, to export the converted SDLTB termbase to the glossary format.
 
 ### New fragment window
 
@@ -1712,7 +1720,7 @@ Various translation memory export functions.
 
 This is the window that opens when you use the Add fragment to memory button or shortcut. In Preferences > Glossary, you can choose to Skip new term window (shortcut) or Skip new term window (button), which also applies to fragments.
 
-- **Local memories** section lists all the open and fragment-enabled (not read-only) memories available. You can uncheck the memories you don't wish to use for this fragment. The button ads the term only to that memory and closes the window.
+- **Local memories** section lists all the open and fragment-enabled (not read-only) memories available. You can uncheck the memories you don’t wish to use for this fragment. The button ads the term only to that memory and closes the window.
 - Working **source and target language fields** allow you to enter the source term or fragment and its translation. If you select source and target text before opening this window, the fields are pre-populated, but can be further edited here.
 - **Context, Subject, Client, Notes and Reference** fields and field names can be set in Preferences (Options) > Definitions. The Reference field also features a button to attach a file location to serve as reference. If List of Subjects and List of Clients has been set in Preferences (Options) > Definitions, the Subject and Client fields have an editable drop-down menu populated with the list contents.
 - **New fragment** = Button. Resets the fields, allowing you to create a new entry, if you were editing an existing one or want to start over.
@@ -1783,7 +1791,7 @@ This is the window that opens when you add a new glossary (Glossary > New glossa
 
 This is the window that opens when you use the Add term to glossary button or shortcut. In Preferences > Glossary, you can choose to Skip new term window (shortcut) or Skip new term window (button).
 
-- **Glossaries** section lists all the open and enabled (not read-only) glossaries available. You can uncheck the glossaries you don't wish to use for this term. The button ads the term only to that glossary and closes the window.
+- **Glossaries** section lists all the open and enabled (not read-only) glossaries available. You can uncheck the glossaries you don’t wish to use for this term. The button ads the term only to that glossary and closes the window.
 - Working **source and target language fields** allow you to enter the source term and its translation. If you select source and target text before opening this window, the fields are pre-populated, but can be further edited here.
 - **Additional languages/language variants** fields will be displayed below if you are working on a multilingual glossary.
 - **Context, Subject, Client, Notes and Reference** fields and field names can be set in Preferences (Options > Definitions. The Reference field also features a button to attach a file location to serve as reference. If List of Subjects and List of Clients has been set in Preferences (Options) > Definitions, the Subject and Client fields have an editable drop-down menu populated with the list contents.
@@ -1877,6 +1885,7 @@ Buttons:
 - 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
 - 20180315 Updated
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
+- 20180830 Updated for CafeTran Espresso 2018 - Akua Update 11
 
 ## Feedback
 

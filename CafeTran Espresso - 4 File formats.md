@@ -1,7 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CAFETRAN ESPRESSO - FILE FORMATS](#cafetran-espresso-file-formats)
-	- [SUPPORTED FILE FORMATS AND WORKFLOWS](#supported-file-formats-and-workflows)
+	- [1. SUPPORTED FILE FORMATS AND WORKFLOWS](#1-supported-file-formats-and-workflows)
 	- [File formats overview](#file-formats-overview)
 	- [CafeTran’s own file formats](#cafetrans-own-file-formats)
 	- [CafeTran’s File type filters](#cafetrans-file-type-filters)
@@ -45,13 +45,13 @@
 			- [String resource header (.loc)](#string-resource-header-loc)
 		- [Paper document workflow](#paper-document-workflow)
 			- [Image (.jpg/gif/bmp/png)](#image-jpggifbmppng)
-	- [EXTERNAL PROJECTS](#external-projects)
+	- [2. EXTERNAL PROJECTS](#2-external-projects)
 		- [GENERAL NOTES ON BILINGUAL XLIFF FILES](#general-notes-on-bilingual-xliff-files)
 		- [SDL Trados Studio](#sdl-trados-studio)
 			- [SDLXLIFF](#sdlxliff)
 			- [SDLPPX](#sdlppx)
-			- [SDLTM](#sdltm)
-			- [SDLTB](#sdltb)
+			- [SDLTM translation memories](#sdltm-translation-memories)
+			- [SDLTB termbases](#sdltb-termbases)
 			- [TRADOS UNCLEAN RTF/DOC](#trados-unclean-rtfdoc)
 			- [TRADOS WORKBENCH - TTX](#trados-workbench-ttx)
 			- [TRADOS WORKBENCH - RTF](#trados-workbench-rtf)
@@ -90,7 +90,7 @@
 		- [XTM Cloud](#xtm-cloud)
 		- [XLIFF 2.0](#xliff-20)
 		- [Interoperability Now! TIPP and XLIFF:DOC](#interoperability-now-tipp-and-xliffdoc)
-	- [UNSUPPORTED FORMATS](#unsupported-formats)
+	- [3. UNSUPPORTED FORMATS](#3-unsupported-formats)
 		- [PDF](#pdf)
 		- [DOC / XLS / PPT](#doc-xls-ppt)
 		- [RTF](#rtf)
@@ -108,13 +108,14 @@
 			- [MOBI / AZW / AZW3](#mobi-azw-azw3)
 			- [IBOOKS](#ibooks)
 		- [TIPP (Packages)](#tipp-packages)
-	- [SOLUTIONS](#solutions)
+	- [4. SOLUTIONS](#4-solutions)
 		- [MateCat (Recommended)](#matecat-recommended)
 			- [MateCat file formats](#matecat-file-formats)
 		- [MateCat filters](#matecat-filters)
 			- [Online](#online)
 			- [Offline](#offline)
 		- [Wordfast Pro 3](#wordfast-pro-3)
+		- [Wordfast Pro 5](#wordfast-pro-5)
 		- [Swordfish](#swordfish)
 		- [Heartsome](#heartsome)
 		- [Memsource](#memsource)
@@ -123,7 +124,6 @@
 		- [SDL Trados Studio](#sdl-trados-studio)
 		- [memoQ](#memoq)
 		- [Déjà Vu](#dj-vu)
-		- [Wordfast Pro 5](#wordfast-pro-5)
 	- [LIST OF CHANGES](#list-of-changes)
 	- [Feedback](#feedback)
 
@@ -131,7 +131,7 @@
 
 # CAFETRAN ESPRESSO - FILE FORMATS
 
-*Updated for CafeTran Espresso 2018 - Akua Update 10 (build 2018062001)*
+*Updated for CafeTran Espresso 2018 - Akua Update 11 (build 2018082501)*
 
 *This file receives regular updates every two-three months*
 
@@ -143,7 +143,7 @@ This document aims to cover natively supported file formats in CafeTran, provide
 
 <!--- *Shortened link to this document:* --->
 
-## SUPPORTED FILE FORMATS AND WORKFLOWS
+## 1. SUPPORTED FILE FORMATS AND WORKFLOWS
 
 Be it office suite documents, web, DTP, AutoCAD or localization file types, CafeTran supports natively a variety of different file formats with its default “**Translate document**” workflow.
 
@@ -220,11 +220,17 @@ Only files from MS Office 2003 and later (.docx, .xlsx, .pptx) are natively supp
 
 For .doc, .xls and .ppt formats, check the Unsupported formats section below.
 
+Password-protected files are not imported. You need to remove the protection before importing them into CafeTran.
+
 #### MS Word (.docx)
 
-Note: MS Word files containing macros **.docm** are also handled via this filter (although the file type might need to be selected manually).
+Notes:
 
-Hidden content is not imported into CafeTran, which can be an effective solution for filtering out content that you don't wish to translate. Just remember to unmask hidden content when done.
+- MS Word files containing macros **.docm** are also handled via this filter (although the file type might need to be selected manually).
+
+- Hidden content is not imported into CafeTran, which can be an effective solution for filtering out content that you don't wish to translate. Just remember to unmask hidden content when done.
+
+- Password-protected Word files are not imported. You need to remove the protection before importing them into CafeTran.
 
 #### MS Word OCR (.docx/xml)
 
@@ -246,17 +252,21 @@ Use this filter for Trados RTF/DOC Uncleaned documents (converted to DOCX). Uncl
 
 #### MS Excel (.xlsx)
 
-Note: MS Excel files containing macros **.xlsm** are also handled via this filter (although the file type might need to be selected manually).
+Notes:
+
+- MS Excel files containing macros **.xlsm** are also handled via this filter (although the file type might need to be selected manually).
 
 ![Excel file filter options](https://i.imgur.com/ePfZ2mA.png)
 
-When you choose the **Excel filter**, you have access to the following Filter options:
+- When you choose the **Excel filter**, you have access to the following Filter options:
 
- - **Import source column**: allows you to specify from which column(s) to import source text
- - **Import target column**: allows you to specify from which column(s) you wish to import content in the translated segments. Note: If you define two Excel columns for import separately (in two Import fields of the filter), the second column is to be imported for the review of the existing translation. Only existing rows (not empty cells) will be imported if you define an Import target column. If you specify two import columns separately, leave the export column empty.
- - **Export column**: allows you to specify to which column(s) you want to export your translation
+	 - **Import source column**: allows you to specify from which column(s) to import source text
+	 - **Import target column**: allows you to specify from which column(s) you wish to import content in the translated segments. Note: If you define two Excel columns for import separately (in two Import fields of the filter), the second column is to be imported for the review of the existing translation. Only existing rows (not empty cells) will be imported if you define an Import target column. If you specify two import columns separately, leave the export column empty.
+	 - **Export column**: allows you to specify to which column(s) you want to export your translation
 
-Note: CafeTran imports only visible (not hidden) columns, rows or sheets. Hiding these in Excel before starting a project allows you to filter out content that you don't wish to translate.
+- CafeTran imports only visible (not hidden) columns, rows or sheets. Hiding these in Excel before starting a project allows you to filter out content that you don't wish to translate.
+
+- [Custom target segment text formatting](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#edit--target-segment-submenu) is not supported.
 
 #### Tagged MS Excel (.xlsx)
 
@@ -426,7 +436,7 @@ Related links:
 [Translation of Scanned Images](https://cafetran.freshdesk.com/support/solutions/articles/6000111566-translation-of-scanned-images)
 [Translation of Paper Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000111789-translation-of-paper-documents)
 
-## EXTERNAL PROJECTS
+## 2. EXTERNAL PROJECTS
 
 Intercompatibility (both in and out) is an important CafeTran Espresso feature. “Translate external project” workflow lets you handle a host of bilingual files and packages that originate from other CAT tools, all without leaving your favorite program. This section offers details on different external bilingual project types.
 
@@ -456,11 +466,12 @@ Related links:
 
 ### SDL Trados Studio
 
-SDL Trados Studio files and packages are well supported in CafeTran.
+SDL Trados Studio files and packages are very well supported in CafeTran.
+
+CafeTran Espresso can also import SDLTM translation memories and SDLTB termbases, which are converted into the TMX format.
 
 In addition to the general notes above, please consider the following **known limitations**:
 
-- Studio termbases (SDLTB) require external conversion prior to import (see below).
 - Tags at the start of the source segment cannot be moved around in the target segment.
 - Trados Comments are shown as Notes in CT and CT Notes are imported as Comments in SDL Trados Studio (but do not get the levels FYI, Warning, and Error). In CT, segments with Notes/Comments have a leading and an ending tag. This is normal.
 - Alternative translations work for the current session only in Studio projects. If they interfere with SDL Trados, you can try removing them via Task > Remove alternative translations in CafeTran.
@@ -491,42 +502,53 @@ SDLXLIFF is the SDL Trados version of the bilingual XLIFF format. Please refer t
 #### SDLPPX
 
 - **Opening SDLPPX packages**
-When you drag and drop an SDLPPX package on CafeTran’s Dashboard, the program unpacks it automatically and loads the included SDLXLIFF files, as well as the attached SDLTM, in the form of a read-only TMX memory.
+When you drag and drop an SDLPPX package on CafeTran’s Dashboard, the program unpacks it automatically and loads the included SDLXLIFF files, and imports any attached SDLTM translation memory and SDLTB termbase in the form of a (read-only) TMX memory.
 
-You need to check the unpacked package to see if it contains an SDLTB term base or any additional material that could be useful to you (reference material, project analysis, etc.).
+You need to check the unpacked package to see if it contains any additional material that could be useful to you (reference material, project analysis, etc.).
 
 - **Exporting SDLPPX packages**
 After you finish the translation of SDLPPX package, finalize it and export it back to package via Project > Export > To package. Then, you have two options for the export: Project package or Return package.
 
 The translated return package (SDLRPX) should be opened in SDL Trados Studio which created the normal (SDLPPX) package. If you did not create this project yourself, export to as a normal project package (SDLPPX) to review it in your installation of SDL Trados Studio.
 
-#### SDLTM
+#### SDLTM translation memories
 
-SDL Translation Memories are imported as read-only TMX files in CafeTran. The process is very quick and painless.
+CafeTran handles SDLTM translation memories, which are imported as read-only TMX files in CafeTran. The process is very quick and painless.
 
-You can do so via Memory > Import > Import SDLTM memory.
+You can do so manually via Memory > Import > Import SDLTM memory.
 
-SDLTM files present in Trados packages (SDLPPX) are automatically imported as TMX in CafeTran when you open a package. The TM options dialog is shown, allowing you to fine-tune their options or apply additional filtering.
+SDLTM files present in Trados packages (SDLPPX) are automatically imported as a TMX in CafeTran when you open a package. The TM options dialog is shown, allowing you to fine-tune their options or apply additional filtering. All SDLTM files present in the package are joined together during the import. To open them separately, use the manual process above.
 
-#### SDLTB
+In the SDLTB section below, you can find external utilities that also handle SDTM conversion.
 
-SDLTB terminology files are not handled directly and need to be converted before importing them into CafeTran.
+#### SDLTB termbases
 
-Van Nellen’s [Trados Studio Resource Converter](http://www.vannellen.com/fortranslators.php) is a free cross-platform Java app that offers conversion from both SDLTM and SDLTB files. Since SDLTM is already well handled by CafeTran, we will focus on SDLTB conversion.
+CafeTran handles SDLTB terminology files, which are imported as TMX termbases into CafeTran.
+
+You can do so manually via Memory > Import > Import SDLTB termbase.
+
+SDLTB files present in Trados packages (SDLPPX) are automatically imported as a TMX in CafeTran when you open a package. The TM options dialog is shown, allowing you to fine-tune their options or apply additional filtering. All SDLTB files present in the package are joined together during the import. To open them separately, use the manual process above.
+
+If you prefer to convert the imported SDLTB termbase to the glossary format, proceed as follows: After importing the SDLTB, select the glossary in which you wish to import the converted entries, then go to Memory > Export > Export segments to glossary. You will be asked to select the memory you wish to export from in the next dialog.
+
+**External SDLTM and SDLTB conversion utilities**
+
+Although their use is now redundant, since CafeTran already handles SDLTM and SDLTB files on its own, here are some additional utilities that offer SDLTM and SDLTB conversion capabilities outside CafeTran:
+
+- Van Nellen’s [Trados Studio Resource Converter](http://www.vannellen.com/fortranslators.php) is a free cross-platform Java app that offers conversion from both SDLTM and SDLTB files.
 
 ![Trados Studio Resource Converter](https://i.imgur.com/hbnHVoS.png)
 
-Steps to convert a SDLTB in Trados Studio Resource Converter:
+<!---Not needed anymore:
+
+ Steps to convert a SDLTB in Trados Studio Resource Converter:
  - Click on “Convert SDLTB” button.
  - Navigate to the file’s directory and select the SDLTB file.
  - Select “Tab-separated TXT” in the “Please select the output type” dialog.
  - Select “Separated by a pipe (|)” in the “Please select how synonyms should be presented” dialog.
+ --->
 
-<!--- TODO LATER improve explanations --->
-
-Alternatives:
-
--[WfConverter](http://wordfast.fi/blog/cat-tools/2012/11/03/convert-sdltm-and-sdltb-without-studio-and-multiterm/) by Jean-Philippe Odent.
+- [WfConverter](http://wordfast.fi/blog/cat-tools/2012/11/03/convert-sdltm-and-sdltb-without-studio-and-multiterm/) by Jean-Philippe Odent.
 - [Glossary Converter](http://www.cerebus.de/glossaryconverter/index.html), available as an SDL Trados plugin and as a standalone Windows program. It can serve to convert term bases from and to SDLTB.
 - [XBench](https://www.xbench.net/) QA and Terminology Management tool version 3.x (paid, yearly licencing plan) can open SDLTB files and convert them to either TMX or tab -delimited TXT format.
 
@@ -956,7 +978,7 @@ Wordfast classic
 
 --->
 
-## UNSUPPORTED FORMATS
+## 3. UNSUPPORTED FORMATS
 
 You may come across translation projects which require handling various yet unsupported formats. This section lists and discusses different such formats (the list is bound to expand as needs arise) along with possible ways to deal with them. The next section (Solution) catalogs various tools you can use to prepare unsupported file formats and export them back to their original format after translating them in CafeTran, so be sure to check it as well.
 
@@ -1256,7 +1278,7 @@ memoQ has full support for TIPP packages and XLIFF:doc documents, so you also ca
 Related links:
 [Interoperability Now! project](https://code.google.com/archive/p/interoperability-now/)
 
-## SOLUTIONS
+## 4. SOLUTIONS
 
 Since CafeTran offers a wide compatibility with external bilingual files, you can take advantage of this to prepare files (into a format CafeTran can accept) using a different software tool which handles **file types not yet supported by CafeTran** or offers **additional filter options** for already supported formats, then export the files back to their original format using the same tool once you’ve completed the translation in CafeTran (what we will call a “round trip”).
 
@@ -1620,6 +1642,7 @@ Déjà Vu - [Supported Formats And How To Use Them](https://atrilsolutions.zende
 - 20171203 Added section for e-books (EPUB, MOBI, AZW), and information about Memsource tags.
 - 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
+- 20180830 Updated for CafeTran Espresso 2018 - Akua Update 11
 
 ## Feedback
 

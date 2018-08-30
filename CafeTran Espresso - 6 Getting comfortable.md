@@ -176,7 +176,7 @@ Depending on the window layout, the panes are detached differently, so feel free
 
 To avoid unnecessary complexity in the beginning, CafeTran hides some of its menus by default.
 
-Depending on your needs, you might need to Show more menus.
+Depending on your needs, you might wish to Show more menus.
 
 Just go to View > and select which you wish to have displayed or hidden.
 

@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2018 Akua Update 11 (20180730)](#2018-akua-update-11-20180730)
 	- [2018 Akua Update 10 (20180612)](#2018-akua-update-10-20180612)
 	- [2018 Akua Update 9 (20180604)](#2018-akua-update-9-20180604)
 	- [2018 Akua Update 8 (20180521)](#2018-akua-update-8-20180521)
@@ -108,6 +109,31 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 <!--- Shortened link to this document: --->
 
 **Important! Please complete all your translation projects in your current CafeTran version before updating.**
+
+## 2018 Akua Update 11 (20180730)
+
+- Some improvements to the LibreOffice filter.
+- Import of the editable drawings in the Ms Excel filter.
+- Display of regular expression matches instead of the regular expression patterns in the Matchboard.
+- Corrected project's language code for Irish Gaelic.
+- New QA > Length difference check in the number of characters
+- New Filter > Segments with numbers.
+- Fixed an issue while closing resources with duplicate names.
+- Import of SDLTB termbases.
+
+The new build (**2018080601**) of update 11 is available with the following:
+
+- fixed a glitch in the display of Total Recall tables in the Dashboard.
+- fixed recording/remembering of the selected words (with the mouse) for the latest Java version.
+- fixed the addition of comments in some sdlxliff files.
+
+The new build (**2018082301**) of update 11 is available with the following:
+
+- import of SDLTB termbases (see the new menu Memory > Import > Import SDLTB termbase...).
+
+Issue with trunctacted text in imported SDLTB termbases fixed in build **2018082401**.
+
+The new build (**2018082501**) of update 11 is available. It has a modified algorithm in the optional feature "Team Auto-assembling with the Machine Translation".
 
 ## 2018 Akua Update 10 (20180612)
 
