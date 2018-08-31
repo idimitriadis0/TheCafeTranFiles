@@ -228,9 +228,7 @@ Notes:
 
 - MS Word files containing macros **.docm** are also handled via this filter (although the file type might need to be selected manually).
 
-- Hidden content is not imported into CafeTran, which can be an effective solution for filtering out content that you don't wish to translate. Just remember to unmask hidden content when done.
-
-- Password-protected Word files are not imported. You need to remove the protection before importing them into CafeTran.
+- Hidden content is not imported into CafeTran, which can be an effective solution for filtering out content that you don't wish to translate. Just remember to unmask hidden content when done. You can also use the TransTools Word add-in to [Hide/Unhide Text](http://www.translatortools.net/word-hideunhide.html).
 
 #### MS Word OCR (.docx/xml)
 
