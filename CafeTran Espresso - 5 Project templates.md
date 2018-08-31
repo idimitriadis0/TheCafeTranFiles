@@ -21,11 +21,13 @@ An explanation of the project templates feature in CafeTran Espresso 2018.
 
 ## TEMPLATES - A PRESENTATION
 
-When you reopen a project from the Dashboard or the Project menu, CafeTran remembers various settings and resources used before, so that you can quickly pick up from where you left.
+In native projects, when you reopen a project from the Dashboard or the Project menu, CafeTran remembers various settings and resources used before, so that you can quickly pick up from where you left.
 
 What if you want to apply these settings to future jobs, or quickly swap between different settings, to account for different project needs?
 
 Since Yeddi Update 9 (May 2017), CafeTran offers a templates feature which conveniently stores a variety of settings in an XML template file for easy reuse in new projects.
+
+If you often translate external projects that originate from other CAT tools, then then there is one additional compelling reason to use Translation Templates: the settings and resources previously used are NOT remembered when you reopen the external project, especially if you have opened a different CafeTran project in the meantime. CafeTran cannot currently save this information as it would render the external project unusable. The solution? Use project templates not only for new projects, but also for reopening existing external projects.
 
 In their current form, project templates store information such as:
 
@@ -121,6 +123,7 @@ As it can be easily understood, templates are versatile and can be used in a num
 - **Specific clients/projects/file formats**: You may wish to create different templates for different clients, or for all jobs related to a specific project.
 - **Different resources**: You may simply wish to have different resources selected or present per each template, for various reasons. In this case, all actions can be carried out from within the Dashboard. Simply tick or add the desired resources and save the template.
 - **Remember layout and tab states**: If you tend to join, dock or float specific resources/tabs, or use different layout or layout/theme/color adjustments, you can easily save these and make new project boot faster.
+- **Open/Reopen external projects**: use project templates each time you wish to open or reopen an external project (created in a different CAT tool). This way, you can find the same settings and resources as before.
 
 <!--- Note for same client projects: In this case (although not necessarily recommended), you can even create one CT project and then just add/remove documents keeping the same project resources. This solution will work for CafeTran projects. --->
 
@@ -128,6 +131,7 @@ As it can be easily understood, templates are versatile and can be used in a num
 
 - 20180307 File creation
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
+- 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11
 
 ## Feedback
 
