@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2018 Akua Update 12 (20180901)](#2018-akua-update-12-20180901)
 	- [2018 Akua Update 11 (20180730)](#2018-akua-update-11-20180730)
 	- [2018 Akua Update 10 (20180612)](#2018-akua-update-10-20180612)
 	- [2018 Akua Update 9 (20180604)](#2018-akua-update-9-20180604)
@@ -109,6 +110,14 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 <!--- Shortened link to this document: --->
 
 **Important! Please complete all your translation projects in your current CafeTran version before updating.**
+
+## 2018 Akua Update 12 (20180901)
+
+- Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
+- Showing context in the filtered view of Layout 6 Compact.
+- Fixed closing of the tabs after changing their position via drag and drop.
+- Fixed the display of exact and fuzzy matches in the Matchboard for Translation Memories with the option "Keep out of auto-assembling" on.
+- Added the "Minimal prefix length" option in Edit > Preferences > Glossary tab.
 
 ## 2018 Akua Update 11 (20180730)
 
