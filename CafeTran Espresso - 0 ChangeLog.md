@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2019 Forerunner (20180907)](#2019-forerunner-20180907)
 	- [2018 Akua Update 12 (20180901)](#2018-akua-update-12-20180901)
 	- [2018 Akua Update 11 (20180730)](#2018-akua-update-11-20180730)
 	- [2018 Akua Update 10 (20180612)](#2018-akua-update-10-20180612)
@@ -110,6 +111,13 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 <!--- Shortened link to this document: --->
 
 **Important! Please complete all your translation projects in your current CafeTran version before updating.**
+
+## 2019 Forerunner (20180907)
+
+- Autopilot. This may be a very handy feature during the Review or QA phase of translation. You can also use it when translating short, repetitive/similar phrases or numbers. It allows hands-free navigation with the set delay between the segments. The default delay of 2000 milliseconds (2 seconds) can be increased in Edit > Preferences > General tab. Activation/deactivation of the Autopilot is done via the Action menu. After that, you will notice the Autopilot button in the target segment editor. Click this button to turn on/off the Autopilot. Going to the next segment triggers its functioning. To suspend it for a while (e.g for the correction of the current segment), press the Esc key or click the mouse on the target segment editor.
+- Automatic transfer of numbers being the full segments which end with the white space character.
+- Recognition of language variants in SDLTB termbases.
+
 
 ## 2018 Akua Update 12 (20180901)
 
