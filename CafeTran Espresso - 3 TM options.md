@@ -77,7 +77,7 @@ Quickly check or change the priority level for the TM, which can also be set via
 
 **Compare with target segment** = If enabled, this option shows the red “Different translation” warning in the TM tab for Exact matches. It can also be set for individual TMs after the right-click.
 
-**Recall memory**= Recall the contents of the selected database table to this translation memory in the lexical context of the current project. Also available through Memory > Recall memory. This is the same as selecting a Total Recall table to recall from the Dashboard.
+**Recall memory** = Recall the contents of the selected database table to this translation memory in the lexical context of the current project. Also available through Memory > Recall memory. This is the same as selecting a Total Recall table to recall from the Dashboard.
 
 **Store memory in Total Recall** = Save the currently selected translation memory in a Total Recall database table. Also available through Memory > Store memory in Total Recall.
 

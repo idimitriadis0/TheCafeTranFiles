@@ -118,11 +118,12 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - Automatic transfer of numbers being the full segments which end with the white space character.
 - Recognition of language variants in SDLTB termbases.
 
-The new build of CTE 2019 Forerunner (**2018091301**) is available for download. It features the following major changes:
+The new build of CTE 2019 Forerunner (**2018091401**) is available for download. It features the following major changes:
 
 - added an option to set the variable delay for Autopilot. The default setting in Edit > Preferences is 1000 millisecond per 10 characters in the current segment. You can adjust it as preferable.
 - fixed a search off by one segment issue with Autopilot.
 - added the menu option to turn on/off automatic searching - useful with Autopilot during the review - see it the Action menu.
+- fixed an issue with the "Transpose selection to the right".
 
 ## 2018 Akua Update 12 (20180901)
 
