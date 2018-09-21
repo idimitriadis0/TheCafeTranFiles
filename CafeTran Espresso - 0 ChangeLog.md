@@ -125,6 +125,12 @@ The new build of CTE 2019 Forerunner (**2018091401**) is available for download.
 - added the menu option to turn on/off automatic searching - useful with Autopilot during the review - see it the Action menu.
 - fixed an issue with the "Transpose selection to the right".
 
+The new build of CTE 2019 Forerunner (**2018092101**) is available for download. It features the following:
+
+- recognition of synonyms in .sdltb termbases.
+- glossaries selection at QA > Terms consistency check.
+- including non-translatable duplicates from the current segment in the F4 list.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
