@@ -131,6 +131,19 @@ The new build of CTE 2019 Forerunner (**2018092101**) is available for download.
 - glossaries selection at QA > Terms consistency check.
 - including non-translatable duplicates from the current segment in the F4 list.
 
+The new build of CTE 2019 Forerunner (**2018092401**) is available for download, with the following improvements to the spell-checker function.
+
+- recognition of words with the curly apostrophe (instead of the typewriter/straight apostrophe) inside.
+- ignoring short (fewer than 4 characters in length) upper-case words.
+- improved display of Task > List words with unknown spelling - see the buttons to add - easily the listed words to user's spell-checker dictionary.
+
+The latest build (**2018092701**) makes ignoring short upper-case acronyms optional in Preferences > QA tab. Other improvements:
+
+- An option to set the maximal length of the upper case acronyms to skip during spell checking.
+- Task > List of words with unknown spelling: the buttons in the list have two functions now - click to add the word to the spell checker dictionary or hold CTRL key + click to search the misspelled word in target segments.
+- Change of the glossary Prefix matching option in Preferences > Glossary tab causes the automatic reload of the glossaries.
+- Saving notes in external .xliff or .xlf files that follow XLIFF 1.2 specification.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
