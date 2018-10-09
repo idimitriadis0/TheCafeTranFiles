@@ -151,6 +151,17 @@ The new build of CTE 2019 Forerunner (**2018100401**) is available for download,
 - Holding the CTRL key while closing the "New Term" dialog switches to the "New fragment" dialog. The switch also works while closing the "New fragment" dialog.
 - Highlighting of non-translatables overwrites the highlight color of glossary or TM matches.
 
+Τhe new build of CTE 2019 Forerunner (**2018100901**) is available for download, with the following:
+
+- Automatic case adjustment (e.g to lower or upper case) during Auto-completion.
+- New tasks (in the Task menu): Bookmark segments and Unbookmark segments (e.g. for bookmarking filtered segments).
+- New Filter: Unbookmarked segments.
+-  Task > TMX Memory > Remove TMX filtered units can also detect the same contents in the filtered project segments (not in the TMX edit mode), and remove such segments from the TMX Memory.
+-  New Term Dialog can add multiple entries to the glossary - separated by the new line.
+-  Export of filtered segments as a bilingual Word document. The return import is also possible into exactly the same filter only.
+-  TMX Memory edit mode: Export and Import as a bilingual Word document.
+-  Fixed some minor issues.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
