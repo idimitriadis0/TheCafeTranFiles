@@ -162,6 +162,12 @@ The new build of CTE 2019 Forerunner (**2018100401**) is available for download,
 -  TMX Memory edit mode: Export and Import as a bilingual Word document.
 -  Fixed some minor issues.
 
+The "Remove TMX filtered units" feature in latest build (**2018101001**) works with multilple TM selection too.
+
+The new build of CTE 2019 Forerunner (**2018101601**) is available for download, with the following:
+
+- Added Java memory usage indicator in the Help > About panel. The feature helps to determine the size of Java memory assigned for CafeTran.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
