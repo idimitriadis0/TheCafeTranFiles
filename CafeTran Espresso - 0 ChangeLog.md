@@ -168,6 +168,15 @@ The new build of CTE 2019 Forerunner (**2018101601**) is available for download,
 
 - Added Java memory usage indicator in the Help > About panel. The feature helps to determine the size of Java memory assigned for CafeTran.
 
+The new update (**2018102501**) has just been uploaded. It features the following:
+
+- enhancements to the Auto-complete feature (e.g. autocompletion in the middle of words, full MT results).
+- filtering out of the deleted text in Ms Word and LibreOffice source documents with the - track changes enabled (only for the new projects).
+- restored Import and Export of Preferences in the Preferences panel.
+- TM pane is refreshed after the deletion of the segments from the memory.
+
+**As there are changes to the filters, please complete any unfinished Word or LibreOffice projects before updating**.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
