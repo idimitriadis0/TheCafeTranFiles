@@ -171,11 +171,18 @@ The new build of CTE 2019 Forerunner (**2018101601**) is available for download,
 The new update (**2018102501**) has just been uploaded. It features the following:
 
 - enhancements to the Auto-complete feature (e.g. autocompletion in the middle of words, full MT results).
-- filtering out of the deleted text in Ms Word and LibreOffice source documents with the - track changes enabled (only for the new projects).
+- filtering out of the deleted text in Ms Word and LibreOffice source documents with the track changes enabled (only for the new projects).
 - restored Import and Export of Preferences in the Preferences panel.
 - TM pane is refreshed after the deletion of the segments from the memory.
 
 **As there are changes to the filters, please complete any unfinished Word or LibreOffice projects before updating**.
+
+The new build (**2018103001**) of CafeTran Forerunner 2019 is available for download. It adds the following:
+
+- Options to turn off the automatic case adjustment and overwriting during auto-completion - see the new Prompter tab in Preferences.
+- Added "Rejected" status for proofreaders. It also maps to the similar status in sdlxliff and mqxliff files.
+- CafeTran "Approved" status maps the the similar status in in sdlxliff files and mqxliff files now.
+- CafeTran "Checked" status maps to the Translated status in sdlxliff files and the Confirmed status in mqxliff files now.
 
 ## 2018 Akua Update 12 (20180901)
 
