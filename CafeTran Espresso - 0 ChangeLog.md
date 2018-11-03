@@ -184,6 +184,15 @@ The new build (**2018103001**) of CafeTran Forerunner 2019 is available for down
 - CafeTran "Approved" status maps the the similar status in in sdlxliff files and mqxliff files now.
 - CafeTran "Checked" status maps to the Translated status in sdlxliff files and the Confirmed status in mqxliff files now.
 
+The new update (**2018110201**) of CafeTran 2019 Forerunner has just been made available for download with the following changes:
+
+- Statistics for checked, rejected and approved segments.
+- Removing the two-word (typed) phrase from the Prompter if one of the words is a spelling mistake.
+- Some improvements to Ms Excel filter.
+- Added the "es" language code (neutral - without a country variant) for Spanish spoken in the US.
+- Keeping the punctuation character when replacing a word during auto-completion.
+- Option to propagate the current segment status during auto-propagation.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
