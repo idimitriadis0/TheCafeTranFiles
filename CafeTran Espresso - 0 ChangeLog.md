@@ -193,6 +193,10 @@ The new update (**2018110201**) of CafeTran 2019 Forerunner has just been made a
 - Keeping the punctuation character when replacing a word during auto-completion.
 - Option to propagate the current segment status during auto-propagation.
 
+The new update (**2018110802**) of CafeTran 2019 Forerunner is available for download with the following change:
+
+- options for QA checks are stored in Project Templates.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
