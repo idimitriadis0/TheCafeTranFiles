@@ -26,7 +26,7 @@
 
 # CAFETRAN ESPRESSO 2018 - GETTING COMFORTABLE
 
-*Updated for CafeTran Espresso 2018*
+*Updated for CafeTran Espresso 2019*
 
 Customizing CafeTran. An introduction.
 
@@ -116,7 +116,7 @@ Messed up and want to revert to the default theme colors? Just reset them [Set d
 
 When you have settled with the above, you can also choose one of the two themes available for the Dashboard.
 
-Via the Dashbord menu button, select the Coffeehouse theme and see if it suits you better than the default one.
+Via the Dashboard menu button, select the Dark Dashboard theme and see if it suits you better than the default one.
 
 ### Font face and size
 
@@ -300,6 +300,7 @@ And that concludes part II. This should give you a good head start!
 
 - 20180316 File creation
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
+- 20181113 Updated for CafeTran Espresso 2019 - Forerunner
 
 ## Feedback
 

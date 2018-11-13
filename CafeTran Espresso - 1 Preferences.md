@@ -2,6 +2,7 @@
 
 - [CAFETRAN ESPRESSO - PREFERENCES](#cafetran-espresso-preferences)
 	- [ACCESSING PREFERENCES (OPTIONS)](#accessing-preferences-options)
+	- [EXPORT/IMPORT/RESET PREFERENCES](#exportimportreset-preferences)
 	- [GENERAL](#general)
 		- [User ID:](#user-id)
 		- [Database connection:](#database-connection)
@@ -28,8 +29,8 @@
 			- [Surround with characters 2:](#surround-with-characters-2)
 			- [Surround with characters 3:](#surround-with-characters-3)
 		- [Project page size (units):](#project-page-size-units)
-		- [Segment Timer:](#segment-timer)
-		- [Segment delay (millisec):](#segment-delay-millisec)
+		- [Autopilot delay (millisec/chars):](#autopilot-delay-millisecchars)
+		- [Autopilot fixed delay (milliseconds):](#autopilot-fixed-delay-milliseconds)
 	- [DEFINITIONS](#definitions)
 		- [List of subjects… | List of clients…](#list-of-subjects-list-of-clients)
 		- [Definitions column names](#definitions-column-names)
@@ -54,8 +55,13 @@
 		- [Copy source to target during segmentation](#copy-source-to-target-during-segmentation)
 		- [Transfer source to empty target during translation](#transfer-source-to-empty-target-during-translation)
 		- [Replace characters at source transfer:](#replace-characters-at-source-transfer)
-		- [Auto-completion (start at, word length):](#auto-completion-start-at-word-length)
-		- [Enable two-word hints:](#enable-two-word-hints)
+	- [PROMPTER](#prompter)
+		- [Prompt phrases](#prompt-phrases)
+		- [Two-word hints](#two-word-hints)
+		- [Automatic case adjustment](#automatic-case-adjustment)
+		- [Replace existing words](#replace-existing-words)
+		- [Prompting starts at (char):](#prompting-starts-at-char)
+		- [Minimal word length:](#minimal-word-length)
 	- [AUTO-ASSEMBLING](#auto-assembling)
 		- [Automatic insertion of matches](#automatic-insertion-of-matches)
 		- [Transfer numbers to matches](#transfer-numbers-to-matches)
@@ -77,6 +83,7 @@
 		- [Auto-propagation of non-translatable fragments](#auto-propagation-of-non-translatable-fragments)
 		- [Auto-propagation forward only](#auto-propagation-forward-only)
 		- [Auto-propagation from locked segments](#auto-propagation-from-locked-segments)
+		- [Auto-propagation of segment status](#auto-propagation-of-segment-status)
 	- [GLOSSARY](#glossary)
 		- [Alternatives entries separator:](#alternatives-entries-separator)
 		- [Trim](#trim)
@@ -84,6 +91,7 @@
 			- [Trim new term start:](#trim-new-term-start)
 			- [Trim new term end:](#trim-new-term-end)
 		- [Fields to hide:](#fields-to-hide)
+		- [Minimal prefix length:](#minimal-prefix-length)
 		- [Prefix matching](#prefix-matching)
 		- [Sort matches alphabetically](#sort-matches-alphabetically)
 		- [Skip new term window (button)](#skip-new-term-window-button)
@@ -119,8 +127,10 @@
 	- [QA](#qa)
 		- [Terms consistency check:](#terms-consistency-check)
 		- [Length difference check (%):](#length-difference-check-)
+		- [Length difference check (chars):](#length-difference-check-chars)
 		- [Maximum segment length (chars):](#maximum-segment-length-chars)
 		- [Prefix marching (%):](#prefix-marching-)
+		- [Don't spellcheck acronyms (chars):](#dont-spellcheck-acronyms-chars)
 		- [Regular expression:](#regular-expression)
 		- [Whole words:](#whole-words)
 		- [Match case:](#match-case)
@@ -155,15 +165,15 @@
 
 # CAFETRAN ESPRESSO - PREFERENCES
 
-*Updated for CafeTran Espresso 2018 - Akua Update 11 (build 2018082501)*
+*Updated for CafeTran Espresso 2019 - Forerunner (build 2018110802)*
 
 This reference document offers a tour of CafeTran’s Preferences (Options) and describes each item’s function, providing additional information along the way.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
 
-*This file receives regular updates every two-three months*
+*This file receives regular updates every two-three months*.
 
-*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
+*To keep track of the latest CafeTran developments, review (and subscribe to) the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
 <!--- Shortened link to this document: --->
 
@@ -171,11 +181,21 @@ This reference document offers a tour of CafeTran’s Preferences (Options) and 
 
 You can access Preferences from the **Menu (Edit>Preferences [Options])** or directly from the **Dashboard** by clicking the button shown below and choosing Preferences (Options). OS X users can also use the usual Cmd + , shortcut.
 
-![Dashboard menu button](https://i.imgur.com/GwHznze.png)
+![Dashboard menu button](https://i.imgur.com/R2Kxc0J.png)
+
+## EXPORT/IMPORT/RESET PREFERENCES
+
+You can easily export CafeTran preferences and import them back. This allows you to backup your preferences or reuse them in another installation.
+
+The corresponding buttons can be found in each Preferences pane.
+
+To reset CafeTran to its default preferences, use the Reset button also included in each Preferences pane. Resetting is applied to all CafeTran settings.
+
+![Export/Import/Reset Preferences](https://i.imgur.com/VMZwdtu.png)
 
 ## GENERAL
 
-![General pane](https://i.imgur.com/T1Wfget.png)
+![General pane](https://i.imgur.com/zgt98Cb.png)
 
 General preferences pane allows you to set various CafeTran options and features, the most important probably being the Segmentation function.
 
@@ -415,22 +435,27 @@ Note: Limiting the number of displayed segments in one “page” is one of the 
 Related links:
 [Running CafeTran in the Battery Mode](https://cafetran.freshdesk.com/support/solutions/articles/6000113091-running-cafetran-in-the-battery-mode)
 
-### Segment Timer:
+### Autopilot delay (millisec/chars):
 
+Checkbox and value field. Default value: 1000 (milliseconds per 10 characters).
 
-Checkbox.
+Autopilot may be a very handy feature during the Review or QA phase of translation. You can also use it when translating short, repetitive/similar phrases or numbers. It allows hands-free navigation with the set delay between the segments. You can either use a fixed delay (next option) or a **variable delay** (here).
 
-When this is enabled, the segment timer icon is added to the target segment editor. The segment timer allows you to go through each segment after the defined segment delay (see below) without using the keyboard. To trigger this, you simply need to Move/Go to next segment. To stop the timer, either click the button or hit the Esc key.
+Activation/deactivation of the Autopilot is done via the Action menu. After that, you will notice the Autopilot button in the target segment editor. Click this button to turn on/off the Autopilot. Going to the next segment triggers its functioning. To suspend it for a while (e.g for the correction of the current segment), press the Esc key or click the mouse on the target segment editor.
 
-### Segment delay (millisec):
+### Autopilot fixed delay (milliseconds):
 
-Default value: 2000.
+Checkbox and value field. Default value: 2000.
 
-Define the delay in milliseconds at which CafeTran will automatically go to the next segment, when the Segment timer option is enabled (see above).
+Autopilot may be a very handy feature during the Review or QA phase of translation. You can also use it when translating short, repetitive/similar phrases or numbers. It allows hands-free navigation with the set delay between the segments. You can either use a **fixed delay** (here) or a variable delay (previous option).
+
+Activation/deactivation of the Autopilot is done via the Action menu. After that, you will notice the Autopilot button in the target segment editor. Click this button to turn on/off the Autopilot. Going to the next segment triggers its functioning. To suspend it for a while (e.g for the correction of the current segment), press the Esc key or click the mouse on the target segment editor.
 
 ## DEFINITIONS
 
-![Definitions pane](https://i.imgur.com/y6kxAZW.png)
+
+
+![Definitions pane](https://i.imgur.com/QdofC5Y.png)
 
 Definitions pane allows you to specify some fields that can be applied to the Glossaries and Termbases (Memories for fragments) and Project configuration. It is optional in most scenarios, but useful for more information-rich terminology implementations.
 
@@ -486,7 +511,7 @@ Related links:
 
 ## WORKFLOW
 
-![Workflow pane](https://i.imgur.com/A6m7T0g.png)
+![Workflow pane](https://i.imgur.com/m71yg1s.png)
 
 This pane includes some options related to various CafeTran workflows. Workflows can be selected from the drop-menu available in the Dashboard.
 
@@ -590,30 +615,57 @@ These field pairs allow you to set characters you wish to replace during source 
 
 Note: This replacement option is a helper to "Transfer numbers to matches" feature. It lets your replace the defined characters in a numerical expression during the transfer from the source to the target segment.
 
-### Auto-completion (start at, word length):
+## PROMPTER
 
-Checkbox, ON by default
-Two fields, Default values: Start at: 3 and word length: 7 respectively.
+![Prompter pane](https://i.imgur.com/eDXJEjm.png)
 
-The checkbox allows you to enable or disable Auto-completion function.
+Prompter is CafeTran's auto-complete feature that uses text from various sources (Project segments, Memories [segment or fragment matches, fuzzies, hits], Glossaries, MT results, etc.). As you type the first characters of a word, CafeTran will often bring up the auto-completion menu, which allows you to quickly complete the word instead of typing it.
 
-Auto-completion is a CafeTran feature that uses text from various sources (Project segments, Memories [segment or fragment matches, fuzzies, hits], Glossaries, MT results, etc.). As you type the first characters of a word, CafeTran will often bring up the auto-completion menu, which allows you to quickly complete the word instead of typing it. The auto-completion function is automatically triggered if enabled, and if there is a space following the cursor. If there is a character in the right side of the cursor, you can still manually bring the auto-completion menu with the Ctrl+Down arrow (default) keyboard shortcut. Press enter to use the auto-complete suggestion. Selection can be done via the up or down arrow keys, as well as by double-clicking the desired suggestion.
+Press enter to use the auto-complete suggestion. Selection can be done via the up or down arrow keys, as well as by double-clicking the desired suggestion.
 
 Note: You can remove a highlighted suggestion by using the **Remove from auto-completion list** keyboard shortcut.
 
-**Start at:** minimum number of typed characters to trigger the Auto-completion function.
-
-**Word length:** minimum character length of words to be processed by the Auto-completion function.
-
-### Enable two-word hints:
+### Prompt phrases
 
 Checkbox, ON by default
 
-This option also concerns the Auto-completion function. If the option is ON, CafeTran will offer auto-completion options for the next word as well.
+The checkbox allows you to enable or disable CafeTran's Prompter (auto-completion) feature.
+
+The prompter (auto-completion) function is automatically triggered if enabled, and if there is a space following the cursor. If there is a character in the right side of the cursor, you can still manually bring the auto-completion menu with the Ctrl+Down arrow (default) keyboard shortcut.
+
+### Two-word hints
+
+Checkbox, ON by default
+
+With this option ON, CafeTran will offer auto-completion options for the next word as well.
+
+### Automatic case adjustment
+
+Checkbox, ON by default
+
+Options to toggle the automatic case adjustment during auto-completion.
+
+### Replace existing words
+
+Checkbox, ON by default
+
+Option to toggle the overwriting during auto-completion.
+
+### Prompting starts at (char):
+
+Default value: 3.
+
+Minimum number of typed characters to trigger the Auto-completion function.
+
+### Minimal word length:
+
+Default value: 7.
+
+Minimum character length of words to be processed by the Auto-completion function.
 
 ## AUTO-ASSEMBLING
 
-![Auto-assembling pane](https://i.imgur.com/26hi7OT.png)
+![Auto-assembling pane](https://i.imgur.com/ZVbijV3.png)
 
 This pane allows you to set various auto-assembling options.
 
@@ -718,7 +770,7 @@ If enabled, auto-assembling replaces the punctuation characters as set in the fi
 
 ## AUTO-PROPAGATION
 
-![Auto-propagation pane](https://i.imgur.com/kkIAiLL.png)
+![Auto-propagation pane](https://i.imgur.com/47ZEI8s.png)
 
 This pane lets you enable or disable various Auto-propagation options.
 
@@ -758,19 +810,25 @@ If this option is ON, auto-propagation works also for segments that only differ 
 
 ### Auto-propagation forward only
 
-Checkbox, ON by default
+Checkbox, OFF by default
 
 If this option is ON, backward auto-propagation is disabled.
 
 ### Auto-propagation from locked segments
 
-Checkbox.
+Checkbox, ON by default
 
 You can choose whether to block or enable auto0propaggation from locked segments.
 
+### Auto-propagation of segment status
+
+Checkbox, OFF by default
+
+If this option is ON, the current segment status is also propagated during auto-propagation.
+
 ## GLOSSARY
 
-![Glossary pane](https://i.imgur.com/Zx4RVp0.png)
+![Glossary pane](https://i.imgur.com/OkbgEUk.png)
 
 This pane features various options relevant to Glossaries (and Termbases - Memories for fragments).
 
@@ -816,6 +874,12 @@ Here you can define Fields you wish to hide from glossary columns.
 Enter the number of the Glossary field(s) you want to hide, separated with a comma (,)
 
 This allows you to only display specific fields while keeping the fields defined in Definitions.
+
+### Minimal prefix length:
+
+Default value: 5
+
+With this setting, you can control the fuzziness of glossary terms used by the Prefix matching (see next item).
 
 ### Prefix matching
 
@@ -873,7 +937,7 @@ With this option enabled, CafeTran only shows the longest glossary match in the 
 
 ## MEMORY
 
-![Memory pane](https://i.imgur.com/BgD7MJZ.png)
+![Memory pane](https://i.imgur.com/W1FGLcK.png)
 
 This pane lets you choose the assigned RAM for CafeTran and set various aspects related to Translation Memories behaviour.
 
@@ -1019,7 +1083,7 @@ If enabled, CafeTran use word [stemming](https://en.wikipedia.org/wiki/Stemming)
 
 ## MEMORY SERVER
 
-![Memory server pane](https://i.imgur.com/WHUmuZD.png)
+![Memory server pane](https://i.imgur.com/dLyHxwq.png)
 
 CafeTran can act as a Translation Memory server, accepting online connections and queries from other CafeTran users. In such a server mode it is possible to work in a team on a translation project. Checking the box activates the server mode. Change the default server port if the default port is already taken by another program on your computer.
 
@@ -1044,7 +1108,7 @@ Related links:
 
 ## QA
 
-![QA pane](https://i.imgur.com/5Z1zQGZ.png)
+![QA pane](https://i.imgur.com/v6gi4wI.png)
 
 This pane features options related to CafeTran’s QA function (see QA menu).
 
@@ -1060,6 +1124,12 @@ Drop-down menu. Choices: 0 to 100 (by increments of 5). Default: 50
 
 Check for the maximum difference in length between source and target segments.
 
+### Length difference check (chars):
+
+Default value: 100
+
+Check for the maximum difference in number of characters between source and target segments.
+
 ### Maximum segment length (chars):
 
 Default value: 1000
@@ -1072,9 +1142,15 @@ Drop-down menu. Choices: 10, 20, 30, 40, 50, 60, 70, 80, 90. Default: 50
 
 The field determines the minimal length of prefixes of the words processed during terms consistency check by Prefix matching function.
 
+### Don't spellcheck acronyms (chars):
+
+Checkbox. Default value: 3
+
+If this checkbox is enabled, QA step "Check spelling in target segments" ignores the words written in capital letters if they have less that the define number of characters. This is useful to avoid triggering the spell-checker for acronyms.
+
 ### Regular expression:
 
-Checkbox, OFF by default.
+Checkbox, OFF by default
 
 If you run a QA > Word lists check/filtering with Regular expression option ON, CafeTran will perform filtering based on the included regular expression.
 
@@ -1103,9 +1179,9 @@ Related links:
 
 ## MT SERVICES
 
-![MT services pane](https://i.imgur.com/nPpj3A7.png)
+![MT services pane](https://i.imgur.com/yU1DoEY.png)
 
-This pane features options related to Machine Translation. Individual options can also be set via the MT context menu (see [CafeTran Espresso - Menu and Interface]{https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface}).
+This pane features options related to Machine Translation. Individual options can also be set via the MT context menu (see [CafeTran Espresso - Menu and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface}).
 
 ### Mask non-translatable fragments
 
@@ -1210,7 +1286,7 @@ Related links:
 
 ## WEB SERVICES
 
-![Web services pane](https://i.imgur.com/8aLSjQy.png)
+![Web services pane](https://i.imgur.com/0s1fFJc.png)
 
 This pane allows you to enable a few Web services options. Network connectivity is required to use these features.
 
@@ -1255,7 +1331,7 @@ Related links:
 
 ## APPEARANCE
 
-![Apperance pane](https://i.imgur.com/UESaXVx.png)
+![Apperance pane](https://i.imgur.com/HHvYpo8.png)
 
 This pane includes a few appearance options. Many more are available in the View menu.
 
@@ -1285,7 +1361,7 @@ Polish (pl-PL)
 
 ## KEYBOARD SHORTCUTS
 
-![Keyboard shortcuts pane](https://i.imgur.com/AZMdk2p.png)
+![Keyboard shortcuts pane](https://i.imgur.com/TDqXt6b.png)
 
 This pane is where you can review or set most keyboard shortcuts CafeTran uses.
 
@@ -1364,6 +1440,8 @@ Also in Action menu.
 Adjust the ending punctuation of the target segment to match that of the source segment.
 
 Also in Edit > Target segment submenu.
+
+**Adjust start punctuation**		Ctrl+Open Bracket
 
 **All segments**	Ctrl+Shift+K
 
@@ -1651,9 +1729,9 @@ Browse for an existing translation memory file.
 
 Also in Memory menu.
 
-**Open project…**	Ctrl+O
+**Open project folder…**	Ctrl+O
 
-Browse for an existing translation project. The current active project will be closed upon opening a different project.
+Browse for an existing translation project folder. The current active project will be closed upon opening a different project.
 
 Also in Project menu.
 
@@ -1938,6 +2016,8 @@ Found in View > Toolbars > Hide toolbars.
 - 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
 - 20180315 Updated
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
+- 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11
+- 20181113 Updated for CafeTran Espresso 2019 - Forerunner
 
 ## Feedback
 

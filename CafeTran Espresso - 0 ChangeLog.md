@@ -106,7 +106,7 @@ To get notified about new CafeTran updates, use the "Follow" button in the [Cafe
 *The ChangeLog is being curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
 Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](http://beijer.uk) and [Hans Lenting](http://www.niederlaendisch.nl/).*
 
-*This document is being updated with every CafeTran update announcement*
+*This document is being updated with every CafeTran update announcement*.
 
 <!--- Shortened link to this document: --->
 
@@ -144,12 +144,19 @@ The latest build (**2018092701**) makes ignoring short upper-case acronyms optio
 - Change of the glossary Prefix matching option in Preferences > Glossary tab causes the automatic reload of the glossaries.
 - Saving notes in external .xliff or .xlf files that follow XLIFF 1.2 specification.
 
+The new build of CTE 2019 Forerunner (**2018092901**) is available for download, with the following:
+
+- Fixed Task > Remove notes function for some external xliff files (e.g. mqxliff).
+- Remembering the choices in QA > Check all panel.
+
 The new build of CTE 2019 Forerunner (**2018100401**) is available for download, with the following:
 
 - Added "Adjust start punctuation" command/shortcut in the menu Edit > Target segment.
 - Added "Clone" function to "Term Editor". It enables the creation of a new term based on the currently edited term.
-- Holding the CTRL key while closing the "New Term" dialog switches to the "New fragment" dialog. The switch also works while closing the "New fragment" dialog.
+- Holding the CTRL key while closing the "New Term" dialog via the Close dialog switches to the "New fragment" dialog. The switch also works while closing the "New fragment" dialog.
 - Highlighting of non-translatables overwrites the highlight color of glossary or TM matches.
+
+The new build (**2018100402**) has the Clone button grayed initially.
 
 Τhe new build of CTE 2019 Forerunner (**2018100901**) is available for download, with the following:
 

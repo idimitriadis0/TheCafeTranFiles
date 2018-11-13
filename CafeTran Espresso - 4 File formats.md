@@ -35,6 +35,7 @@
 			- [InDesign (.idml)](#indesign-idml)
 			- [FrameMaker (.mif)](#framemaker-mif)
 			- [DTP Tagged Text](#dtp-tagged-text)
+			- [Vector image (.svg)](#vector-image-svg)
 		- [AutoCAD](#autocad)
 			- [AutoCAD (.dxf)](#autocad-dxf)
 		- [Software localization](#software-localization)
@@ -99,6 +100,7 @@
 		- [PUB (Microsoft Publisher)](#pub-microsoft-publisher)
 		- [VDX (Microsoft Visio)](#vdx-microsoft-visio)
 		- [INDD (InDesign)](#indd-indesign)
+		- [AI (ILLUSTRATOR)](#ai-illustrator)
 		- [DWG (AutoCAD)](#dwg-autocad)
 		- [PO](#po)
 		- [JSON](#json)
@@ -116,9 +118,10 @@
 			- [Offline](#offline)
 		- [Wordfast Pro 3](#wordfast-pro-3)
 		- [Wordfast Pro 5](#wordfast-pro-5)
+		- [Memsource](#memsource)
+		- [Smartcat](#smartcat)
 		- [Swordfish](#swordfish)
 		- [Heartsome](#heartsome)
-		- [Memsource](#memsource)
 		- [Okapi Framework - Rainbow](#okapi-framework-rainbow)
 		- [Online/Offline file converters](#onlineoffline-file-converters)
 		- [SDL Trados Studio](#sdl-trados-studio)
@@ -131,11 +134,11 @@
 
 # CAFETRAN ESPRESSO - FILE FORMATS
 
-*Updated for CafeTran Espresso 2018 - Akua Update 11 (build 2018082501)*
+*Updated for CafeTran Espresso 2019 - Forerunner (build 2018110802)*
 
-*This file receives regular updates every two-three months*
+*This file receives regular updates every two-three months*.
 
-*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
+*To keep track of the latest CafeTran developments, review (and subscribe to) the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
 This document aims to cover natively supported file formats in CafeTran, provide compatibility information for external bilingual projects (files and packages), and discuss solutions to handle not yet supported file types.
 
@@ -157,7 +160,7 @@ Finally, additional workflows make it possible to translate images and scanned/p
 
 ## File formats overview
 
-![CafeTran Espresso - Supported file formats](https://i.imgur.com/MZ7IHk6.png)
+![CafeTran Espresso - Supported file formats](https://i.imgur.com/pAVmCkO.png)
 
 **CT uses a native filter for external formats marked with an asterisk.*
 
@@ -208,6 +211,7 @@ Here is the list of native file type filters CafeTran offers when creating a new
  - DTP Tagged Text
  - Tagged MS Excel (.xlsx)
  - Transit XML File
+ - Vector image (.svg)
  - Image (.jpg/gif/bmp/png)
 
 ## File types in detail
@@ -227,8 +231,8 @@ Password-protected files are not imported. You need to remove the protection bef
 Notes:
 
 - MS Word files containing macros **.docm** are also handled via this filter (although the file type might need to be selected manually).
-
 - Hidden content is not imported into CafeTran, which can be an effective solution for filtering out content that you don't wish to translate. Just remember to unmask hidden content when done. You can also use the TransTools Word add-in to [Hide/Unhide Text](http://www.translatortools.net/word-hideunhide.html).
+- CafeTran filters out of the deleted text in Ms Word source documents with the track changes enabled.
 
 #### MS Word OCR (.docx/xml)
 
@@ -277,6 +281,8 @@ Note: Final file should be checked against any missing parts in code, as some HT
 ### OpenOffice/LibreOffice
 
 #### Writer (.odt)
+
+Notes: CafeTran filters out of the deleted text in LibreOffice source documents with the track changes enabled.
 
 #### OpenOffice Uncleaned (.odt)
 
@@ -376,6 +382,14 @@ CafeTran handles Quark Express DTP Tagged Text files.
 
 <!--- TODO --->
 
+#### Vector image (.svg)
+
+Scalable Vector Graphics (SVG) is an open standard XML-based vector image format for two-dimensional graphics with support for interactivity and animation.
+
+SVG images and their behaviors are defined in XML text files. They can be produced by Inkscape [free and open source software], Adobe Illustrator, Adobe Flash Professional, or CorelDRAW, and rendered to common raster image formats such as PNG using the same software.
+
+NOTE: Since Adobe Illustrator can import and export SVG files, an SVG filter can help handle Adobe Illustrator files (*.ai or *.eps) as well as DWG or CAD files, exported to SVG by Adobe Illustrator. For handling AI files using the SVG file filter, see the Unsupported formats section.
+
 ### AutoCAD
 
 AutoCAD, developed by Autodesk, Inc. and first released in December 1982, is a software application for computer-aided design (CAD) and drafting that supports both 2D and 3D formats.
@@ -442,26 +456,26 @@ Intercompatibility (both in and out) is an important CafeTran Espresso feature. 
 
 “Translate external project” workflow presents some differences when compared to the native “Translate document” workflow. Here are some of these differences you may want to consider:
 
-- The final export of the translation to the original target language document is generally done by the client who created the translation project in his/her tool (or, in some cases, by the translator, if he uses the same tool). This cannot be achieved in CafeTran for external projects. The same goes for translation preview (Project > Preview current document).
-- CafeTran does not handle the segmentation phase as this takes place at the bilingual file creation. Project Managers usually send such files segmented properly with the target language specified. If you receive and open an unsegmented file, CafeTran will show a warning message. Then, please consult with your client to receive the segmented file.
-- Likewise, CafeTran offers its progressive spit/merge segments feature for native bilingual files only. However, CafeTran Espresso supports virtual joining of segments in external projects. The feature allows to join segments in segments’ editor and rearrange their contents comfortably. As soon as the joined segments leave the editor, their number is the same as before joining but their respective text contents is changed (rearranged), hence the virtual aspect of this feature. Use this new feature with care making sure that boundary (opening and closing) tags between joined segments are in place.
-- Instead of creating a Project folder, copying the source documents and generating a segmented native XLIFF (as it happens for native projects), CafeTran edits the external bilingual files directly at their own directory location. Make sure you have a copy if needed.
-- Contrarily to native projects, when you close an external project or quit CafeTran and reopen the said project, CafeTran does not remember/reopen the previously used resources. A way around this limitation is to use [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
-- If Project memory and/or Project glossary are checked in the Dashboard, the ProjectTM.tmx and ProjectTerms.txt files are conveniently created and placed at the same working folder (in native projects, these files are generated in the newly created Project folder).
-- Supported packages (.sdlppx, .mqxlz) are expanded and edited at the working folder location.
-- QA > Tags check should be performed prior to finalizing the project, to ensure no tag issues are present in the delivered files. It is also recommended to run the QA > At tags spaces check.
-- Export button becomes Finalize button in CafeTran’s segments grid. This sets the translated status to all target segments and saves the project. Generally, this step should be performed prior to delivering the files. Note: If you need to keep a different status for some segments than the translated status, DON'T use the Finalize button. Instead, filter the segments you want to set as Translated, and apply the Task > Set translated status for target segments.
-- For packages, once you Finalize the files, you also need to export the package (or return package) back via Project > Export and exchange > To Package.
-- The memory match values are not stored in non-CafeTran project. They are available for the current session only, unless the projects provide their own values.
-- CafeTran attempts to map its own additional segment statuses (Checked, Locked) to the statuses applied by the external tool. More information can be found in each tool’s section below.
-- CafeTran generally maps its Notes feature to the Comments supported by external tools. More information can be found in each tool’s section below.
-- Extra formatting tags cannot be added. Additional formatting will need to be done at final document export.
-- You can now export bilingual DOCX files (with or without notes) for external review via Project > Export & Exchange menu. However, importing the changes directly back into CafeTran via Projects > Export & Exchange > Import bilingual file is possible for native projects only, not external ones.
-- Auto-propagation: The P and nP marks for auto-propagation and no propagation of individual segments are displayed for the current session only, for non-CafeTran projects.
-- Review jobs that rely on Track changes feature cannot be performed in CafeTran (CafeTran’s own simple Version tracking cannot be used for this purpose). However, an solution such as the online [TQAuditor](https://cloud.tqauditor.com/quick/upload) can be used to produce a changes report which highlights the document corrections.
+- **Export target file format**. For external projects, CafeTran does not export to the original target language document file format. Instead, it Finalizes the edited bilingual file(s). To final target file export is generally done by the client who created the translation project in their tool (or, in some cases, by the translator, if they use the same tool). This is a general limitation and is not inherent to CafeTran.
+- **Export target file Preview**. For the same reason as above, CafeTran does not export a target file Preview for external projects.
+- **Segmentation**. For external projects, CafeTran does not handle the segmentation phase as this takes place at the bilingual file creation. If you open an unsegmented file, CafeTran will show a warning message. Ask for properly prepared (segmented) files.
+- **Split/Merge** segments. CafeTran only supports **virtual joining of segments** in external projects. The feature allows to join segments in segments’ editor and rearrange their contents comfortably. As soon as the joined segments leave the editor, their number is the same as before joining but their respective text contents is changed (rearranged), hence the virtual aspect of this feature.
+- **Project creation**. For native projects, CafeTran creates a Project folder, copies the source documents and generates a segmented native XLIFF, which it opens for translation. For external projects, **CafeTran edits the external bilingual files directly at their own directory location**. Make sure you have a copy if needed.
+- **CafeTran does not remember/reopen the previously used resources for external projects**. Use [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates) to achieve this.
+- **Project memory/Project glossary**. If Project memory and/or Project glossary are checked in the Dashboard when opening an external project, the ProjectTM.tmx and ProjectTerms.txt files are conveniently created and placed at the same working folder.
+- **Packages**. Supported packages (.sdlppx, .mqxlz) are expanded and edited at the working folder location. To reopen an already expanded package, just drag and drop the package file once again. You can export a package (or return package) via Project > Export and exchange > To Package.
+- Export button becomes **Finalize button** in CafeTran’s segments grid. This sets the Checked status (Translated in SDL Trados/Confirmed in memoQ) to all target segments and saves the project. Generally, this step should be performed prior to delivering the files. Note: If you need to keep a different status for some segments than the translated status, DON'T use the Finalize button. Instead, filter the segments you want to set as Translated, and apply the Task > Set translated status for target segments.
+- **QA > Tags check** should be performed prior to finalizing the project, to ensure no tag issues are present in the delivered files. It is also recommended to run the **QA > At tags spaces check**.
+- **TM match marks**. The translation memory match values are not stored in non-CafeTran project. They are available for the current session only, unless the projects provide their own values.
+- **Segment statuses**. CafeTran attempts to map its own additional segment statuses (Checked, Approved, Locked) to the statuses applied by the external tool. More information can be found in each tool’s section below.
+- **Segment Notes (Comments).** CafeTran generally maps its Notes feature to the Comments supported by external tools. More information can be found in each tool’s section below.
+- **Extra formating tags** cannot be added (contrarily to native projects). Additional formatting will need to be done at final document export.
+- **Export bilingual DOCX for review**. You can export bilingual DOCX files (with or without notes) for external review via Project > Export & Exchange menu. However, importing the changes directly back into CafeTran via Projects > Export & Exchange > Import bilingual file is reserved to native projects.
+- **Auto-propagation** is supported (also across multiple files, if they are virtually glued together). However, the P and nP marks for auto-propagation and no propagation of individual segments are displayed **for the current session only**.
+- **Review** jobs that rely on Track changes feature cannot be performed in CafeTran (CafeTran’s own simple Version tracking cannot be used for this purpose). However, an solution such as the online [TQAuditor](https://cloud.tqauditor.com/quick/upload) can be used to produce a changes report which highlights the document corrections. CafeTran does map Translator Approved and Translator Rejected SDL Trados statuses.
 
-Related links:
-[Project File Formats Created in Other Tools](https://cafetran.freshdesk.com/support/solutions/articles/6000166523-project-file-formats-created-in-other-tools)
+- Related links:
+  [Project File Formats Created in Other Tools](https://cafetran.freshdesk.com/support/solutions/articles/6000166523-project-file-formats-created-in-other-tools)
 
 ### SDL Trados Studio
 
@@ -477,16 +491,19 @@ In addition to the general notes above, please consider the following **known li
 
 **Segment status:**
 
-<!--- TODO Update the below content after testing again --->
+In the screenshot below, you see how the various SDL Trados statuses mentioned in the green Notes are displayed in CafeTran.
 
-- Translated segments in SDL Trados get the Approved status in CafeTran.
-- CafeTran's Approved status maps to Translated status in the .sdxliff files.
-- Approved segments in SDL Trados appear with a dark color box and the 100% mark in CafeTran. [Note: This needs further testing].
-- Signed-off segments in SDL Trados have the Checked status in CafeTran.
-- Complete Sign-off (marked with PM and a lock in SDL Trados) have the Locked status in CafeTran.
+![SDL Trados statuses in CafeTran Espresso](https://i.imgur.com/DoI5PFX.png)
+
+- "Translated" segments in SDL Trados get the "Checked" status in CafeTran (gray background in segments, plus simple gray background in segment number) and vice versa. This is the status segments get when you press the Finalize button in CafeTran.
+- "Translation approved" segments in SDL Trados appear as "Approved" in CafeTran (gray segment background, plus gray segment number background with green frame).
+- "Translation rejected" segments in SDL Trados appear as "Rejected" in CafeTran (no segment background, plus gray segment number background with red frame).
+- "Signed-off" segments in SDL Trados do not have a specific status in CafeTran.
+- "Sign-off rejected" segments do not have a specific status in CafeTran.
+- "Locked"/"Complete Sign-off" (marked with PM and a lock in SDL Trados) have the Locked status in CafeTran.
 - Context Matches (CM) and 100% matches have the 100% match status in CafeTran.
-- Fuzzy matches in SDL Trados do not have a match mark in CafeTran.
-- You have the option to omit setting the Translated status for target segments during the export to .sdlrpx packages.
+- Fuzzy matches in SDL Trados do not necessarily have a match mark in CafeTran.
+- You have the option to omit setting the Translated status for target segments during the export to .sdlrpx packages and apply a statuses to filtered segments.
 
 Note: If you mark Studio segments as Locked in CafeTran, this status is active for the current CT session only. The CafeTran status does not interfere with the locked segment status (Complete sign-off) that is set in Studio by the project manager.
 
@@ -1175,11 +1192,40 @@ Steps:
 
 [Video](https://www.youtube.com/watch?v=Z4GrkPtowpI&feature=youtu.be) tutorial.
 
+### AI (ILLUSTRATOR)
+
+Adobe Illustrator Artwork (AI) is a proprietary file format developed by Adobe Systems for representing single-page vector-based drawings in either the EPS or PDF formats. The .ai filename extension is used by Adobe Illustrator. The AI file format was originally a native format called PGF.
+
+While AI files are not directly supported in CafeTran, since Adobe Illustrator can import and export SVG files, you can use CafeTran's SVG filter to handle Adobe Illustrator files (*.ai or *.eps).
+
+To save the AI file as an SVG, you need to use a compatible application. There are several options:
+
+Paid options:
+
+- Purchase the Sysfilter pack or a monthly/annual Sysfilter subscription for Illustrator [here](https://polmannshop.com/online/en/search?controller=search&orderby=position&orderway=desc&search_query=sysfilter&submit_search=). Generates XLIFF files for import/export.
+- Get a monthly subscription to Adobe Illustrator itself ([here](https://www.adobe.com/creativecloud/plans.html)). Use that to save as .SVG.
+
+Free option: Use the free/libre software [Inkscape](https://inkscape.org/). For more information, review the related documentation for [Inkscape for Adobe Illustrator users](https://inkscape.org/en/learn/faq/#inkscape-edits-svg-file-which-was-originally-created-adobe-illustrator-are-lost-when-importing-back-ai) and an [additional explanation/workaround](https://inkscape.org/learn/faq/#inkscape-edits-svg-file-which-was-originally-created-adobe-illustrator-are-lost-when-importing-back-ai).
+
+Adobe Illustrator instructions:
+
+- Before you export your document, you need to change the text from single line text boxes to full paragraph text boxes in Illustrator. This ensures correct segmentation.
+
+- To prevent too many tags and ensure correct segmentation, use the following Illustrator export settings (make sure you do not use "Preserve Illustrator Editing Capabilities"):
+
+  ![Adobe Illustrator - Export to SVG options](https://i.imgur.com/xZA2GiX.png)
+
+- Saving the document as SVG separates out the images. Therefore, save the SVG to its own  separate folder.
+
+- Import the SVG into CafeTran. After the translation, export the file back into the original folder so that the images can be linked correctly.
+
 ### DWG (AutoCAD)
 
 Generally, prior to translation, the AutoCAD DWG proprietary binary format needs to be converted into DXF, an exchange plain text format, which is handled by CafeTran (see Supported filters section above).
 
 Ideally, this should be done by the client in AutoCAD. Various (often expensive) software solutions also offer DWG to DFX conversion.
+
+If the DWG is exported as an SVG file (in Adobe Illustrator), if can be translated using the SVG file filter.
 
 Free conversion solutions include: [Teigha File Converter](https://www.opendesign.com/guestfiles/TeighaFileConverter) (free, cross-platform)
 
@@ -1329,96 +1375,9 @@ Additional notes:
 
 #### MateCat file formats
 
-Below you will find the full list of supported file formats in MateCat (in bold, those not natively supported by CafeTran):
+Below you will find the full list of supported file formats in MateCat (in bold, those not natively supported by CafeTran): Microsoft Office (DOCX, XLSX, PPTX, **DOC**, **DOT**, DOCM, **DOTX**, **DOTM**, **XLS**, **XLT**, XLSM, **XLTX**, **XLTM**, **PPT**, **PPS**, **PPTM**, **PPSX**, **PPSM**, **POT**, **POTM**), OpenOffice (ODT, **OTT**, ODS, **OTS**, ODP, OTP), Web (HTM, HTML, XHTML, **CSV**, **TSV**, XML, **DTD**, **JSON**, **YAML**, **YML**) Localization (SDLXLIFF, XLIFF, XLF, **PO**, TTX, TXML, Android XML), Desktop publishing (MIF, IDML, **ICML**, **DITA**), Others (TXT, PROPERTIES, RESX, STRINGS, **SRT**, **WIX**), OCR [via Nuance OCR SDK] (BMP, GIF, PNG, JPEG, TIFF, Scanned PDFs). Others (**RTF**, Regular PDFs [converted to DOCX via CloudConvert]).
 
-Microsoft Office
-
- - DOCX
- - XLSX
- - PPTX
- - **DOC**
-- **DOT**
-- DOCM
-- **DOTX**
-- **DOTM**
-- **XLS**
-- **XLT**
-- XLSM
-- **XLTX**
-- **XLTM**
- - **PPT**
-- **PPS**
-- **PPTM**
-- **PPSX**
-- **PPSM**
-- **POT**
-- **POTM**
-
- OpenOffice
-
- - ODT
- - **OTT**
- - ODS
- - **OTS**
- - ODP
- - OTP
-
- Web
-
-- HTM
-- HTML
-- XHTML
-- **CSV**
-- **TSV**
-- XML
-- **DTD**
-- **JSON**
-- **YAML**
-- **YML**
-
-Localization
-
-- SDLXLIFF
-- XLIFF
-- XLF
-- **PO**
-- TTX
-- TXML
-- Android XML
-
-Desktop publishing
-
-- MIF
-- IDML
-- **ICML**
-- **DITA**
-
-Others
-
-- TXT
-- PROPERTIES
-- RESX
-- STRINGS
-- **SRT**
-- **WIX**
-
-OCR (via Nuance OCR SDK)
-
-- BMP
-- GIF
-- PNG
-- JPEG
-- TIFF
-- Scanned PDFs
-
-Note: CafeTran does not offer OCR, but can handle image translation (except for TIFFs) via the “Translate paper document” workflow.
-
-Others
-
-- **RTF**
-- Regular PDFs (converted to DOCX via CloudConvert)
-
-Note: CafeTran does not offer OCR, but can handle editable PDFs with its Clipboard workflow and short non-editable PDFs with its Paper document workflow.
+Note: CafeTran does not offer OCR, but can handle image translation (except for TIFFs) via the “Translate paper document” workflow, editable PDFs with its Clipboard workflow and short non-editable PDFs with its Paper document workflow.
 
 Related links:
 List of [MateCat - Supported file formats and languages](https://www.matecat.com/support/introducing-matecat/supported-browser-languages-formats/)
@@ -1441,9 +1400,9 @@ Written in Java using Jetty and Okapi Framework, MateCat filters is offered as a
 
 There is a Mashape plan for 250 free conversions per month, as well as other paid plans.
 
-For more information:
-[MateCat Filters](http://filters.matecat.com/) (home page).
-[Supported file formats](https://github.com/matecat/MateCat-Filters/wiki/Supported-file-formats)
+For more information:- 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11
+- [MateCat Filters](http://filters.matecat.com/) (home page).
+  [Supported file formats](https://github.com/matecat/MateCat-Filters/wiki/Supported-file-formats)
 
 #### Offline
 
@@ -1469,16 +1428,7 @@ WFP roudtrip procedure:
 
 Additional supported file formats include:
 
- - Adobe InCopy ICML
- - PO
- - RTF
- - DOC
- - XLS
- - PPT
- - ASP
- - JPS
- - SRT
- - VDX (Microsoft Visio)
+ - Adobe InCopy ICML, PO, RTF, DOC, XLS, PPT, ASP, JPS, SRT, VDX (Microsoft Visio)
 
 Also, some file formats already supported by CafeTran can offer additional filter options in WFP (in Edit > Preferences > Formats), such as the ability to choose whether to include slide notes, hidden slides etc. in PowerPoint presentations.
 
@@ -1495,37 +1445,6 @@ You can use the cross-platform Wordfast Pro 5 to perform a round trip for differ
 
 [Supported file formats | Download](http://www.wordfast.com/products/products_wordfast_pro_5) (Specifications tab)
 
-### Swordfish
-
-*Offline, cross-platform, 30-day trial, license request needed*
-
-Additional supported file filters include:
-
- - SVG
- - DocBook 3.x, 4.x and 5.x
- - JavaScript
- - PHP Arrays
- - PO (Portable Objects)
- - RC (Windows C/C++ Resources)
- - TS (Qt Linguist translation source)
- - DITA
-
-Related links:
-Download [Swordfish](https://www.maxprograms.com/products/swordfish.html).
-
-### Heartsome
-
-*Offline, cross-flatform, free and open source*
-
-Additional supported file filters include:
-
- - DITA
- - PO
- - RC
-
-Related links:
-[Heartsome Translation Studio 8.0](https://github.com/heartsome/translationstudio8)
-
 ### Memsource
 
 *Online/offline, cross-platform, Personal Edition or Freelancer edition*
@@ -1537,34 +1456,36 @@ Related links:
 
 Memsource handles a wide range of file types and offers various filters.
 
-Additional supported file filters include:
+Additional supported file filters include: Multilingual MS Excel, Multilingual XML, Adobe Photoshop - PSD, JSON, CSV, YAML, DITA (dita, .ditamap), DocBook, PO Gettext, PHP, Markdown (.md, .markdown), Quark Tag, CATKEYS, EPUB, INI, LANG, PLIST, RC, SRT, SUB, TS, WIKI, YAML, TAG, XTG.
 
- - Multilingual MS Excel
- - Multilingual XML
- - Adobe Photoshop - PSD
- - JSON
- - CSV
- - YAML
- - DITA (dita, .ditamap)
- - DocBook
- - PO Gettext
- - PHP
- - Markdown (.md, .markdown)
- - SVG
- - Quark Tag
- - CATKEYS
- - EPUB
- - INI
- - LANG
- - PLIST
- - RC
- - SRT
- - SUB
- - TS
- - WIKI
- - YAML
- - TAG
- - XTG
+### Smartcat
+
+*Free, online*
+
+[Smartcat](https://www.smartcat.ai/) supports [exporting and importing back a translated XLIFF](https://help.smartcat.ai/hc/en-us/articles/360000240072-Export-XLIFF-from-Smartcat). This makes it excellent for roundtrip scenarios. See also their [best practices](https://help.smartcat.ai/hc/en-us/articles/115003578451-XLIFF-export-Best-practices) document.
+
+Additional supported [file formats](https://help.smartcat.ai/hc/en-us/articles/360006979511-File-formats-supported-in-Smartcat) include: DOC, XLS, PPT, POT/POTX, RTF, PHP, PO, MIF, DITA XML, HELP+MANUAL XML, CSV, TSV, DTD, JSON, TJSON, YML, INC, SRT, various image formats, powered by OCR (JPG/JPEG, TIF/TIFF, BMP, PNG, GIF, DJVU/DJV, DCX, PCX, JP2, JPC, JFIF, JB2), WSXZ packages.
+
+Related links:
+[Smartcat Help Center](https://help.smartcat.ai/hc/en-us/categories/115000235031-CAT-tool)
+
+### Swordfish
+
+*Offline, cross-platform, 30-day trial, license request needed*
+
+Additional supported file filters include: DocBook 3.x, 4.x and 5.x, JavaScript, PHP Arrays, PO (Portable Objects), RC (Windows C/C++ Resources), TS (Qt Linguist translation source), DITA
+
+Related links:
+Download [Swordfish](https://www.maxprograms.com/products/swordfish.html).
+
+### Heartsome
+
+*Offline, cross-flatform, free and open source*
+
+Additional supported file filters include: DITA, PO, RC.
+
+Related links:
+[Heartsome Translation Studio 8.0](https://github.com/heartsome/translationstudio8)
 
 ### Okapi Framework - Rainbow
 
@@ -1642,6 +1563,7 @@ Déjà Vu - [Supported Formats And How To Use Them](https://atrilsolutions.zende
 - 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 - 20180830 Updated for CafeTran Espresso 2018 - Akua Update 11
+- 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11 - Added section for SVG filter in Supported file formats, Adobe Illustrator (AI) in Unsupported formats, and Smartcat in Solutions
 
 ## Feedback
 

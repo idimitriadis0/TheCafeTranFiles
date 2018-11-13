@@ -11,9 +11,9 @@
 
 # CAFETRAN ESPRESSO - PROJECT TEMPLATES
 
-*Updated for CafeTran Espresso 2018*
+*Updated for CafeTran Espresso 2019*
 
-An explanation of the project templates feature in CafeTran Espresso 2018.
+An explanation of the project templates feature in CafeTran Espresso 2019.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN/EL>FR translator).*
 
@@ -40,14 +40,15 @@ In their current form, project templates store information such as:
 - The docked and joined state of tabs when a project is open (the tabs order is NOT saved, though)
 - The selected language pair
 - The selected workflow
-- The default project location and source file directory (for native projects only)
+- The default project location and source file directory (for native projects only, external projects are edited directly at the original location)
 - The default file format for project creation (Note: In general, CafeTran determines the file format dynamically based on the source file extension)
 - Appearance settings such as:
     - The theme and dashboard theme
-    - The windows layout
+    - The Window layout
     - Various color settings (found in View > Colors)
 - Billing information (applied rate for Statistics)
 - "Replace punctuation characters" and "Replace characters at source transfer" options
+- Options for QA checks
 
 To find out exactly what information is being stored in a project template, just create a project template in the Dashboard and open the resulting XML file with a text editor. Each line which includes <code>entry key="" value=""</code> represents a setting. There is no need to manually edit the XML files to use the templates feature.
 
@@ -55,7 +56,7 @@ To find out exactly what information is being stored in a project template, just
 
 Template-related actions are accessible via the Dashboard menu button:
 
-![Dashboard menu button](https://i.imgur.com/E2keydI.png)
+![Dashboard menu button](https://i.imgur.com/R2Kxc0J.png)
 
 The two dropdown menu items related to templates are:
 
@@ -132,6 +133,7 @@ As it can be easily understood, templates are versatile and can be used in a num
 - 20180307 File creation
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 - 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11
+- 20181113 Updated for CafeTran Espresso 2019 - Forerunner
 
 ## Feedback
 
