@@ -152,7 +152,7 @@ This degree of layout/appearance customizability is rarely found in other CAT to
 
 At this point, you might be asking yourself: What does each pane do? Let’s see:
 
-![CafeTran’s translation interface](https://i.imgur.com/EOIUVW9.png)
+![CafeTran’s translation interface](https://i.imgur.com/1Bjrgft.png)
 
 <!--- TODO change the screenshot? --->
 
