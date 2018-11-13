@@ -1946,7 +1946,7 @@ Buttons:
 ## LIST OF CHANGES
 
 - 20171112 File creation
-- 20171116 Updated for Yeddi #27
+- 20171116 Updated for Yeddi 27
 - 20171129 Added explanations for several context menus, TM-Town, ProZ.com and New term and fragment windows.
 - 20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
 - 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
