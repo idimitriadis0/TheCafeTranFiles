@@ -1,6 +1,6 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [CAFETRAN ESPRESSO 2018 - GETTING COMFORTABLE](#cafetran-espresso-2018-getting-comfortable)
+- [CAFETRAN ESPRESSO 2019 - GETTING COMFORTABLE](#cafetran-espresso-2019-getting-comfortable)
 	- [PART I | TAKING A TOUR](#part-i-taking-a-tour)
 		- [Intro](#intro)
 		- [New dummy project](#new-dummy-project)
@@ -24,7 +24,7 @@
 
 <!-- /TOC -->
 
-# CAFETRAN ESPRESSO 2018 - GETTING COMFORTABLE
+# CAFETRAN ESPRESSO 2019 - GETTING COMFORTABLE
 
 *Updated for CafeTran Espresso 2019*
 
