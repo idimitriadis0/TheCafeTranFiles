@@ -502,7 +502,7 @@ In the screenshot below, you see how the various SDL Trados statuses mentioned i
 - "Sign-off rejected" segments do not have a specific status in CafeTran.
 - "Locked"/"Complete Sign-off" (marked with PM and a lock in SDL Trados) have the Locked status in CafeTran.
 - Context Matches (CM) and 100% matches have the 100% match status in CafeTran.
-- Fuzzy matches in SDL Trados do not necessarily have a match mark in CafeTran.
+- Fuzzy matches in SDL Trados have the same match mark in CafeTran (but this is not so the other way around).
 - You have the option to omit setting the Translated status for target segments during the export to .sdlrpx packages and apply a statuses to filtered segments.
 
 Note: If you mark Studio segments as Locked in CafeTran, this status is active for the current CT session only. The CafeTran status does not interfere with the locked segment status (Complete sign-off) that is set in Studio by the project manager.
