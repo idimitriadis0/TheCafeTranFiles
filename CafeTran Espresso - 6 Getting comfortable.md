@@ -38,7 +38,7 @@ For additional introductory and knowledge-base articles, please visit the offici
 
 ### Intro
 
-So you’ve installed CafeTran Espresso on your computer.
+So you’ve [installed](https://cafetran.freshdesk.com/support/solutions/folders/6000232627) CafeTran Espresso on your computer.
 
 Let’s take some time to get acquainted and adjust it to your liking.
 

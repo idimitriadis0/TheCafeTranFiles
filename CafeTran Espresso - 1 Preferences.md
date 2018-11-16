@@ -331,7 +331,7 @@ If you select Rules.srx (or other SRX files from the drop-down menu), “Segment
 
 CafeTran supports the SRX standard and offers the possibility to edit SRX files (which are used to specify the break rules and the exception rules on a per language basis). The Default rules take precedence over any other rules.
 
-SRX files are stored in *cafetran/rules/segmentation* folder.
+SRX files are stored in *cafetran/rules/segmentation* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/rules/segmentation*).
 This is where you will find the Rules.srx file and where you can add other SRX files as well.
 
 **Editing segmentation rules:**
@@ -350,7 +350,7 @@ Segmentation can further be adjusted manually by using the **Split** and **Merge
 
 *Suggestions:
 To access more already set language rules for segmentation, you may want to download and use OmegaT’s [SRX file](https://raw.githubusercontent.com/omegat-org/omegat/master/src/org/omegat/core/segmentation/defaultRules.srx).
-Save the document directly from your browser and remove the .txt extension. Rename it as needed and place it in *cafetran/rules/segmentation* folder. It will be recognized after CT has been restarted.
+Save the document directly from your browser and remove the .txt extension. Rename it as needed and place it in *cafetran/rules/segmentation* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/rules/segmentation*). It will be recognized after CT has been restarted.
 For a Trados-like segmentation, you may want to add the colon character (:) to the OmegaT’s Default rules and change Break: [\.\?\!]+ to [\.\?\!:]+ in the beforebreak section.*
 
 *Another option packed with even more per language rules comes from LanguageTool and its [SRX file](https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/resource/segment.srx)*
@@ -367,7 +367,7 @@ Drop-down menu: Blank by default
 
 You can create text shortcuts to expand any given text with a defined character combination. To create a text shortcuts file that you can use across different sessions or projects, you need to first add at least one Text shortcut in Resources > Text shortcuts > Add selection to text shortcuts, then choose Resources > Text shortcuts > List text shortcuts and click the Save button. If you don’t save the shortcuts, they will be working for the current session only. Once saved, the shortcuts file will be available in this drop-down menu.
 
-Saved Text shortcuts files are saved as txt files in *cafetran/resources/shortcuts* folder.
+Saved Text shortcuts files are saved as txt files in *cafetran/resources/shortcuts* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/resources/shortcuts*).
 Multiple shortcuts files can be saved in this folder and selected from the drop-down menu.
 
 Text shortcuts files use the following format (each line is a new shortcut):
@@ -385,7 +385,7 @@ You can define non-translatables, which will be stored in the non-translatable l
 
 Non-translatables appear by default with a violet color background on the source segment and can be easily inserted via the F4 keyboard shortcut.
 
-Non-translatables are stored in *cafetran/resources/placeables* folder.
+Non-translatables are stored in *cafetran/resources/placeables* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/resources/placeables*).
 Multiple non-translatables files can be saved in this folder and selected from the drop-down menu.
 
 The non-translatable TXT files are simple lists with one non-translatable per line.
@@ -462,7 +462,7 @@ Definitions pane allows you to specify some fields that can be applied to the Gl
 ### List of subjects… | List of clients…
 Clicking these buttons lets you select a TXT file which contains a list a subjects or clients that you will the be able to apply as metadata to your projects, glossaries and termbases. Once the file is specified, it will be used by CT until you set another file.
 
-*Suggestion: You can create a “Subjects-clients” folder within cafetran/resources folder, and then a separate “clients” and “subjects” text file.*
+*Suggestion: You can create a “Subjects-clients” folder within cafetran/resources folder, and then a separate “clients” and “subjects” text file (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in /Contents/Java/resources).*
 
 <!---Modification: could CafeTran have such a folder and such a txt file already populated?--->
 

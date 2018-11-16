@@ -204,6 +204,24 @@ The new update (**2018110802**) of CafeTran 2019 Forerunner is available for dow
 
 - options for QA checks are stored in Project Templates.
 
+The new update (**2018111601**) of CafeTran 2019 Forerunner is available for download. The changes are as follows:
+
+- highlighting punctuation characters in TM exact matches which are defined in "Do not match" option.
+- replacing background color with strike-through line for the missing words at the comparison between the current segment and fuzzy matches.
+- new "R" symbol in the grid for repeated segments regardless of their propagation status.
+- marking segments edited in the current session - see the red asterisk in the grid.
+- showing the origin of the translation in the grid:
+  - Machine Translation - see the MT symbol.
+  - CafeTran's Auto-assembling - see the CT symbol.
+  - Human Translation - see the HT symbol.
+
+CafeTran handles the origin state automatically. For example, Machine Translations or Exact/Fuzzy matches switch to Human Translation (HT) state after their edition. Currently, the origin is stored permamently in CafeTran's projects only, as projects coming from other translation tools may not have this concept. There are also new filters corresponding to the new states:
+
+- Segments edited in the current session - see Filter > Status menu.
+- Human Translation (HT) - see Filter > Origin menu.
+- AI Translation (MT+TM) - see Filter > Origin menu.
+
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
