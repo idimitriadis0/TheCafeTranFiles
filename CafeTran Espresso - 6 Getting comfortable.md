@@ -40,9 +40,9 @@ For additional introductory and knowledge-base articles, please visit the offici
 
 So you’ve [installed](https://cafetran.freshdesk.com/support/solutions/folders/6000232627) CafeTran Espresso on your computer.
 
-Let’s take some time to get acquainted and adjust it to your liking.
+Let’s take some time to get acquainted with the CAT tool and adjust it to your liking.
 
-Once you accept the software license, you are greeted by the Dashboard.
+Once you accept the software license, you are greeted by the [Dashboard](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#project-dashboard).
 
 To take a peek at the translation interface, you can close the Dashboard (Dashbord menu button > Close Dashboard) or simply create a new project.
 
@@ -134,7 +134,7 @@ Remember, you can easily make the source and target editor segment text bigger o
 
 ![View > Window layout submenu](https://i.imgur.com/svkHea5.png)
 
-Let’s now focus on the Window layout.
+Let’s now focus on the [Window layout](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#view--window-layout-submenu), one of the most important settings you can choose.
 
 Depending on the project/workflow type, your screen resolution or your own preference, you might want to switch between the six available layout options. Try them out instantly, no restart required!
 
@@ -202,19 +202,21 @@ Still, there are some Preferences you might wish to set up soon:
 
 **Preferences > General > Segmentation**
 
-Defining the segmentation rules which will be applied for a given project is an important consideration. Check out the available options. The default (Sentence) is fine for basic needs, but you may want to explore more advanced (SRX) solutions. Recommendation: Review the Suggestion section under [Segmentation](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#segmentation) in the “Preferences” reference document.
+Defining the segmentation rules which will be applied for a given project is an important consideration. Check out the available options. The default (Sentence) is fine for starters, but you may want to explore more advanced (SRX) solutions. Recommendation: Review the Suggestion section under [Segmentation](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#segmentation) in the “Preferences” reference document.
 
 **Preferences > Memory > Java Memory size (MB)**
 
 You can define the amount of RAM dynamically allocated to Java for CafeTran’s operation.
 
-Since resources are loaded in RAM, if you have 8 GB RAM or more, you can safely push this setting higher for a more comfortable operation. Consider increasing the default value from 1024 to 2048 (or higher). In this case, also make sure you have installed the 64-bit Java version from Oracle.
+Since resources are loaded in RAM, if you have 8 GB RAM or more, you can safely push this setting higher for a more comfortable operation. Consider increasing the default value from 1024 to 2048 (or much higher). In this case, also make sure you have installed the 64-bit Java version from Oracle. You can check the current RAM usage in Help > About.
 
 **Preferences > MT services**
 
 If you’d like to receive Machine Translation suggestions while working on your translations, you’ll probably want to set up the available [MT services](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#mt-services) (DeepL, Google Translate, Microsoft Translator, MyMemory and Yandex.Translate).
 
 Some MT services can also be queried via their web interface, straight from within CafeTran. Depending on your language pairs, check out DeepL, Google Translate, Bing Translator and Youdao, in Resources > Web (or enable them from the Dashboard).
+
+All these are entirely optional and can be stopped or queried manually on a per-segment basis.
 
 **Preferences > Web services**
 
@@ -233,7 +235,7 @@ You might wish to customize some as well.
 Here are a few examples (by no means prescriptions, just to give an idea):
 
 - Since I tend use the **Default scope** much (for searching the selected web resource), I give it the Ctrl(Cmd)+Enter shortcut and switch the **Add segment to memory and go to next untranslated segment** to Ctrl+Shift+Down. Ctrl+Enter was the historical shortcut given to the Default scope in CafeTran anyway.
-- To avoid splitting or merging segments accidentally, I either disable **Split segment** and **Merge segment** shortcuts or assign a non casually triggered one, such as Alt+PageUp/PageDown.
+- To avoid splitting or merging segments accidentally, I either disable **Split segment** and **Merge segment** shortcuts or assign a non casually triggered one, such as Alt+PageUp/PageDown. Split and Merge can also be performed via the [Target segment editor buttons](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#target-segment-editor-icons).
 
 It’s up to you!
 
@@ -245,7 +247,7 @@ Many actions are accessible via shortcuts as well. Some menus give access to add
 
 By default, help tips are shown at the bottom left when you hover a menu or a UI element.
 
-To dive deeper info Menus, see the reference document “[Menu and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface)”.
+To dive deeper into Menus, see the reference document “[Menu and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface)”.
 
 **Resources > Web**
 
@@ -272,7 +274,7 @@ Places to visit:
 
 CafeTran memories do not only store segments. They can also store fragments and be used as Termbases. Fragments or subsegments are parts of segments and phrases. They can consist of one or more terms (which in turn can consist of one or more words). In such a case, using a Memory for storing both segments and fragments (see TM options above) can be all you need. You can also set up a separate Memory meant to store fragments only.
 
-Another way of tackling terminology is to use Glossaries. In CafeTran, Glossaries are simple tab-delimited text files for storing terms.
+Another way of tackling terminology is to use Glossaries. In CafeTran, Glossaries are simple tab-delimited text files for storing terms. CafeTran supports many features, such as synonyms, regular expressions, non-translatables, and multilingual glossaries.
 
 Both approaches have their advantages and disadvantages, fervent adepts and detractors.
 
@@ -284,9 +286,9 @@ CafeTran offers a templates feature which stores a variety of settings in templa
 
 Saving and loading templates is accessible via the Dashboard menu.
 
-This can be very convenient, especially if you happen to work on different language pairs or wish to quickly swap resources and (various) settings from one project to another.
+This can be very convenient, especially if you happen to work on different language pairs or wish to quickly swap resources and (various) settings from one project to another. Project templates are particularly handy if you happen to work with external projects.
 
-If so, check out the reference document on [Project templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
+Check out the reference document on [Project templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
 
 ### FILE FORMATS
 
