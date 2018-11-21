@@ -1,7 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CAFETRAN ESPRESSO - PREFERENCES](#cafetran-espresso-preferences)
-	- [ACCESSING PREFERENCES (OPTIONS)](#accessing-preferences-options)
+	- [ACCESSING PREFERENCES](#accessing-preferences)
 	- [EXPORT/IMPORT/RESET PREFERENCES](#exportimportreset-preferences)
 	- [GENERAL](#general)
 		- [User ID:](#user-id)
@@ -167,7 +167,7 @@
 
 *Updated for CafeTran Espresso 2019 - Forerunner (build 2018110802)*
 
-This reference document offers a tour of CafeTran’s Preferences (Options) and describes each item’s function, providing additional information along the way.
+This reference document offers a tour of CafeTran’s Preferences and describes each item’s function, providing additional information along the way.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
 
@@ -177,9 +177,9 @@ This reference document offers a tour of CafeTran’s Preferences (Options) and 
 
 <!--- Shortened link to this document: --->
 
-## ACCESSING PREFERENCES (OPTIONS)
+## ACCESSING PREFERENCES
 
-You can access Preferences from the **Menu (Edit>Preferences [Options])** or directly from the **Dashboard** by clicking the button shown below and choosing Preferences (Options). OS X users can also use the usual Cmd + , shortcut.
+You can access Preferences from the **Menu (Edit>Preferences)** or directly from the **Dashboard** by clicking the button shown below and choosing Preferences.
 
 ![Dashboard menu button](https://i.imgur.com/R2Kxc0J.png)
 
@@ -348,10 +348,22 @@ Okapi Framework - [Ratel](http://okapiframework.org/wiki/index.php?title=Ratel) 
 
 Segmentation can further be adjusted manually by using the **Split** and **Merge** features (again, this works only for native CT projects).
 
-*Suggestions:
+Suggestion:
 To access more already set language rules for segmentation, you may want to download and use OmegaT’s [SRX file](https://raw.githubusercontent.com/omegat-org/omegat/master/src/org/omegat/core/segmentation/defaultRules.srx).
 Save the document directly from your browser and remove the .txt extension. Rename it as needed and place it in *cafetran/rules/segmentation* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/rules/segmentation*). It will be recognized after CT has been restarted.
-For a Trados-like segmentation, you may want to add the colon character (:) to the OmegaT’s Default rules and change Break: [\.\?\!]+ to [\.\?\!:]+ in the beforebreak section.*
+For a Trados-like segmentation, you may want to add the colon character (:) to the OmegaT’s Default rules and change Break:
+
+```
+[\.\?\!]+
+```
+
+ to
+
+```
+[\.\?\!:]+
+```
+
+ in the beforebreak section.
 
 *Another option packed with even more per language rules comes from LanguageTool and its [SRX file](https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/resource/segment.srx)*
 
@@ -1785,13 +1797,13 @@ Also in Glossary menu and the Glossary context-menu (right click).
 
 **Remove defined character to the left**	Ctrl+Shift+Comma
 
-Remove the characters defined in Edit-> Options-> General-Characters for removal, but only to the left of the cursor.
+Remove the characters defined in Edit > Preferences > General > Characters for removal, but only to the left of the cursor.
 
 Also in Edit > Target segment submenu.
 
 **Remove defined characters**	Ctrl+Shift+Period
 
-Remove the characters defined in Edit-> Options-> General-Characters for removal from the entire target segment.
+Remove the characters defined in Edit > Preferences > General > Characters for removal from the entire target segment.
 
 Also in Edit > Target segment submenu.
 
@@ -1889,19 +1901,19 @@ Also in Edit > Target segment submenu and through the context menu (right click)
 
 **Surround with characters 1**	Ctrl+Shift+Quote
 
-Surround the selected text with the characters defined in Edit-> Options-> General-> Surround with characters 1.
+Surround the selected text with the characters defined in Edit > Preferences > General > Surround with characters 1.
 
 Also in Edit > Target segment submenu and through the context menu (right click) when in the target language box.
 
 **Surround with characters 2**	Ctrl+Shift+Close Bracket
 
-Surround the selected text with the characters defined in Edit-> Options-> General-> Surround with characters 2.
+Surround the selected text with the characters defined in Edit > Preferences > General > Surround with characters 2.
 
 Also in Edit > Target segment submenu and through the context menu (right click) when in the target language box.
 
 **Surround with characters 3**	Ctrl+Shift+Open Bracket
 
-Surround the selected text with the characters defined in Edit-> Options-> General-> Surround with characters 3.
+Surround the selected text with the characters defined in Edit > Preferences > General > Surround with characters 3.
 
 Also in Edit > Target segment submenu and through the context menu (right click) when in the target language box.
 
