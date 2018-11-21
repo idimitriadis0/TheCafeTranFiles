@@ -348,7 +348,7 @@ Okapi Framework - [Ratel](http://okapiframework.org/wiki/index.php?title=Ratel) 
 
 Segmentation can further be adjusted manually by using the **Split** and **Merge** features (again, this works only for native CT projects).
 
-Suggestion:
+**Suggestion:**
 To access more already set language rules for segmentation, you may want to download and use OmegaT’s [SRX file](https://raw.githubusercontent.com/omegat-org/omegat/master/src/org/omegat/core/segmentation/defaultRules.srx).
 Save the document directly from your browser and remove the .txt extension. Rename it as needed and place it in *cafetran/rules/segmentation* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/rules/segmentation*). It will be recognized after CT has been restarted.
 For a Trados-like segmentation, you may want to add the colon character (:) to the OmegaT’s Default rules and change Break:
