@@ -221,6 +221,22 @@ CafeTran handles the origin state automatically. For example, Machine Translatio
 - Human Translation (HT) - see Filter > Origin menu.
 - AI Translation (MT+TM) - see Filter > Origin menu.
 
+The new update (**2018111901**) of CafeTran 2019 Forerunner is available for download with the following:
+
+- quick access to recently used Project Templates via the Dashboard menu. Their usage is remembered starting from this update.
+- improved dark theme for Nimbus look and feel.
+
+The new update (**2018112201**) of CafeTran 2019 Forerunner has been available for download.  The new features:
+
+- handling of some Unicode symbols (e.g Trademark**™**, Copyright©, Registered trademark®) during fuzzy matching.
+- handling of CDATA sections in some external xliff files.
+
+The new update (**2018112701**) of CafeTran 2019 Forerunner is available with the following changes:
+
+- a new filter for ITT subtitles file. SRT subtitles file filter should be ready for the next update.
+- options for displaying various segment labels in the grid - see the menu View > Segment labels.
+
+Google Translate website has changed so CafeTran's interfacing to it needed updating as well. The update **2018112901** is available for download.
 
 ## 2018 Akua Update 12 (20180901)
 
