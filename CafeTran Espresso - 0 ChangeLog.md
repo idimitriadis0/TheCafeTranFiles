@@ -238,6 +238,15 @@ The new update (**2018112701**) of CafeTran 2019 Forerunner is available with th
 
 Google Translate website has changed so CafeTran's interfacing to it needed updating as well. The update **2018112901** is available for download.
 
+The new update (**2018120602**) of CafeTran 2019 Forerunner is available with the following features:
+
+- an filter option to define a notes column for the import of Ms Excel documents.
+- an option to export target documents into a shared folder - across multiple projects. See Edit > Preferences > Workflow tab > Shared export folder check box.  After turning this option on, CafeTran remembers the last Export location for the subsequent projects.
+- added a movie resource - see the menu Resources > Open movie... . The movie resource can be useful during the translation of subtitles. You can also watch movies for fun, while translating, if you are good at multitasking.
+- added YouTube web resource.
+
+The new movie resource feature depends both on the Java version and the operating system (or its version). In particular, not all Linux distributions can work with this feature. Generally, Java developers try to catch up with the latest versions of video codec libraries on your operating system.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
