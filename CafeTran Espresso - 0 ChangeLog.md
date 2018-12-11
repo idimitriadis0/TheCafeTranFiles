@@ -247,6 +247,11 @@ The new update (**2018120602**) of CafeTran 2019 Forerunner is available with th
 
 The new movie resource feature depends both on the Java version and the operating system (or its version). In particular, not all Linux distributions can work with this feature. Generally, Java developers try to catch up with the latest versions of video codec libraries on your operating system.
 
+The new update (**2018121001**) of CafeTran 2019 Forerunner is available with the following features:
+
+- case-insensitive language codes mapping for segmentation .srx files.
+- the option Filter > Source and Target segments preview also determines the language of export/conversion of the project to the text and html formats.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
