@@ -252,6 +252,8 @@ The new update (**2018121001**) of CafeTran 2019 Forerunner is available with th
 - case-insensitive language codes mapping for segmentation .srx files.
 - the option Filter > Source and Target segments preview also determines the language of export/conversion of the project to the text and html formats.
 
+The update **2018121301** of CafeTran 2019 Forerunner is available with Portuguese and Russian languages included in DeepL API.
+
 ## 2018 Akua Update 12 (20180901)
 
 - Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
