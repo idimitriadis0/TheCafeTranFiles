@@ -1,27 +1,8 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CAFETRAN ESPRESSO - Translation Memories options](#cafetran-espresso-translation-memories-options)
-	- [TM context menu options](#tm-context-menu-options)
-		- [Browse memory](#browse-memory)
-		- [Memory type](#memory-type)
-		- [Priority](#priority)
-	- [TM options](#tm-options)
-		- [Memory type](#memory-type)
-		- [Language pair](#language-pair)
-		- [Options](#options)
-	- [TM filter options](#tm-filter-options)
-		- [Properties filter](#properties-filter)
-		- [Segment filters](#segment-filters)
-	- [Total Recall options](#total-recall-options)
-		- [Database - [name of database]](#database-name-of-database)
-	- [List of changes](#list-of-changes)
-	- [Feedback](#feedback)
-
-<!-- /TOC -->
+[TOC]
 
 # CAFETRAN ESPRESSO - Translation Memories options
 
-*Updated for CafeTran Espresso 2019 - Forerunner (build 2018110802)*
+*Updated for CafeTran Espresso 2019*
 
 This document offers an overview of CafeTran’s Translation Memory options.
 
@@ -30,8 +11,6 @@ Some memory-related settings can be found in [Edit > Preferences (Options) > Mem
 You can find additional information on [Working with Translation Memories](https://cafetran.freshdesk.com/support/solutions/folders/6000058172) In the official CafeTran Knowledge Base (Solutions).
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
-
-*This file receives regular updates every two-three months*
 
 *If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 

@@ -1,146 +1,12 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CAFETRAN ESPRESSO - FILE FORMATS](#cafetran-espresso-file-formats)
-	- [1. SUPPORTED FILE FORMATS AND WORKFLOWS](#1-supported-file-formats-and-workflows)
-	- [File formats overview](#file-formats-overview)
-	- [CafeTran’s own file formats](#cafetrans-own-file-formats)
-	- [CafeTran’s File type filters](#cafetrans-file-type-filters)
-	- [File types in detail](#file-types-in-detail)
-		- [Microsoft Office](#microsoft-office)
-			- [MS Word (.docx)](#ms-word-docx)
-			- [MS Word OCR (.docx/xml)](#ms-word-ocr-docxxml)
-			- [MS Word Uncleaned (.docx/xml)](#ms-word-uncleaned-docxxml)
-			- [MS Excel (.xlsx)](#ms-excel-xlsx)
-			- [Tagged MS Excel (.xlsx)](#tagged-ms-excel-xlsx)
-			- [MS PowerPoint (.pptx)](#ms-powerpoint-pptx)
-		- [OpenOffice/LibreOffice](#openofficelibreoffice)
-			- [Writer (.odt)](#writer-odt)
-			- [OpenOffice Uncleaned (.odt)](#openoffice-uncleaned-odt)
-			- [Calc (.ods)](#calc-ods)
-			- [Impress (.odp)](#impress-odp)
-			- [Draw (.odg)](#draw-odg)
-		- [AbiWord (.abw)](#abiword-abw)
-		- [Apple iWork](#apple-iwork)
-			- [iWork Pages (.pages)](#iwork-pages-pages)
-			- [iWork Numbers (.numbers)](#iwork-numbers-numbers)
-			- [iWork Keynote (.key)](#iwork-keynote-key)
-		- [Web localization/XML files](#web-localizationxml-files)
-			- [XML](#xml)
-			- [HTML](#html)
-			- [XML/HTML with tags](#xmlhtml-with-tags)
-			- [Transit XML File](#transit-xml-file)
-			- [Tagged MS Excel (.xlsx)](#tagged-ms-excel-xlsx)
-		- [DTP](#dtp)
-			- [InDesign (.inx)](#indesign-inx)
-			- [InDesign (.idml)](#indesign-idml)
-			- [FrameMaker (.mif)](#framemaker-mif)
-			- [DTP Tagged Text](#dtp-tagged-text)
-			- [Vector image (.svg)](#vector-image-svg)
-		- [AutoCAD](#autocad)
-			- [AutoCAD (.dxf)](#autocad-dxf)
-		- [Software localization](#software-localization)
-			- [Java Properties (.properties)](#java-properties-properties)
-			- [Windows .NET Resources (.resx)](#windows-net-resources-resx)
-			- [Mac String Resources (.strings)](#mac-string-resources-strings)
-			- [Android (and other) XML files (.xml)](#android-and-other-xml-files-xml)
-			- [String resource header (.loc)](#string-resource-header-loc)
-		- [Paper document workflow](#paper-document-workflow)
-			- [Image (.jpg/gif/bmp/png)](#image-jpggifbmppng)
-	- [2. EXTERNAL PROJECTS](#2-external-projects)
-		- [GENERAL NOTES ON BILINGUAL XLIFF FILES](#general-notes-on-bilingual-xliff-files)
-		- [SDL Trados Studio](#sdl-trados-studio)
-			- [SDLXLIFF](#sdlxliff)
-			- [SDLPPX](#sdlppx)
-			- [SDLTM translation memories](#sdltm-translation-memories)
-			- [SDLTB termbases](#sdltb-termbases)
-			- [TRADOS UNCLEAN RTF/DOC](#trados-unclean-rtfdoc)
-			- [TRADOS WORKBENCH - TTX](#trados-workbench-ttx)
-			- [TRADOS WORKBENCH - RTF](#trados-workbench-rtf)
-			- [IMPORTING CAFETRAN’S TMX TO STUDIO](#importing-cafetrans-tmx-to-studio)
-			- [CONVERTING CAFETRAN GLOSSARIES TO SDLTB](#converting-cafetran-glossaries-to-sdltb)
-		- [memoQ](#memoq)
-			- [MQXLIFF](#mqxliff)
-			- [MQXLZ](#mqxlz)
-			- [MQOUT](#mqout)
-			- [memoQ online projects](#memoq-online-projects)
-			- [memoQ bilingual RTF files](#memoq-bilingual-rtf-files)
-			- [memoQ Translation Memories](#memoq-translation-memories)
-			- [memoQ Term Bases](#memoq-term-bases)
-		- [Wordfast Pro](#wordfast-pro)
-			- [WFP 3 - TXML](#wfp-3-txml)
-			- [WFP 4/5 - TXLF](#wfp-45-txlf)
-			- [WFP 4/5 - GLP](#wfp-45-glp)
-			- [RTF/DOC/DOCX Bilingual Review](#rtfdocdocx-bilingual-review)
-			- [Wordfast TXT TMs](#wordfast-txt-tms)
-			- [Wordfast Glossaries](#wordfast-glossaries)
-		- [Déjà Vu](#dj-vu)
-			- [External View XLF](#external-view-xlf)
-			- [External View bilingual RTF tables](#external-view-bilingual-rtf-tables)
-			- [Déjà Vu Satellite files (.dvsat)](#dj-vu-satellite-files-dvsat)
-			- [Déjà Vu Pack & Go packages (.dvpng)](#dj-vu-pack-go-packages-dvpng)
-			- [Déjà Vu TMs (.dvmdb)](#dj-vu-tms-dvmdb)
-			- [Déjà Vu TBs (.dvtdb)](#dj-vu-tbs-dvtdb)
-		- [STAR Transit NXT Professional+](#star-transit-nxt-professional)
-			- [PPF AND TRANSIT XML files](#ppf-and-transit-xml-files)
-			- [Transit TermStar terminology files - TXE](#transit-termstar-terminology-files-txe)
-			- [Transit XV packages - PXF](#transit-xv-packages-pxf)
-		- [Memsource Cloud](#memsource-cloud)
-			- [MXLIFF](#mxliff)
-		- [CROWDIN](#crowdin)
-			- [XLIFF](#xliff)
-		- [XTM Cloud](#xtm-cloud)
-		- [XLIFF 2.0](#xliff-20)
-		- [Interoperability Now! TIPP and XLIFF:DOC](#interoperability-now-tipp-and-xliffdoc)
-	- [3. UNSUPPORTED FORMATS](#3-unsupported-formats)
-		- [PDF](#pdf)
-		- [DOC / XLS / PPT](#doc-xls-ppt)
-		- [RTF](#rtf)
-			- [Bilingual RTF/DOC files / Multi-column RTF tables](#bilingual-rtfdoc-files-multi-column-rtf-tables)
-			- [Multi-column RTF tables](#multi-column-rtf-tables)
-		- [PUB (Microsoft Publisher)](#pub-microsoft-publisher)
-		- [VDX (Microsoft Visio)](#vdx-microsoft-visio)
-		- [INDD (InDesign)](#indd-indesign)
-		- [AI (ILLUSTRATOR)](#ai-illustrator)
-		- [DWG (AutoCAD)](#dwg-autocad)
-		- [PO](#po)
-		- [JSON](#json)
-		- [SRT](#srt)
-		- [EPUB / MOBI / AZW / e-book](#epub-mobi-azw-e-book)
-			- [EPUB](#epub)
-			- [MOBI / AZW / AZW3](#mobi-azw-azw3)
-			- [IBOOKS](#ibooks)
-		- [TIPP (Packages)](#tipp-packages)
-	- [4. SOLUTIONS](#4-solutions)
-		- [MateCat (Recommended)](#matecat-recommended)
-			- [MateCat file formats](#matecat-file-formats)
-		- [MateCat filters](#matecat-filters)
-			- [Online](#online)
-			- [Offline](#offline)
-		- [Wordfast Pro 3](#wordfast-pro-3)
-		- [Wordfast Pro 5](#wordfast-pro-5)
-		- [Memsource](#memsource)
-		- [Smartcat](#smartcat)
-		- [Swordfish](#swordfish)
-		- [Heartsome](#heartsome)
-		- [Okapi Framework - Rainbow](#okapi-framework-rainbow)
-		- [Online/Offline file converters](#onlineoffline-file-converters)
-		- [SDL Trados Studio](#sdl-trados-studio)
-		- [memoQ](#memoq)
-		- [Déjà Vu](#dj-vu)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
-
-<!-- /TOC -->
+[TOC]
 
 # CAFETRAN ESPRESSO - FILE FORMATS
 
-*Updated for CafeTran Espresso 2019 - Forerunner (build 2018110802)*
-
-*This file receives regular updates every two-three months*.
-
-*To keep track of the latest CafeTran developments, review (and subscribe to) the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
+*Updated for CafeTran Espresso 2019  - Croissant 10.0 (20190117)*
 
 This document aims to cover natively supported file formats in CafeTran, provide compatibility information for external bilingual projects (files and packages), and discuss solutions to handle not yet supported file types.
+
+*To keep track of the latest CafeTran developments, review (and subscribe to) the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
 
@@ -160,7 +26,7 @@ Finally, additional workflows make it possible to translate images and scanned/p
 
 ## File formats overview
 
-![CafeTran Espresso - Supported file formats](https://i.imgur.com/pAVmCkO.png)
+![CafeTran Espresso - Supported file formats](https://i.imgur.com/WmHwk4T.png)
 
 **CT uses a native filter for external formats marked with an asterisk.*
 
@@ -204,6 +70,8 @@ Here is the list of native file type filters CafeTran offers when creating a new
  - InDesign (.inx)
  - InDesign (.idml)
  - FrameMaker (.mif)
+ - Subtitles (.srt)
+ - Subtitles (.itt)
  - Java Properties (.properties)
  - Windows .NET Resources (.resx)
  - Mac String Resources (.strings)
@@ -258,13 +126,14 @@ Notes:
 
 - MS Excel files containing macros **.xlsm** are also handled via this filter (although the file type might need to be selected manually).
 
-![Excel file filter options](https://i.imgur.com/ePfZ2mA.png)
+![Excel file filter options](https://i.imgur.com/lyzEJ1X.png)
 
 - When you choose the **Excel filter**, you have access to the following Filter options:
 
-	 - **Import source column**: allows you to specify from which column(s) to import source text
-	 - **Import target column**: allows you to specify from which column(s) you wish to import content in the translated segments. Note: If you define two Excel columns for import separately (in two Import fields of the filter), the second column is to be imported for the review of the existing translation. Only existing rows (not empty cells) will be imported if you define an Import target column. If you specify two import columns separately, leave the export column empty.
-	 - **Export column**: allows you to specify to which column(s) you want to export your translation
+   - **Import source column**: allows you to specify from which column(s) to import source text
+    - **Import target column**: allows you to specify from which column(s) you wish to import content in the translated segments. Note: If you define two Excel columns for import separately (in two Import fields of the filter), the second column is to be imported for the review of the existing translation. Only existing rows (not empty cells) will be imported if you define an Import target column. If you specify two import columns separately, leave the export column empty.
+    - **Import notes column:** allows you to define a column that will be imported in the form of Notes in CafeTran.
+    - **Export column**: allows you to specify to which column(s) you want to export your translation.
 
 - CafeTran imports only visible (not hidden) columns, rows or sheets. Hiding these in Excel before starting a project allows you to filter out content that you don't wish to translate.
 
@@ -435,6 +304,20 @@ The XML filter can be used to localize Android applications, among other content
 #### String resource header (.loc)
 
 String resource header files are used for localization of programs written in C or C++ language.
+
+### Subtitles
+
+Subtitling offline or online software is often used not only to create, edit, and time code, but also to translate subtitles, including SubRip files, because it integrates video and audio context and offers various features specific to subtitling.
+
+For those wishing to translate subtitling files in CafeTran Espresso, the developer has recently added support for SRT and ITT files. The program can also open videos (Resources > Open movie) and offers access to YouTube as a Web resource (Resources > Web > YouTube.) 
+
+#### Subtitles (.srt)
+
+SubRip Text files.
+
+#### Subtitles (.itt)
+
+iTunes Timed Text files.
 
 ### Paper document workflow
 
@@ -1002,7 +885,7 @@ You may come across translation projects which require handling various yet unsu
 
 PDF (Portable Document Format) represents a difficult format to deal with. You should ask your client for the editable file that generated the PDF file instead. If this is not possible, different strategies and solutions exist for editable and non-editable PDF documents, some of which are presented below.
 
-- **CafeTran**
+- **CafeTran Espresso**
 
 CafeTran does not offer OCR, but can handle editable PDFs with its **Translate through Clipboard** workflow (either exporting to MS Word, OO/LO Writer or directly pasting the translation into a dedicated PDF editor) and short non-editable (scanned) PDFs with its **Translate paper document** workflow.
 
@@ -1243,14 +1126,6 @@ JavaScript Object Notation (JSON) files are not directly supported by CafeTran.
 
 CAT tools that allow you to handle JSON files via a round trip: MateCat, Wordfast Pro, memoQ, Swordfish, SDL Trados Studio (via an Open Exchange application). Okapi Framework can also help prepare files for translation and then back to the original format.
 
-### SRT
-
-SubRip (.srt) is a simple plain text subtitling format.
-
-Subtitling offline or online software is often used not only to create, edit, and time code, but also to translate subtitles, including SubRip files, because it integrates video and audio context and offers various features specific to subtitling.
-
-Those wishing to translate SRT files in CafeTran should prepare them in another tool such as: MateCat, Wordfast Pro 3, Okapi Framework, Memsource, SDL Trados Studio.
-
 ### EPUB / MOBI / AZW / e-book
 
 *Report any issues as described in the Feedback section of this document*
@@ -1344,7 +1219,7 @@ In this workflow, View > Detached windows can help you arrange your screen to in
 Related links:
 [Basic Clipboard Workflow](https://cafetran.freshdesk.com/solution/articles/6000108822-basic-workflow).
 
-### MateCat (Recommended)
+### MateCat
 
 MateCat is a free online CAT tool* which handles no less than 70 different formats and offers an excellent and easy way to translate file types for which CafeTran does not yet offer native support, acting as an additional file filter.
 
@@ -1554,7 +1429,7 @@ If you own a Déjà Vu license, you can use this CAT tool to create projects whi
 
 Related links:
 [Déjà Vu - Supported File Formats](https://atrilsolutions.zendesk.com/hc/en-us/articles/205383202-Supported-File-Formats)
-Déjà Vu - [Supported Formats And How To Use Them](https://atrilsolutions.zendesk.com/hc/en-us/sections/201686442-Supported-formats-and-how-to-use-them)
+[Déjà Vu - Supported Formats And How To Use Them](https://atrilsolutions.zendesk.com/hc/en-us/sections/201686442-Supported-formats-and-how-to-use-them)
 
 ## LIST OF CHANGES
 
@@ -1564,6 +1439,7 @@ Déjà Vu - [Supported Formats And How To Use Them](https://atrilsolutions.zende
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 - 20180830 Updated for CafeTran Espresso 2018 - Akua Update 11
 - 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11 - Added section for SVG filter in Supported file formats, Adobe Illustrator (AI) in Unsupported formats, and Smartcat in Solutions
+- 20190121 Updated for CafeTran Espresso 2019  - Croissant 10.0
 
 ## Feedback
 

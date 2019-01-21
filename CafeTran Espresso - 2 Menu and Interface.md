@@ -1,99 +1,14 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CAFETRAN ESPRESSO - MENU AND INTERFACE](#cafetran-espresso-menu-and-interface)
-- [1. Interface](#1-interface)
-	- [Project Dashboard](#project-dashboard)
-		- [Dashboard menu options](#dashboard-menu-options)
-			- [Dashboard menu options > Project type submenu](#dashboard-menu-options-project-type-submenu)
-		- [Dashboard’s Resources](#dashboards-resources)
-			- [Local resources](#local-resources)
-			- [TM-Town resources](#tm-town-resources)
-	- [New project/Project configuration dialog](#new-projectproject-configuration-dialog)
-		- [Document settings tab](#document-settings-tab)
-		- [Memory & glossary tab](#memory-glossary-tab)
-		- [Project properties tab](#project-properties-tab)
-		- [Filter options tab](#filter-options-tab)
-	- [Main translation interface](#main-translation-interface)
-	- [Segments grid icons](#segments-grid-icons)
-	- [Source segment editor icons](#source-segment-editor-icons)
-		- [Source segment editor context menu](#source-segment-editor-context-menu)
-	- [Target segment editor icons](#target-segment-editor-icons)
-		- [Target segment editor context menu](#target-segment-editor-context-menu)
-	- [Matchboard (and Matchbar)](#matchboard-and-matchbar)
-		- [Marchboard context menu](#marchboard-context-menu)
-	- [Tabbed panel](#tabbed-panel)
-		- [Tabbed panel tab context menu](#tabbed-panel-tab-context-menu)
-		- [Memory context menu and Options](#memory-context-menu-and-options)
-		- [Glossary context menu](#glossary-context-menu)
-		- [MT engines context menu](#mt-engines-context-menu)
-		- [Google MT context menu](#google-mt-context-menu)
-		- [ProZ tab and context menu](#proz-tab-and-context-menu)
-		- [TM-Town tab and context menu](#tm-town-tab-and-context-menu)
-	- [Quick search bar](#quick-search-bar)
-	- [Advanced Search (Find and Replace) window](#advanced-search-find-and-replace-window)
-- [2. Menu items](#2-menu-items)
-	- [Project](#project)
-		- [Project > Statistics submenu](#project-statistics-submenu)
-		- [Project > Export and exchange submenu](#project-export-and-exchange-submenu)
-	- [Edit](#edit)
-		- [Edit > Find at cursor submenu](#edit-find-at-cursor-submenu)
-		- [Edit > Target segment submenu](#edit-target-segment-submenu)
-	- [View](#view)
-		- [View > Window layout submenu](#view-window-layout-submenu)
-		- [View > Segment editors submenu](#view-segment-editors-submenu)
-		- [View > Themes submenu](#view-themes-submenu)
-		- [View > Colors submenu](#view-colors-submenu)
-		- [View > Font submenu](#view-font-submenu)
-		- [View > Tabs submenu](#view-tabs-submenu)
-		- [View > Toolbars submenu](#view-toolbars-submenu)
-	- [Action](#action)
-		- [Action > Tags submenu](#action-tags-submenu)
-		- [Action > Skip submenu](#action-skip-submenu)
-	- [Translate](#translate)
-	- [Filter](#filter)
-		- [Filter > Status submenu](#filter-status-submenu)
-			- [CafeTran Statuses explained](#cafetran-statuses-explained)
-		- [Filter > Matches submenu](#filter-matches-submenu)
-	- [QA](#qa)
-		- [QA > Word lists submenu](#qa-word-lists-submenu)
-		- [QA > Consistency checks submenu](#qa-consistency-checks-submenu)
-		- [QA > Check all window](#qa-check-all-window)
-	- [Task](#task)
-		- [Task > Frequent words submenu](#task-frequent-words-submenu)
-			- [Task > Frequent words context menu](#task-frequent-words-context-menu)
-		- [Task > TMX memory submenu](#task-tmx-memory-submenu)
-	- [Resources](#resources)
-		- [Add/Edit resource window](#addedit-resource-window)
-		- [Resources > Notepad submenu](#resources-notepad-submenu)
-		- [Resources > Non-translatable fragments submenu](#resources-non-translatable-fragments-submenu)
-		- [Resources > Text shortcuts submenu](#resources-text-shortcuts-submenu)
-		- [Resources > Abbreviations submenu](#resources-abbreviations-submenu)
-	- [Memory](#memory)
-		- [Memory > Import submenu](#memory-import-submenu)
-		- [Memory > Export submenu](#memory-export-submenu)
-		- [New fragment window](#new-fragment-window)
-	- [Glossary](#glossary)
-		- [New glossary window](#new-glossary-window)
-		- [New term window](#new-term-window)
-	- [Total Recall](#total-recall)
-		- [Total Recall > Import submenu](#total-recall-import-submenu)
-	- [Help](#help)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
-
-<!-- /TOC -->
+[TOC]
 
 # CAFETRAN ESPRESSO - MENU AND INTERFACE
 
-*Updated for CafeTran Espresso 2019 - Forerunner (build 2018110802)*
+*Updated for CafeTran Espresso 2019  - Croissant 10.0 (20190117)*
 
 A trip to CafeTran’s interface and menus.
 
 This is heavily based and builds upon texts CafeTran displays in the help bar at the bottom of the program’s window (if the help tips option is enabled in View >Toolbars submenu).
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
-
-*This file receives regular updates every two-three months*.
 
 *To keep track of the latest CafeTran developments, review (and subscribe to) the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
@@ -135,15 +50,16 @@ Note: If you haven’t created a project yet, this button is not displayed.
 
 ### Dashboard menu options
 
-![Dashboard context menu](https://i.imgur.com/3qLEXMN.png)
+![Dashboard context menu](https://i.imgur.com/IncqKPC.png)
 
 Clicking the Dashboard menu button allows you to access additional project options and settings:
 
 - **Project type** = **Submenu**. Choose how you’d like to use CafeTran Espresso for your new project (see submenu items below).
 - **Multiple document project** = Check this menu item to choose a folder, instead of a single document, so all documents within are added as source documents.
+- **Recent project templates** = Quickly access recently used Project Templates.
 - **Open project template** = Open an already saved project template. You will be asked to select which template file to open.
 - **Save project template** = Save a project template as an XML file. You will be asked to select a file location.
-Suggestion: Create a “templates” folder in *cafetran* or *cafetran/projects* folder and save your templates there.
+  Suggestion: Create a “templates” folder in *cafetran* or *cafetran/projects* folder and save your templates there.
 - **Choose your rate** = You can set your rate for statistics calculations here. Can also be set in Preferences and in the Statistics tab of an open project.
 - **Remove working language pair** = All source and target languages you select in the Dashboard’s corresponding drop-down menus are added at the very start of the available language/language variant list, so that you can easily re-use your working languages. If you wish to remove a working language pair, set the pair you want to remove in the drop-down menus, and then use this option.
 - **Dark Dashboard** = Toggle the alternative dark Dashboard theme.
@@ -184,6 +100,20 @@ The **Dashboard** also allows you to select various resource types: **Translatio
 #### TM-Town resources
 
 If you enable TM Town (see Preferences > Web services), CafeTran also displays a new tab, allowing you to check TM-Town’s available resources and options (via the context menu).
+
+### Customizing the Dashboard
+
+CafeTran Espresso currently offers two reversed themes: the standard theme and the Dark Dashboard.
+
+If you wish to change the colors/images used for the Dashboard themes, you can do so by replacing the images texture.jpg and texture2.jpg in the folder.
+
+GNU/Linux>Windows: *cafetran/graphics/backgrounds*
+
+Mac users: */Applications/CafeTran.app* [Right click>Show package contents]*/Contents/Java/graphics/backgrounds*
+
+Note: The replaced images are likely to be replaced with every update.
+
+Tip: Simply renaming texture.jpg and texture2.jpg results in a nice Dark Dashboard theme.
 
 ## New project/Project configuration dialog
 
@@ -233,7 +163,7 @@ If you have set a TXT file for Client and/or Subject in Preferences > Definition
 
 ### Filter options tab
 
-![Filter options tab](https://i.imgur.com/G4L1C3D.png)
+![Filter options tab](https://i.imgur.com/bqKS1BV.png)
 
 Filter options tab offers additional options. Filter options are only available for some file formats.
 
@@ -241,6 +171,7 @@ For example, the screenshot above shows the **Excel filter** options:
 
  - **Import source column** allows you to specify from which column to import source text
  - **Import target column** allows you to specify from which column you wish to import content in the translated segments
+ - **Import notes column** allows you to specify which column you wish to import as Notes
  - **Export column** allows you to specify to which column you want to export your translation
 
 ## Main translation interface
@@ -372,7 +303,7 @@ Matchboard color label meaning:
 - Blue - TM matches (segments or fragments).
 - Green - Glossary matches.
 - Purple - Machine Translation.
-- Black - Auto-assembling result.
+- Brown - Auto-assembling result/Context Match (CM).
 - Pink - Fuzzy matches.
 
 The Matchbar, placed at the top of the Matchboard, allows you to quickly display the matches without the need for scrolling in the long list of the matching results. Just hover the mouse above each Matchbar starting character.
@@ -708,7 +639,11 @@ Here you can export your documents, export and import bilingual documents, and c
 
 **Project > Export and exchange > Export current document with notes** = Export a translated copy of the currently-active document, and include any segment notes in the exported document.
 
+For a Word/LibreOffice document, this results in CT Notes being saved as Word/LibreOffice Comments, using the User ID as the author's name.
+
 **Project > Export and exchange > Export all documents with notes** = Export translated copies of all documents in the current project, including any segment notes.
+
+For a Word/LibreOffice document, this results in CT Notes being saved as Word/LibreOffice Comments, using the User ID as the author's name.
 
 **Project > Export and exchange > Include source segments in notes** = Toggle whether or not a copy of the source segment is included in exported segment notes.
 
@@ -743,6 +678,8 @@ So, for example, If you export to HTML while having the QA filtered view, you ca
 This feature can also be used as an alternative to Project > Export as bilingual document, although it does not support the import feature. Open the HTML file in OpenOffice/LibreOffice and save it as .odt or .docx.
 
 **Project > Export and exchange > (Convert) To Text file** = Save all segment pairs in a plaintext document. The exported TXT takes into account the filtered segments.
+
+Note: the option Filter > Source and Target segments preview also determines the language of export/conversion of the project to a Text file. Thus, you can choose to export only the source text, or only the target text.
 
 ## Edit
 
@@ -895,7 +832,7 @@ Also through Change to title case icon in Source segment editors.
 
 ## View
 
-![View menu](https://i.imgur.com/ue49xwE.png)
+![View menu](https://i.imgur.com/QuxZzCl.png)
 
 **View > Show Filter menu** = Toggle menu visibility
 
@@ -930,6 +867,8 @@ Hidden if already set to Detached.
 **View > Font (Appearance)** = **Submenu**. Set the font face and size for various CafeTran interface elements (see submenu items below).
 
 **View > Toolbars** = **Submenu**. See submenu items below.
+
+**View > Segment labels** = **Submenu**. See submenu items below.
 
 **View > Full screen** = Switch to full screen mode. Press F11 at any time to exit, or mouse near the top of the window to show the “Exit full screen” button.
 
@@ -1091,6 +1030,24 @@ Many of the items found in this submenu are also available in the Tabbed panel c
 
 **View > Toolbars > Hide help tips** = Hide the help tips. This also hides the workflow tips at the bottom of the Dashboard.
 
+### View > Segment labels submenu
+
+![View > Segment labels submenu](https://i.imgur.com/2T6Rn5I.png)
+
+This submenu allows you to toggle the visibility of various segment labels in the grid.
+
+CafeTran handles the origin state automatically. For example, Machine Translations or Exact/Fuzzy matches switch to Human Translation (HT) state after their edition. Currently, the origin is stored permanently in CafeTran's projects only, as projects coming from other translation tools may not have this concept.
+
+**View > Segment labels > Human Translation (HT)**
+
+**View > Segment labels > Machine Translation (MT)**
+
+**View > Segment labels > Auto-assembling (CT)**
+
+**View > Segment labels > Edited segment (*)**
+
+There are also new filters corresponding to the new states (See Filter > Origin and Filter > Status > Segments edited in the current session).
+
 ## Action
 
 ![Action menu](https://i.imgur.com/S7TWrYr.png)
@@ -1224,7 +1181,7 @@ Define which segments will be skipped while traversing through the segment pairs
 
 ## Filter
 
-![Filter menu](https://i.imgur.com/N1OFdWk.png)
+![Filter menu](https://i.imgur.com/XJvj1JF.png)
 
 **Filter > Segments filter** = Toggle the usage of the segments filter, which enables displaying only the segment pairs matching the criteria below. Can also be done via the dedicated shortcut and the FIlter icon in the Segments grid.
 
@@ -1238,7 +1195,7 @@ Define which segments will be skipped while traversing through the segment pairs
 
 **Filter > Status** = **Submenu**. Filter segments according to status (see submenu list below).
 
-**Filter > Matches** = **Submenu**. Filter according to match type (see submenu list below).
+**Filter > Origin** = **Submenu**. Filter according to their origin or match type (see submenu list below).
 
 **Filter > Non-translatable segments** = Include non-translatable segments.
 
@@ -1274,7 +1231,7 @@ Define which segments will be skipped while traversing through the segment pairs
 
 ### Filter > Status submenu
 
-![Filter > Status submenu](https://i.imgur.com/UvT8MPa.png)
+![Filter > Status submenu](https://i.imgur.com/Cw5ft4k.png)
 
 **Filter > Status > Translated segments** = Include segments which have been translated.
 
@@ -1292,6 +1249,8 @@ Define which segments will be skipped while traversing through the segment pairs
 
 **Filter > Status > Unlocked segments** = Include which have not been locked.
 
+**Filter > Status > Segments edited in the current session** = Include segments which have been edited in the current session.
+
 #### CafeTran Statuses explained
 
 Main statuses (applied via the Action menu/keyboard shortcuts, or via the Task menu):
@@ -1308,21 +1267,25 @@ Other statuses (applied only via the Task menu):
 
 **Locked**: No segment background, feature a red "L" letter in the segment number.
 
-### Filter > Matches submenu
+### Filter > Origin submenu
 
-![Filter > Matches submenu](https://i.imgur.com/f9p4Luj.png)
+![Filter > Matches submenu](https://i.imgur.com/j4dxQaL.png)
 
-**Filter > Matches > Exact and context matches** = Include segments which have exact or context matches.
+**Filter > Origin > Human Translation (HT)** = Include segments created by the human translator.
 
-**Filter > Matches > Context matches (101%, 102%)** = Include segments with at least a 101% context match (either the preceding or succeeding segment is an exact match).
+**Filter > Origin > Exact and context matches (MT+TM)** = Include segments created by Machine Translation or Translation Memory systems.
 
-**Filter > Matches > Context matches (102%**) = Include segments with a 102% context match (both the preceding and succeeding segments are exact matches).
+**Filter > Origin > Exact and context matches** = Include segments which have exact or context matches.
 
-**Filter > Matches > No exact and context matches** = Include segments which have neither exact nor context matches.
+**Filter > Origin > Context matches (101%, 102%)** = Include segments with at least a 101% context match (either the preceding or succeeding segment is an exact match).
 
-**Filter > Matches > No context matches (101%, 102%)** = Include segments without a 101% or 102% context match (neither the preceding nor succeeding segment is an exact match).
+**Filter > Origin > Context matches (102%**) = Include segments with a 102% context match (both the preceding and succeeding segments are exact matches).
 
-**Filter > Matches > No context matches (102%)** = Include segments without a 102% context match (one of the preceding and succeeding segments is not an exact match).
+**Filter > Origin > No exact and context matches** = Include segments which have neither exact nor context matches.
+
+**Filter > Origin > No context matches (101%, 102%)** = Include segments without a 101% or 102% context match (neither the preceding nor succeeding segment is an exact match).
+
+**Filter > Origin > No context matches (102%)** = Include segments without a 102% context match (one of the preceding and succeeding segments is not an exact match).
 
 ## QA
 
@@ -1409,7 +1372,7 @@ These QA items allow you to conduct various consistency checks.
 
 **QA > Consistency checks > Translation consistency check** = Check for segment pairs that have the same source segment, but have a differing target segment translations.
 
-**QA > Consistency checks > Fragments consistency check (Memory)** = Check for segment pairs that do not have terms consistent with entries in your translation memories.
+**QA > Consistency checks > Fragments consistency check (Memory)** = Check for segment pairs that do not have terms consistent with entries in your translation memories. Note: The TM used for this check should be a termbase (storing only Fragments, not Segments).
 
 **QA > Consistency checks > Terms consistency check (Glossary)** = Check for segment pairs that do not have terms consistent with entries in your glossaries. This prompts you to select the glossaries.
 
@@ -1425,7 +1388,7 @@ It can be run via QA > Check all or through the “Perform QA before exporting�
 
 ## Task
 
-![Task menu](https://i.imgur.com/sE8k7bU.png)
+![Task menu](https://i.imgur.com/V81ysyZ.png)
 
 **Task > Frequent words** = **Submenu**. Calculate and extract the most frequent words and display results in a new tab according to different criteria (see submenu items below).
 
@@ -1536,13 +1499,23 @@ Note: Remove TMX filtered units can also detect the same contents in the filtere
 
 ## Resources
 
-![Resources menu](https://i.imgur.com/uc2En4i.png)
+![Resources menu](https://i.imgur.com/CDvjE1x.png)
 
 **Resources > Simultaneous web search** = Toggle whether all web resources are searched simultaneously, or if only the currently-selected web resource should be searched.
 
 Suggestion: You might want to keep this toggled off, and enable it as needed, when you wish to query all resources at once.
 
 **Resources > Web** = **Submenu**. Open a new Web browser tab for any of various translation-related online resources. These may be searched like any other CafeTran resources. Use “Add resource…” below to add new web pages.
+
+CafeTran offers some already set up resources, although you can add many more.
+
+Some web resources of note:
+
+- MT engines with Web interface (DeepL, Google Translator, Bing Translator, Youdao MT). CafeTran conveniently allows you to easily query the MT web interface via the Translate button (or shortcut) and then transfer the MT web result to the target segment editor via the Transfer button (or shortcut).
+- Linguee (bilingual concordancer in a available in a multitude of language pairs)
+- YouTube (useful if translating subtitles)
+- Resources > Web > Examples offer various other examples of resources, such as Google search, KudoZ, Wikipedia, monolingual dictionaries (such as Wordnet and Merriam-Webster), Pons, etc.
+- LanguageTool: linguistic QA resource. The Translate and Transfer buttons for querying and transferring MT web results work for this QA web resource as well.
 
 Related links:
 [Choose Resources for Help](https://cafetran.freshdesk.com/support/solutions/articles/6000108212-choose-resources-for-help)
@@ -1559,6 +1532,10 @@ Related links:
 **Resources > Open website for source preview** = Open a specified URL in a new CafeTran internal web browser tab.
 
 Note: When enabling this option, you are prompted to connect to Dropbox or Office Live, but can also specify a different URL in the Quick search bar, where your files are hosted.
+
+**Resources > Open movie** = Open a movie file as a resource tab. The movie resource can be useful during the translation of subtitles.
+
+The new movie resource feature depends both on the Java version and the operating system (or its version). In particular, not all Linux distributions can work with this feature. Generally, Java developers try to catch up with the latest versions of video codec libraries on your operating system.
 
 **Resources > PDF viewer** = Browse for and open a PDF file for display in the tabbed pane.
 
@@ -1600,7 +1577,7 @@ This is the window that allows you to add or edit a web resource information. If
 
 **Web resources suggestions**
 
-To quickly access a list of bilingual and monolingual web resources to add in CafeTran, you can use the [IntelliWebSearch Search Database](http://www.intelliwebsearch.com/findsearch.asp). Add the “Start” and “Finish” strings to the “Address start” and “Address end” fields when creating a new resource.
+To quickly access a list of bilingual and monolingual web resources to add in CafeTran, you can use the [IntelliWebSearch Search Database](http://www.intelliwebsearch.com/findsearch.asp) (it can now only be queried from within IntelliWebSearch). Add the “Start” and “Finish” strings to the “Address start” and “Address end” fields when creating a new resource.
 
 You can also use the free browser [SlimBrowser](https://www.slimbrowser.net/) (Windows) or [Slimboat](https://www.slimjet.com/slimboat/) (Windows, Mac, GNU/Linux) to determine the start and end fields of a web resource you wish to add. To do so:
 1. Open the Internet resource in the browser.
@@ -1954,6 +1931,7 @@ Buttons:
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 - 20180830 Updated for CafeTran Espresso 2018 - Akua Update 11
 - 20181113 Updated for CafeTran Espresso 2019 - Forerunner
+- 20190121 Updated for CafeTran Espresso 2019 - Croissant 10.0
 
 ## Feedback
 

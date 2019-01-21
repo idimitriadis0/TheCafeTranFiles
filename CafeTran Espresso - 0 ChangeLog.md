@@ -1,101 +1,4 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
-	- [2019 Forerunner (20180907)](#2019-forerunner-20180907)
-	- [2018 Akua Update 12 (20180901)](#2018-akua-update-12-20180901)
-	- [2018 Akua Update 11 (20180730)](#2018-akua-update-11-20180730)
-	- [2018 Akua Update 10 (20180612)](#2018-akua-update-10-20180612)
-	- [2018 Akua Update 9 (20180604)](#2018-akua-update-9-20180604)
-	- [2018 Akua Update 8 (20180521)](#2018-akua-update-8-20180521)
-	- [2018 Akua Update 7 (20180504)](#2018-akua-update-7-20180504)
-	- [2018 Akua Update 6 (20180427)](#2018-akua-update-6-20180427)
-	- [2018 Akua Update 5 (20180409)](#2018-akua-update-5-20180409)
-	- [2018 Akua Update 4 (20180330)](#2018-akua-update-4-20180330)
-	- [2018 Akua Update 3 (20180323)](#2018-akua-update-3-20180323)
-	- [2018 Akua Update 2 (20180312)](#2018-akua-update-2-20180312)
-	- [2018 Akua Update 1 (20180301)](#2018-akua-update-1-20180301)
-	- [2018 Akua (20180118)](#2018-akua-20180118)
-	- [2018 Forerunner (20171130)](#2018-forerunner-20171130)
-	- [2017 Yeddi Update 27 (20171114)](#2017-yeddi-update-27-20171114)
-	- [2017 Yeddi Update 26 (20171110)](#2017-yeddi-update-26-20171110)
-	- [2017 Yeddi Update 25 (20171023)](#2017-yeddi-update-25-20171023)
-	- [2017 Yeddi Update 24 (20171016)](#2017-yeddi-update-24-20171016)
-	- [2017 Yeddi Update 23 (20171010)](#2017-yeddi-update-23-20171010)
-	- [2017 Yeddi Update 22 (20171001)](#2017-yeddi-update-22-20171001)
-	- [2017 Yeddi Update 21 - 20170901](#2017-yeddi-update-21-20170901)
-	- [2017 Yeddi Update 20 (20170824)](#2017-yeddi-update-20-20170824)
-	- [2017 Yeddi Update 19 (20170708)](#2017-yeddi-update-19-20170708)
-	- [2017 Yeddi Update 18 (20170731)](#2017-yeddi-update-18-20170731)
-	- [2017 Yeddi Update 17 (20170726)](#2017-yeddi-update-17-20170726)
-	- [2017 Yeddi Update 16 (20170705)](#2017-yeddi-update-16-20170705)
-	- [2017 Yeddi Update 15 (20170627)](#2017-yeddi-update-15-20170627)
-	- [2017 Yeddi Update 14 (20170615)](#2017-yeddi-update-14-20170615)
-	- [2017 Yeddi Update 13 (20170609)](#2017-yeddi-update-13-20170609)
-	- [2017 Yeddi Update 12 (20170531)](#2017-yeddi-update-12-20170531)
-	- [2017 Yeddi Update 11 (20170524)](#2017-yeddi-update-11-20170524)
-	- [2017 Yeddi Update 10 (20170517)](#2017-yeddi-update-10-20170517)
-	- [2017 Yeddi Update 9 (20170508)](#2017-yeddi-update-9-20170508)
-	- [2017 Yeddi Update 8 (20170426)](#2017-yeddi-update-8-20170426)
-	- [2017 Yeddi Update 7 (20170419)](#2017-yeddi-update-7-20170419)
-	- [2017 Yeddi Update 6 (20170410)](#2017-yeddi-update-6-20170410)
-	- [2017 Yeddi Update 5 (20170330)](#2017-yeddi-update-5-20170330)
-	- [2017 Yeddi Update 4 (20170325)](#2017-yeddi-update-4-20170325)
-	- [2017 Yeddi Update 3 (20170310)](#2017-yeddi-update-3-20170310)
-	- [2017 Yeddi Update 2 (20170302)](#2017-yeddi-update-2-20170302)
-	- [2017 Yeddi Update 1 (20170221)](#2017-yeddi-update-1-20170221)
-	- [2017 Yeddi - 20170201](#2017-yeddi-20170201)
-	- [2017 Harbinger RC 4 (20170103)](#2017-harbinger-rc-4-20170103)
-	- [2017 Harbinger RC 3 (20161222)](#2017-harbinger-rc-3-20161222)
-	- [2017 Harbinger RC 2 (20161212)](#2017-harbinger-rc-2-20161212)
-	- [2017 Harbinger RC 1 (20161205)](#2017-harbinger-rc-1-20161205)
-	- [2016 Ichiro Update 27 (20161128)](#2016-ichiro-update-27-20161128)
-	- [2016 Ichiro Update 26 (20161118)](#2016-ichiro-update-26-20161118)
-	- [2016 Ichiro Update 25 (20161109)](#2016-ichiro-update-25-20161109)
-	- [2016 Ichiro Update 24 (20161102)](#2016-ichiro-update-24-20161102)
-	- [2016 Ichiro Update 23 (20161027)](#2016-ichiro-update-23-20161027)
-	- [2016 Ichiro Update 22 (20161022)](#2016-ichiro-update-22-20161022)
-	- [2016 Ichiro Update 21 (20161017)](#2016-ichiro-update-21-20161017)
-	- [2016 Ichiro Update 20 (20161010)](#2016-ichiro-update-20-20161010)
-	- [2016 Ichiro Update 19 (20161003)](#2016-ichiro-update-19-20161003)
-	- [2016 Ichiro Update 18 (20160916)](#2016-ichiro-update-18-20160916)
-	- [2016 Ichiro Update 17 (20160907)](#2016-ichiro-update-17-20160907)
-	- [2016 Ichiro Update 16 (20160831)](#2016-ichiro-update-16-20160831)
-	- [2016 Ichiro Update 15 (20160823)](#2016-ichiro-update-15-20160823)
-	- [2016 Ichiro Update 14 (20160809)](#2016-ichiro-update-14-20160809)
-	- [2016 Ichiro Update 13 (20160802)](#2016-ichiro-update-13-20160802)
-	- [2016 Ichiro Update 12 (20160726)](#2016-ichiro-update-12-20160726)
-	- [2016 Ichiro Update 11 (20160715)](#2016-ichiro-update-11-20160715)
-	- [2016 Ichiro Update 10 (20160610)](#2016-ichiro-update-10-20160610)
-	- [2016 Ichiro Update 9 (20160606)](#2016-ichiro-update-9-20160606)
-	- [2016 Ichiro Update 8 (20160519)](#2016-ichiro-update-8-20160519)
-	- [2016 Ichiro Update 7 (20160505)](#2016-ichiro-update-7-20160505)
-	- [2016 Ichiro Update 6 (20160422)](#2016-ichiro-update-6-20160422)
-	- [2016 Ichiro Update 5 (20160411)](#2016-ichiro-update-5-20160411)
-	- [2016 Ichiro Update 4 (20160328)](#2016-ichiro-update-4-20160328)
-	- [2016 Ichiro Update 3 (20160317)](#2016-ichiro-update-3-20160317)
-	- [2016 Ichiro Update 2 (20160310)](#2016-ichiro-update-2-20160310)
-	- [2016 Ichiro Update 1 (20160205)](#2016-ichiro-update-1-20160205)
-	- [2016 Ichiro - 20160119](#2016-ichiro-20160119)
-	- [Imported from previous ChangeLog (2013-07-01 - 2015-11-28)](#imported-from-previous-changelog-2013-07-01-2015-11-28)
-	- [2016 Harbinger – 2015-11-28](#2016-harbinger-2015-11-28)
-	- [2015 Update 12 – 2015-11-25](#2015-update-12-2015-11-25)
-	- [2015 Update 12 – 2015-11-17](#2015-update-12-2015-11-17)
-	- [2015 Update 11 - 2015-11-09](#2015-update-11-2015-11-09)
-	- [2015 Update 10 - Icons with Colours (2015-11-02)](#2015-update-10-icons-with-colours-2015-11-02)
-	- [2015 Update 9 - Icons for High Resolution Screens (2015-10-22)](#2015-update-9-icons-for-high-resolution-screens-2015-10-22)
-	- [2015 Update 8 - Introducing the Match Bar (2015-10-22)](#2015-update-8-introducing-the-match-bar-2015-10-22)
-	- [2015 Update 7 (2015-10-13)](#2015-update-7-2015-10-13)
-	- [2015 Update 6 (2015-09-18)](#2015-update-6-2015-09-18)
-	- [2015 Previous updates](#2015-previous-updates)
-	- [CafeTran Espresso 2015](#cafetran-espresso-2015)
-	- [Gandalf (Released on 1 January 2014)](#gandalf-released-on-1-january-2014)
-	- [Aragorn (Released on June 2013)](#aragorn-released-on-june-2013)
-	- [Arwen (Released on March 2013)](#arwen-released-on-march-2013)
-	- [Frodo (Released on February 2013)](#frodo-released-on-february-2013)
-	- [Bilbo (Released on January 2013)](#bilbo-released-on-january-2013)
-	- [Hobbit (Released on December 2012)](#hobbit-released-on-december-2012)
-
-<!-- /TOC -->
+[TOC]
 
 # CafeTran Espresso ChangeLog
 
@@ -106,11 +9,69 @@ To get notified about new CafeTran updates, use the "Follow" button in the [Cafe
 *The ChangeLog is being curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).
 Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](http://beijer.uk) and [Hans Lenting](http://www.niederlaendisch.nl/).*
 
-*This document is being updated with every CafeTran update announcement*.
+*This document is being updated (roughly) with every CafeTran update announcement*.
 
 <!--- Shortened link to this document: --->
 
-**Important! Please complete all your translation projects in your current CafeTran version before updating.**
+**Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
+
+## 2019 Croissant (version 10.0 - 20190117)
+
+This version is the summary of all the updates to the CTE 2018 Akua and CTE 2019 Forerunner (aka Beta) version.
+
+The major changes in this version:
+
+- Easier selection of a single translation memory from the list of loaded TMs in the Memory menu for various tasks.
+- Recognition of .xhtml file extension for HTML filter.
+- Uniform color for search buttons in the search bar.
+- Adjustment to transfer the translation from Ms Bing Translator web page due to its recent change.
+- New "Transfer MT from web page" button in the source segment toolbar.  It transfers the translation from the selected Machine Translation web page (e.g DeepL, Google Translate, Bing Translator).
+- Locked segment can be exported to translation memories either vie Project > Export and exchange > To TMX memory or via Memory > Import > Import segments from project.
+- Access to DeepL Pro Machine Translation service via its API key. See this option in Edit > Preferences > MT services tab.
+- Displaying match score information for the target segments included in .txml translation projects.
+- Added the right-click pop-up menu to Frequent words feature with the minimal and maximal fragment length settings.
+- Frequent words feature is activated automatically at the start of the project when "Extract frequent words from current segment" option is on.
+- Resizing of the Preferences dialog is remembered now.
+- Repeated segments in the filter are sorted in the order of their occurrence.
+- Project Template files are selected directly via the File Chooser.
+- Option to turn off the "greedy" exact matching for translation memories - see it in the TM options panel. With this option off, CafeTran does not stop the search at the found exact match(es) for the current segment, but it continues looking for fuzzy matches and fragments. Switching off this option is not recommended for slower computers and huge translation memories.
+- Automatic removal of the misspelled words from the Auto-completion list.
+- Splitting and joining of adjacent segments in the Filter mode as well.
+- Adjustments to the MS Word filter.
+- Approved segment status - see the status selection box in the target segment toolbar. Approved segments are marked with the red border around the status cell in the grid. The new segment status maps to "Translated" status in the external sdlxliff files. There is also a new filter for "Approved" and "Not approved" segments.
+- Updated target segment editor bindings to web editors on the refreshed MT websites.
+- Added import of Multiterm XML glossaries - see the Memory > Import menu.
+- Added two window layouts for higher resolution screens - see the menu View > Window layout > Layout 4 and 5 Desktop. Layout 4 is the default for new CafeTran installation on high resolution screens while Layout 5 resembles, more or less, panels arrangement found in some other CAT tools.
+- The frequently-requested layout that integrates editors and the grid - see View > Window Layout > Layout 6 Compact. Although it is recommended for reviewing your translations, some translators might wish to use it for translating too, as it is a popular layout in other tools.
+- QA > Initial capitalization check catches the false positives that start with numbers.
+- The status of the current segment in Layout 6 Compact is displayed in the corner of the editor.
+- Clicking at the segment status label in the Filter view switches back to the normal (unfiltered) view.
+- A keyboard shortcut (CTRL+SHIFT+H) to hide editor toolbars if needed.
+- Improved sorting of resources in the Dashboard.
+- Saving of "Replace punctuation characters" and "Replace characters at source transfer" options in Project Templates.
+- Check for the maximum difference in length between source and target segments (menu QA > Length difference check).
+- Check for the maximum number of characters in the target segments (menu QA > Maximum segment length check).
+- Check for the consistency of non-translatable fragments in the source and target segments (menu QA > Non-translatable fragments check).
+- Some improvements to the LibreOffice filter.
+- Import of the editable drawings in the Ms Excel filter.
+- Corrected project's language code for Irish Gaelic.
+- New QA > Length difference check in the number of characters.
+- New Filter > Segments with numbers.
+- Fixed an issue while closing resources with duplicate names.
+- Import of SDLTB termbases.
+- Extension of the "Transfer tags to matches" option for the matches found in Machine Translation results.
+- Showing context in the filtered view of Layout 6 Compact.
+- Fixed closing of the tabs after changing their position via drag and drop.
+- Fixed the display of exact and fuzzy matches in the Matchboard for Translation Memories with the option "Keep out of auto-assembling" on.
+- Added the "Minimal prefix length" option in Edit > Preferences > Glossary tab.
+- Autopilot. This may be a very handy feature during the Review or QA phase of translation. You can also use it when translating short, repetitive/similar phrases or numbers. It allows hands-free navigation with the set delay between the segments. The default delay of 2000 milliseconds (2 seconds) can be increased in Edit > Preferences > General tab. Activation/deactivation of the Autopilot is done via the Action menu. After that, you will notice the Autopilot button in the target segment editor. Click this button to turn on/off the Autopilot. Going to the next segment triggers off its functioning. To suspend it for a while (e.g for the correction of the current segment), press the Esc key or click the mouse on the target segment editor.
+- Automatic transfer of numbers being the full segments which end with the white space character.
+- Recognition of language variants in SDLTB termbases.
+- Support for subtitles (.itt and .srt file formats).
+- Added video resource preview for translation of subtitles.
+- Added an option to set the variable delay for Autopilot. The default setting in Edit > Preferences is 1000 millisecond per 10 characters in the current segment.
+- Added the menu option to turn on/off automatic searching - useful with Autopilot during the review - see it the Action menu.
+- Glossaries selection at QA > Terms consistency check.
 
 ## 2019 Forerunner (20180907)
 
@@ -253,6 +214,14 @@ The new update (**2018121001**) of CafeTran 2019 Forerunner is available with th
 - the option Filter > Source and Target segments preview also determines the language of export/conversion of the project to the text and html formats.
 
 The update **2018121301** of CafeTran 2019 Forerunner is available with Portuguese and Russian languages included in DeepL API.
+
+The update **2019010501** of CafeTran 2019 Forerunner is available with the following:
+
+- added LanguageTool as a Web resource (see it the menu Resources > Web). The Translate and Transfer buttons for querying and transferring MT web results work for this QA web resource as well.
+
+- added support for Java 12 (to be released in March). The early access (ea) of this new Java version fixes an issue on MacOS Mojave with the insertion of accented characters via Mac pop-up characters window. If you insert the accented characters through this method on your Mac,  you need to update CafeTan by downloading and installing again to have this issue fixed. Otherwise, there is no need to reinstall the program, which works with the current Java 11.
+
+
 
 ## 2018 Akua Update 12 (20180901)
 

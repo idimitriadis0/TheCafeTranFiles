@@ -1,13 +1,4 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CAFETRAN ESPRESSO - PROJECT TEMPLATES](#cafetran-espresso-project-templates)
-	- [TEMPLATES - A PRESENTATION](#templates-a-presentation)
-	- [CREATING, MANAGING AND USING TEMPLATES](#creating-managing-and-using-templates)
-	- [SOME USAGE EXAMPLES](#some-usage-examples)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
-
-<!-- /TOC -->
+[TOC]
 
 # CAFETRAN ESPRESSO - PROJECT TEMPLATES
 
@@ -58,10 +49,11 @@ Template-related actions are accessible via the Dashboard menu button:
 
 ![Dashboard menu button](https://i.imgur.com/R2Kxc0J.png)
 
-The two dropdown menu items related to templates are:
+The two drop-down menu items related to templates are:
 
-![Templates menu](https://i.imgur.com/sDnZ6OX.png)
+![Templates menu](https://i.imgur.com/b1TKt9W.png)
 
+- **Recent project templates** = Your recently used templates will be shown here.
 - **Open project templates** = Open an already saved project template. You will be asked to select which template file to open.
 - **Save project template** = Save a project template as an .xml file. You will be asked to select a location (and file name). The Save dialogue filters only .xml files. You can save changes to an existing project template by saving it under the same file name.
 

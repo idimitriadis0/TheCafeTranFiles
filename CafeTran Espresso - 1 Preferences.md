@@ -1,177 +1,12 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CAFETRAN ESPRESSO - PREFERENCES](#cafetran-espresso-preferences)
-	- [ACCESSING PREFERENCES](#accessing-preferences)
-	- [EXPORT/IMPORT/RESET PREFERENCES](#exportimportreset-preferences)
-	- [GENERAL](#general)
-		- [User ID:](#user-id)
-		- [Database connection:](#database-connection)
-			- [Drop down menu:](#drop-down-menu)
-			- [Database connection button:](#database-connection-button)
-		- [Applications connection:](#applications-connection)
-			- [Drop down menu:](#drop-down-menu)
-			- [Applications connection button:](#applications-connection-button)
-		- [Spell checker:](#spell-checker)
-		- [Web browser:](#web-browser)
-		- [External editor:](#external-editor)
-		- [Desktop search tool:](#desktop-search-tool)
-		- [Rate:](#rate)
-			- [Rate button:](#rate-button)
-		- [Segmentation:](#segmentation)
-			- [Drop-down menu:](#drop-down-menu)
-			- [Segmentation editor, segmentation rules:](#segmentation-editor-segmentation-rules)
-			- [Segment at all tags:](#segment-at-all-tags)
-		- [Text shortcuts:](#text-shortcuts)
-		- [Non-translatable fragments:](#non-translatable-fragments)
-		- [Characters for removal:](#characters-for-removal)
-		- [Surround with characters](#surround-with-characters)
-			- [Surround with characters 1:](#surround-with-characters-1)
-			- [Surround with characters 2:](#surround-with-characters-2)
-			- [Surround with characters 3:](#surround-with-characters-3)
-		- [Project page size (units):](#project-page-size-units)
-		- [Autopilot delay (millisec/chars):](#autopilot-delay-millisecchars)
-		- [Autopilot fixed delay (milliseconds):](#autopilot-fixed-delay-milliseconds)
-	- [DEFINITIONS](#definitions)
-		- [List of subjects… | List of clients…](#list-of-subjects-list-of-clients)
-		- [Definitions column names](#definitions-column-names)
-			- [Context column name:](#context-column-name)
-			- [Subject column name:](#subject-column-name)
-			- [Client column name:](#client-column-name)
-			- [Notes column name:](#notes-column-name)
-			- [Reference column name:](#reference-column-name)
-			- [User’s column name: (3x)](#users-column-name-3x)
-		- [Language column names:](#language-column-names)
-	- [WORKFLOW](#workflow)
-		- [Image translation export to:](#image-translation-export-to)
-		- [Auto-save](#auto-save)
-			- [Auto-save project (segments):](#auto-save-project-segments)
-			- [Auto-save memory (segments):](#auto-save-memory-segments)
-			- [Auto-save glossary (entries):](#auto-save-glossary-entries)
-		- [Keep formatting at export via clipboard](#keep-formatting-at-export-via-clipboard)
-		- [Clipboard sensitive target:](#clipboard-sensitive-target)
-		- [Remove newlines at clipboard transfer:](#remove-newlines-at-clipboard-transfer)
-		- [Automatic selection of whole words:](#automatic-selection-of-whole-words)
-		- [Automatic memory matching:](#automatic-memory-matching)
-		- [Copy source to target during segmentation](#copy-source-to-target-during-segmentation)
-		- [Transfer source to empty target during translation](#transfer-source-to-empty-target-during-translation)
-		- [Replace characters at source transfer:](#replace-characters-at-source-transfer)
-	- [PROMPTER](#prompter)
-		- [Prompt phrases](#prompt-phrases)
-		- [Two-word hints](#two-word-hints)
-		- [Automatic case adjustment](#automatic-case-adjustment)
-		- [Replace existing words](#replace-existing-words)
-		- [Prompting starts at (char):](#prompting-starts-at-char)
-		- [Minimal word length:](#minimal-word-length)
-	- [AUTO-ASSEMBLING](#auto-assembling)
-		- [Automatic insertion of matches](#automatic-insertion-of-matches)
-		- [Transfer numbers to matches](#transfer-numbers-to-matches)
-		- [Transfer tags to matches](#transfer-tags-to-matches)
-		- [Match case](#match-case)
-		- [Fuzzy match auto-correction](#fuzzy-match-auto-correction)
-		- [Automatic fragments adjustment](#automatic-fragments-adjustment)
-		- [Insert target only](#insert-target-only)
-		- [Format numbers](#format-numbers)
-		- [Automatic case adjustment](#automatic-case-adjustment)
-		- [Beginning of sentence only](#beginning-of-sentence-only)
-		- [Copy matches to clipboard](#copy-matches-to-clipboard)
-		- [Replace punctuation characters](#replace-punctuation-characters)
-	- [AUTO-PROPAGATION](#auto-propagation)
-		- [Auto-propagation to other segments](#auto-propagation-to-other-segments)
-		- [Auto-propagation to current segments](#auto-propagation-to-current-segments)
-		- [Auto-propagation to other documents](#auto-propagation-to-other-documents)
-		- [Auto-propagation of numbers](#auto-propagation-of-numbers)
-		- [Auto-propagation of non-translatable fragments](#auto-propagation-of-non-translatable-fragments)
-		- [Auto-propagation forward only](#auto-propagation-forward-only)
-		- [Auto-propagation from locked segments](#auto-propagation-from-locked-segments)
-		- [Auto-propagation of segment status](#auto-propagation-of-segment-status)
-	- [GLOSSARY](#glossary)
-		- [Alternatives entries separator:](#alternatives-entries-separator)
-		- [Trim](#trim)
-			- [Trim new terms:](#trim-new-terms)
-			- [Trim new term start:](#trim-new-term-start)
-			- [Trim new term end:](#trim-new-term-end)
-		- [Fields to hide:](#fields-to-hide)
-		- [Minimal prefix length:](#minimal-prefix-length)
-		- [Prefix matching](#prefix-matching)
-		- [Sort matches alphabetically](#sort-matches-alphabetically)
-		- [Skip new term window (button)](#skip-new-term-window-button)
-		- [Vertical display](#vertical-display)
-		- [Look up word stems:](#look-up-word-stems)
-		- [Terms consistency check:](#terms-consistency-check)
-		- [Skip new term window (shortcut)](#skip-new-term-window-shortcut)
-		- [Display longest match only](#display-longest-match-only)
-	- [MEMORY](#memory)
-		- [Java memory size (MB):](#java-memory-size-mb)
-		- [Switch to preliminary matching threshold:](#switch-to-preliminary-matching-threshold)
-		- [Subsegment hits threshold:](#subsegment-hits-threshold)
-		- [Subsegment to auto threshold:](#subsegment-to-auto-threshold)
-		- [Contextual subsegment to auto threshold:](#contextual-subsegment-to-auto-threshold)
-		- [Subsegment to virtual threshold:](#subsegment-to-virtual-threshold)
-		- [Subsegment look-up limit:](#subsegment-look-up-limit)
-		- [Subsegment minimal length:](#subsegment-minimal-length)
-		- [Subsegments min. length difference (%):](#subsegments-min-length-difference-)
-		- [Auto-assembling insert threshold (%):](#auto-assembling-insert-threshold-)
-		- [Fuzzy match insert threshold (%):](#fuzzy-match-insert-threshold-)
-		- [Function words threshold (%):](#function-words-threshold-)
-		- [Fuzzy match threshold (%):](#fuzzy-match-threshold-)
-		- [Fuzzy match display limit:](#fuzzy-match-display-limit)
-		- [Search display limit:](#search-display-limit)
-		- [Additional space characters (Unicode):](#additional-space-characters-unicode)
-		- [Do not match:](#do-not-match)
-		- [Compare with target segment:](#compare-with-target-segment)
-		- [Look up word stems:](#look-up-word-stems)
-	- [MEMORY SERVER](#memory-server)
-		- [Rendezvous server port:](#rendezvous-server-port)
-		- [Read only](#read-only)
-		- [Request dialog,](#request-dialog)
-	- [QA](#qa)
-		- [Terms consistency check:](#terms-consistency-check)
-		- [Length difference check (%):](#length-difference-check-)
-		- [Length difference check (chars):](#length-difference-check-chars)
-		- [Maximum segment length (chars):](#maximum-segment-length-chars)
-		- [Prefix marching (%):](#prefix-marching-)
-		- [Don't spellcheck acronyms (chars):](#dont-spellcheck-acronyms-chars)
-		- [Regular expression:](#regular-expression)
-		- [Whole words:](#whole-words)
-		- [Match case:](#match-case)
-		- [QA for checked segments:](#qa-for-checked-segments)
-	- [MT SERVICES](#mt-services)
-		- [Mask non-translatable fragments](#mask-non-translatable-fragments)
-		- [Team auto-assembling with machine translation](#team-auto-assembling-with-machine-translation)
-		- [Team high-priority fragments only](#team-high-priority-fragments-only)
-		- [Online MT engines](#online-mt-engines)
-			- [DeepL:](#deepl)
-			- [Google Translate:](#google-translate)
-			- [MS Translator:](#ms-translator)
-			- [MyMemory:](#mymemory)
-			- [Yandex Translate:](#yandex-translate)
-		- [Offline MT engines](#offline-mt-engines)
-			- [Slate Desktop:](#slate-desktop)
-	- [WEB SERVICES](#web-services)
-		- [ProZ.com](#prozcom)
-		- [WIWO automatic pop-up dialog](#wiwo-automatic-pop-up-dialog)
-		- [TM-Town](#tm-town)
-	- [APPEARANCE](#appearance)
-		- [Look and Feel](#look-and-feel)
-		- [Large icons](#large-icons)
-		- [Monochromatic icons](#monochromatic-icons)
-		- [Interface language:](#interface-language)
-	- [KEYBOARD SHORTCUTS](#keyboard-shortcuts)
-		- [Miscellaneous keyboard shortcuts](#miscellaneous-keyboard-shortcuts)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
-
-<!-- /TOC -->
+[TOC]
 
 # CAFETRAN ESPRESSO - PREFERENCES
 
-*Updated for CafeTran Espresso 2019 - Forerunner (build 2018110802)*
+*Updated for CafeTran Espresso 2019  - Croissant 10.0 (20190117)*
 
 This reference document offers a tour of CafeTran’s Preferences and describes each item’s function, providing additional information along the way.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
-
-*This file receives regular updates every two-three months*.
 
 *To keep track of the latest CafeTran developments, review (and subscribe to) the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
 
@@ -523,7 +358,7 @@ Related links:
 
 ## WORKFLOW
 
-![Workflow pane](https://i.imgur.com/m71yg1s.png)
+![Workflow pane](https://i.imgur.com/FwCpSRJ.png)
 
 This pane includes some options related to various CafeTran workflows. Workflows can be selected from the drop-menu available in the Dashboard.
 
@@ -618,6 +453,12 @@ Checkbox, OFF by default
 If this option is ON, CafeTran copies the content of the source segment to each empty target segment you visit during the translation.
 
 Note: To transfer source segments to all target segments, you can also use Task > Transfer source segments to target segments.
+
+### Shared export folder
+
+Checkbox, OFF by default
+
+This option lets you export target documents into a shared folder - across multiple projects.  After turning this option ON, CafeTran remembers the last Export location for the subsequent projects.
 
 ### Replace characters at source transfer:
 
@@ -1385,7 +1226,7 @@ Clicking any item of the list opens a **keyboard shortcuts window,** which allow
 
 Don’t be afraid to customize them to your liking.
 
-Below, you will find the default keyboard shortcuts (in GNU/Linux and Windows, since they are different for OS X), along with their explanation. An additional section lists shortcuts found elsewhere:
+Below, you will find the **default keyboard shortcuts** (for GNU/Linux, Windows and Mac unless specified in parenthesis), along with their explanation. An additional section lists shortcuts found elsewhere:
 
 **Add checked segment to memory and go to next segment**	Ctrl+Shift+Enter
 
@@ -1399,19 +1240,19 @@ Add your translation of this segment to your translation memories, mark the segm
 
 Also in Action menu.
 
-**Add fragment to memory**	Alt+M
+**Add fragment to memory**	Alt+M (Mac: ⌃+⌥+M)
 
 Create a new translation memory fragment. Any highlighted portion of the source/target segments will be preset in the resulting “New fragment” dialog.
 
 Also in Action menu.
 
-**Add segment note**	Alt+N
+**Add segment note**	Alt+N (Mac: ⌃+⌥+N)
 
 Add an annotation about this segment; it will appear below the segment in the grid pane, marked with an “N”.
 
 Also in Action menu.
 
-**Add segment to memory and go to next segment**	Alt+Down
+**Add segment to memory and go to next segment**	Alt+Down (Mac: ⌃+⌥+↓)
 
 Add your translation of this segment to your translation memories, and move on to the next segment in the source document.
 
@@ -1429,7 +1270,7 @@ Add a selected fragment of the segment to abbreviations.
 
 Also in Resources > Abbreviations submenu.
 
-**Add selection to non-translatable fragments**	Alt+P
+**Add selection to non-translatable fragments**	Alt+P (Mac: ⌃+⌥+P)
 
 Add a selected fragment of the segment to non-translatable fragments.
 
@@ -1441,7 +1282,7 @@ Add a selected fragment of the segment to text shortcuts. It will create a text 
 
 Also in Resources > Text shortcuts submenu.
 
-**Add term to glossary**	Alt+G
+**Add term to glossary**	Alt+G (Mac: ⌃+⌥+G)
 
 Create a new glossary entry. Any highlighted portion of the source/target segments will be preset in the resulting “New term” dialog.
 
@@ -1461,15 +1302,15 @@ Include all segments (Remove filters).
 
 Also in Filter menu.
 
-**Alternative translation**	Alt+T
+**Alternative translation**	Alt+T (Mac: ⌃+⌥+T)
 
 Also in Action menu.
 
-**Bold**	Ctrl+B
+**Bold**	Ctrl+B (Mac: ⌘+B)
 
 Also in Edit > Target segment submenu and context menu (right click) in the target language box.
 
-**Bookmark segment**	Alt+B
+**Bookmark segment**	Alt+B (Mac: ⌃+⌥+B)
 
 Bookmark the current segment. A letter “B” will appear next to the segment number in the segment grid.
 
@@ -1527,7 +1368,7 @@ Perform a search through the Desktop search tool.
 
 Also through the dedicated Quick search bar button (only available if DST already set).
 
-**Documents…**	Ctrl+D
+**Documents…**	Ctrl+D (Mac: ⌘+D)
 
 Open a dialog listing all project source documents, and choose which one to actively display within CafeTran.
 
@@ -1539,19 +1380,19 @@ Exit CafeTran Espresso.
 
 Also in Project menu.
 
-**Export current document**	Alt+End
+**Export current document**	Alt+End (Mac: ⌃+⌥+↘)
 
 Export a translated copy of only the document currently-active in the CafeTran interface.
 
 Also in Project > Export and exchange submenu.
 
-**Find in page**	Ctrl+Alt+F
+**Find in page**	Ctrl+Alt+F (Mac: ⌘+⌥+F)
 
 Perform the search for a word in the loaded web page and highlight the result.
 
 Also in Edit menu.
 
-**Find…**	Ctrl+F
+**Find…**	Ctrl+F (Mac: ⌘+F)
 
 Open the “Find and replace” dialog, which provides extensive options for searching resources and segments.
 
@@ -1581,7 +1422,7 @@ Hide starting and ending tags for the current segment.
 
 Also in Action > Tags submenu.
 
-**Hide source segment tags**	Ctrl+Alt+T
+**Hide source segment tags**	Ctrl+Alt+T (Mac: ⌃+⌥+T)
 
 Hide all the tags in the current source segment.
 
@@ -1593,25 +1434,25 @@ Hide all toolbars in the CafeTran Espresso interface.
 
 Also in View > Toolbars submenu.
 
-**Insert auto-assembling**	Alt+4
+**Insert auto-assembling**	Alt+4 (Mac: ⌃+⌥+4)
 
 Transfer the auto-assembling match to the target segment editor (if one exists).
 
 Also in Translate menu.
 
-**Insert fuzzy match 1**	Alt+1
+**Insert fuzzy match 1**	Alt+1 (Mac: ⌃+⌥+1)
 
 Transfer the first fuzzy match to the target segment editor (if one exists).
 
 Also in Translate menu.
 
-**Insert fuzzy match 2**	Alt+2
+**Insert fuzzy match 2**	Alt+2 (Mac: ⌃+⌥+2)
 
 Transfer the second fuzzy match to the target segment editor (if one exists).
 
 Also in Translate menu.
 
-**Insert fuzzy match 3**	Alt+3
+**Insert fuzzy match 3**	Alt+3 (Mac: ⌃+⌥+3)
 
 Transfer the third fuzzy match to the target segment editor (if one exists).
 
@@ -1635,11 +1476,11 @@ Insert a soft return special character at the current cursor position.
 
 Also in Edit > Target segment submenu.
 
-**Italic**	Ctrl+I
+**Italic**	Ctrl+I (Mac: ⌘+I)
 
 Also in Edit > Target segment submenu and context menu (right click) in the target language box.
 
-**Join segments** Alt+Up
+**Join segments** Alt+Up (Mac: ⌃+⌥+↑)
 
 Merge the contents of the next source segment into the currently-selected segment. The next segment will also be eliminated.
 
@@ -1693,13 +1534,13 @@ When enabled, tags can be added to the target segment simply by left-clicking wh
 
 Also in Action > Tags submenu and through the <> button in the target language box.
 
-**Move to the next segment**	Alt+Right
+**Move to the next segment**	Alt+Right (Mac: ⌃+⌥+→)
 
  Move to the next segment in the source document (without modifying your translation memories).
 
 Also in Action menu.
 
-**Move to the previous segment**	Alt+Left
+**Move to the previous segment**	Alt+Left (Mac: ⌃+⌥+←) 
 
 Move to the previous segment in the source document (without modifying your translation memories).
 
@@ -1717,7 +1558,7 @@ Create a new notepad in the tabbed pane.
 
 Also in Resources > Notepad submenu.
 
-**New project…**	Ctrl+N
+**New project…**	Ctrl+N (Mac: ⌘+N)
 
 Create a new translation project. The current active project will be closed, and the Project Dashboard will be displayed.
 
@@ -1735,25 +1576,25 @@ Open an image file in the tabbed pane.
 
 Also in Resources > Notepad submenu.
 
-**Open memory…**	Alt+Shift+O
+**Open memory…**	Alt+Shift+O (Mac: ⌥+⇧+O)
 
 Browse for an existing translation memory file.
 
 Also in Memory menu.
 
-**Open project folder…**	Ctrl+O
+**Open project folder…**	Ctrl+O (Mac: ⌘+O)
 
 Browse for an existing translation project folder. The current active project will be closed upon opening a different project.
 
 Also in Project menu.
 
-**Preview current document**	Alt+D
+**Preview current document**	Alt+D (Mac: ⌃+⌥+D)
 
 Open a preview copy of the current document in an external program.
 
 Also in Project menu.
 
-**Print**	Ctrl+P
+**Print**	Ctrl+P (Mac: ⌘+P)
 
 Print the contents of the currently-selected tab.
 
@@ -1777,7 +1618,7 @@ Also in Project > Statistics submenu.
 
 Also in Edit > Find at cursor submenu and through the dedicated Project target button in the Quick search bar.
 
-**Quick search…**	Ctrl+Shift+F
+**Quick search…**	Ctrl+Shift+F (Mac: ⌘+⇧+F)
 
 Toggle the display of the Search bar to look up quickly in the project and resources.
 
@@ -1827,7 +1668,7 @@ Perform the most recent QA check again. Useful to re-check after correcting issu
 
 Also in QA menu.
 
-**Replace characters at source transfer**	Alt+R
+**Replace characters at source transfer**	Alt+R (Mac: ⌃+⌥+R)
 
 Replace characters defined in Edit> Option> Workflow tab> Replace characters at source transfer.
 
@@ -1849,13 +1690,13 @@ Also in View > Segment editors submenu.
 
 Also in Edit > Find at cursor submenu and through the dedicated Resources button in the Quick search bar.
 
-**Save all memories**	Alt+Shift+S
+**Save all memories**	Alt+Shift+S (Mac: ⌥+⇧+S)
 
 Save all open translation memories to disk.
 
 Also in Memory menu.
 
-**Save project**	Ctrl+S
+**Save project**	Ctrl+S (Mac: ⌘+S)
 
 Save the project. Glossaries are also saved, but translation memories are saved separately; they are configured to be automatically or manually saved.
 
@@ -1879,7 +1720,7 @@ Also in View menu.
 
 Also in Edit menu and with right click or context menu button on red underlined word.
 
-**Split segment** Alt+S
+**Split segment** Alt+S (Mac: ⌃+⌥+S)
 
  Split the currently-selected segment into two. The segment will be split at the current cursor location in the source segment editor above.
 
@@ -1929,55 +1770,55 @@ Search Total Recall target segments for contents of current selection in the sou
 
 Also in Edit > Find at cursor submenu and through the dedicated TR target button in the Quick search bar.
 
-**Transfer current tag**	Alt+9
+**Transfer current tag**	Alt+9 (Mac: ⌃+⌥+9)
 
 Transfer the current tag in the list of tags from the source segment to the target segment.
 
 Also in Action > Tags submenu.
 
-**Transfer DeepL MT** Alt+E
+**Transfer DeepL MT** Alt+E (Mac: ⌃+⌥+E)
 
 Transfer DeepL MT result to the target segment editor.
 
 Also in Translate menu.
 
-**Transfer Google MT** Alt+K
+**Transfer Google MT** Alt+K (Mac: ⌃+⌥+K)
 
 Transfer Google Translate MT result to the target segment editor.
 
 Also in Translate menu.
 
-**Transfer Microsoft MT**	Alt+J
+**Transfer Microsoft MT**	Alt+J (Mac: ⌃+⌥+J)
 
 Transfer Microsoft Translator MT result to the target segment editor.
 
 Also in Translate menu.
 
-**Transfer MT from web page**	Alt+V
+**Transfer MT from web page**	Alt+V (Mac: ⌃+⌥+V)
 
 Transfer the result of the machine translation on the selected MT website to the target segment editor. The transfer action can also be used when editors binding is off. See also [Machine Translation with MT Web Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000186533-machine-translation-with-mt-web-resources).
 
 Also in Translate menu.
 
-**Transfer MyMemory MT**	Alt+H
+**Transfer MyMemory MT**	Alt+H (Mac: ⌃+⌥+H)
 
 Transfer MyMemory MT result to the target segment editor.
 
 Also in Translate menu.
 
-**Transfer source segment**	Alt+I
+**Transfer source segment**	Alt+I (Mac: ⌃+⌥+I)
 
 Transfer the (selected) source segment editor contents directly to the target segment editor.
 
 Also in Translate menu.
 
-**Transfer Yandex MT** Alt+Y
+**Transfer Yandex MT** Alt+Y (Mac: ⌃+⌥+Y)
 
 Transfer Yandex Translate MT result to the target segment editor.
 
 Also in Translate menu.
 
-**Translate selected fragment**	Alt+Enter
+**Translate selected fragment**	Alt+Enter (Mac: ⌃+⌥+⏎)
 
 Perform a resource search for the full source segment, or for a highlighted portion.
 
@@ -1995,7 +1836,7 @@ Also in Edit > Target segment submenu.
 
 Also in Edit > Target segment submenu.
 
-**Underline**	Ctrl+U
+**Underline**	Ctrl+U (Mac: ⌘+U)
 
 Also in Edit > Target segment submenu and context menu (right click) in the target language box.
 
@@ -2030,6 +1871,7 @@ Found in View > Toolbars > Hide toolbars.
 - 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
 - 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11
 - 20181113 Updated for CafeTran Espresso 2019 - Forerunner
+- 20190121 Updated for CafeTran Espresso 2019 - Croissant 10.0
 
 ## Feedback
 
