@@ -1983,7 +1983,7 @@ Import > Load Glossary Or Term List** = Load tab-delimited files to Total Recall
 
 **Help > About** = Open the About dialog.
 
-![About dialog](https://i.imgur.com/dGWNg1O.png)
+![About dialog](https://i.imgur.com/BblWupd.png)
 
 CafeTran product information:
 
