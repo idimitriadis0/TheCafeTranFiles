@@ -1,4 +1,13 @@
-[TOC]
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [CAFETRAN ESPRESSO - PROJECT TEMPLATES](#cafetran-espresso-project-templates)
+	- [TEMPLATES - A PRESENTATION](#templates-a-presentation)
+	- [CREATING, MANAGING AND USING TEMPLATES](#creating-managing-and-using-templates)
+	- [SOME USAGE EXAMPLES](#some-usage-examples)
+	- [LIST OF CHANGES](#list-of-changes)
+	- [Feedback](#feedback)
+
+<!-- /TOC -->
 
 # CAFETRAN ESPRESSO - PROJECT TEMPLATES
 

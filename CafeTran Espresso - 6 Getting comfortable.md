@@ -1,4 +1,28 @@
-[TOC]
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [CAFETRAN ESPRESSO 2019 - GETTING COMFORTABLE](#cafetran-espresso-2019-getting-comfortable)
+	- [PART I | TAKING A TOUR](#part-i-taking-a-tour)
+		- [Intro](#intro)
+		- [New dummy project](#new-dummy-project)
+		- [Look and Feel & Large icons](#look-and-feel-large-icons)
+		- [Themes](#themes)
+		- [Colors](#colors)
+		- [Dashboard theme](#dashboard-theme)
+		- [Font face and size](#font-face-and-size)
+		- [Window layout](#window-layout)
+		- [Translation interface and Panes](#translation-interface-and-panes)
+		- [Detached windows](#detached-windows)
+		- [Toolbars](#toolbars)
+	- [PART 2 | Taking it further](#part-2-taking-it-further)
+		- [TAMING THE PREFERENCES](#taming-the-preferences)
+		- [TAMING THE INTERFACE AND MENUS](#taming-the-interface-and-menus)
+		- [MEMORIES AND TERMBASES/GLOSSARIES](#memories-and-termbasesglossaries)
+		- [TEMPLATES](#templates)
+		- [FILE FORMATS](#file-formats)
+	- [LIST OF CHANGES](#list-of-changes)
+	- [Feedback](#feedback)
+
+<!-- /TOC -->
 
 # CAFETRAN ESPRESSO 2019 - GETTING COMFORTABLE
 

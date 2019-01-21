@@ -1,4 +1,23 @@
-[TOC]
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [CAFETRAN ESPRESSO - Translation Memories options](#cafetran-espresso-translation-memories-options)
+	- [TM context menu options](#tm-context-menu-options)
+		- [Browse memory](#browse-memory)
+		- [Memory type](#memory-type)
+		- [Priority](#priority)
+	- [TM options](#tm-options)
+		- [Memory type](#memory-type)
+		- [Language pair](#language-pair)
+		- [Options](#options)
+	- [TM filter options](#tm-filter-options)
+		- [Properties filter](#properties-filter)
+		- [Segment filters](#segment-filters)
+	- [Total Recall options](#total-recall-options)
+		- [Database - [name of database]](#database-name-of-database)
+	- [List of changes](#list-of-changes)
+	- [Feedback](#feedback)
+
+<!-- /TOC -->
 
 # CAFETRAN ESPRESSO - Translation Memories options
 
