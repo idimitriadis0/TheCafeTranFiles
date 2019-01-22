@@ -907,7 +907,7 @@ Also through Change to title case icon in Source segment editors.
 
 **Edit > Target segment > Surround with characters 3** = Surround the selected text with the characters defined in Edit-> Options-> General-> Surround with characters 3.
 
-**Edit > Target segment > Adjust start punctuation** = Adjust the ending punctuation of the target segment to match that of the source segment.
+**Edit > Target segment > Adjust start punctuation** = Adjust the starting punctuation of the target segment to match that of the source segment.
 
 **Edit > Target segment > Adjust end punctuation** = Adjust the ending punctuation of the target segment to match that of the source segment.
 
