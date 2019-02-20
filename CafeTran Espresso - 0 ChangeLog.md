@@ -1,7 +1,8 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
-	- [2019 Croissant (version 10.0 - 20190117)](#2019-croissant-version-100-20190117)
+	- [2019 Croissant 10.1 (20190218)](#2019-croissant-101-20190218)
+	- [2019 Croissant 10.0 (20190117)](#2019-croissant-100-20190117)
 	- [2019 Forerunner (20180907)](#2019-forerunner-20180907)
 	- [2018 Akua Update 12 (20180901)](#2018-akua-update-12-20180901)
 	- [2018 Akua Update 11 (20180730)](#2018-akua-update-11-20180730)
@@ -113,7 +114,15 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
-## 2019 Croissant (version 10.0 - 20190117)
+## 2019 Croissant 10.1 (20190218)
+
+The major changes in this version:
+
+- Automatic tagging of non-translatable fragments in Machine Translation and Auto-assembling results.
+- Automatic transfer of source segments that contain non-translatable fragments and numbers only - an option in Edit > Preferences > Workflow tab.
+- Added "Sort by length" (long segments first) filter.
+
+## 2019 Croissant 10.0 (20190117)
 
 This version is the summary of all the updates to the CTE 2018 Akua and CTE 2019 Forerunner (aka Beta) version.
 
