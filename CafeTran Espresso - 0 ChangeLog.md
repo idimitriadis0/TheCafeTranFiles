@@ -1,7 +1,10 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2019 Croissant 10.1.2 (20190223)](#2019-croissant-1012-20190223)
+	- [2019 Croissant 10.1.1 (20190220)](#2019-croissant-1011-20190220)
 	- [2019 Croissant 10.1 (20190218)](#2019-croissant-101-20190218)
+	- [2019 Croissant 10.0.1 (20190130)](#2019-croissant-1001-20190130)
 	- [2019 Croissant 10.0 (20190117)](#2019-croissant-100-20190117)
 	- [2019 Forerunner (20180907)](#2019-forerunner-20180907)
 	- [2018 Akua Update 12 (20180901)](#2018-akua-update-12-20180901)
@@ -114,6 +117,20 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
+## 2019 Croissant 10.1.2 (20190223)
+
+- Fixed automatic tagging of non-translatable fragments surrounded by brackets.
+- Distinction between exact fragment matches, exact segments matches and context matches in the Matchboard. Fragment matches are marked as "Fragm" and Context matches have the CTX label.
+
+## 2019 Croissant 10.1.1 (20190220)
+
+This update adds two shortcut options useful for French translators during typing - see the menu Resources > Text shortcuts:
+
+- Change double straight quotes to guillemets in French.
+- Add non-breaking space before some French punctuation characters.
+
+If the above options are on, they get activated automatically with French as the target language of the current project. The default shortcut to surround the word at the cursor with guillemets (CTRL + SHIFT + Quote) remains unchanged.
+
 ## 2019 Croissant 10.1 (20190218)
 
 The major changes in this version:
@@ -121,6 +138,13 @@ The major changes in this version:
 - Automatic tagging of non-translatable fragments in Machine Translation and Auto-assembling results.
 - Automatic transfer of source segments that contain non-translatable fragments and numbers only - an option in Edit > Preferences > Workflow tab.
 - Added "Sort by length" (long segments first) filter.
+
+## 2019 Croissant 10.0.1 (20190130)
+
+- Conversion of some HTML entities (e.g. &gt; &amp;) during the transfer of the Machine Translation result to the target segment editor.
+- Recognition of terms at g tag in sdlxliff files.
+- Prompter recognizes words with the hyphen during automatic case adjustment.
+- Added Bislama language to the list of project languages.
 
 ## 2019 Croissant 10.0 (20190117)
 
