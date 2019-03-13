@@ -166,7 +166,6 @@ If the inflection of a word is too high for automatic prefix matching you can en
 **Greedy exact matches** = Checkbox. With this option OFF, CafeTran does not stop the search at the found exact match(es) for the current segment, but it continues looking for fuzzy matches and fragments. Switching OFF this option is not recommended for slower computers and huge translation memories.
 
 **Duplicates option** = Drop-down menu. Choices: Keep all duplicates, Keep newer duplicates, Keep old duplicates. Default: Keep newer duplicates.
-<!--- TODO Igor add text for this option? --->
 
  - **Keep all duplicates** = Select this if you want CafeTran to keep both newer and older identical source segments in the memory.
  - **Keep newer duplicates** = Select this if you want CafeTran to overwrite old Translation Units (segments) when you add a new translation for the same TU.
