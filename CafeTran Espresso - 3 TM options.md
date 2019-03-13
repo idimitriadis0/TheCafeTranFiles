@@ -163,7 +163,7 @@ If the inflection of a word is too high for automatic prefix matching you can en
 
 **Match case** = Checkbox. If enabled, CafeTran takes into account the text case when looking for matches, differentiating identical Translation Units that only differ in case type (uppercase or lowercase).
 
-**Greedy exact matches** = Checkbox. With this option enabled, CafeTran does not stop the search at the found exact match(es) for the current segment, but it continues looking for fuzzy matches and fragments. Switching on this option is not recommended for slower computers and huge translation memories.
+**Greedy exact matches** = Checkbox. With this option OFF, CafeTran does not stop the search at the found exact match(es) for the current segment, but it continues looking for fuzzy matches and fragments. Switching OFF this option is not recommended for slower computers and huge translation memories.
 
 **Duplicates option** = Drop-down menu. Choices: Keep all duplicates, Keep newer duplicates, Keep old duplicates. Default: Keep newer duplicates.
 <!--- TODO Igor add text for this option? --->
