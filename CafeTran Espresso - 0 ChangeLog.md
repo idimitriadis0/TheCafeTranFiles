@@ -1,6 +1,9 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2019 Croissant 10.2.2 ( 20190313)](#2019-croissant-1022-20190313)
+	- [2019 Croissant 10.2.1 (20190308)](#2019-croissant-1021-20190308)
+	- [2019 Croissant 10.2 (20190304)](#2019-croissant-102-20190304)
 	- [2019 Croissant 10.1.2 (20190223)](#2019-croissant-1012-20190223)
 	- [2019 Croissant 10.1.1 (20190220)](#2019-croissant-1011-20190220)
 	- [2019 Croissant 10.1 (20190218)](#2019-croissant-101-20190218)
@@ -116,6 +119,28 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 <!--- Shortened link to this document: --->
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
+
+## 2019 Croissant 10.2.2 ( 20190313)
+
+- When CJKV language is set in the project, the Statistics function shows the number of ideographic characters.
+- Unfolding of text shortcuts after the full stop.
+- Fixed an issue with handling of TTX files.
+- Improved setting of the target language code in the exported Word documents.
+
+## 2019 Croissant 10.2.1 (20190308)
+
+- Disabling of auto-propagation of the segment  (nP label in the grid) replaces its previously set auto-propagation state (P label in the grid).
+- Fixed an issue with auto-tagging of numbers.
+- Automatic appending of the space in the target segment if the source segment ends with the full width question mark, exclamation mark, colon or semi-colon (e.g. in Japanese).
+
+## 2019 Croissant 10.2 (20190304)
+
+- Term or Fragment Matches with higher or lower priority of the given glossary/memory have the brighter or darker shade of its highlight color.
+- Fixed keyboard shortcuts issue with segment editors in the detached mode.
+- Search after listing misspelled words with the "whole words" option turned on automatically.
+- On some Glossary menu actions (e.g. join, merge, sort) CafeTran displays glossary selection panel, when no glossary is selected in the active tab.
+- Glossary "Prefix matching" option for CJK languages.
+- "Keep out of auto-assembling" memory option can also be selected in the Priority box of the TM options panel.
 
 ## 2019 Croissant 10.1.2 (20190223)
 
