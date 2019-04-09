@@ -1,7 +1,10 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
-	- [2019 Croissant 10.2.2 ( 20190313)](#2019-croissant-1022-20190313)
+	- [2019 Croissant 10.3.2 (20190328)](#2019-croissant-1032-20190328)
+	- [2019 Croissant 10.3.1 (2019032)](#2019-croissant-1031-2019032)
+	- [2019 Croissant 10.3 (20190323)](#2019-croissant-103-20190323)
+	- [2019 Croissant 10.2.2 (20190313)](#2019-croissant-1022-20190313)
 	- [2019 Croissant 10.2.1 (20190308)](#2019-croissant-1021-20190308)
 	- [2019 Croissant 10.2 (20190304)](#2019-croissant-102-20190304)
 	- [2019 Croissant 10.1.2 (20190223)](#2019-croissant-1012-20190223)
@@ -120,7 +123,25 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
-## 2019 Croissant 10.2.2 ( 20190313)
+
+## 2019 Croissant 10.3.2 (20190328)
+
+- Prevention against the change of the package folder during the export to package (via the menu Project > Export and exchange > To package... ). Previously, when the user chose another package folder, CafeTran created a wrong package, possibly with large files stalling the program.
+
+## 2019 Croissant 10.3.1 (2019032)
+
+- Clicking on a segment in the gird sets this segment for edition in the target segment editor. It works the same as clicking on a segment number.
+- Some additional word dividers do not need to be escaped by the backslash character in the Glossary preferences.
+- A right-click option to display Machine Translation results last in the Matchboard.
+
+## 2019 Croissant 10.3 (20190323)
+
+-  Added punctuation to ideographic characters count in Statistics for CJK languages.
+- If the Human Translation (HT) and Edited Segment (*) labels are deactivated (in View > Segment Labels menu), the TM match percentage keeps being displayed in the grid even for edited/changed segments.
+- Added the "Additional word dividers" field to the Glossary options - see Preferences > Glossary tab.
+- Added a confirmation panel before the removal of the current document during the "Replace document" action.
+
+## 2019 Croissant 10.2.2 (20190313)
 
 - When CJKV language is set in the project, the Statistics function shows the number of ideographic characters.
 - Unfolding of text shortcuts after the full stop.
