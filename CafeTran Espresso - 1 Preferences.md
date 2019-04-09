@@ -835,7 +835,7 @@ If this option is ON, backward auto-propagation is disabled.
 
 Checkbox, ON by default
 
-You can choose whether to block or enable auto0propaggation from locked segments.
+You can choose whether to block or enable auto-propaggation from locked segments.
 
 ### Auto-propagation of segment status
 
