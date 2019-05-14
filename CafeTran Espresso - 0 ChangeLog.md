@@ -1,6 +1,9 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+	- [2019 Croissant 10.5 (20190507)](#2019-croissant-105-20190507)
+	- [2019 Croissant 10.4.1 (20190424)](#2019-croissant-1041-20190424)
+	- [2019 Croissant 10.4 (20190417)](#2019-croissant-104-20190417)
 	- [2019 Croissant 10.3.2 (20190328)](#2019-croissant-1032-20190328)
 	- [2019 Croissant 10.3.1 (2019032)](#2019-croissant-1031-2019032)
 	- [2019 Croissant 10.3 (20190323)](#2019-croissant-103-20190323)
@@ -123,6 +126,29 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
+## 2019 Croissant 10.5 (20190507)
+
+- Automatic fragment adjustment for Machine Translation matches - see it in Edit > Preferences > MT services tab.  With this option on, CafeTran replaces the MT fragments with the synonyms in your glossary/TM that are actually used in the current session.  If the replacement takes place, the MT tabs show both the original MT result and the modified one.
+- Fixed an issue with some special characters in MT results.
+- Choosing a color for Dashboard panels - View > Colors > Dashboard color.
+- Showing line breaks in the grid when the Search filter is used.
+- Letting user overwrite the existing return .sdlrpx package.
+- The cursor set at the start of the target segment after the source segment transfer.
+
+## 2019 Croissant 10.4.1 (20190424)
+
+- The option to open the export folder when exporting to the package.
+- Literal recognition of single character non-translatable fragments without the need for regular expressions.
+- The option to turn off the conversion of html formatting tags to the source document formatting at export - see Preferences > Workflow tab.
+-
+## 2019 Croissant 10.4 (20190417)
+
+- When transferring MT or TM result, the cursor is positioned at the start of the target segment.
+- Addition of several non-translatable terms to the glossary in one "Add term to glossary" action.
+- Filtering on fuzzy matches - see Filter > Origin > Fuzzy matches.
+- Support for the new Microsoft Translator MT API version 3.0.
+- Support for IBM Watson Language Translator MT API. The API key can be received at IBM website (https://www.ibm.com/watson/services/language-translator/). Please check if your language pair is supported. During the registration at IBM site, choose Frankfurt as the deployment region/location.
+- Change of the Preferences interface for setting API keys in MT Services tab.
 
 ## 2019 Croissant 10.3.2 (20190328)
 
