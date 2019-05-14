@@ -140,7 +140,7 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - The option to open the export folder when exporting to the package.
 - Literal recognition of single character non-translatable fragments without the need for regular expressions.
 - The option to turn off the conversion of html formatting tags to the source document formatting at export - see Preferences > Workflow tab.
--
+
 ## 2019 Croissant 10.4 (20190417)
 
 - When transferring MT or TM result, the cursor is positioned at the start of the target segment.
