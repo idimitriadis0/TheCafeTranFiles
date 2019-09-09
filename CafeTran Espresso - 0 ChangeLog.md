@@ -126,6 +126,13 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
+## 2019 Croissant 10.5.1 (20190909)
+
+- Improved sorting of matches by quality in the Matchboard.
+- Fixed handling of some formatting (color) tags in Ms PowerPoint filter.
+- Automatic insertion of Machine Translation results prioritizes the auto-insert thresholds set for the Memory matches and Auto-assembling in Preferences.
+- Some tuning for the new Java 13 version.
+
 ## 2019 Croissant 10.5 (20190507)
 
 - Automatic fragment adjustment for Machine Translation matches - see it in Edit > Preferences > MT services tab.  With this option on, CafeTran replaces the MT fragments with the synonyms in your glossary/TM that are actually used in the current session.  If the replacement takes place, the MT tabs show both the original MT result and the modified one.
