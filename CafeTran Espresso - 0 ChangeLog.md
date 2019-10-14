@@ -126,14 +126,22 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
-## 2019 Croissant 10.5.1 (20190909)
+## 2019 10.6 Brownie (20191014)
+
+- Hidden non-translatable fragments (both literal phrases and regular expressions). Just append the ^ character to your non-translatable fragment to hide it behind the tag and let it transfer to the target segment like the regular tags. To disable hiding of tags temporarily, use the menu Resource > Non-translatable fragments > Show hidden non-translatable fragments.
+- Hide tag details option in the menu Action > Tags. It toggles the display of the tags in more detail for xliff-based projects and the contents of hidden tags in native projects.
+- Ignoring a spelling mistake for the current session - right click at the misspelled word and choose the "Ignore" item.
+- Fixed a text orientation issue with the export of Word documents translated from a RTL source language.
+- Normalization of double byte numbers to pass QA numbers check
+
+## 2019 10.5.1 Croissant (20190909)
 
 - Improved sorting of matches by quality in the Matchboard.
 - Fixed handling of some formatting (color) tags in Ms PowerPoint filter.
 - Automatic insertion of Machine Translation results prioritizes the auto-insert thresholds set for the Memory matches and Auto-assembling in Preferences.
 - Some tuning for the new Java 13 version.
 
-## 2019 Croissant 10.5 (20190507)
+## 2019 10.5 Croissant (20190507)
 
 - Automatic fragment adjustment for Machine Translation matches - see it in Edit > Preferences > MT services tab.  With this option on, CafeTran replaces the MT fragments with the synonyms in your glossary/TM that are actually used in the current session.  If the replacement takes place, the MT tabs show both the original MT result and the modified one.
 - Fixed an issue with some special characters in MT results.
@@ -142,13 +150,13 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - Letting user overwrite the existing return .sdlrpx package.
 - The cursor set at the start of the target segment after the source segment transfer.
 
-## 2019 Croissant 10.4.1 (20190424)
+## 2019 10.4.1 Croissant (20190424)
 
 - The option to open the export folder when exporting to the package.
 - Literal recognition of single character non-translatable fragments without the need for regular expressions.
 - The option to turn off the conversion of html formatting tags to the source document formatting at export - see Preferences > Workflow tab.
 
-## 2019 Croissant 10.4 (20190417)
+## 2019 10.4 Croissant (20190417)
 
 - When transferring MT or TM result, the cursor is positioned at the start of the target segment.
 - Addition of several non-translatable terms to the glossary in one "Add term to glossary" action.
@@ -157,31 +165,31 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - Support for IBM Watson Language Translator MT API. The API key can be received at IBM website (https://www.ibm.com/watson/services/language-translator/). Please check if your language pair is supported. During the registration at IBM site, choose Frankfurt as the deployment region/location.
 - Change of the Preferences interface for setting API keys in MT Services tab.
 
-## 2019 Croissant 10.3.2 (20190328)
+## 2019 10.3.2 Croissant (20190328)
 
 - Prevention against the change of the package folder during the export to package (via the menu Project > Export and exchange > To package... ). Previously, when the user chose another package folder, CafeTran created a wrong package, possibly with large files stalling the program.
 
-## 2019 Croissant 10.3.1 (2019032)
+## 2019 10.3.1 Croissant (2019032)
 
 - Clicking on a segment in the gird sets this segment for edition in the target segment editor. It works the same as clicking on a segment number.
 - Some additional word dividers do not need to be escaped by the backslash character in the Glossary preferences.
 - A right-click option to display Machine Translation results last in the Matchboard.
 
-## 2019 Croissant 10.3 (20190323)
+## 2019 10.3 Croissant (20190323)
 
 -  Added punctuation to ideographic characters count in Statistics for CJK languages.
 - If the Human Translation (HT) and Edited Segment (*) labels are deactivated (in View > Segment Labels menu), the TM match percentage keeps being displayed in the grid even for edited/changed segments.
 - Added the "Additional word dividers" field to the Glossary options - see Preferences > Glossary tab.
 - Added a confirmation panel before the removal of the current document during the "Replace document" action.
 
-## 2019 Croissant 10.2.2 (20190313)
+## 2019 10.2.2 Croissant (20190313)
 
 - When CJKV language is set in the project, the Statistics function shows the number of ideographic characters.
 - Unfolding of text shortcuts after the full stop.
 - Fixed an issue with handling of TTX files.
 - Improved setting of the target language code in the exported Word documents.
 
-## 2019 Croissant 10.2.1 (20190308)
+## 2019 10.2.1 Croissant (20190308)
 
 - Disabling of auto-propagation of the segment  (nP label in the grid) replaces its previously set auto-propagation state (P label in the grid).
 - Fixed an issue with auto-tagging of numbers.
@@ -196,12 +204,12 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - Glossary "Prefix matching" option for CJK languages.
 - "Keep out of auto-assembling" memory option can also be selected in the Priority box of the TM options panel.
 
-## 2019 Croissant 10.1.2 (20190223)
+## 2019 10.1.2 Croissant (20190223)
 
 - Fixed automatic tagging of non-translatable fragments surrounded by brackets.
 - Distinction between exact fragment matches, exact segments matches and context matches in the Matchboard. Fragment matches are marked as "Fragm" and Context matches have the CTX label.
 
-## 2019 Croissant 10.1.1 (20190220)
+## 2019 10.1.1 Croissant (20190220)
 
 This update adds two shortcut options useful for French translators during typing - see the menu Resources > Text shortcuts:
 
@@ -218,14 +226,14 @@ The major changes in this version:
 - Automatic transfer of source segments that contain non-translatable fragments and numbers only - an option in Edit > Preferences > Workflow tab.
 - Added "Sort by length" (long segments first) filter.
 
-## 2019 Croissant 10.0.1 (20190130)
+## 2019 10.0.1 Croissant (20190130)
 
 - Conversion of some HTML entities (e.g. &gt; &amp;) during the transfer of the Machine Translation result to the target segment editor.
 - Recognition of terms at g tag in sdlxliff files.
 - Prompter recognizes words with the hyphen during automatic case adjustment.
 - Added Bislama language to the list of project languages.
 
-## 2019 Croissant 10.0 (20190117)
+## 2019 10.0 Croissant (20190117)
 
 This version is the summary of all the updates to the CTE 2018 Akua and CTE 2019 Forerunner (aka Beta) version.
 
