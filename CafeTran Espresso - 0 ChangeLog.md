@@ -1,20 +1,23 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
-	- [2019 Croissant 10.5 (20190507)](#2019-croissant-105-20190507)
-	- [2019 Croissant 10.4.1 (20190424)](#2019-croissant-1041-20190424)
-	- [2019 Croissant 10.4 (20190417)](#2019-croissant-104-20190417)
-	- [2019 Croissant 10.3.2 (20190328)](#2019-croissant-1032-20190328)
-	- [2019 Croissant 10.3.1 (2019032)](#2019-croissant-1031-2019032)
-	- [2019 Croissant 10.3 (20190323)](#2019-croissant-103-20190323)
-	- [2019 Croissant 10.2.2 (20190313)](#2019-croissant-1022-20190313)
-	- [2019 Croissant 10.2.1 (20190308)](#2019-croissant-1021-20190308)
+	- [2019 10.6.2 Brownie (20191023)](#2019-1062-brownie-20191023)
+	- [2019 10.6.1 Brownie (20191014)](#2019-1061-brownie-20191014)
+	- [2019 10.5.1 Croissant (20190909)](#2019-1051-croissant-20190909)
+	- [2019 10.5 Croissant (20190507)](#2019-105-croissant-20190507)
+	- [2019 10.4.1 Croissant (20190424)](#2019-1041-croissant-20190424)
+	- [2019 10.4 Croissant (20190417)](#2019-104-croissant-20190417)
+	- [2019 10.3.2 Croissant (20190328)](#2019-1032-croissant-20190328)
+	- [2019 10.3.1 Croissant (2019032)](#2019-1031-croissant-2019032)
+	- [2019 10.3 Croissant (20190323)](#2019-103-croissant-20190323)
+	- [2019 10.2.2 Croissant (20190313)](#2019-1022-croissant-20190313)
+	- [2019 10.2.1 Croissant (20190308)](#2019-1021-croissant-20190308)
 	- [2019 Croissant 10.2 (20190304)](#2019-croissant-102-20190304)
-	- [2019 Croissant 10.1.2 (20190223)](#2019-croissant-1012-20190223)
-	- [2019 Croissant 10.1.1 (20190220)](#2019-croissant-1011-20190220)
+	- [2019 10.1.2 Croissant (20190223)](#2019-1012-croissant-20190223)
+	- [2019 10.1.1 Croissant (20190220)](#2019-1011-croissant-20190220)
 	- [2019 Croissant 10.1 (20190218)](#2019-croissant-101-20190218)
-	- [2019 Croissant 10.0.1 (20190130)](#2019-croissant-1001-20190130)
-	- [2019 Croissant 10.0 (20190117)](#2019-croissant-100-20190117)
+	- [2019 10.0.1 Croissant (20190130)](#2019-1001-croissant-20190130)
+	- [2019 10.0 Croissant (20190117)](#2019-100-croissant-20190117)
 	- [2019 Forerunner (20180907)](#2019-forerunner-20180907)
 	- [2018 Akua Update 12 (20180901)](#2018-akua-update-12-20180901)
 	- [2018 Akua Update 11 (20180730)](#2018-akua-update-11-20180730)
@@ -126,7 +129,11 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
-## 2019 10.6 Brownie (20191014)
+## 2019 10.6.2 Brownie (20191023)
+
+- The option to include hidden non-translatable fragments in matching results and auto-assembling - see the menu Resources > Non-translatable fragments > Match hidden non-translatable fragments. The ability to hide a part of the segment was introduced in CafeTran Espresso 10.6.
+
+## 2019 10.6.1 Brownie (20191014)
 
 - Hidden non-translatable fragments (both literal phrases and regular expressions). Just append the ^ character to your non-translatable fragment to hide it behind the tag and let it transfer to the target segment like the regular tags. To disable hiding of tags temporarily, use the menu Resource > Non-translatable fragments > Show hidden non-translatable fragments.
 - Hide tag details option in the menu Action > Tags. It toggles the display of the tags in more detail for xliff-based projects and the contents of hidden tags in native projects.
