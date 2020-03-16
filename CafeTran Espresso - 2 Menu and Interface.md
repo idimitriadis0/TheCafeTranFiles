@@ -21,15 +21,15 @@
     + [Target segment editor icons](#target-segment-editor-icons)
     + [Target segment editor context menu](#target-segment-editor-context-menu)
     + [Matchboard (and Matchbar)](#matchboard--and-matchbar-)
-      - [Matchboard context menu](#matchboard-context-menu)
+    + [Matchboard context menu](#matchboard-context-menu)
     + [Tabbed panel](#tabbed-panel)
-      - [Tabbed panel tab context menu](#tabbed-panel-tab-context-menu)
-      - [Memory context menu and Options](#memory-context-menu-and-options)
-      - [Glossary context menu](#glossary-context-menu)
-      - [MT engines context menu](#mt-engines-context-menu)
-      - [Google MT context menu](#google-mt-context-menu)
-      - [ProZ tab and context menu](#proz-tab-and-context-menu)
-      - [TM-Town tab and context menu](#tm-town-tab-and-context-menu)
+    + [Tabbed panel tab context menu](#tabbed-panel-tab-context-menu)
+    + [Memory context menu and Options](#memory-context-menu-and-options)
+    + [Glossary context menu](#glossary-context-menu)
+    + [MT engines context menu](#mt-engines-context-menu)
+    + [Google MT context menu](#google-mt-context-menu)
+    + [ProZ tab and context menu](#proz-tab-and-context-menu)
+    + [TM-Town tab and context menu](#tm-town-tab-and-context-menu)
     + [Quick search bar](#quick-search-bar)
     + [Advanced Search (Find and Replace) window](#advanced-search--find-and-replace--window)
 - [2. Menu items](#2-menu-items)
@@ -82,89 +82,6 @@
   * [Total Recall menu](#total-recall-menu)
     + [Total Recall > Import submenu](#total-recall---import-submenu)
   * [Help menu](#help-menu)
-- [CAFETRAN ESPRESSO - MENU AND INTERFACE](#cafetran-espresso---menu-and-interface-1)
-- [1. Interface](#1-interface-1)
-  * [1.1 Project Dashboard](#11-project-dashboard-1)
-    + [Dashboard menu options](#dashboard-menu-options-1)
-      - [Dashboard menu options > Project type submenu](#dashboard-menu-options---project-type-submenu-1)
-    + [Dashboard’s Resources](#dashboard-s-resources-1)
-      - [Local resources](#local-resources-1)
-      - [TM-Town resources](#tm-town-resources-1)
-    + [Customizing the Dashboard](#customizing-the-dashboard-1)
-  * [New project/Project configuration dialog](#new-project-project-configuration-dialog)
-    + [Document settings tab](#document-settings-tab-1)
-    + [Memory & glossary tab](#memory---glossary-tab-1)
-    + [Project properties tab](#project-properties-tab-1)
-    + [Filter options tab](#filter-options-tab-1)
-  * [1.2 Main translation interface](#12-main-translation-interface)
-  * [Segments grid icons](#segments-grid-icons-1)
-  * [Source segment editor icons](#source-segment-editor-icons-1)
-    + [Source segment editor context menu](#source-segment-editor-context-menu-1)
-  * [Target segment editor icons](#target-segment-editor-icons-1)
-    + [Target segment editor context menu](#target-segment-editor-context-menu-1)
-  * [Matchboard (and Matchbar)](#matchboard--and-matchbar--1)
-    + [Matchboard context menu](#matchboard-context-menu-1)
-  * [Tabbed panel](#tabbed-panel-1)
-    + [Tabbed panel tab context menu](#tabbed-panel-tab-context-menu-1)
-    + [Memory context menu and Options](#memory-context-menu-and-options-1)
-    + [Glossary context menu](#glossary-context-menu-1)
-    + [MT engines context menu](#mt-engines-context-menu-1)
-    + [Google MT context menu](#google-mt-context-menu-1)
-    + [MT tab](#mt-tab)
-    + [ProZ tab and context menu](#proz-tab-and-context-menu-1)
-    + [TM-Town tab and context menu](#tm-town-tab-and-context-menu-1)
-  * [Quick search bar](#quick-search-bar-1)
-  * [Advanced Search (Find and Replace) window](#advanced-search--find-and-replace--window-1)
-- [2. Menu items](#2-menu-items-1)
-  * [Project](#project)
-    + [Project > Statistics submenu](#project---statistics-submenu-1)
-    + [Project > Export and exchange submenu](#project---export-and-exchange-submenu-1)
-  * [Edit](#edit)
-    + [Edit > Find at cursor submenu](#edit---find-at-cursor-submenu-1)
-    + [Edit > Target segment submenu](#edit---target-segment-submenu-1)
-    + [Edit > Invisible characters submenu](#edit---invisible-characters-submenu-1)
-  * [View](#view)
-    + [View > Window layout submenu](#view---window-layout-submenu-1)
-    + [View > Segment editors submenu](#view---segment-editors-submenu-1)
-    + [View > Themes submenu](#view---themes-submenu-1)
-    + [View > Colors submenu](#view---colors-submenu-1)
-    + [View > Font submenu](#view---font-submenu-1)
-    + [View > Tabs submenu](#view---tabs-submenu-1)
-    + [View > Toolbars submenu](#view---toolbars-submenu-1)
-    + [View > Segment labels submenu](#view---segment-labels-submenu-1)
-  * [Action](#action)
-    + [Action > Tags submenu](#action---tags-submenu-1)
-    + [Action > Skip submenu](#action---skip-submenu-1)
-  * [Translate](#translate)
-  * [Filter](#filter)
-    + [Filter > Status submenu](#filter---status-submenu-1)
-      - [CafeTran Statuses explained](#cafetran-statuses-explained-1)
-    + [Filter > Origin submenu](#filter---origin-submenu-1)
-    + [Filter > Sort submenu](#filter---sort-submenu-1)
-  * [QA](#qa)
-    + [QA > Word lists submenu](#qa---word-lists-submenu-1)
-    + [QA > Consistency checks submenu](#qa---consistency-checks-submenu-1)
-    + [QA > Check all window](#qa---check-all-window-1)
-  * [Task](#task)
-    + [Task > Frequent words submenu](#task---frequent-words-submenu-1)
-      - [Task > Frequent words context menu](#task---frequent-words-context-menu-1)
-    + [Task > TMX memory submenu](#task---tmx-memory-submenu-1)
-  * [Resources](#resources)
-    + [Add/Edit resource window](#add-edit-resource-window-1)
-    + [Resources > Notepad submenu](#resources---notepad-submenu-1)
-    + [Resources > Non-translatable fragments submenu](#resources---non-translatable-fragments-submenu-1)
-    + [Resources > Text shortcuts submenu](#resources---text-shortcuts-submenu-1)
-    + [Resources > Abbreviations submenu](#resources---abbreviations-submenu-1)
-  * [Memory](#memory)
-    + [Memory > Import submenu](#memory---import-submenu-1)
-    + [Memory > Export submenu](#memory---export-submenu-1)
-    + [New fragment window](#new-fragment-window-1)
-  * [Glossary](#glossary)
-    + [New glossary window](#new-glossary-window-1)
-    + [New term window](#new-term-window-1)
-  * [Total Recall](#total-recall)
-    + [Total Recall > Import submenu](#total-recall---import-submenu-1)
-  * [Help](#help)
 
 <!-- /TOC -->
 
@@ -466,7 +383,7 @@ The Matchbar, placed at the top of the Matchboard, allows you to quickly display
 
 The Matchboard can be docked or floated as any other tab.
 
-#### Matchboard context menu
+### Matchboard context menu
 
 ![Matchboard context menu](https://i.imgur.com/Cb1rtyx.png)
 
@@ -479,8 +396,7 @@ You can select which results and matches to display in the Matchboard, along wit
 The tabbed panel is home to different resources organized in tabs. These can be Translation memories, Glossaries, MT engines, Statistics, the Matchboard, web resources as well as web services such as ProZ or TM-Town, but also Notepad documents, Images, HTML and website previews, the internal PDF viewer and the Frequent words.
 
 The resources can be re-organized in various ways or docked to other panes, as described below. If tabs take more than one row, double-clicking any tab toggles the wrapping of tabs in one row. Options are displayed for each tab when right-clicking to bring the context menu.
-
-#### Tabbed panel tab context menu
+### Tabbed panel tab context menu
 
 ![Tabbed panel tab context menu](https://i.imgur.com/NvaDnMz.png)
 
@@ -504,7 +420,7 @@ Many of these items are also available via the View > Tabs submenu, which featur
 - **Close other tabs** = Close all resource tabs, besides the one currently-selected.
 - **Close tab** = Close the currently-active resource tab.
 
-#### Memory context menu and Options
+### Memory context menu and Options
 
 ![Memory context menu](https://i.imgur.com/JGYTX2r.png)
 
@@ -527,7 +443,7 @@ The TM context menu can be accessed by right-clicking inside the pane of a speci
 
 Memory options are explained in detail in a separate document: “[CafeTran TM options](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/3-TM-options)”.
 
-#### Glossary context menu
+### Glossary context menu
 
 ![Glossary context menu](https://i.imgur.com/7O8sZsF.png)
 
@@ -549,7 +465,7 @@ This is the context menu you get when right-clicking inside a glossary tab. It a
 - **Stop automatic matching** = If enabled, the glossary entries will not be matched automatically against the source text of the current segment. This also affects the matchboard results. You will still be able to search the glossary manually.
 - **Terms consistency check** = If enabled, the glossary will be used for the self-titled QA check, allowing you to check for segment pairs that do not have terms consistent with glossary entries.
 
-#### MT engines context menu
+### MT engines context menu
 
 ![MT engines context menu](https://i.imgur.com/A3zOojh.png)
 
@@ -564,13 +480,13 @@ Note: Some of the MT-related preferences can be set in Preferences > MT services
 Related links:
 [Machine Translation with MT Services](https://cafetran.freshdesk.com/support/solutions/articles/6000186536-machine-translation-with-mt-services)
 
-#### Google MT context menu
+### Google MT context menu
 
 ![Google MT context menu](https://i.imgur.com/LQchkjE.png)
 
 The Google MT engine context menu additionally allows you to choose between Neutral Machine Translation and Phrase-Based Machine Translation.
 
-#### ProZ tab and context menu
+### ProZ tab and context menu
 
 ![ProZ.com tab interface](https://i.imgur.com/KIQPg3j.png)
 
@@ -600,7 +516,7 @@ Related links:
 [Signing in to ProZ.com account](https://cafetran.freshdesk.com/support/solutions/articles/6000158973-signing-in-to-proz-com-account),
 [Proz.com Term Search Integration](https://cafetran.freshdesk.com/support/solutions/articles/6000118360-proz-com-term-search-integration).
 
-#### TM-Town tab and context menu
+### TM-Town tab and context menu
 
 ![TM-Town tab interface](https://i.imgur.com/nSkXesx.png)
 
