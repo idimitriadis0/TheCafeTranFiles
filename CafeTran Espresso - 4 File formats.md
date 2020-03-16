@@ -1,150 +1,144 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [CAFETRAN ESPRESSO - FILE FORMATS](#cafetran-espresso-file-formats)
-	- [1. SUPPORTED FILE FORMATS AND WORKFLOWS](#1-supported-file-formats-and-workflows)
-	- [File formats overview](#file-formats-overview)
-	- [CafeTran’s own file formats](#cafetrans-own-file-formats)
-	- [CafeTran’s File type filters](#cafetrans-file-type-filters)
-	- [File types in detail](#file-types-in-detail)
-		- [Microsoft Office](#microsoft-office)
-			- [MS Word (.docx)](#ms-word-docx)
-			- [MS Word OCR (.docx/xml)](#ms-word-ocr-docxxml)
-			- [MS Word Uncleaned (.docx/xml)](#ms-word-uncleaned-docxxml)
-			- [MS Excel (.xlsx)](#ms-excel-xlsx)
-			- [Tagged MS Excel (.xlsx)](#tagged-ms-excel-xlsx)
-			- [MS PowerPoint (.pptx)](#ms-powerpoint-pptx)
-		- [OpenOffice/LibreOffice](#openofficelibreoffice)
-			- [Writer (.odt)](#writer-odt)
-			- [OpenOffice Uncleaned (.odt)](#openoffice-uncleaned-odt)
-			- [Calc (.ods)](#calc-ods)
-			- [Impress (.odp)](#impress-odp)
-			- [Draw (.odg)](#draw-odg)
-		- [AbiWord (.abw)](#abiword-abw)
-		- [Apple iWork](#apple-iwork)
-			- [iWork Pages (.pages)](#iwork-pages-pages)
-			- [iWork Numbers (.numbers)](#iwork-numbers-numbers)
-			- [iWork Keynote (.key)](#iwork-keynote-key)
-		- [Web localization/XML files](#web-localizationxml-files)
-			- [XML](#xml)
-			- [HTML](#html)
-			- [XML/HTML with tags](#xmlhtml-with-tags)
-			- [Transit XML File](#transit-xml-file)
-			- [Tagged MS Excel (.xlsx)](#tagged-ms-excel-xlsx)
-		- [DTP](#dtp)
-			- [InDesign (.inx)](#indesign-inx)
-			- [InDesign (.idml)](#indesign-idml)
-			- [FrameMaker (.mif)](#framemaker-mif)
-			- [DTP Tagged Text](#dtp-tagged-text)
-			- [Vector image (.svg)](#vector-image-svg)
-		- [AutoCAD](#autocad)
-			- [AutoCAD (.dxf)](#autocad-dxf)
-		- [Software localization](#software-localization)
-			- [Java Properties (.properties)](#java-properties-properties)
-			- [Windows .NET Resources (.resx)](#windows-net-resources-resx)
-			- [Mac String Resources (.strings)](#mac-string-resources-strings)
-			- [Android (and other) XML files (.xml)](#android-and-other-xml-files-xml)
-			- [String resource header (.loc)](#string-resource-header-loc)
-		- [Subtitles](#subtitles)
-			- [Subtitles (.srt)](#subtitles-srt)
-			- [Subtitles (.itt)](#subtitles-itt)
-		- [Paper document workflow](#paper-document-workflow)
-			- [Image (.jpg/gif/bmp/png)](#image-jpggifbmppng)
-	- [2. EXTERNAL PROJECTS](#2-external-projects)
-		- [GENERAL NOTES ON BILINGUAL XLIFF FILES](#general-notes-on-bilingual-xliff-files)
-		- [SDL Trados Studio](#sdl-trados-studio)
-			- [SDLXLIFF](#sdlxliff)
-			- [SDLPPX](#sdlppx)
-			- [SDLTM translation memories](#sdltm-translation-memories)
-			- [SDLTB termbases](#sdltb-termbases)
-			- [TRADOS UNCLEAN RTF/DOC](#trados-unclean-rtfdoc)
-			- [TRADOS WORKBENCH - TTX](#trados-workbench-ttx)
-			- [TRADOS WORKBENCH - RTF](#trados-workbench-rtf)
-			- [IMPORTING CAFETRAN’S TMX TO STUDIO](#importing-cafetrans-tmx-to-studio)
-			- [CONVERTING CAFETRAN GLOSSARIES TO SDLTB](#converting-cafetran-glossaries-to-sdltb)
-		- [memoQ](#memoq)
-			- [MQXLIFF](#mqxliff)
-			- [MQXLZ](#mqxlz)
-			- [MQOUT](#mqout)
-			- [memoQ online projects](#memoq-online-projects)
-			- [memoQ bilingual RTF files](#memoq-bilingual-rtf-files)
-			- [memoQ Translation Memories](#memoq-translation-memories)
-			- [memoQ Term Bases](#memoq-term-bases)
-		- [Wordfast Pro](#wordfast-pro)
-			- [WFP 3 - TXML](#wfp-3-txml)
-			- [WFP 4/5 - TXLF](#wfp-45-txlf)
-			- [WFP 4/5 - GLP](#wfp-45-glp)
-			- [RTF/DOC/DOCX Bilingual Review](#rtfdocdocx-bilingual-review)
-			- [Wordfast TXT TMs](#wordfast-txt-tms)
-			- [Wordfast Glossaries](#wordfast-glossaries)
-		- [Déjà Vu](#dj-vu)
-			- [External View XLF](#external-view-xlf)
-			- [External View bilingual RTF tables](#external-view-bilingual-rtf-tables)
-			- [Déjà Vu Satellite files (.dvsat)](#dj-vu-satellite-files-dvsat)
-			- [Déjà Vu Pack & Go packages (.dvpng)](#dj-vu-pack-go-packages-dvpng)
-			- [Déjà Vu TMs (.dvmdb)](#dj-vu-tms-dvmdb)
-			- [Déjà Vu TBs (.dvtdb)](#dj-vu-tbs-dvtdb)
-		- [STAR Transit NXT Professional+](#star-transit-nxt-professional)
-			- [PPF AND TRANSIT XML files](#ppf-and-transit-xml-files)
-			- [Transit TermStar terminology files - TXE](#transit-termstar-terminology-files-txe)
-			- [Transit XV packages - PXF](#transit-xv-packages-pxf)
-		- [Memsource Cloud](#memsource-cloud)
-			- [MXLIFF](#mxliff)
-		- [CROWDIN](#crowdin)
-			- [XLIFF](#xliff)
-		- [XTM Cloud](#xtm-cloud)
-		- [XLIFF 2.0](#xliff-20)
-		- [Interoperability Now! TIPP and XLIFF:DOC](#interoperability-now-tipp-and-xliffdoc)
-	- [3. UNSUPPORTED FORMATS](#3-unsupported-formats)
-		- [PDF](#pdf)
-		- [DOC / XLS / PPT](#doc-xls-ppt)
-		- [RTF](#rtf)
-			- [Bilingual RTF/DOC files / Multi-column RTF tables](#bilingual-rtfdoc-files-multi-column-rtf-tables)
-			- [Multi-column RTF tables](#multi-column-rtf-tables)
-		- [PUB (Microsoft Publisher)](#pub-microsoft-publisher)
-		- [VDX (Microsoft Visio)](#vdx-microsoft-visio)
-		- [INDD (InDesign)](#indd-indesign)
-		- [AI (ILLUSTRATOR)](#ai-illustrator)
-		- [DWG (AutoCAD)](#dwg-autocad)
-		- [PO](#po)
-		- [JSON](#json)
-		- [EPUB / MOBI / AZW / e-book](#epub-mobi-azw-e-book)
-			- [EPUB](#epub)
-			- [MOBI / AZW / AZW3](#mobi-azw-azw3)
-			- [IBOOKS](#ibooks)
-		- [TIPP (Packages)](#tipp-packages)
-	- [4. SOLUTIONS](#4-solutions)
-		- [MateCat](#matecat)
-			- [MateCat file formats](#matecat-file-formats)
-		- [MateCat filters](#matecat-filters)
-			- [Online](#online)
-			- [Offline](#offline)
-		- [Wordfast Pro 3](#wordfast-pro-3)
-		- [Wordfast Pro 5](#wordfast-pro-5)
-		- [Memsource](#memsource)
-		- [Smartcat](#smartcat)
-		- [Swordfish](#swordfish)
-		- [Heartsome](#heartsome)
-		- [Okapi Framework - Rainbow](#okapi-framework-rainbow)
-		- [Online/Offline file converters](#onlineoffline-file-converters)
-		- [SDL Trados Studio](#sdl-trados-studio)
-		- [memoQ](#memoq)
-		- [Déjà Vu](#dj-vu)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
+- [CAFETRAN ESPRESSO - FILE FORMATS](#cafetran-espresso---file-formats)
+  * [1. SUPPORTED FILE FORMATS AND WORKFLOWS](#1-supported-file-formats-and-workflows)
+  * [File formats overview](#file-formats-overview)
+  * [CafeTran’s own file formats](#cafetran-s-own-file-formats)
+  * [CafeTran’s File type filters](#cafetran-s-file-type-filters)
+  * [File types in detail](#file-types-in-detail)
+    + [Microsoft Office](#microsoft-office)
+      - [MS Word (.docx)](#ms-word--docx-)
+      - [MS Word OCR (.docx/xml)](#ms-word-ocr--docx-xml-)
+      - [MS Word Uncleaned (.docx/xml)](#ms-word-uncleaned--docx-xml-)
+      - [MS Excel (.xlsx)](#ms-excel--xlsx-)
+      - [Tagged MS Excel (.xlsx)](#tagged-ms-excel--xlsx-)
+      - [MS PowerPoint (.pptx)](#ms-powerpoint--pptx-)
+    + [OpenOffice/LibreOffice](#openoffice-libreoffice)
+      - [Writer (.odt)](#writer--odt-)
+      - [OpenOffice Uncleaned (.odt)](#openoffice-uncleaned--odt-)
+      - [Calc (.ods)](#calc--ods-)
+      - [Impress (.odp)](#impress--odp-)
+      - [Draw (.odg)](#draw--odg-)
+    + [AbiWord (.abw)](#abiword--abw-)
+    + [Apple iWork](#apple-iwork)
+      - [iWork Pages (.pages)](#iwork-pages--pages-)
+      - [iWork Numbers (.numbers)](#iwork-numbers--numbers-)
+      - [iWork Keynote (.key)](#iwork-keynote--key-)
+    + [Web localization/XML files](#web-localization-xml-files)
+      - [XML](#xml)
+      - [HTML](#html)
+      - [XML/HTML with tags](#xml-html-with-tags)
+      - [Transit XML File](#transit-xml-file)
+      - [Tagged MS Excel (.xlsx)](#tagged-ms-excel--xlsx--1)
+    + [DTP](#dtp)
+      - [InDesign (.inx)](#indesign--inx-)
+      - [InDesign (.idml)](#indesign--idml-)
+      - [FrameMaker (.mif)](#framemaker--mif-)
+      - [DTP Tagged Text](#dtp-tagged-text)
+      - [Vector image (.svg)](#vector-image--svg-)
+    + [AutoCAD](#autocad)
+      - [AutoCAD (.dxf)](#autocad--dxf-)
+    + [Software localization](#software-localization)
+      - [Java Properties (.properties)](#java-properties--properties-)
+      - [Windows .NET Resources (.resx)](#windows-net-resources--resx-)
+      - [Mac String Resources (.strings)](#mac-string-resources--strings-)
+      - [Android (and other) XML files (.xml)](#android--and-other--xml-files--xml-)
+      - [String resource header (.loc)](#string-resource-header--loc-)
+    + [Subtitles](#subtitles)
+      - [Subtitles (.srt)](#subtitles--srt-)
+      - [Subtitles (.itt)](#subtitles--itt-)
+    + [Paper document workflow](#paper-document-workflow)
+      - [Image (.jpg/gif/bmp/png)](#image--jpg-gif-bmp-png-)
+  * [2. EXTERNAL PROJECTS](#2-external-projects)
+    + [GENERAL NOTES ON BILINGUAL XLIFF FILES](#general-notes-on-bilingual-xliff-files)
+    + [SDL Trados Studio](#sdl-trados-studio)
+      - [SDLXLIFF](#sdlxliff)
+      - [SDLPPX](#sdlppx)
+      - [SDLTM translation memories](#sdltm-translation-memories)
+      - [SDLTB termbases](#sdltb-termbases)
+      - [TRADOS UNCLEAN RTF/DOC](#trados-unclean-rtf-doc)
+      - [TRADOS WORKBENCH - TTX](#trados-workbench---ttx)
+      - [TRADOS WORKBENCH - RTF](#trados-workbench---rtf)
+      - [IMPORTING CAFETRAN’S TMX TO STUDIO](#importing-cafetran-s-tmx-to-studio)
+      - [CONVERTING CAFETRAN GLOSSARIES TO SDLTB](#converting-cafetran-glossaries-to-sdltb)
+    + [memoQ](#memoq)
+      - [MQXLIFF](#mqxliff)
+      - [MQXLZ](#mqxlz)
+      - [MQOUT](#mqout)
+      - [memoQ online projects](#memoq-online-projects)
+      - [memoQ bilingual RTF files](#memoq-bilingual-rtf-files)
+      - [memoQ Translation Memories](#memoq-translation-memories)
+      - [memoQ Term Bases](#memoq-term-bases)
+    + [Wordfast Pro](#wordfast-pro)
+      - [WFP 3 - TXML](#wfp-3---txml)
+      - [WFP 5 - TXLF](#wfp-5---txlf)
+      - [WFP 5 - GLP](#wfp-5---glp)
+      - [RTF/DOC/DOCX Bilingual Review](#rtf-doc-docx-bilingual-review)
+      - [Wordfast TXT TMs](#wordfast-txt-tms)
+      - [Wordfast Glossaries](#wordfast-glossaries)
+    + [Déjà Vu](#d-j--vu)
+      - [External View XLF](#external-view-xlf)
+      - [External View bilingual RTF tables](#external-view-bilingual-rtf-tables)
+      - [Déjà Vu Satellite files (.dvsat)](#d-j--vu-satellite-files--dvsat-)
+      - [Déjà Vu Pack & Go packages (.dvpng)](#d-j--vu-pack---go-packages--dvpng-)
+      - [Déjà Vu TMs (.dvmdb)](#d-j--vu-tms--dvmdb-)
+      - [Déjà Vu TBs (.dvtdb)](#d-j--vu-tbs--dvtdb-)
+    + [STAR Transit NXT Professional+](#star-transit-nxt-professional-)
+      - [PPF AND TRANSIT XML files](#ppf-and-transit-xml-files)
+      - [Transit TermStar terminology files - TXE](#transit-termstar-terminology-files---txe)
+      - [Transit XV packages - PXF](#transit-xv-packages---pxf)
+    + [Memsource](#memsource)
+      - [MXLIFF](#mxliff)
+    + [SMARTCAT](#smartcat)
+    + [CROWDIN](#crowdin)
+      - [Crowdin's XLIFFs](#crowdin-s-xliffs)
+    + [XTM Cloud](#xtm-cloud)
+    + [XLIFF 2.0](#xliff-20)
+    + [Interoperability Now! TIPP and XLIFF:DOC](#interoperability-now--tipp-and-xliff-doc)
+  * [3. UNSUPPORTED FORMATS](#3-unsupported-formats)
+    + [PDF](#pdf)
+    + [DOC / XLS / PPT](#doc---xls---ppt)
+    + [RTF](#rtf)
+      - [Bilingual RTF/DOC files / Multi-column RTF tables](#bilingual-rtf-doc-files---multi-column-rtf-tables)
+      - [Multi-column RTF tables](#multi-column-rtf-tables)
+    + [PUB (Microsoft Publisher)](#pub--microsoft-publisher-)
+    + [VDX (Microsoft Visio)](#vdx--microsoft-visio-)
+    + [INDD (InDesign)](#indd--indesign-)
+    + [AI (ILLUSTRATOR)](#ai--illustrator-)
+    + [DWG (AutoCAD)](#dwg--autocad-)
+    + [PO](#po)
+    + [JSON](#json)
+    + [EPUB / MOBI / AZW / e-book](#epub---mobi---azw---e-book)
+      - [EPUB](#epub)
+      - [MOBI / AZW / AZW3](#mobi---azw---azw3)
+      - [IBOOKS](#ibooks)
+    + [TIPP (Packages)](#tipp--packages-)
+  * [4. SOLUTIONS](#4-solutions)
+    + [MateCat](#matecat)
+      - [MateCat file formats](#matecat-file-formats)
+    + [MateCat filters](#matecat-filters)
+      - [Online](#online)
+      - [Offline](#offline)
+    + [Smartcat](#smartcat)
+    + [XLIFF Manager](#xliff-manager)
+    + [Memsource](#memsource-1)
+    + [Wordfast Pro 3](#wordfast-pro-3)
+    + [Wordfast Pro 5](#wordfast-pro-5)
+    + [Swordfish](#swordfish)
+    + [Heartsome](#heartsome)
+    + [Okapi Framework - Rainbow](#okapi-framework---rainbow)
+    + [Online/Offline file converters](#online-offline-file-converters)
+    + [SDL Trados Studio](#sdl-trados-studio-1)
+    + [memoQ](#memoq-1)
+    + [Déjà Vu](#d-j--vu-1)
 
 <!-- /TOC -->
 
 # CAFETRAN ESPRESSO - FILE FORMATS
 
-*Updated for CafeTran Espresso 2019  - Croissant 10.0 (20190117)*
+*Updated for CafeTran Espresso 2020 (10.7.2)*
 
-This document aims to cover natively supported file formats in CafeTran, provide compatibility information for external bilingual projects (files and packages), and discuss solutions to handle not yet supported file types.
-
-*To keep track of the latest CafeTran developments, review (and subscribe to) the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
-
-*Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
-
-<!--- *Shortened link to this document:* --->
+This document: (1) covers natively supported file formats in CafeTran, (2) provides compatibility information for external bilingual projects (files and packages), and (3) discusses solutions to handle not yet supported file types.
 
 ## 1. SUPPORTED FILE FORMATS AND WORKFLOWS
 
@@ -214,7 +208,7 @@ Here is the list of native file type filters CafeTran offers when creating a new
  - Tagged MS Excel (.xlsx)
  - Transit XML File
  - Vector image (.svg)
- - Image (.jpg/gif/bmp/png)
+ - Image (.jpg/gif/bmp/png) or Paper
 
 ## File types in detail
 
@@ -261,17 +255,16 @@ Notes:
 - MS Excel files containing macros **.xlsm** are also handled via this filter (although the file type might need to be selected manually).
 
 ![Excel file filter options](https://i.imgur.com/lyzEJ1X.png)
-
 - When you choose the **Excel filter**, you have access to the following Filter options:
 
    - **Import source column**: allows you to specify from which column(s) to import source text
     - **Import target column**: allows you to specify from which column(s) you wish to import content in the translated segments. Note: If you define two Excel columns for import separately (in two Import fields of the filter), the second column is to be imported for the review of the existing translation. Only existing rows (not empty cells) will be imported if you define an Import target column. If you specify two import columns separately, leave the export column empty.
     - **Import notes column:** allows you to define a column that will be imported in the form of Notes in CafeTran.
     - **Export column**: allows you to specify to which column(s) you want to export your translation.
-
+ - If no Filter option is set, CafeTran loads the entire Excel content, and translation will replace the source text. Likewise, if no export column is set, translation will replace the source text.
 - CafeTran imports only visible (not hidden) columns, rows or sheets. Hiding these in Excel before starting a project allows you to filter out content that you don't wish to translate.
-
-- [Custom target segment text formatting](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#edit--target-segment-submenu) is not supported.
+- [Custom formatting](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#edit--target-segment-submenu) (including bold, italics, underline, subscript and superscript) is supported in Excel projects.
+- Suggestion: If you use Filter options, export a file preview (Project > Preview current document) early on to make sure the content is exported as expected.
 
 #### Tagged MS Excel (.xlsx)
 
@@ -443,7 +436,7 @@ String resource header files are used for localization of programs written in C 
 
 Subtitling offline or online software is often used not only to create, edit, and time code, but also to translate subtitles, including SubRip files, because it integrates video and audio context and offers various features specific to subtitling.
 
-For those wishing to translate subtitling files in CafeTran Espresso, the developer has recently added support for SRT and ITT files. The program can also open videos (Resources > Open movie) and offers access to YouTube as a Web resource (Resources > Web > YouTube.)
+For those wishing to translate subtitling files in CafeTran Espresso, the developer has recently added support for SRT and ITT files. The program can also open videos (Resources > Open movie) and offers access to YouTube as a Web resource (Resources > Web > YouTube).
 
 #### Subtitles (.srt)
 
@@ -476,23 +469,22 @@ Intercompatibility (both in and out) is an important CafeTran Espresso feature. 
 - **Export target file format**. For external projects, CafeTran does not export to the original target language document file format. Instead, it Finalizes the edited bilingual file(s). To final target file export is generally done by the client who created the translation project in their tool (or, in some cases, by the translator, if they use the same tool). This is a general limitation and is not inherent to CafeTran.
 - **Export target file Preview**. For the same reason as above, CafeTran does not export a target file Preview for external projects.
 - **Segmentation**. For external projects, CafeTran does not handle the segmentation phase as this takes place at the bilingual file creation. If you open an unsegmented file, CafeTran will show a warning message. Ask for properly prepared (segmented) files.
-- **Split/Merge** segments. CafeTran only supports **virtual joining of segments** in external projects. The feature allows to join segments in segments’ editor and rearrange their contents comfortably. As soon as the joined segments leave the editor, their number is the same as before joining but their respective text contents is changed (rearranged), hence the virtual aspect of this feature.
+- **Split/Join** segments. CafeTran only supports **virtual joining of segments** in external projects. The feature allows to join segments in segments’ editor and rearrange their contents comfortably. As soon as the joined segments leave the editor, their number is the same as before joining but their respective text contents is changed (rearranged), hence the virtual aspect of this feature. Make sure you keep the added tags intact.
 - **Project creation**. For native projects, CafeTran creates a Project folder, copies the source documents and generates a segmented native XLIFF, which it opens for translation. For external projects, **CafeTran edits the external bilingual files directly at their own directory location**. Make sure you have a copy if needed.
 - **CafeTran does not remember/reopen the previously used resources for external projects**. Use [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates) to achieve this.
 - **Project memory/Project glossary**. If Project memory and/or Project glossary are checked in the Dashboard when opening an external project, the ProjectTM.tmx and ProjectTerms.txt files are conveniently created and placed at the same working folder.
 - **Packages**. Supported packages (.sdlppx, .mqxlz) are expanded and edited at the working folder location. To reopen an already expanded package, just drag and drop the package file once again. You can export a package (or return package) via Project > Export and exchange > To Package.
-- Export button becomes **Finalize button** in CafeTran’s segments grid. This sets the Checked status (Translated in SDL Trados/Confirmed in memoQ) to all target segments and saves the project. Generally, this step should be performed prior to delivering the files. Note: If you need to keep a different status for some segments than the translated status, DON'T use the Finalize button. Instead, filter the segments you want to set as Translated, and apply the Task > Set translated status for target segments.
-- **QA > Tags check** should be performed prior to finalizing the project, to ensure no tag issues are present in the delivered files. It is also recommended to run the **QA > At tags spaces check**.
+- The Export button becomes a **Finalize button** in CafeTran’s segments grid. This sets the Checked status (corresponds to Translated in SDL Trados/Confirmed in memoQ) to all target segments and saves the project. Generally, this step should be performed prior to delivering the files. Note: If you need to keep a different status for some segments than the translated status, DON'T use the Finalize button. Instead, filter the segments you want to set as Translated, and apply the Task > Set translated status for target segments.
+- **QA > Tags check** must be performed prior to finalizing the project, to ensure no tag issues are present in the delivered files. It is also recommended to run the **QA > At tags spaces check**.
 - **TM match marks**. The translation memory match values are not stored in non-CafeTran project. They are available for the current session only, unless the projects provide their own values.
 - **Segment statuses**. CafeTran attempts to map its own additional segment statuses (Checked, Approved, Locked) to the statuses applied by the external tool. More information can be found in each tool’s section below.
-- **Segment Notes (Comments).** CafeTran generally maps its Notes feature to the Comments supported by external tools. More information can be found in each tool’s section below.
-- **Extra formating tags** cannot be added (contrarily to native projects). Additional formatting will need to be done at final document export.
+- **Segment Notes (Comments)**. CafeTran generally maps its Notes feature to the Comments supported by external tools. More information can be found in each tool’s section below.
+- **Extra formating tags** (bold, italics, underline) cannot be added, contrarily to native projects. Additional formatting will need to be conducted at final document export.
 - **Export bilingual DOCX for review**. You can export bilingual DOCX files (with or without notes) for external review via Project > Export & Exchange menu. However, importing the changes directly back into CafeTran via Projects > Export & Exchange > Import bilingual file is reserved to native projects.
 - **Auto-propagation** is supported (also across multiple files, if they are virtually glued together). However, the P and nP marks for auto-propagation and no propagation of individual segments are displayed **for the current session only**.
-- **Review** jobs that rely on Track changes feature cannot be performed in CafeTran (CafeTran’s own simple Version tracking cannot be used for this purpose). However, an solution such as the online [TQAuditor](https://cloud.tqauditor.com/quick/upload) can be used to produce a changes report which highlights the document corrections. CafeTran does map Translator Approved and Translator Rejected SDL Trados statuses.
-
+- **Review** jobs that rely on Track changes feature cannot be performed in CafeTran (CafeTran’s own simple Version tracking cannot be used for this purpose). However, a solution such as the online [TQAuditor](https://cloud.tqauditor.com/quick/upload) can be used to produce a changes report which highlights the document corrections. CafeTran does map Translator Approved and Translator Rejected SDL Trados statuses.
 - Related links:
-  [Project File Formats Created in Other Tools](https://cafetran.freshdesk.com/support/solutions/articles/6000166523-project-file-formats-created-in-other-tools)
+[Project File Formats Created in Other Tools](https://cafetran.freshdesk.com/support/solutions/articles/6000166523-project-file-formats-created-in-other-tools)
 
 ### SDL Trados Studio
 
@@ -506,9 +498,13 @@ In addition to the general notes above, please consider the following **known li
 - Trados Comments are shown as Notes in CT and CT Notes are imported as Comments in SDL Trados Studio (but do not get the levels FYI, Warning, and Error). In CT, segments with Notes/Comments have a leading and an ending tag. This is normal.
 - Alternative translations work for the current session only in Studio projects. If they interfere with SDL Trados, you can try removing them via Task > Remove alternative translations in CafeTran.
 
-**Segment status:**
+**Supported features**:
 
-In the screenshot below, you see how the various SDL Trados statuses mentioned in the green Notes are displayed in CafeTran.
+CafeTran is capable of displaying basic formatting (bold, underline and italic) in the Grid for Word-based sdlxliff files.
+
+**Segment status**:
+
+In the screenshot below, you see how the various [SDL Trados statuses](https://docs.sdl.com/LiveContent/web/pub.xql?action=home&pub=SDL Trados Studio Help-v5&lang=en-US#docid=GUID-2DB33A8F-2FAB-4169-A6FC-58B582ABF6A7&addHistory=true&query=status&scope=&tid=3135b1e1-510b-4a49-af45-aae889fc8b0d&filename=GUID-2DB33A8F-2FAB-4169-A6FC-58B582ABF6A7.xml&resource=&inner_id=&toc=false&eventType=lcContent.loadDocGUID-2DB33A8F-2FAB-4169-A6FC-58B582ABF6A7&url=/LiveContent/web/search.xql%3Fc%3Dt%26pub%3DSDL+Trados+Studio+Help-v5%26lang%3Den-US%26action%3Dsearch%26query%3Dstatus&sid=lcSearch.runSearch1572367556227&currentQuery=status&currentScope=) (also [here](https://docs.sdl.com/LiveContent/web/pub.xql?action=home&pub=SDL Trados Studio Help-v5&lang=en-US#docid=GUID-D58CE829-9C3C-4D91-90B9-8639BF1D0CE4&addHistory=true&query=segment%2520status&scope=&tid=6632d686-1c90-4814-9081-d7481d9e301f&filename=GUID-D58CE829-9C3C-4D91-90B9-8639BF1D0CE4.xml&resource=&inner_id=&toc=false&eventType=lcContent.loadDocGUID-D58CE829-9C3C-4D91-90B9-8639BF1D0CE4&url=/LiveContent/web/search.xql%3Fc%3Dt%26pub%3DSDL+Trados+Studio+Help-v5%26lang%3Den-US%26action%3Dsearch%26query%3Dsegment%2520status&sid=lcSearch.runSearch1563791205613&currentQuery=segment%2520status&currentScope=)) mentioned in the green Notes are displayed in CafeTran.
 
 ![SDL Trados statuses in CafeTran Espresso](https://i.imgur.com/DoI5PFX.png)
 
@@ -546,13 +542,13 @@ The translated return package (SDLRPX) should be opened in SDL Trados Studio whi
 
 #### SDLTM translation memories
 
-CafeTran handles SDLTM translation memories, which are imported as read-only TMX files in CafeTran. The process is very quick and painless.
+CafeTran handles SDLTM translation memories, which are imported as <u>read-only</u> TMX files in CafeTran. The process is very quick and painless.
 
 You can do so manually via Memory > Import > Import SDLTM memory.
 
 SDLTM files present in Trados packages (SDLPPX) are automatically imported as a TMX in CafeTran when you open a package. The TM options dialog is shown, allowing you to fine-tune their options or apply additional filtering. All SDLTM files present in the package are joined together during the import. To open them separately, use the manual process above.
 
-In the SDLTB section below, you can find external utilities that also handle SDTM conversion.
+In the SDLTB section below, you can find external utilities that also handle SDLTM conversion.
 
 #### SDLTB termbases
 
@@ -568,18 +564,15 @@ If you prefer to convert the imported SDLTB termbase to the glossary format, pro
 
 Although their use is now redundant, since CafeTran already handles SDLTM and SDLTB files on its own, here are some additional utilities that offer SDLTM and SDLTB conversion capabilities outside CafeTran:
 
-- Van Nellen’s [Trados Studio Resource Converter](http://www.vannellen.com/fortranslators.php) is a free cross-platform Java app that offers conversion from both SDLTM and SDLTB files.
+- Van Nellen’s [Trados Studio Resource Converter](https://closedtags.com/trados-studio-resource-converter/) is a free cross-platform Java app that offers conversion from both SDLTM and SDLTB files.
 
 ![Trados Studio Resource Converter](https://i.imgur.com/hbnHVoS.png)
-
-<!---Not needed anymore:
 
  Steps to convert a SDLTB in Trados Studio Resource Converter:
  - Click on “Convert SDLTB” button.
  - Navigate to the file’s directory and select the SDLTB file.
  - Select “Tab-separated TXT” in the “Please select the output type” dialog.
  - Select “Separated by a pipe (|)” in the “Please select how synonyms should be presented” dialog.
- --->
 
 - [WfConverter](http://wordfast.fi/blog/cat-tools/2012/11/03/convert-sdltm-and-sdltb-without-studio-and-multiterm/) by Jean-Philippe Odent.
 - [Glossary Converter](http://www.cerebus.de/glossaryconverter/index.html), available as an SDL Trados plugin and as a standalone Windows program. It can serve to convert term bases from and to SDLTB.
@@ -614,7 +607,7 @@ In order to import data into a translation memory, the translation memory must a
 To display this wizard for the active translation memory, select File > Import from the menu bar in the Translation Memories view.
 
 Related links:
-[Overview: Importing and Exporting Translation Memory Data](http://producthelp.sdl.com/sdl%20trados%20studio/client_en/TM_View/TM_Data/Importing_Exporting_TM_Data/O_ImExpTM.htm)
+[Overview: Importing and Exporting Translation Memory Data](http://producthelp.sdl.com/sdl%20trados%20studio/client_en/TM_View/TM_Data/Importing_Exporting_TM_Data/O_ImExpTM.htm),
 [Overview: Import Wizard](http://producthelp.sdl.com/sdl%20trados%20studio/client_en/Ref/H-N/Import_Wizard.htm)
 
 #### CONVERTING CAFETRAN GLOSSARIES TO SDLTB
@@ -629,7 +622,7 @@ memoQ’s MQXLIFF and MQXLZ files are well supported in CafeTran, although MQOUT
 
 **Known limitations:**
 
-<!--- TODO LATER --->
+- Empty target segments have been reported in segments where the Virtual joining feature has been used. Until the issue is fully fixed, please avoid using this feature. Otherwise, also deliver an exported bilingual DOCX, which includes all target segments.
 
 **Segment status:**
 
@@ -646,7 +639,10 @@ memoQ’s MQXLIFF and MQXLZ files are well supported in CafeTran, although MQOUT
 
 MQXLIFF is a memoQ-flavored XLIFF file format. It is well handled by CafeTran (please refer to the above general notes on bilingual XLIFF files and read more specific details concerning memoQ).
 
-Note: CafeTran now displays the match percentage for the target segments included in .mqxliff translation projects.
+Notes: 
+
+- CafeTran now displays the match percentage for the target segments included in .mqxliff translation projects.
+- Context notes are shown in as Notes in the Grid in MQXLIFF projects.
 
 #### MQXLZ
 
@@ -693,7 +689,7 @@ Packing up the translated XLIFF files in a memoQ Handback (MQBACK) package:
 
 #### memoQ online projects
 
-Information taken from the [old wiki](http://beijer.uk/cafetran-old-wiki/cafetran.wikidot.com/translating-memoq-files.html):
+Information taken from the old wiki [old wiki](https://web.archive.org/web/20151018135237/http://cafetran.wikidot.com/translating-memoq-files):
 - When handling online projects, many aspects depend on the export/import rights the PM assigns to you on the server settings.
 - In some cases server files cannot be exported or cannot be re-imported. There is a simple trick to export and re-import server files: Simply click on Create view on the Document tab in memoQ. This view can be exported and re-imported.
 - Please bear in mind that in most cases TMs and/or TBs cannot be exported from memoQ server projects. And the PM won't see any progress until you re-import your file.
@@ -705,12 +701,20 @@ Information taken from the [old wiki](http://beijer.uk/cafetran-old-wiki/cafetra
 
 MQXLIFF, and MQXLZ files are the recommended way to receive memoQ projects in CafeTran. Please ask for one of these formats instead.
 
-For instructions on how to handle bilingual RTF files exported from memoQ, refer to this [old wiki article](http://beijer.uk/cafetran-old-wiki/cafetran.wikidot.com/translating-bilingual-files-from-memoq-deja-vu-etc.html).
+If you must translate bilingual RTF files exported  from memoQ in CafeTran, here is a suggested workflow ([see the original discussion](https://cafetran.freshdesk.com/support/discussions/topics/6000021149/page/2?url_locale=)):
+
+- Convert RTF to DOCX (or ODT)
+- Copy SL column in a second DOCX
+- Import the second DOCX into CT
+- Tell CT to copy source to target
+- Export as bilingual document
+- Paste target language into the second column of the exported document
+- Import in CT
+- QA
+- Export finished translation
+- Convert DOCX to RTF
 
 Also see the RTF entry in Unsupported formats section below.
-
-<!--- TODO LATER write instructions here https://cafetran.freshdesk.com/support/discussions/topics/6000021149/page/3?url_locale=
- --->
 
 #### memoQ Translation Memories
 
@@ -743,9 +747,9 @@ Notes:
 - CafeTran supports comments in .txml files.
 - CafeTran displays the match score information for the target segments included om .txml translation projects.
 
-#### WFP 4/5 - TXLF
+#### WFP 5 - TXLF
 
- Wordfast Pro 4 and Wordfast Pro 5 use TXLF bilingual file format.
+ Wordfast Pro 5 uses the TXLF bilingual file format.
 
 This file format is handled by CafeTran, as part of the “Translate external project” workflow, with the following limitations.
 
@@ -753,11 +757,11 @@ This file format is handled by CafeTran, as part of the “Translate external pr
 
 - Segments with confirmed/Unconfirmed and Locked status all show as simply Translated in CafeTran.
 - WFP segment Notes are not mapped to CafeTran Notes
-- Finalizing the TXLF file in CafeTran does not change the status in WFP 4/5.
+- Finalizing the TXLF file in CafeTran does not change the status in WFP 5.
 
-#### WFP 4/5 - GLP
+#### WFP 5 - GLP
 
-Wordfast Pro 4/5 zipped packages have the .glp file extension.
+Wordfast Pro 5 zipped packages have the .glp file extension.
 
 They are not handled directly by CafeTran and need to be expanded.
 
@@ -767,12 +771,12 @@ Translate the TXLF files contained in the folder bearing the same title.
 
 These Wordfast Pro exported files are usually meant to be used for external review or for exchange with Wordfast Classic or for external review in MS Word. Whenever possible, ask for a TXML/TXLF file instead.
 
-You may want to try CafeTran’s MS Word Uncleaned file filter if you wish to translate these files.
-
-<!--- TODO confirm how to handle these --->
+You may want to try CafeTran’s MS Word Uncleaned file filter if you wish to translate these files. If you do so, please report back.
 
 Related links:
-[Wordfast Pro - Bilingual Export](http://www.wordfast.com/WFP2/PM_Using_PM_plug-in/Bilingual_review.htm)
+[Wordfast Pro 3 - Bilingual Export](https://wordfast.com/WFP3/PM_Using_PM_plug-in/Bilingual_review.htm),
+
+[Wordfast Pro  5 - Biligual Export](https://wordfast.com/WFP/5.5/t1867739.html)
 
 #### Wordfast TXT TMs
 
@@ -800,7 +804,7 @@ Related links:
 
 **Known limitations:**
 
-- Déjà Vu Comments are not mapped to CafeTran Notes.
+- Déjà Vu Comments are not mapped to CafeTran's Notes.
 - Déjà Vu segment statuses are not differentiated in CafeTran and CafeTran does not change their status back in Déjà Vu, even after the Finalize button is clicked (see below). You will need to change the segment status to Translated in Déjà Vu.
 
 **Segment status:**
@@ -812,7 +816,7 @@ Related links:
 
 **Known workarounds:**
 
-- According to this [old wiki article](http://beijer.uk/cafetran-old-wiki/cafetran.wikidot.com/translating-deja-vu-files.html), you can update comments to show CafeTran’s Notes in Déjà Vu by using an SQL command in Déjà Vu.
+- According to this [old wiki article](https://web.archive.org/web/20151018135232/http://cafetran.wikidot.com/translating-deja-vu-files), you can update comments to show CafeTran’s Notes in Déjà Vu by using an SQL command in Déjà Vu.
 - According to the same article, If a project contains more than one file, check Project > Documents in CafeTran and glue all files as needed. By default the last file is selected.
 
 #### External View XLF
@@ -822,10 +826,6 @@ CafeTran handles External View XLIFF files (and their tags), with the segment st
 #### External View bilingual RTF tables
 
 RTF files are mostly meant for users without a translation tool. XLIFF is the preferred format for users of another translation tool. Please ask for a XLIFF file instead.
-
-For instructions on how to handle External View bilingual RTF files from Déjà Vu, refer to this [old wiki article](http://beijer.uk/cafetran-old-wiki/cafetran.wikidot.com/translating-bilingual-files-from-memoq-deja-vu-etc.html).
-
-<!--- TODO LATER write instructions --->
 
 #### Déjà Vu Satellite files (.dvsat)
 
@@ -858,6 +858,8 @@ Note: As per the above, DVPNG files can only be handled from within Déjà Vu. A
 
 Déjà Vu uses DBMDB access database files for its native TMs and can import or export TMX files (which can be used by CafeTran), among other formats.
 
+If you don't have access to a Déjà Vu installation, you can open DBMDB database files in Excel after renaming them from .dbmdb to .mdb. XBench can also help convert these files.
+
 Related links:
 [Déjà Vu - How To Export A Translation Memory To TMX](https://atrilsolutions.zendesk.com/hc/en-us/articles/115004332365-How-to-export-a-Translation-Memory-to-TMX)
 [Déjà Vu - How To Use A TMX File In Déjà Vu](https://atrilsolutions.zendesk.com/hc/en-us/articles/205379992-How-to-use-a-TMX-file-in-D%C3%A9j%C3%A0-Vu)
@@ -865,6 +867,8 @@ Related links:
 #### Déjà Vu TBs (.dvtdb)
 
 Déjà Vu uses DVTDB access database files for its native TBs and can import or export tab-delimited TXT glossary files (which can be used by CafeTran), among other formats.
+
+If you don't have access to a Déjà Vu installation, you can open DVTDB database files in Excel after renaming them from .dvtdb to .mdb.  XBench can also help convert these files.
 
 Related links:
 [Déjà Vu - How To Export A TB To CSV Format](https://atrilsolutions.zendesk.com/hc/en-us/articles/205456621-How-to-export-a-TB-to-CSV-format)
@@ -918,9 +922,9 @@ To import a TXE terminology file in CafeTran:
 
 The older version, Transit XV used the PXF extension for packages. You should be able to ask for a PPF file instead, in the unlikely event you receive a PXF package.
 
-### Memsource Cloud
+### Memsource
 
-CafeTran can handle MXLIFF files that you download from your own [Memsource](https://www.memsource.com/) translator account (both Personal Edition and 1+ Freelancer Edition) or those you are allowed to download from an account enabled by a translation agency on a project basis (some clients/accounts seem to disable the download feature).
+CafeTran can handle MXLIFF files that you download from your own [Memsource](https://www.memsource.com/) translator account or those you are allowed to download from an account enabled by a translation agency on a project basis (some clients/accounts seem to disable the download feature).
 
 **Translation status:**
 
@@ -930,14 +934,14 @@ CafeTran can handle MXLIFF files that you download from your own [Memsource](htt
 
 Follow these steps to translate MXLIFF files in CafeTran:
 
- 1. Download the MXLIFF files from the Memsource Cloud account (Go to the project’s dashboard, check the files you wish to download and click on the Download button).
+ 1. Download the MXLIFF files from the Memsource online account (Go to the project’s dashboard, check the files you wish to download and click on the Download button).
  2. Create a working folder and copy the bilingual MXLIFF files.
  3. Translate the files in CafeTran and perform QA > Tags check making sure that tags are correct.
  4. Run Task > Set checked status for target segments. CafeTran’s “Checked” status is mapped to Memsource’s “Confirm” status.
  5. Launch Memsource Editor and connect with the same Memsource credentials (click [here](https://www.memsource.com/download/) to download and install it on your computer), and open one MXLIFF file at a time.
  6. (Recommended) Run Memsource’s QA checks and/or run bilingual file export/import operation as needed.
  7. Upload the MXLIFF file to the Memsource server via Document > Upload to server in Memsource Editor. Repeat for each file.
- 8. Finalize the project in Memsource Cloud.
+ 8. Finalize the project in Memsource Editor for Web.
 
 This last step generally requires the following actions:
  - Check that all files are 100% confirmed.
@@ -958,14 +962,18 @@ Then, you will be able to easily place these tags with the F4 keyboard shortcut 
 To exclude these tags from memory matching (so that they don’t hurt the TM fuzzy matching algorithm), you can also insert the above regex in the “Do not match” section of Preferences (Options) > Memory.
 
 Related resources, for your reference:
-[Memsource Editor User Manual](https://wiki.memsource.com/wiki/Memsource_Editor_User_Manual)
-[Memsource Cloud User Manual](https://wiki.memsource.com/wiki/Memsource_Cloud_User_Manual)
+[Memsource Editor for Desktop](https://help.memsource.com/hc/en-us/sections/115000903871-Memsource-Editor-for-Desktop),
+[Memsource Editor for Web](https://help.memsource.com/hc/en-us/sections/115000918792-Memsource-Editor-for-Web)
+
+### SMARTCAT
+
+[Smartcat](https://www.smartcat.ai/)'s online CAT tool supports [exporting and importing back translated XLIFFs](https://help.smartcat.ai/hc/en-us/articles/360000240072-Export-XLIFF-from-Smartcat). Exported Smartcat XLIFFs can then be translated in CafeTran and uploaded back into Smartcat. When you hit Finalize and choose to set the Translated status in CafeTran, all segments are marked as Confirmed in Smartcat, which means the final translated document can be directly exported from the online interface.
 
 ### CROWDIN
 
 Crowdin is an online localization project management platfom and translation tool for developers and website owners.
 
-#### XLIFF
+#### Crowdin's XLIFFs
 
 XLIFF files downloaded from Crowdin are properly handled using CafeTran’s “Translate external project” workflow.
 
@@ -975,7 +983,7 @@ Note: Access to Crowdin’s Translation Memories (TM) and Termbases (TB) can onl
 
 ### XTM Cloud
 
-XTM Cloud is an online Translation Management Software.
+[XTM Cloud](https://xtm.cloud/) is an online Translation Management Software.
 
 XLIFF files downloaded from XTM Cloud are properly handled (including tags) by CafeTran’s “Translate external project” workflow. They can be imported back into XTM Cloud by a Project Manager.
 
@@ -989,7 +997,7 @@ XLIFF 2 is being developed by the OASIS XLIFF TC. The latest published version o
 
 CafeTran uses an experimental filter for XLIFF 2.0 files. Report any issues to the developer.
 
-Note: [Okapi XLIFF Toolkit](https://bitbucket.org/okapiframework/xliff-toolkit) is a library that implements a set of Java components to create, read and manipulate XLIFF 2 documents. It can be used to validate a XLIFF 2.0 file (which can also be done online via this [XLIFF checker](https://okapi-lynx.appspot.com/validation)).
+Note: [Okapi XLIFF Toolkit](https://bitbucket.org/okapiframework/xliff-toolkit) is a library that implements a set of Java components to create, read and manipulate XLIFF 2 documents. It can be used to validate a XLIFF 2.0 file (which can also be done online via this [XLIFF Manager](https://www.maxprograms.com/products/xliffmanager.html).
 
 ### Interoperability Now! TIPP and XLIFF:DOC
 
@@ -1004,16 +1012,9 @@ See the Unsupported section for more details.
 Related links:
 [Interoperability Now! project](https://code.google.com/archive/p/interoperability-now/)
 
-<!--- TODO LATER
-Wordfast classic
-
- WorldServer xlz wsxz
-
---->
-
 ## 3. UNSUPPORTED FORMATS
 
-You may come across translation projects which require handling various yet unsupported formats. This section lists and discusses different such formats (the list is bound to expand as needs arise) along with possible ways to deal with them. The next section (Solution) catalogs various tools you can use to prepare unsupported file formats and export them back to their original format after translating them in CafeTran, so be sure to check it as well.
+You may come across translation projects which require handling various yet unsupported formats. This section lists and discusses different such formats (the list is bound to expand as needs arise) along with possible ways to deal with them. The next section (Solutions) catalogs various tools you can use to prepare unsupported file formats and export them back to their original format after translating them in CafeTran, so be sure to check it as well.
 
 ### PDF
 
@@ -1034,13 +1035,13 @@ Especially for scanned (non-editable) PDFs and images, an obvious solution is to
 
 Note: OCR conversion, source file preparation and final layout editing require additional time and are generally billed as an extra service.
 
-Because scanned PDF documents are routinely sent in for translation, obtaining an efficient OCR solution can often be a worthy investment. [ABBYY FineReader](https://www.abbyy.com/finereader/) (Windows, Mac) is the most popular choice (and, in version 14, also integrates the PDF editing capabilities of PDF Transformer+), but it’s not the only one. Other offline paid solutions include [Adobe Acrobat Pro DC](https://acrobat.adobe.com/us/en/acrobat/pricing.html?promoid=DZTH12D8&mv=other) (Windows, Mac, OCR, PDF editor, OCR, PDF to Word, Word, Excel or PowerPoint to PDF), [Nuance OmniPage](%28https://www.nuance.com/print-capture-and-pdf-solutions/optical-character-recognition/omnipage.html) (Windows), [Readiris](http://www.irislink.com/EN-US/c1462/Readiris-16-for-Windows---OCR-Software.aspx) (Windows, Mac) and [Wondershare PDFelement](https://pdf.wondershare.com/pdfelement/) (Windows, Mac, PDF editor, OCR, PDF to Word).
+Because scanned PDF documents are routinely sent in for translation, obtaining an efficient OCR solution can often be a worthy investment. [ABBYY FineReader](https://www.abbyy.com/finereader/) (Windows, Mac) is the most popular choice (and, in version 14/15, also integrates the PDF editing capabilities of PDF Transformer+), but it’s not the only one. Other offline paid solutions include [Adobe Acrobat Pro DC](https://acrobat.adobe.com/us/en/acrobat/pricing.html?promoid=DZTH12D8&mv=other) (Windows, Mac, OCR, PDF editor, OCR, PDF to Word, Word, Excel or PowerPoint to PDF), [Kofax OmniPage](https://www.kofax.com/Products/omnipage?source=nuance) (Windows), [Readiris](http://www.irislink.com/EN-US/c1462/Readiris-16-for-Windows---OCR-Software.aspx) (Windows, Mac) and [Wondershare PDFelement](https://pdf.wondershare.com/pdfelement/) (Windows, Mac, PDF editor, OCR, PDF to Word).
 
 Free offline OCR solutions which make use of Tesseract, an open source OCR engine (which produces accurate results, but is less efficient with complex layouts), include: [FreeOCR](http://www.paperfile.net/download.html) (Windows), [gImageReader](https://github.com/manisandro/gImageReader) (GNU/Linux, Windows, also create searchable PDFs), VietOCR (Windows, Mac, GNU/Linux).
 
 Online solutions: [FineReaderOnline](https://finereaderonline.com/) (10 page free trial, yearly paid plans, multiple languages supported, excellent results), [Convertio](https://convertio.co/ocr/) (10 page free trial, API available, prepaid and API packages available, multiple languages supported, excellent results, identical to FineReaderOnline in my test), [Free Online OCR](https://www.onlineocr.net/) (max. size 15 MB, good OCR recognition for basic layouts, uses Tesseract), [TM-Town](https://www.tm-town.com/blog/uploader-and-alignment-redux) (online, uses Tesseract).
 
-On the CAT tools front, [MateCat](https://matecat.com) (online, uses Nuance OmniPage SDK) and [Wordfast Anywhere](https://www.freetm.com/anywhere.html) (online) offer PDF OCR conversion. [SDL Trados Studio](http://www.sdl.com/software-and-services/translation-software/sdl-trados-studio/) also offers OCR, powered by Solid Documents Technology, or via the IRIS PDF OCR plugin (powered by Readiris).
+On the CAT tools front, [MateCat](https://matecat.com) (online) and [Wordfast Anywhere](https://www.freetm.com/anywhere.html) (online) offer PDF OCR conversion. [SDL Trados Studio](http://www.sdl.com/software-and-services/translation-software/sdl-trados-studio/) also offers OCR, powered by Solid Documents Technology, or via the IRIS PDF OCR plugin (powered by Readiris).
 
 Inceni’s [TransPDF](https://transpdf.iceni.com/) (free or pay as you go) online service tackles the PDF problem in a different way, via conversion to XLIFF and back, offering an OCR feature paid with credits along the way (see below for more details).
 
@@ -1060,7 +1061,7 @@ While OCR can still be used on editable PDFs, there are generally other effectiv
 
 Typically, the resulting file still needs source preparation before translation, or at least some final layout editing after file export.
 
-Offline tools with PDF conversion capabilities include: [WPS PDF to Word Converter](https://www.wps.com/pdf-to-word) (paid, free for 5 page documents, Windows, tested with excellent results), [Foxit's PhantomPDF](https://www.foxitsoftware.com/pdf-editor/%29) (paid, Windows, PDF editor, PDF to Word), [Adobe Acrobat Pro DC](https://acrobat.adobe.com/us/en/acrobat/pricing.html?promoid=DZTH12D8&mv=other) (paid, Windows, Mac, PDF editor, OCR, PDF to Word, Word, Excel, or PowerPoint to PDF), [Wondershare PDFelement](https://pdf.wondershare.com/pdfelement/) (paid, Windows, Mac, PDF editor, OCR, PDF to Word), [PDF Architect](http://www.pdfforge.org/pdfarchitect/download) (paid, Windows, PDF editor, OCR, PDF to Word), [Solid Converter](http://www.soliddocuments.com/pdf/-to-word-converter/304/1) (paid, Windows and Mac), [Nitro](https://www.gonitro.com/home-1#) (paid, Windows, PDF editor, PDF to Word), [PDFSam](https://pdfsam.org/) (paid for PDF to word, OCR and other stuff on Windows / free cross-platform utility for basic editing tasks, such as splitting and merging PDFs), [Ableword](http://www.ableword.net/pdftoword.html) (free, Windows, Word and PDF editor, PDF to Word), [Sejda Desktop](https://www.sejda.com/desktop) (free/paid, Windows, Mac, GNU/Linux, PDF editor, PDF to Word, Word to PDF, also online version) and [ABBY PDF Transformer+](https://www.abbyy.com/download/pdft_plus/) (still available for a free 30-day /100 pages trial, but not offered for purchase as a separate product. Now its functionality is included in [ABBYY FineReader](https://www.abbyy.com/finereader/)).
+Offline tools with PDF conversion capabilities include: [WPS PDF to Word Converter](https://www.wps.com/pdf-to-word) (paid, free for 5 page documents, Windows, tested with excellent results), [Foxit's PhantomPDF](https://www.foxitsoftware.com/pdf-editor/) (paid, Windows, Mac, PDF editor, PDF to Word), [Adobe Acrobat Pro DC](https://acrobat.adobe.com/us/en/acrobat/pricing.html?promoid=DZTH12D8&mv=other) (paid, Windows, Mac, PDF editor, OCR, PDF to Word, Word, Excel, or PowerPoint to PDF), [Wondershare PDFelement](https://pdf.wondershare.com/pdfelement/) (paid, Windows, Mac, PDF editor, OCR, PDF to Word), [PDF Architect](https://www.pdfforge.org/pdfarchitect/personal) (paid, Windows, PDF editor, OCR, PDF to Word), [Solid Converter](http://www.soliddocuments.com/pdf/-to-word-converter/304/1) (paid, Windows and Mac), [Nitro](https://www.gonitro.com/home-1#) (paid, Windows, PDF editor, PDF to Word), [PDFSam](https://pdfsam.org/) (paid for PDF to word, OCR and other stuff on Windows / free cross-platform utility for basic editing tasks, such as splitting and merging PDFs), [Ableword](http://www.ableword.net/pdftoword.html) (free, Windows, Word and PDF editor, PDF to Word), [Sejda Desktop](https://www.sejda.com/desktop) (free/paid, Windows, Mac, GNU/Linux, PDF editor, PDF to Word, Word to PDF, also online version) and [ABBY PDF Transformer+](https://www.abbyy.com/download/pdft_plus/) (still available for a free 30-day /100 pages trial, but not offered for purchase as a separate product. Now its functionality is included in [ABBYY FineReader](https://www.abbyy.com/finereader/)).
 [Microsoft Word](https://support.office.com/en-us/article/Edit-PDF-content-in-Word-b2d1d729-6b79-499a-bcdb-233379c2f63a) (2013 and later, on Windows) also offers the ability to turn a PDF into an editable document. [LibreOffice](https://libreoffice.org/) does this as well, but text appears within text boxes, which only makes it usable for PDF editing, not document preparation.
 For simple text extraction, you can also use the free [Adobe Reader](https://get.adobe.com/reader/otherversions/) and other PDF readers.
 
@@ -1097,14 +1098,16 @@ On the plus side, the original layout is preserved and should only require limit
 
 On the down side, the service has some price attached to it which, although quite low, represents an additional cost. Furthermore, even with the improved segmentation if you go for a roundrip through SDL Trados or Memsource, the file might present a few less than optimal segmentation situations that you cannot fix as you would in a native CafeTran project.
 
-Still, TransPDF represents an interesting option you should definitely try!
+Still, TransPDF represents an interesting option you should try.
+
+Note: ProZ.com members get a [25% discount](https://go.proz.com/transpdf-credit-purchase) when buying credits. ProZ.com Plus members also receive 10 credits per month, as part of their [Plus package](http://www.proz.com/about-plus-package).
 
 Related links:
-TransPDF - [Home page](https://www.iceni.com/transpdf.htm)
-TransPDF - [Pricing](https://www.iceni.com/transpdf.htm#pricing)
-TransPDF - [Help and support](https://transpdf.iceni.com/support/)
-TransPDF - [PDF Translation, Step-by-step](https://transpdf.iceni.com/segments/help)
-TransPDF - [Using Trados Studio for PDF translation](https://transpdf.iceni.com/guide_trados_plugin)
+TransPDF - [Home page](https://www.iceni.com/transpdf.htm),
+TransPDF - [Pricing](https://www.iceni.com/transpdf.htm#pricing),
+TransPDF - [Help and support](https://transpdf.iceni.com/support/),
+TransPDF - [PDF Translation, Step-by-step](https://transpdf.iceni.com/segments/help),
+TransPDF - [Using Trados Studio for PDF translation](https://transpdf.iceni.com/guide_trados_plugin),
 TransPDF - [Using Memsource for PDF translation](https://transpdf.iceni.com/guide_memsource)
 
 - **EXTRACT PDF TABLES - TABULA**
@@ -1117,7 +1120,7 @@ Note: There is an ongoing discussion for integrating Tesseract OCR capabilities 
 
 PDF editing solutions are also useful to keep around for various tasks, including CafeTran’s “Translate through Clipboard” workflow.
 
-[Adobe Acrobat Pro DC](https://acrobat.adobe.com/us/en/acrobat/pricing.html?promoid=DZTH12D8&mv=other) (Windows, Mac), [Nitro Pro](https://www.gonitro.com/download), [Nuance Power PDF](https://www.nuance.com/print-capture-and-pdf-solutions/pdf-and-document-conversion/power-pdf-converter.html) (Windows, PDF editor, PDF to Word), [Foxit Phantom PDF](https://www.foxitsoftware.com/pdf-editor/) (Windows, PDF editor, PDF to Word), [Wondershare PDFelement](https://pdf.wondershare.com/pdfelement/) (paid, Windows, Mac, PDF editor, OCR, PDF to Word), [PDF Architect](http://www.pdfforge.org/pdfarchitect/download) (paid, Windows, PDF editor, OCR, PDF to Word), [Soda PDF](https://www.sodapdf.com/) (Windows, online, PDF editor, PDF to Word), [iSkysoft PDF Editor](https://pdf.iskysoft.com/) (paid, Windows, Mac), [FlexiPDF](http://www.softmaker.de/flexipdf) (paid, Windows, PDF Editor, doc to PDF converter) and [Master PDF Editor](https://code-industry.net/masterpdfeditor/) (free with watermarking/paid, Windows, Mac, and GNU/Linux // Linux free edition is 100% usable without PDF watermarking) are some of the available options. [ABBYY FineReader](https://www.abbyy.com/finereader/) (Windows, Mac), mostly known for OCR, now also integrates the PDF editing capabilities of PDF Transformer+.
+[Adobe Acrobat Pro DC](https://acrobat.adobe.com/us/en/acrobat/pricing.html?promoid=DZTH12D8&mv=other) (Windows, Mac), [Nitro Pro](https://www.gonitro.com/download), [Kofax Omnipage](https://www.kofax.com/Products/omnipage/standardl) (Windows, PDF editor, PDF to Word), [Foxit Phantom PDF](https://www.foxitsoftware.com/pdf-editor/) (Windows, PDF editor, PDF to Word), [Wondershare PDFelement](https://pdf.wondershare.com/pdfelement/) (paid, Windows, Mac, PDF editor, OCR, PDF to Word), [PDF Architect](http://www.pdfforge.org/pdfarchitect/download) (paid, Windows, PDF editor, OCR, PDF to Word), [Soda PDF](https://www.sodapdf.com/) (Windows, online, PDF editor, PDF to Word), [iSkysoft PDF Editor](https://pdf.iskysoft.com/) (paid, Windows, Mac), [FlexiPDF](http://www.softmaker.de/flexipdf) (paid, Windows, PDF Editor, doc to PDF converter) and [Master PDF Editor](https://code-industry.net/masterpdfeditor/) (free with watermarking/paid, Windows, Mac, and GNU/Linux // Linux free edition is 100% usable without PDF watermarking) are some of the available options. [ABBYY FineReader](https://www.abbyy.com/finereader/) (Windows, Mac), mostly known for OCR, now also integrates the PDF editing capabilities of PDF Transformer+.
 
 On the (mostly) free front: [Sejda Desktop](https://www.sejda.com/desktop) (free/paid, Windows, Mac, GNU/Linux, PDF editor, PDF to Word, Word to PDF, also free/paid online version) [AbleWord](http://www.ableword.net/) (free, Windows, Word and PDF editor), [PDF-XChange Editor](https://www.tracker-software.com/product/pdf-xchange-editor) (Windows, Free and Plus versions available), [LibreOffice](https://libreoffice.org/) Writer or Draw (free, Windows, Mac, GNU/Linux, text appears within text boxes), Inkscape (free, Windows, Mac, GNU/Linux, SVG editor, can also serve to edit PDFs - each page separately - and translate images).
 
@@ -1129,7 +1132,7 @@ Sometimes, you may need to deliver documents to PDF format as well.
 
 Office suite applications ([Microsoft Office](https://products.office.com/) [Windows, Mac, online], [OpenOffice](https://www.openoffice.org)/[LibreOffice](https://libreoffice.org/) [cross-platform], [WPS Office](https://www.wps.com/) [Windows, GNU/Linux], [SoftMaker Office](http://www.softmaker.com/en/softmaker-office) [cross-platform], [Google Docs](https://docs.google.com) [online]) and many software applications can export a document they handle directly to PDF.
 
-Most PDF editing tools mentioned above should also handle document to PDF conversion, such as [Adobe Acrobat Pro DC](https://acrobat.adobe.com/us/en/acrobat/pricing.html?promoid=DZTH12D8&mv=other) (Windows, Mac), [Nuance Power PDF](https://www.nuance.com/print-capture-and-pdf-solutions/pdf-and-document-conversion/power-pdf-converter.html) (Windows), [Foxit Phantom PDF](https://www.foxitsoftware.com/pdf-editor/) (Windows), [Wondershare PDFelement](https://pdf.wondershare.com/pdfelement/) (Windows, Mac), [PDF Architect](http://www.pdfforge.org/pdfarchitect/download) (Windows), [Soda PDF](https://www.sodapdf.com/) (Windows) and [iSkysoft PDF Editor](https://pdf.iskysoft.com/) (Windows, Mac), [FlexiPDF](http://www.softmaker.de/flexipdf) (Windows, PDF Editor, Word to PDF converter).
+Most PDF editing tools mentioned above should also handle document to PDF conversion, such as [Adobe Acrobat Pro DC](https://acrobat.adobe.com/us/en/acrobat/pricing.html?promoid=DZTH12D8&mv=other) (Windows, Mac), [Nuance Power PDF](https://www.nuance.com/print-capture-and-pdf-solutions/pdf-and-document-conversion/power-pdf-converter.html) (Windows), [Foxit Phantom PDF](https://www.foxitsoftware.com/pdf-editor/) (Windows), [Wondershare PDFelement](https://pdf.wondershare.com/pdfelement/) (Windows, Mac), [PDF Architect](https://www.pdfforge.org/pdfarchitect/personal) (Windows), [Soda PDF](https://www.sodapdf.com/) (Windows, Mac) and [iSkysoft PDF Editor](https://pdf.iskysoft.com/) (Windows, Mac), [FlexiPDF](http://www.softmaker.de/flexipdf) (Windows, PDF Editor, Word to PDF converter).
 There are also apps like [PrimoPDF by Nitro](http://www.primopdf.com/) (Windows, free), [Icecream PDF converter](https://icecreamapps.com/PDF-Converter/) (Windows, free/paid).
 
 Online: [Soda Word to PDF](https://www.sodapdf.com/word-to-pdf/), [Smallpdf](https://smallpdf.com/), as well as general (batch) file converters such as: [Zamzar](http://www.zamzar.com/), [CloudConvert](https://cloudconvert.com/), [Convertio](https://convertio.co/).
@@ -1138,11 +1141,10 @@ Online: [Soda Word to PDF](https://www.sodapdf.com/word-to-pdf/), [Smallpdf](htt
 
 Microsoft Office 1997–2003 files (.doc, .xls, .ppt) are not directly supported in CafeTran.
 
-You can either convert these files to DOCX, XLSX, PPTX before translating them in CafeTran or, if compatibility/presentation issues might arise, use a round trip solution (MateCat, Wordfast Pro 3 & 5, Okapi Framework, Memsource, SDL Trados Studio, memoQ, etc.).
+You can either convert these files to DOCX, XLSX, PPTX before translating them in CafeTran or, if compatibility/presentation issues might arise, use a round trip solution (MateCat, Wordfast Pro 3 & 5, Okapi Framework, Memsource, SDL Trados Studio, memoQ, etc.). Check the Solutions section below.
 
 ### RTF
 
-<!--- TODO now --->
 Short for Rich Text Format, RTF is a text file format with only some additional basic formatting.
 
 You will need to convert RTF to DOCX or ODT before translating it in CafeTran. After export, you can convert it back to RTF using MS Word or OpenOffice/LibreOffice. Conversion should be lossless.
@@ -1156,8 +1158,6 @@ RTF (or DOC) is being sometimes used as a bilingual document format by a number 
 In general, you will be better off asking for a bilingual XLIFF-flavored file.
 
 Otherwise, please note additional file preparation and handling might be needed before proceeding to the translation in CafeTran.
-
-For such Déjà Vu and memoQ files, you can access this [old wiki article](http://beijer.uk/cafetran-old-wiki/cafetran.wikidot.com/translating-bilingual-files-from-memoq-deja-vu-etc.html). See also below:
 
 #### Multi-column RTF tables
 
@@ -1188,9 +1188,7 @@ Microsoft Visio is a diagramming and vector graphics application that is part of
 
 If you have Microsoft Visio, you can use [TransTools For Visio](http://www.translatortools.net/visio-about.html) that allows you to extract translatable text from Visio drawings (all formats supported by Microsoft Visio) and to merge translations back into the original Visio drawings.
 
-CAT tools that allow you to handle Visio files via a round trip: Wordfast Pro 3, Okapi Framework, MemoQ, Deja Vu.
-
-<!--- TODO LATER add unsupported CAT tools subsection --->
+CAT tools that allow you to handle Visio files via a round trip: Wordfast Pro 3, Okapi Framework, MemoQ, Déjà Vu.
 
 ### INDD (InDesign)
 
@@ -1384,7 +1382,7 @@ Additional notes:
 
 #### MateCat file formats
 
-Below you will find the full list of supported file formats in MateCat (in bold, those not natively supported by CafeTran): Microsoft Office (DOCX, XLSX, PPTX, **DOC**, **DOT**, DOCM, **DOTX**, **DOTM**, **XLS**, **XLT**, XLSM, **XLTX**, **XLTM**, **PPT**, **PPS**, **PPTM**, **PPSX**, **PPSM**, **POT**, **POTM**), OpenOffice (ODT, **OTT**, ODS, **OTS**, ODP, OTP), Web (HTM, HTML, XHTML, **CSV**, **TSV**, XML, **DTD**, **JSON**, **YAML**, **YML**) Localization (SDLXLIFF, XLIFF, XLF, **PO**, TTX, TXML, Android XML), Desktop publishing (MIF, IDML, **ICML**, **DITA**), Others (TXT, PROPERTIES, RESX, STRINGS, **SRT**, **WIX**), OCR [via Nuance OCR SDK] (BMP, GIF, PNG, JPEG, TIFF, Scanned PDFs). Others (**RTF**, Regular PDFs [converted to DOCX via CloudConvert]).
+Below you will find the full list of supported file formats in MateCat (in bold, those not natively supported by CafeTran): Microsoft Office (DOCX, XLSX, PPTX, **DOC**, **DOT**, DOCM, **DOTX**, **DOTM**, **XLS**, **XLT**, XLSM, **XLTX**, **XLTM**, **PPT**, **PPS**, **PPTM**, **PPSX**, **PPSM**, **POT**, **POTM**), OpenOffice (ODT, **OTT**, ODS, **OTS**, ODP, OTP), Web (HTM, HTML, XHTML, **CSV**, **TSV**, XML, **DTD**, **JSON**, **YAML**, **YML**) Localization (SDLXLIFF, XLIFF, XLF, **PO**, TTX, TXML, Android XML), Desktop publishing (MIF, IDML, **ICML**, **DITA**), Others (TXT, PROPERTIES, RESX, STRINGS, SRT, **WIX**), OCR [via Nuance OCR SDK] (BMP, GIF, PNG, JPEG, TIFF, Scanned PDFs). Others (**RTF**, Regular PDFs [converted to DOCX via CloudConvert]).
 
 Note: CafeTran does not offer OCR, but can handle image translation (except for TIFFs) via the “Translate paper document” workflow, editable PDFs with its Clipboard workflow and short non-editable PDFs with its Paper document workflow.
 
@@ -1409,17 +1407,79 @@ Written in Java using Jetty and Okapi Framework, MateCat filters is offered as a
 
 There is a Mashape plan for 250 free conversions per month, as well as other paid plans.
 
-For more information:- 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11
-- [MateCat Filters](http://filters.matecat.com/) (home page).
-  [Supported file formats](https://github.com/matecat/MateCat-Filters/wiki/Supported-file-formats)
+For more information:
+- [MateCat Filters](http://filters.matecat.com/) (home page),
+- [Supported file formats](https://github.com/matecat/MateCat-Filters/wiki/Supported-file-formats)
 
 #### Offline
 
 You can build and use your own instance of MateCat filters (open source), although you will optionally need to install the MateCat Win Converter to support legacy MS Office formats, and buy licenses for the commercial software MateCat Filter uses to support OCR for images, scanned files (Nuance OCR SDK) and editable PDFs (CloudConvert).
 
 Related links:
-[Matecat Filters](https://github.com/matecat/MateCat-Filters) (git page)
+[Matecat Filters](https://github.com/matecat/MateCat-Filters) (git page),
 [Matecat Win Converter](https://github.com/matecat/MateCat-Win-Converter)
+
+### Smartcat
+
+*Free, online*
+
+[Smartcat](https://www.smartcat.ai/) supports [exporting and importing back translated XLIFF files](https://help.smartcat.ai/hc/en-us/articles/360000240072-Export-XLIFF-from-Smartcat), handles various additonal file types and offers filter options. This makes it excellent for roundtrip scenarios. See also their [best practices](https://help.smartcat.ai/hc/en-us/articles/115003578451-XLIFF-export-Best-practices) document.
+
+Additional supported [file formats](https://help.smartcat.ai/hc/en-us/articles/360006979511-File-formats-supported-in-Smartcat) include: DOC, XLS, PPT, POT/POTX, RTF, PHP, PO, MIF, DITA XML, HELP+MANUAL XML, CSV, TSV, DTD, JSON, TJSON, YML, INC, various image formats, powered by OCR (JPG/JPEG, TIF/TIFF, BMP, PNG, GIF, DJVU/DJV, DCX, PCX, JP2, JPC, JFIF, JB2), WSXZ packages.
+
+Related links:
+[Smartcat Help Center](https://help.smartcat.ai/hc/en-us/categories/115000235031-CAT-tool)
+
+### XLIFF Manager
+
+[XLIFF Manager](https://maxprograms.com/products/xliffmanager.html) is a cross-platform open source graphical user interface for [OpenXLIFF Filters](https://www.maxprograms.com/products/openxliff.html) (an open source set of filters for creating, merging and validating XLIFF 1.2 and 2.0 files) written in JavaScript.
+
+With XLIFF Manager you can:
+
+- Create XLIFF 1.2 and 2.0 files that can be translated in any modern CAT tool for a variety of file types.
+- Convert your translated XLIFF files to original format with a couple of clicks.
+- Validate XLIFF files created by any tool. Validation is supported for XLIFF 1.0, 1.1, 1.2 and 2.0.
+- Produce an HTML file with word counts and segment status statistics from an XLIFF document.
+- The XLIFF files generated by OpenXLIFF Filters don't use proprietary markup and are fully compatible with most CAT tools.
+
+Supported file formats:
+
+- Adobe InDesign Interchange (INX)
+- Adobe InDesign IDML CS4, CS5, CS6 & CC
+- HTML
+- Microsoft Office (2007 and newer)
+- Microsoft Visio XML Drawings (2007 and newer)
+- MIF (Maker Interchange Format OpenOffice/LibreOffice/StarOffic
+- Plain Text
+- SDLXLIFF (Trados Studio)
+- TXML (GlobalLink/Wordfast PRO)
+- WPML XLIFF (WordPress Multilingual Plugin)
+- XML Formats
+- XML (Generic)
+- DITA 1.0, 1.1, 1.2 and 1.3
+- DocBook 3.x, 4.x and 5.x
+- SVG
+- Word 2003 ML
+- XHTML
+- JavaScript
+- Java Properties
+- PO (Portable Objects)
+- RC (Windows C/C++ Resources)
+- ResX (Windows .NET Resources)
+- TS (Qt Linguist translation source)
+
+### Memsource
+
+*Online/offline, cross-platform, Personal Edition or Freelancer edition*
+
+Memsource free Personal Edition account offers max. 2 files for translation (10 MB each). Old files will need to be deleted before adding new ones. Memsource paid Freelancer Edition (monthly subscription) offers unlimited file use.
+
+Related links:
+[Memsource Cloud - Translator editions](https://www.memsource.com/pricing/#translators)
+
+Memsource handles a wide range of file types and offers various filters.
+
+Additional supported file filters include: Multilingual MS Excel, Multilingual XML, Adobe Photoshop - PSD, JSON, CSV, YAML, DITA (dita, .ditamap), DocBook, PO Gettext, PHP, Markdown (.md, .markdown), Quark Tag, CATKEYS, EPUB, INI, LANG, PLIST, RC, SUB, TS, WIKI, YAML, TAG, XTG.
 
 ### Wordfast Pro 3
 
@@ -1442,7 +1502,7 @@ Additional supported file formats include:
 Also, some file formats already supported by CafeTran can offer additional filter options in WFP (in Edit > Preferences > Formats), such as the ability to choose whether to include slide notes, hidden slides etc. in PowerPoint presentations.
 
 Related links:
-Download [Wordfast Pro 3](https://www.wordfast.com/products/products_wordfast_pro_3)
+Download [Wordfast Pro 3](https://www.wordfast.com/products/wordfast_pro_3)
 
 ### Wordfast Pro 5
 
@@ -1453,30 +1513,6 @@ If you own a Wordfast Pro 5 license, you can use this CAT tool to create project
 You can use the cross-platform Wordfast Pro 5 to perform a round trip for different file types. While WFP demo version has a cap on the size of resources (TMs and glossaries) that can be imported, it can import a source document of any size.
 
 [Supported file formats | Download](http://www.wordfast.com/products/products_wordfast_pro_5) (Specifications tab)
-
-### Memsource
-
-*Online/offline, cross-platform, Personal Edition or Freelancer edition*
-
-Memsource free Personal Edition account offers max. 2 files for translation (10 MB each). Old files will need to be deleted before adding new ones. Memsource paid Freelancer Edition (monthly subscription) offers unlimited file use.
-
-Related links:
-[Memsource Cloud - Translator editions](https://www.memsource.com/pricing/#translators)
-
-Memsource handles a wide range of file types and offers various filters.
-
-Additional supported file filters include: Multilingual MS Excel, Multilingual XML, Adobe Photoshop - PSD, JSON, CSV, YAML, DITA (dita, .ditamap), DocBook, PO Gettext, PHP, Markdown (.md, .markdown), Quark Tag, CATKEYS, EPUB, INI, LANG, PLIST, RC, SRT, SUB, TS, WIKI, YAML, TAG, XTG.
-
-### Smartcat
-
-*Free, online*
-
-[Smartcat](https://www.smartcat.ai/) supports [exporting and importing back a translated XLIFF](https://help.smartcat.ai/hc/en-us/articles/360000240072-Export-XLIFF-from-Smartcat). This makes it excellent for roundtrip scenarios. See also their [best practices](https://help.smartcat.ai/hc/en-us/articles/115003578451-XLIFF-export-Best-practices) document.
-
-Additional supported [file formats](https://help.smartcat.ai/hc/en-us/articles/360006979511-File-formats-supported-in-Smartcat) include: DOC, XLS, PPT, POT/POTX, RTF, PHP, PO, MIF, DITA XML, HELP+MANUAL XML, CSV, TSV, DTD, JSON, TJSON, YML, INC, SRT, various image formats, powered by OCR (JPG/JPEG, TIF/TIFF, BMP, PNG, GIF, DJVU/DJV, DCX, PCX, JP2, JPC, JFIF, JB2), WSXZ packages.
-
-Related links:
-[Smartcat Help Center](https://help.smartcat.ai/hc/en-us/categories/115000235031-CAT-tool)
 
 ### Swordfish
 
@@ -1564,19 +1600,3 @@ If you own a Déjà Vu license, you can use this CAT tool to create projects whi
 Related links:
 [Déjà Vu - Supported File Formats](https://atrilsolutions.zendesk.com/hc/en-us/articles/205383202-Supported-File-Formats)
 [Déjà Vu - Supported Formats And How To Use Them](https://atrilsolutions.zendesk.com/hc/en-us/sections/201686442-Supported-formats-and-how-to-use-them)
-
-## LIST OF CHANGES
-
-- 20171127 File creation
-- 20171203 Added section for e-books (EPUB, MOBI, AZW), and information about Memsource tags.
-- 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
-- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
-- 20180830 Updated for CafeTran Espresso 2018 - Akua Update 11
-- 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11 - Added section for SVG filter in Supported file formats, Adobe Illustrator (AI) in Unsupported formats, and Smartcat in Solutions
-- 20190121 Updated for CafeTran Espresso 2019  - Croissant 10.0
-
-## Feedback
-
-You can send me feedback via a [ProZ message](https://www.proz.com/?sp=mailsend&eid_s=2042360). Please start your subject with the name of the document: “CafeTran - File formats”.
-
-<!--- TODO suggest file formats: srt, po, tiff --->

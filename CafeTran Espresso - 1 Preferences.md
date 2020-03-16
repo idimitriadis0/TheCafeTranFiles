@@ -1,188 +1,39 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [CAFETRAN ESPRESSO - PREFERENCES](#cafetran-espresso-preferences)
-	- [ACCESSING PREFERENCES](#accessing-preferences)
-	- [EXPORT/IMPORT/RESET PREFERENCES](#exportimportreset-preferences)
-	- [GENERAL](#general)
-		- [User ID:](#user-id)
-		- [Database connection:](#database-connection)
-			- [Drop down menu:](#drop-down-menu)
-			- [Database connection button:](#database-connection-button)
-		- [Applications connection:](#applications-connection)
-			- [Drop down menu:](#drop-down-menu)
-			- [Applications connection button:](#applications-connection-button)
-		- [Spell checker:](#spell-checker)
-		- [Web browser:](#web-browser)
-		- [External editor:](#external-editor)
-		- [Desktop search tool:](#desktop-search-tool)
-		- [Rate:](#rate)
-			- [Rate button:](#rate-button)
-		- [Segmentation:](#segmentation)
-			- [Drop-down menu:](#drop-down-menu)
-			- [Segmentation editor, segmentation rules:](#segmentation-editor-segmentation-rules)
-			- [Segment at all tags:](#segment-at-all-tags)
-		- [Text shortcuts:](#text-shortcuts)
-		- [Non-translatable fragments:](#non-translatable-fragments)
-		- [Characters for removal:](#characters-for-removal)
-		- [Surround with characters](#surround-with-characters)
-			- [Surround with characters 1:](#surround-with-characters-1)
-			- [Surround with characters 2:](#surround-with-characters-2)
-			- [Surround with characters 3:](#surround-with-characters-3)
-		- [Project page size (units):](#project-page-size-units)
-		- [Autopilot delay (millisec/chars):](#autopilot-delay-millisecchars)
-		- [Autopilot fixed delay (milliseconds):](#autopilot-fixed-delay-milliseconds)
-	- [DEFINITIONS](#definitions)
-		- [List of subjects… | List of clients…](#list-of-subjects-list-of-clients)
-		- [Definitions column names](#definitions-column-names)
-			- [Context column name:](#context-column-name)
-			- [Subject column name:](#subject-column-name)
-			- [Client column name:](#client-column-name)
-			- [Notes column name:](#notes-column-name)
-			- [Reference column name:](#reference-column-name)
-			- [User’s column name: (3x)](#users-column-name-3x)
-		- [Language column names:](#language-column-names)
-	- [WORKFLOW](#workflow)
-		- [Image translation export to:](#image-translation-export-to)
-		- [Auto-save](#auto-save)
-			- [Auto-save project (segments):](#auto-save-project-segments)
-			- [Auto-save memory (segments):](#auto-save-memory-segments)
-			- [Auto-save glossary (entries):](#auto-save-glossary-entries)
-		- [Keep formatting at export via clipboard](#keep-formatting-at-export-via-clipboard)
-		- [Clipboard sensitive target:](#clipboard-sensitive-target)
-		- [Remove newlines at clipboard transfer:](#remove-newlines-at-clipboard-transfer)
-		- [Automatic selection of whole words:](#automatic-selection-of-whole-words)
-		- [Automatic memory matching:](#automatic-memory-matching)
-		- [Copy source to target during segmentation](#copy-source-to-target-during-segmentation)
-		- [Transfer source to empty target during translation](#transfer-source-to-empty-target-during-translation)
-		- [Shared export folder](#shared-export-folder)
-		- [Replace characters at source transfer:](#replace-characters-at-source-transfer)
-	- [PROMPTER](#prompter)
-		- [Prompt phrases](#prompt-phrases)
-		- [Two-word hints](#two-word-hints)
-		- [Automatic case adjustment](#automatic-case-adjustment)
-		- [Replace existing words](#replace-existing-words)
-		- [Prompting starts at (char):](#prompting-starts-at-char)
-		- [Minimal word length:](#minimal-word-length)
-	- [AUTO-ASSEMBLING](#auto-assembling)
-		- [Automatic insertion of matches](#automatic-insertion-of-matches)
-		- [Transfer numbers to matches](#transfer-numbers-to-matches)
-		- [Transfer tags to matches](#transfer-tags-to-matches)
-		- [Match case](#match-case)
-		- [Fuzzy match auto-correction](#fuzzy-match-auto-correction)
-		- [Automatic fragments adjustment](#automatic-fragments-adjustment)
-		- [Insert target only](#insert-target-only)
-		- [Format numbers](#format-numbers)
-		- [Automatic case adjustment](#automatic-case-adjustment)
-		- [Beginning of sentence only](#beginning-of-sentence-only)
-		- [Copy matches to clipboard](#copy-matches-to-clipboard)
-		- [Replace punctuation characters](#replace-punctuation-characters)
-	- [AUTO-PROPAGATION](#auto-propagation)
-		- [Auto-propagation to other segments](#auto-propagation-to-other-segments)
-		- [Auto-propagation to current segments](#auto-propagation-to-current-segments)
-		- [Auto-propagation to other documents](#auto-propagation-to-other-documents)
-		- [Auto-propagation of numbers](#auto-propagation-of-numbers)
-		- [Auto-propagation of non-translatable fragments](#auto-propagation-of-non-translatable-fragments)
-		- [Auto-propagation forward only](#auto-propagation-forward-only)
-		- [Auto-propagation from locked segments](#auto-propagation-from-locked-segments)
-		- [Auto-propagation of segment status](#auto-propagation-of-segment-status)
-	- [GLOSSARY](#glossary)
-		- [Alternatives entries separator:](#alternatives-entries-separator)
-		- [Trim](#trim)
-			- [Trim new terms:](#trim-new-terms)
-			- [Trim new term start:](#trim-new-term-start)
-			- [Trim new term end:](#trim-new-term-end)
-		- [Fields to hide:](#fields-to-hide)
-		- [Minimal prefix length:](#minimal-prefix-length)
-		- [Prefix matching](#prefix-matching)
-		- [Sort matches alphabetically](#sort-matches-alphabetically)
-		- [Skip new term window (button)](#skip-new-term-window-button)
-		- [Vertical display](#vertical-display)
-		- [Look up word stems:](#look-up-word-stems)
-		- [Terms consistency check:](#terms-consistency-check)
-		- [Skip new term window (shortcut)](#skip-new-term-window-shortcut)
-		- [Display longest match only](#display-longest-match-only)
-	- [MEMORY](#memory)
-		- [Java memory size (MB):](#java-memory-size-mb)
-		- [Switch to preliminary matching threshold:](#switch-to-preliminary-matching-threshold)
-		- [Subsegment hits threshold:](#subsegment-hits-threshold)
-		- [Subsegment to auto threshold:](#subsegment-to-auto-threshold)
-		- [Contextual subsegment to auto threshold:](#contextual-subsegment-to-auto-threshold)
-		- [Subsegment to virtual threshold:](#subsegment-to-virtual-threshold)
-		- [Subsegment look-up limit:](#subsegment-look-up-limit)
-		- [Subsegment minimal length:](#subsegment-minimal-length)
-		- [Subsegments min. length difference (%):](#subsegments-min-length-difference-)
-		- [Auto-assembling insert threshold (%):](#auto-assembling-insert-threshold-)
-		- [Fuzzy match insert threshold (%):](#fuzzy-match-insert-threshold-)
-		- [Function words threshold (%):](#function-words-threshold-)
-		- [Fuzzy match threshold (%):](#fuzzy-match-threshold-)
-		- [Fuzzy match display limit:](#fuzzy-match-display-limit)
-		- [Search display limit:](#search-display-limit)
-		- [Additional space characters (Unicode):](#additional-space-characters-unicode)
-		- [Do not match:](#do-not-match)
-		- [Compare with target segment:](#compare-with-target-segment)
-		- [Look up word stems:](#look-up-word-stems)
-	- [MEMORY SERVER](#memory-server)
-		- [Rendezvous server port:](#rendezvous-server-port)
-		- [Read only](#read-only)
-		- [Request dialog,](#request-dialog)
-	- [QA](#qa)
-		- [Terms consistency check:](#terms-consistency-check)
-		- [Length difference check (%):](#length-difference-check-)
-		- [Length difference check (chars):](#length-difference-check-chars)
-		- [Maximum segment length (chars):](#maximum-segment-length-chars)
-		- [Prefix marching (%):](#prefix-marching-)
-		- [Don't spellcheck acronyms (chars):](#dont-spellcheck-acronyms-chars)
-		- [Regular expression:](#regular-expression)
-		- [Whole words:](#whole-words)
-		- [Match case:](#match-case)
-		- [QA for checked segments:](#qa-for-checked-segments)
-	- [MT SERVICES](#mt-services)
-		- [Mask non-translatable fragments](#mask-non-translatable-fragments)
-		- [Team auto-assembling with machine translation](#team-auto-assembling-with-machine-translation)
-		- [Team high-priority fragments only](#team-high-priority-fragments-only)
-		- [Online MT engines](#online-mt-engines)
-			- [DeepL:](#deepl)
-			- [Google Translate:](#google-translate)
-			- [MS Translator:](#ms-translator)
-			- [MyMemory:](#mymemory)
-			- [Yandex Translate:](#yandex-translate)
-		- [Offline MT engines](#offline-mt-engines)
-			- [Slate Desktop:](#slate-desktop)
-	- [WEB SERVICES](#web-services)
-		- [ProZ.com](#prozcom)
-		- [WIWO automatic pop-up dialog](#wiwo-automatic-pop-up-dialog)
-		- [TM-Town](#tm-town)
-	- [APPEARANCE](#appearance)
-		- [Look and Feel](#look-and-feel)
-		- [Large icons](#large-icons)
-		- [Monochromatic icons](#monochromatic-icons)
-		- [Interface language:](#interface-language)
-	- [KEYBOARD SHORTCUTS](#keyboard-shortcuts)
-		- [Miscellaneous keyboard shortcuts](#miscellaneous-keyboard-shortcuts)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
+- [CAFETRAN ESPRESSO - PREFERENCES](#cafetran-espresso---preferences)
+  * [GENERAL](#general)
+    + [Segmentation](#segmentation)
+  * [DEFINITIONS](#definitions)
+  * [WORKFLOW](#workflow)
+  * [PROMPTER](#prompter)
+  * [AUTO-ASSEMBLING](#auto-assembling)
+  * [AUTO-PROPAGATION](#auto-propagation)
+  * [GLOSSARY](#glossary)
+  * [MEMORY](#memory)
+  * [MEMORY SERVER](#memory-server)
+  * [QA](#qa)
+  * [MT SERVICES](#mt-services)
+    + [MT engines](#mt-engines)
+  * [WEB SERVICES](#web-services)
+  * [APPEARANCE](#appearance)
+  * [KEYBOARD SHORTCUTS](#keyboard-shortcuts)
+    + [Miscellaneous keyboard shortcuts](#miscellaneous-keyboard-shortcuts)
 
 <!-- /TOC -->
 
 # CAFETRAN ESPRESSO - PREFERENCES
 
-*Updated for CafeTran Espresso 2019  - Croissant 10.0 (20190117)*
+*Updated for CafeTran Espresso 2020 (10.7.2)*
 
-This reference document offers a tour of CafeTran’s Preferences and describes each item’s function, providing additional information along the way.
+*Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN/EL>FR translator).*
 
-*Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
+**ACCESSING PREFERENCES**
 
-*To keep track of the latest CafeTran developments, review (and subscribe to) the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
-
-<!--- Shortened link to this document: --->
-
-## ACCESSING PREFERENCES
-
-You can access Preferences from the **Menu (Edit>Preferences)** or directly from the **Dashboard** by clicking the button shown below and choosing Preferences.
+You can access Preferences from the **Menu (Edit > Preferences)** (CafeTran > Preferences, for MacOS users) or directly from the **Dashboard** by clicking the button shown below and choosing Preferences.
 
 ![Dashboard menu button](https://i.imgur.com/R2Kxc0J.png)
 
-## EXPORT/IMPORT/RESET PREFERENCES
+**EXPORT/IMPORT/RESET PREFERENCES**
 
 You can easily export CafeTran preferences and import them back. This allows you to backup your preferences or reuse them in another installation.
 
@@ -190,62 +41,70 @@ The corresponding buttons can be found in each Preferences pane.
 
 To reset CafeTran to its default preferences, use the Reset button also included in each Preferences pane. Resetting is applied to all CafeTran settings.
 
-![Export/Import/Reset Preferences](https://i.imgur.com/VMZwdtu.png)
+![Export/Import/Reset Preferences](https://i.imgur.com/5FxAJA1.png)
+
+**Reset the cookies for Internet resources**
+
+In case you encounter any issues with the Internet resources queried with CafeTran's internal web browser interface, you can try resetting the cookies.
+
+To do so, hold the Alt key and press the Reset button.
+
+Related links:
+
+[Issues with Web resources](https://cafetran.freshdesk.com/support/solutions/articles/6000223966-issues-with-web-resources)
 
 ## GENERAL
 
-![General pane](https://i.imgur.com/zgt98Cb.png)
+![General pane](https://i.imgur.com/PgJZTKs.png)
 
 General preferences pane allows you to set various CafeTran options and features, the most important probably being the Segmentation function.
 
-### User ID:
+**User ID**
 
 Blank field by default.
 
 The username entered here will be stored as metadata in CafeTran’s XLIFF files or external bilingual files (in TMX files as well).
 
-### Database connection:
+**Database connection**
 
 In addition to TMX Translation Memory files, CafeTran offers an advanced Translation Memory database feature called **Total Recall** (TR). This section allows you to set the TR database information. You can then create multiple TR databases to suit your needs.
 
 Note: These options can be left in their default values and used as is. They only need to be tweaked for more advanced database creation.
 
-#### Drop down menu:
+**Drop down menu**
 
 Choice between H2, SQLite, Hsqldb, MySQL, New Database
 Default choice: SQLite
 
 This is where you can choose the database type or create a new TR database. After selecting the database type, or if you select “New Database”, you can view and edit the Database information settings by clicking the Database connection button.
 
-#### Database connection button:
+**Database connection button**
 
-![The Database information window](https://i.imgur.com/EAuNH8u.png)
+![The Database information window](https://i.imgur.com/qxkynAD.png)
 
 This button opens the Database information window, which allows you to view and edit the TR database information for the chosen Database type.
 
 Related links:
 [Working with Total Recall](https://cafetran.freshdesk.com/support/solutions/folders/6000058183)
 
-### Applications connection:
+**Applications connection**
 
 You can connect CafeTran to OpenOffice/LibreOffice’s interface and share its spell checker.
 
-<!---TODO: Applications connection not tested yet. How?--->
-
-#### Drop down menu:
+**Drop down menu**
 
 Available applications: OpenOffice
 
 Related links:
 [Connecting to OpenOffice or LibreOffice](http://beijer.uk/cafetran-old-wiki/cafetran.wikidot.com/connecting-to-openoffice-or-libreoffice.html) (old unofficial wiki)
 
-#### Applications connection button:
+**Applications connection button**
 
-![The Applications connection window](https://i.imgur.com/JB9iiPZ.png)
+![The Applications connection window](https://i.imgur.com/0Z9iIUh.png)
 
 Once you choose OpenOffice in the drop-down menu, you can click the Applications connection button, and then click the Class path button to specify the directory where OpenOffice/LibreOffice is installed on your computer. The field will be populated accordingly.
 
-### Spell checker:
+**Spell checker**
 
 Drop down menu. Choice between Hunspell and OpenOffice/LibreOffice. Default: Hunspell.
 
@@ -254,13 +113,13 @@ If you connect OpenOffice/LibreOffice (see previous option), you can use its spe
 Related links:
 [Installing a Spell Checking Dictionary](https://cafetran.freshdesk.com/support/solutions/articles/6000110210-installing-a-spell-checking-dictionary) (Hunspell)
 
-### Web browser:
+**Web browser**
 
 Drop-down menu: Choice between CafeTran or System. Default: CafeTran
 
 CafeTran offers a web resources feature which allows you to use and query various web resources within its tabbed panel (Some resources are already present in the default installation, but you can add many more to suit your needs. Most web pages are supported). This can be done either via **CafeTran**’s internal browser, within the open resource’s tab or via the **System**’s default browser. If the latter is selected, a new search opens the Web resource in the default external Web browser of your operating system.
 
-<!---TODO: Explain how to conduct web searches.--->
+<!---TODO: Link to WORKFLOW.--->
 
 Note: This choice can also be set individually per each web resource.
 
@@ -269,7 +128,7 @@ Related links:
 [Adding a Web Resource - Based on Examples](https://cafetran.freshdesk.com/support/solutions/articles/6000110248-adding-a-web-resource-based-on-examples),
 [Web Resources in the System Browser](https://cafetran.freshdesk.com/support/solutions/articles/6000110761-web-resources-in-the-system-browser-)
 
-### External editor:
+**External editor**
 
 Drop-down menu: Choice between Clipboard binding, Atom, BBEdit, Bing Translator, DeepL, Google Translate, Jarte, Notepad++. Default: Clipboard binding.
 
@@ -279,42 +138,33 @@ Related links:
 [Target Segment Editors](https://cafetran.freshdesk.com/support/solutions/articles/6000162841-target-segment-editors),
 [Voice Translating](https://cafetran.freshdesk.com/support/solutions/folders/6000225250)
 
-### Desktop search tool:
+**Desktop search tool**
 
 Path to the executable you wish to use when querying the Desktop search tool, or terminal command to apply and output within CafeTran.
 
-<!---TODO: Additional information needed--->
-
 Additional checkbox: **Terminal tool**, OFF by default. Allows to output the search result of the command set above, in a separate tab.
 
-Related links:
-[Desktop Search Tool](http://beijer.uk/cafetran-old-wiki/cafetran.wikidot.com/desktop-search-tool.html) (old unofficial wiki)
-
-<!---Alternative:
-You can also search some Reference glossary/text files with the current glossary feature as follows:
-1. Select “Glossary folder” in the Glossary menu.
-2. Choose “Add glossary...” from the Glossary menu and select a folder with the files (no subfolders supported).
-3. After the import and loading, try to do some search via the Search bar (Glossary button).--->
-
-### Rate:
+**Rate**
 
 To populate this field, click on the “Rate:” button. This is useful to calculate the total project cost for source or target segments. You can base the calculation to Words, Characters or All Characters.
 
 <!---TODO: Check what All characters does--->
 
-#### Rate button:
+**Rate button**
 
-![Choose your rate window](https://i.imgur.com/KyKGNOX.png)
+![Choose your rate window](https://i.imgur.com/S3LowtU.png)
 
 Note: Rate can also easily be set/modified in **Statistics** (Project>Statistics>Project Statistics) from within your current project.
 
-![Click to set your rate](https://i.imgur.com/T4MRqF6.png)
+![Click to set your rate](https://i.imgur.com/j97H1wX.png)
 
-### Segmentation:
+For a discussion related to rate calculation and Weighted Word Count (WWC), see the Statistics section of the Menu and Interface document.
+
+### Segmentation
 
 This is where you set what rules CafeTran will use to segment the document(s) you translate. This section is **only for native projects**, not for bilingual files, which are usually already segmented.
 
-#### Drop-down menu:
+**Drop-down menu**
 
 Available choices: Sentence, Paragraph, Tag, Word, Document, Rules.srx. Default: Sentence.
 
@@ -324,7 +174,7 @@ Sentence, Paragraph, Tag, Word, Document segmentation rules are not editable and
 
 <!---TODO: Review the first options. What Document does--->
 
-#### Segmentation editor, segmentation rules:
+**Segmentation editor, segmentation rules**
 
 If you select Rules.srx (or other SRX files from the drop-down menu), “Segmentation” becomes “**Segmentation editor**” and an additional drop-down menu appears (**Segmentation rules**), allowing you to select which source language rules you wish to apply.
 
@@ -333,9 +183,9 @@ CafeTran supports the SRX standard and offers the possibility to edit SRX files 
 SRX files are stored in *cafetran/rules/segmentation* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/rules/segmentation*).
 This is where you will find the Rules.srx file and where you can add other SRX files as well.
 
-**Editing segmentation rules:**
+**Editing segmentation rules**
 
-<!---TODO--->
+<!---TODO LATER --->
 
 CafeTran allows you to view, edit or create segmentation rules.
 
@@ -343,11 +193,15 @@ Free alternatives to the CafeTran internal SRX editor include:
 Maxprograms - [SRXEditor](https://www.maxprograms.com/products/srxeditor.html)
 Okapi Framework - [Ratel](http://okapiframework.org/wiki/index.php?title=Ratel) (standalone or integrated into [Rainbow](http://okapiframework.org/wiki/index.php?title=Rainbow))
 
-**A note on abbreviations:** In addition to fine-tuning segmentation through the SRX editor, you can also use CafeTran’s Abbreviations feature for segmentation purposes. Abbreviations will act as Exception rules, meaning that they will instruct CafeTran not to break the segments if it finds such abbreviations at document creation. This is found in Resources > Abbreviations. A project can also be scanned for abbreviations (You may need to remove and add the document back, since segmentation occurs only at project creation).
+**_A note on abbreviations and segmentation_.** In addition to fine-tuning segmentation through the SRX editor, you can also use CafeTran’s Abbreviations feature for segmentation purposes. Abbreviations will act as Exception rules, meaning that they will instruct CafeTran not to break the segments if it finds such abbreviations at document creation. This is found in Resources > Abbreviations. A project can also be scanned for abbreviations (You may need to remove and add the document back, since segmentation occurs only at project creation).
 
-Segmentation can further be adjusted manually by using the **Split** and **Merge** features (again, this works only for native CT projects).
+Segmentation can further be adjusted manually by using the **Split** and **Join** features ( this works only for native CT projects. For external projects, CafeTran uses virtual Spit and Join).
 
-**Suggestion:**
+Related links:
+
+[Navigate, Split and Join segments](https://cafetran.freshdesk.com/support/solutions/articles/6000108427-navigate-split-and-join-segments)
+
+**_Segmentation suggestion_**
 To access more already set language rules for segmentation, you may want to download and use OmegaT’s [SRX file](https://raw.githubusercontent.com/omegat-org/omegat/master/src/org/omegat/core/segmentation/defaultRules.srx).
 Save the document directly from your browser and remove the .txt extension. Rename it as needed and place it in *cafetran/rules/segmentation* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/rules/segmentation*). It will be recognized after CT has been restarted.
 For a Trados-like segmentation, you may want to add the colon character (:) to the OmegaT’s Default rules and change Break:
@@ -364,15 +218,17 @@ For a Trados-like segmentation, you may want to add the colon character (:) to t
 
  in the beforebreak section.
 
-*Another option packed with even more per language rules comes from LanguageTool and its [SRX file](https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/resource/segment.srx)*
+<!--- TODO Add more additional segmentation examples--->
 
-#### Segment at all tags:
+*Another option packed with language rules comes from LanguageTool and its [SRX file](https://github.com/languagetool-org/languagetool/blob/master/languagetool-core/src/main/resources/org/languagetool/resource/segment.srx)*
+
+**Segment at all tags**
 
 Checkbox, OFF by default
 
 By enabling this option, you can apply an additional rule to the selected segmentation method, namely to break segments at each tag.
 
-### Text shortcuts:
+**Text shortcuts**
 
 Drop-down menu: Blank by default
 
@@ -386,9 +242,11 @@ shortcut=expanded_text
 
 To expand a defined shortcut, you simply type the shortcut and press the Space key.
 
+For now, only letters and digits work as the shortcuts.
+
 Note: External applications may offer more advanced and universal text expansion solutions (meaning they can be used across all applications in your operating system). Still, Text shortcuts can be very useful for ad hoc text expansion needs within CafeTran.
 
-### Non-translatable fragments:
+**Non-translatable fragments**
 
 Drop-down menu: Default: nontranslatables.txt
 
@@ -403,7 +261,7 @@ The non-translatable TXT files are simple lists with one non-translatable per li
 
 Note: You can also use non-translatables to mask confidential terms before being submitted them for Machine Translation. See MT services preferences pane.
 
-### Characters for removal:
+**Characters for removal**
 
 Blank field by default.
 
@@ -413,7 +271,7 @@ This makes use of Java regular expressions.
 
 Suggested example value: ,(?=\s\D)|<[^>]+>|\s(?=\s)
 
-### Surround with characters
+**Surround with characters**
 
 The three fields provide an easy way to surround highlighted text with the defined characters. Different types of quotes, brackets or parentheses are good candidates for this feature.
 
@@ -423,30 +281,32 @@ Methods to use this function:
 - Use defined keyboard shortcut for each option
 - Select S1, S2, or S3 from the context menu (Right-click or use defined keyboard shortcut to bring the context menu)
 
-#### Surround with characters 1:
-
+**Surround with characters 1
+**
 Default value: « S »
 
-#### Surround with characters 2:
+**Surround with characters 2**
 
 Default value: (S)
 
-#### Surround with characters 3:
+**Surround with characters 3**
 
 Default value: “S”
 
-### Project page size (units):
+**Project page size (units)**
 
 Default value: 50
 
-This sets the number of translation units (segments) that are displayed in the Segments grid. You can navigate between segments with the Arrow buttons of the Segments grid.
+The Segments grid does not display all the segments of a document or a project, but a select number of segments in the forme of "pages", which can easily be navigated.
+
+This option sets the number of translation units (segments) that are displayed in the Segments grid. You can navigate between segments with the Arrow buttons of the Segments grid.
 
 Note: Limiting the number of displayed segments in one “page” is one of the ways to help running CT more efficiently in battery mode.
 
 Related links:
 [Running CafeTran in the Battery Mode](https://cafetran.freshdesk.com/support/solutions/articles/6000113091-running-cafetran-in-the-battery-mode)
 
-### Autopilot delay (millisec/chars):
+**Autopilot delay (millisec/chars)**
 
 Checkbox and value field. Default value: 1000 (milliseconds per 10 characters).
 
@@ -454,7 +314,7 @@ Autopilot may be a very handy feature during the Review or QA phase of translati
 
 Activation/deactivation of the Autopilot is done via the Action menu. After that, you will notice the Autopilot button in the target segment editor. Click this button to turn on/off the Autopilot. Going to the next segment triggers its functioning. To suspend it for a while (e.g for the correction of the current segment), press the Esc key or click the mouse on the target segment editor.
 
-### Autopilot fixed delay (milliseconds):
+**Autopilot fixed delay (milliseconds)**
 
 Checkbox and value field. Default value: 2000.
 
@@ -464,20 +324,19 @@ Activation/deactivation of the Autopilot is done via the Action menu. After that
 
 ## DEFINITIONS
 
-
-
-![Definitions pane](https://i.imgur.com/QdofC5Y.png)
+![Definitions pane](https://i.imgur.com/k4Ed3TY.png)
 
 Definitions pane allows you to specify some fields that can be applied to the Glossaries and Termbases (Memories for fragments) and Project configuration. It is optional in most scenarios, but useful for more information-rich terminology implementations.
 
-### List of subjects… | List of clients…
+**List of subjects… | List of clients…**
+
 Clicking these buttons lets you select a TXT file which contains a list a subjects or clients that you will the be able to apply as metadata to your projects, glossaries and termbases. Once the file is specified, it will be used by CT until you set another file.
 
 *Suggestion: You can create a “Subjects-clients” folder within cafetran/resources folder, and then a separate “clients” and “subjects” text file (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in /Contents/Java/resources).*
 
-<!---Modification: could CafeTran have such a folder and such a txt file already populated?--->
+<!---TODO: Ask, could CafeTran have such a folder and such a txt file already populated?--->
 
-### Definitions column names
+**Definitions column names**
 
 Blank fields by default.
 
@@ -487,24 +346,14 @@ Note: If you set multiple columns for your glossary, you may want to consider ch
 
 The Definitions column names include the following fields:
 
-#### Context column name:
+- Context column name:
+- Subject column name:
+- Client column name:
+- Notes column name:
+- Reference column name: If this column name is set, the Reference field also features a button to attach a file location, an image or a link to serve as reference.
+- User’s column name (3x): Three custom column names
 
-
-#### Subject column name:
-
-#### Client column name:
-
-#### Notes column name:
-
-#### Reference column name:
-
-If this column name is set, the Reference field also features a button to attach a file location to serve as reference.
-
-#### User’s column name: (3x)
-
-Three custom column names
-
-### Language column names:
+**Language column names**
 
 Drop-down menus. Up to 8 different languages/variants can be set.
 
@@ -513,7 +362,7 @@ This section concerns only Glossaries. CafeTran supports multilingual glossaries
 CafeTran keeps track of all your working languages/language variants and adds them in this section.
 You may need to remove unnecessary languages/variants if you use various language pairs or do not intend to keep multilingual glossaries. When creating a new glossary, there is a Definitions button that allows you to easily set the required languages. This can also done via the glossary context menu (right-click) > Edit glossary if the glossary is already created.
 
-![Definitions button in New glossary window](https://i.imgur.com/V3mSGB8.png)
+![Definitions button in New glossary window](https://i.imgur.com/TuqaMdz.png)
 
 Related links:
 [Multilingual Glossaries](https://cafetran.freshdesk.com/support/solutions/articles/6000113541-multilingual-glossaries)
@@ -522,11 +371,11 @@ Related links:
 
 ## WORKFLOW
 
-![Workflow pane](https://i.imgur.com/FwCpSRJ.png)
+![Workflow pane](https://i.imgur.com/5BLFhSg.png)
 
 This pane includes some options related to various CafeTran workflows. Workflows can be selected from the drop-menu available in the Dashboard.
 
-### Image translation export to:
+**Image translation export to**
 
 Drop-down menu.
 Available choices: Ms Word, OpenOffice, Text, Default: MS Word
@@ -537,28 +386,34 @@ Related links:
 [Translation of Paper Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000111789-translation-of-paper-documents),
 [Translation of Scanned Images](https://cafetran.freshdesk.com/support/solutions/articles/6000111566-translation-of-scanned-images)
 
-### Auto-save
+**Auto-save**
 
 CafeTran auto-saves project segments, memory segments and glossary entries CafeTran according to the values specified in this section.
 
 Note: Raising the interval makes sense if you run CafeTran on a laptop computer in battery mode. Otherwise, low numbers provide a safety net in case of an unexpected application quit or computer shutdown.
 
-#### Auto-save project (segments):
+**Auto-save project (segments)**
 
 Default value: 3
 
-#### Auto-save memory (segments):
+**Auto-save memory (segments)**
 
 Default value: 5
 
-#### Auto-save glossary (entries):
+**Auto-save glossary (entries)**
 
 Default value: 3
 
 Related links:
 [Running CafeTran in the Battery Mode](https://cafetran.freshdesk.com/support/solutions/articles/6000113091-running-cafetran-in-the-battery-mode)
 
-### Keep formatting at export via clipboard
+**Convert HTML formatting tags at export**
+
+Checkbox: ON by default.
+
+You can turn off the conversion of html formatting tags to the source document formatting at export.
+
+**Keep formatting at export via clipboard**
 
 Checkbox: ON by default.
 
@@ -569,7 +424,7 @@ Uncheck this option if you want to have formatting tags removed upon clipboard e
 Related links:
 [Formatting in Clipboard Workflow](https://cafetran.freshdesk.com/support/solutions/articles/6000110165-formatting-in-clipboard-workflow)
 
-### Clipboard sensitive target:
+**Clipboard sensitive target**
 
 Checkbox, OFF by default
 
@@ -584,25 +439,25 @@ This option specifies the behaviour in case **Edit > Clipboard sensitive** menu 
 Related links:
 [Clipboard Sensitive](https://cafetran.freshdesk.com/support/solutions/articles/6000168359-clipboard-sensitive)
 
-### Remove newlines at clipboard transfer:
+**Remove newlines at clipboard transfer**
 
 Checkbox, OFF by default
 
 If this option is ON, CafeTran removes the newline character from the pasted text during the transfer via clipboard.
 
-### Automatic selection of whole words:
+**Automatic selection of whole words**
 
 Checkbox, ON by default
 
 If this option is ON, CafeTran selects whole words even if you make a partial selection in the source or target segments. The option is quite convenient as it speeds up text selection, since mouse selection does not need to be precise. Uncheck if the behaviour is unwanted.
 
-### Automatic memory matching:
+**Automatic memory matching**
 
 Checkbox, OFF by default
 
 If this option is ON, CafeTran performs automatic search in the translation memories. Otherwise, only manual searches are made.
 
-### Copy source to target during segmentation
+**Copy source to target during segmentation**
 
 Checkbox, OFF by default
 
@@ -610,7 +465,7 @@ If this option is ON, CafeTran copies source segments to target segments during 
 
 Note: To transfer source segments to all target segments during translation (after segmentation), you can also use Task > Transfer source segments to target segments.
 
-### Transfer source to empty target during translation
+**Transfer source to empty target during translation**
 
 Checkbox, OFF by default
 
@@ -618,13 +473,25 @@ If this option is ON, CafeTran copies the content of the source segment to each 
 
 Note: To transfer source segments to all target segments, you can also use Task > Transfer source segments to target segments.
 
-### Shared export folder
+**Transfer source segments with non-translatable fragments only **
+
+Checkbox, ON by default
+
+With this option ON, CafeTran automatically transfers source segments that contain non-translatable fragments and numbers only.
+
+**Ignore segment status at bilingual document import**
 
 Checkbox, OFF by default
 
-This option lets you export target documents into a shared folder - across multiple projects.  After turning this option ON, CafeTran remembers the last Export location for the subsequent projects.
+With this option ON, CafeTran will not update the segment status defined in the status column (A for Approved, R for Rejected and C for Checked/Reviewed) of the bilingual document upon import. Bilingual document export/import can be done via Project > Export and exchange.
 
-### Replace characters at source transfer:
+**Remember export folder**
+
+Checkbox, OFF by default
+
+This option lets you export target documents into a shared folder across multiple projects.  After turning this option ON, CafeTran remembers the last Export location for the subsequent projects.
+
+**Replace characters at source transfer**
 
 Three available field pairs.
 
@@ -634,7 +501,7 @@ Note: This replacement option is a helper to "Transfer numbers to matches" featu
 
 ## PROMPTER
 
-![Prompter pane](https://i.imgur.com/eDXJEjm.png)
+![Prompter pane](https://i.imgur.com/VTN2aTm.png)
 
 Prompter is CafeTran's auto-complete feature that uses text from various sources (Project segments, Memories [segment or fragment matches, fuzzies, hits], Glossaries, MT results, etc.). As you type the first characters of a word, CafeTran will often bring up the auto-completion menu, which allows you to quickly complete the word instead of typing it.
 
@@ -642,7 +509,7 @@ Press enter to use the auto-complete suggestion. Selection can be done via the u
 
 Note: You can remove a highlighted suggestion by using the **Remove from auto-completion list** keyboard shortcut.
 
-### Prompt phrases
+**Prompt phrases**
 
 Checkbox, ON by default
 
@@ -650,31 +517,31 @@ The checkbox allows you to enable or disable CafeTran's Prompter (auto-completio
 
 The prompter (auto-completion) function is automatically triggered if enabled, and if there is a space following the cursor. If there is a character in the right side of the cursor, you can still manually bring the auto-completion menu with the Ctrl+Down arrow (default) keyboard shortcut.
 
-### Two-word hints
+**Two-word hints**
 
 Checkbox, ON by default
 
 With this option ON, CafeTran will offer auto-completion options for the next word as well.
 
-### Automatic case adjustment
+**Automatic case adjustment**
 
 Checkbox, ON by default
 
 Options to toggle the automatic case adjustment during auto-completion.
 
-### Replace existing words
+**Replace existing words**
 
 Checkbox, ON by default
 
 Option to toggle the overwriting during auto-completion.
 
-### Prompting starts at (char):
+**Prompting starts at (char)**
 
 Default value: 3.
 
 Minimum number of typed characters to trigger the Auto-completion function.
 
-### Minimal word length:
+**Minimal word length**
 
 Default value: 7.
 
@@ -682,17 +549,19 @@ Minimum character length of words to be processed by the Auto-completion functio
 
 ## AUTO-ASSEMBLING
 
-![Auto-assembling pane](https://i.imgur.com/ZVbijV3.png)
+![Auto-assembling pane](https://i.imgur.com/Dw8Q2bQ.png)
 
 This pane allows you to set various auto-assembling options.
 
 Auto-assembling is a special CafeTran feature that uses and “repairs” various enabled resources to create a suggested translation.
 
-Auto-assembling (and TM) results can be viewed in and inserted from the Matchboard or the Auto-assembling panel (F1 keyboard shortcut, unless Translate > Pop up auto-assembling panel option is enabled)
+Auto-assembling (and TM) results can be viewed in and inserted from the Matchboard or the Auto-assembling panel (F1 keyboard shortcut, unless Translate > Pop up auto-assembling panel option is enabled).
+
+Because the Auto-assembling is deeply integrated into CafeTran's function, some options play a role outside of auto-assembling (when transferring TM matches or when using the Team autoassembling with machine translations). You might need to review or adjust Auto-assembling settings accordingly.
 
 Note: To further fine-tune the suggestions you get from Auto-assembling, you can set each resource’s Priority (Low, Medium, High) or choose which resources to keep out from auto-assembling via their context menu (right-click) > Keep out of auto-assembling.
 
-### Automatic insertion of matches
+**Automatic insertion of matches**
 
 Checkbox, OFF by default
 
@@ -700,13 +569,13 @@ If this option is ON, CafeTran systematically inserts the auto-assembling result
 
 Note: Auto-assembling insert threshold (%) option, available in the Memory pane can be used to control the automatic insertion threshold for auto-assembling.
 
-### Transfer numbers to matches
+**Transfer numbers to matches**
 
 Checkbox, ON by default
 
 If the option is ON, CafeTran automatically inserts the numbers present in the source segment into the target suggestion, replacing those from fuzzy matches.
 
-### Transfer tags to matches
+**Transfer tags to matches**
 
 Checkbox, ON by default
 
@@ -715,13 +584,13 @@ If the option is ON, CafeTran automatically transfers the surrounding tags of th
 Related links:
 [Auto-tagger: Transfer Formatting Tags to Matches](https://cafetran.freshdesk.com/support/solutions/articles/6000161178-auto-tagger-transfer-formatting-tags-to-matches)
 
-### Match case
+**Match case**
 
 Checkbox, OFF by default
 
 If this option is ON, CafeTran uses case sensitive matching for the resources it uses to provide its suggestions.
 
-### Fuzzy match auto-correction
+**Fuzzy match auto-correction**
 
 Checkbox, ON by default
 
@@ -731,7 +600,7 @@ Fuzzy match auto-correction also works if the start and/or the end of the curren
 
 Note: This also affects the Matchboard behaviour.
 
-### Automatic fragments adjustment
+**Automatic fragments adjustment**
 
 Checkbox, ON by default
 
@@ -742,20 +611,20 @@ The feature recognizes your recent usage of the term or fragment synonyms and ad
 Related link:
 [Automatic Fragments Adjustment](https://cafetran.freshdesk.com/support/solutions/articles/6000175426-automatic-fragments-adjustment)
 
-### Insert target only
+**Insert target only**
 
 Checkbox, OFF by default
 
 If this option is ON, CafeTran only inserts untranslated fragments during auto-assembling into the target language box.
 
-### Format numbers
+**Format numbers**
 
 Checkbox, OFF by default
 
 If this option is ON, CafeTran formats numbers to the target language numbering system if it is
 different from the source language system.
 
-### Automatic case adjustment
+**Automatic case adjustment**
 
 Checkbox, ON by default
 
@@ -767,19 +636,19 @@ To use Title case, use Edit > Target segment > Change to title case, or the rela
 
 To let CafeTran **automatically adjust** the case while typing, you can enable Edit > Target segment > Automatic case adjustment option.
 
-### Beginning of sentence only
+**Beginning of sentence only**
 
 Checkbox, ON by default
 
 If this option is ON, automatic case adjustment occurs only in the beginning of a sentence.
 
-### Copy matches to clipboard
+**Copy matches to clipboard**
 
 Checkbox, OFF by default
 
 If this option is ON, CafeTran copies the auto-assembling match to the clipboard, so that you can be paste it directly if the result is good.
 
-### Replace punctuation characters
+**Replace punctuation characters**
 
 Three field pairs
 
@@ -787,57 +656,57 @@ If enabled, auto-assembling replaces the punctuation characters as set in the fi
 
 ## AUTO-PROPAGATION
 
-![Auto-propagation pane](https://i.imgur.com/47ZEI8s.png)
+![Auto-propagation pane](https://i.imgur.com/J7bfuyM.png)
 
 This pane lets you enable or disable various Auto-propagation options.
 
-Auto-propagation is the process whereby the translation from one segment is applied to other segments that have identical source content.
+Auto-propagation is the process whereby the translation from one segment is applied to other segments that have identical source content. This is unrelated to translation memories and works even when no TM is attached.
 
 Note: You can disable Auto-propagation for a specific segment via right-clicking at the source segment editor and unchecking Auto-propagation checkbox (the segment is marked as “nP” in the Grid). For non-CafeTran projects, this option works for the current session only.
 
-### Auto-propagation to other segments
+**Auto-propagation to other segments**
 
 Checkbox, ON by default
 
 If this option is ON, the current segment is propagated to other identical source segments.
 
-### Auto-propagation to current segments
+**Auto-propagation to current segments**
 
 Checkbox, ON by default
 
 If this option is ON, the translation of another identical source segment in the project is propagated to the currently edited segment.
 
-### Auto-propagation to other documents
+**Auto-propagation to other documents**
 
 Checkbox, ON by default
 
 This option lets you choose if Auto-propagation works across documents in a single project (even if the documents are not glued) or only to the current document.
 
-### Auto-propagation of numbers
+**Auto-propagation of numbers**
 
 Checkbox, ON by default
 
 If this option is ON, auto-propagation works also for segments that only differ in featured numbers.
 
-### Auto-propagation of non-translatable fragments
+**Auto-propagation of non-translatable fragments**
 
 Checkbox, ON by default
 
 If this option is ON, auto-propagation works also for segments that only differ in non-translatable fragments
 
-### Auto-propagation forward only
+**Auto-propagation forward only**
 
 Checkbox, OFF by default
 
 If this option is ON, backward auto-propagation is disabled.
 
-### Auto-propagation from locked segments
+**Auto-propagation from locked segments**
 
 Checkbox, ON by default
 
 You can choose whether to block or enable auto-propaggation from locked segments.
 
-### Auto-propagation of segment status
+**Auto-propagation of segment status**
 
 Checkbox, OFF by default
 
@@ -845,28 +714,38 @@ If this option is ON, the current segment status is also propagated during auto-
 
 ## GLOSSARY
 
-![Glossary pane](https://i.imgur.com/OkbgEUk.png)
+![Glossary pane](https://i.imgur.com/oZUE7xD.png)
 
 This pane features various options relevant to Glossaries (and Termbases - Memories for fragments).
 
 Related links:
 [Working with Glossaries](https://cafetran.freshdesk.com/support/solutions/folders/6000058179)
 
-### Alternatives entries separator:
+**Additional word dividers**
+
+Default value: /
+
+Notes:
+
+The backslash character needs repeated to be escaped such as: <code>\\\\</code>
+
+<!--- TODO fix code --->
+
+Word dividers are single characters only.
+
+**Alternatives entries separator**
 
 Default value: ”;”
 
 This option lets you define the character that will be used for synonyms and alternative entries in Glossaries.
 
-### Trim
-
-#### Trim new terms:
+**Trim new terms**
 
 Checkbox, ON by default
 
 This option applies trim settings to new terms.
 
-#### Trim new term start:
+**Trim new term start**
 
 Blank field by default.
 
@@ -876,7 +755,7 @@ This makes use of Java regular expressions.
 
 Example: Use this setting to exclude chapter numbers etc. when adding terms without making selections first: \A([0-9]*[\p{Punct}]*\s*)+
 
-#### Trim new term end:
+**Trim new term end**
 
 Default value: “[\p{Punct}]*\s*\z”
 
@@ -884,7 +763,7 @@ Here you can define characters for removal that are present at the end of the se
 
 This makes use of Java regular expressions.
 
-### Fields to hide:
+**Fields to hide**
 
 Here you can define Fields you wish to hide from glossary columns.
 
@@ -892,13 +771,15 @@ Enter the number of the Glossary field(s) you want to hide, separated with a com
 
 This allows you to only display specific fields while keeping the fields defined in Definitions.
 
-### Minimal prefix length:
+After restarting the program, you can hover the mouse over the source term in the glossary pane or over the type of the match in the Matchboard to show all the fields (columns). 
+
+**Minimal prefix length**
 
 Default value: 5
 
 With this setting, you can control the fuzziness of glossary terms used by the Prefix matching (see next item).
 
-### Prefix matching
+**Prefix matching**
 
 Checkbox, OFF by default
 
@@ -906,19 +787,19 @@ If this option is enabled, it introduces automatic fuzziness to your glossary ma
 
 Note: As the “Prefix length” option is shared with TM fragments, you can adjust the prefix length in the options for the memory (e.g. after right clicking at the memory pane). You will need to reload the glossary after turning on/off the Prefix matching option. See the [TM options](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/3-TM-options#options) reference document for more information on the prefix length.
 
-### Sort matches alphabetically
+**Sort matches alphabetically**
 
 Checkbox, OFF by default
 
 If multiple term matches are available, they are displayed in alphabetical order with this option enabled.
 
-### Skip new term window (button)
+**Skip new term window (button)**
 
 Checkbox, OFF by default
 
 If enabled, this option skips the new term window when you add a new term by clicking the Add term to glossary or Add fragment to memory buttons in the target language box buttons.
 
-### Vertical display
+**Vertical display**
 
 Checkbox, OFF by default
 
@@ -926,13 +807,13 @@ If enabled, this option triggers the Vertical display option for all glossaries.
 
 NOTE: You can manually enable/disable this option per each glossary via the context menu (right click) > Vertical display.
 
-### Look up word stems:
+**Look up word stems**
 
 Checkbox. ON by default.
 
 If enabled, CafeTran use word [stemming](https://en.wikipedia.org/wiki/Stemming) when querying for glossary matches. CafeTran provides stemming based on the Hunspell dictionary.
 
-### Terms consistency check:
+**Terms consistency check**
 
 Checkbox. ON by default
 
@@ -940,13 +821,13 @@ CafeTran will enable terms consistency check for attached glossaries for this QA
 
 NOTE: You can enable/disable this option per each glossary via the context menu (right click) > Terms consistency check.
 
-### Skip new term window (shortcut)
+**Skip new term window (shortcut)**
 
 Checkbox, OFF by default
 
 If enabled, this option skips the new term window when you add a new term by hitting the Add term to glossary or Add fragment to memory keyboard shortcuts.
 
-### Display longest match only
+**Display longest match only**
 
 Checkbox, OFF by default
 
@@ -954,14 +835,14 @@ With this option enabled, CafeTran only shows the longest glossary match in the 
 
 ## MEMORY
 
-![Memory pane](https://i.imgur.com/W1FGLcK.png)
+![Memory pane](https://i.imgur.com/PodGGjs.png)
 
 This pane lets you choose the assigned RAM for CafeTran and set various aspects related to Translation Memories behaviour.
 
 Related links:
 [Working with Translation Memories](https://cafetran.freshdesk.com/support/solutions/folders/6000058172)
 
-### Java memory size (MB):
+**Java memory size (MB)**
 
 Default value: 1024
 
@@ -973,9 +854,9 @@ Related links:
 [Slowing Down or Exiting Unexpectedly
 ](https://cafetran.freshdesk.com/support/solutions/articles/6000160241-slowing-down-or-exiting-unexpectedly)
 
-### Switch to preliminary matching threshold:
+**Switch to preliminary matching threshold**
 
-Default value: 50,000
+Default value: 50000
 
 Here you can set the number of segments after which TMX or Total Recall memories switch from automatic to preliminary memory matching.
 
@@ -983,12 +864,12 @@ Developers explanation: After you load a translation memory either from TMX file
 
 Note: The preliminary matching workflow option can also be chosen from the Memory options > Workflow integration > Preliminary memory matching.
 
-Note 2: You can disable the switch to preliminary matching by changing the threshold to a very high value, like 2,500,000.
+Note 2: You can disable the switch to preliminary matching by changing the threshold to a very high value, like 2500000.
 
 Related links:
 [Preliminary Memory Matching](https://cafetran.freshdesk.com/support/solutions/articles/6000059860-preliminary-memory-matching)
 
-### Subsegment hits threshold:
+**Subsegment hits threshold**
 
 Default value: 3
 
@@ -996,7 +877,7 @@ This option is here to help reduce the display of low-quality subsegment matches
 
 Note: If it doesn’t help, increase this value even more to 4 or 5 for your source language.
 
-### Subsegment to auto threshold:
+**Subsegment to auto threshold**
 
 Default value: 7
 
@@ -1004,7 +885,7 @@ This option sets the number of hits (subsegment or fragment matches) before a su
 
 Note: Increase this number if you wish to further lower possibility of incorrect guesses.
 
-### Contextual subsegment to auto threshold:
+**Contextual subsegment to auto threshold**
 
 Default value: 3
 
@@ -1012,7 +893,7 @@ CafeTran compares the current subsegment context (in the current segment) to the
 
 This field sets the number of hits (subsegment matches) for contextual subsegments before they are included in auto-assembling.
 
-### Subsegment to virtual threshold:
+**Subsegment to virtual threshold**
 
 Default value: 10
 
@@ -1020,65 +901,65 @@ This field sets the number of hits before a subsegment is treated as an exact su
 
 Note: Increase this number if you wish to further lower possibility of incorrect guesses.
 
-### Subsegment look-up limit:
+**Subsegment look-up limit**
 
 Default value: 1000
 
 This field sets the maximum number of the matches found for a given subsegment, after which, CafeTran stops searching for more matches.
 
-### Subsegment minimal length:
+**Subsegment minimal length**
 
 Default value: 4
 
 CafeTran guesses the meaning of source subsegments only if they are equal or longer than the set minimal length in characters.
 
-### Subsegments min. length difference (%):
+**Subsegments min. length difference (%)**
 
 Default value: 33
 
 CafeTran guesses the meaning of a source subsegment only if the length difference between the source subsegment and guessed target subsegment is no lower than the set percentage.
 
-### Auto-assembling insert threshold (%):
+**Auto-assembling insert threshold (%)**
 
 Default value: 80
 
 This field lets you define the accuracy of the Auto-assembling translation at which CafeTran inserts it automatically into the target language box.
 
-### Fuzzy match insert threshold (%):
+**Fuzzy match insert threshold (%)**
 
 Default value: 90
 
 This field field lets you define the accuracy of the best fuzzy match at which the program inserts it automatically into the target language box.
 
-### Function words threshold (%):
+**Function words threshold (%)**
 
 Default value: 5
 
 CafeTran filters out frequently occurring words which do not need to be translated into the target language as single fragments. In this field you can set the default frequency of occurrence of the words in the source text above which the program treats them as function words and they are omitted by the Auto-assembling function.
 
-### Fuzzy match threshold (%):
+**Fuzzy match threshold (%)**
 
 Default value: 33
 
 This field sets the minimum accuracy of the fuzzy matches which are displayed by CafeTran.
 
-### Fuzzy match display limit:
+**Fuzzy match display limit**
 
 Drop-down menu: Available choices: 1, 2, 3, 4, 5, 6 Default value: 3
 
 This option sets the maximum number of the fuzzy matches displayed by CafeTran.
 
-### Search display limit:
+**Search display limit**
 
 Default value: 100
 
-### Additional space characters (Unicode):
+**Additional space characters (Unicode)**
 
 Default value U+00A0
 
 Here you can insert additional Unicode characters that should be treated as spaces, which counts towards term recognition and auto-assembling.
 
-### Do not match:
+**Do not match**
 
 Default value: ,.。:;!¡?¿[]{}()"«»‘’“”„‚
 
@@ -1086,13 +967,13 @@ CafeTran ignores the (punctuation) characters entered here while searching for m
 
 Note: You can also add spaces and characters as Unicode code here. For example, to match segments that start with an invisible space aka zero-width space (invisible in the source segment section, but visible when copied in the search box), you can use Unicode code U+200B.
 
-### Compare with target segment:
+**Compare with target segment**
 
 Checkbox, OFF by default
 
-If enabled, CafeTran shows a comparison of the memory match with the target segment.
+If enabled, this option shows the red “Different translation” warning in the TM tab for Exact matches. It can also be set for individual TMs after the right-click.
 
-### Look up word stems:
+**Look up word stems**
 
 Checkbox, ON by default
 
@@ -1100,21 +981,21 @@ If enabled, CafeTran use word [stemming](https://en.wikipedia.org/wiki/Stemming)
 
 ## MEMORY SERVER
 
-![Memory server pane](https://i.imgur.com/dLyHxwq.png)
+![Memory server pane](https://i.imgur.com/V5RgycA.png)
 
 CafeTran can act as a Translation Memory server, accepting online connections and queries from other CafeTran users. In such a server mode it is possible to work in a team on a translation project. Checking the box activates the server mode. Change the default server port if the default port is already taken by another program on your computer.
 
-### Rendezvous server port:
+**Rendezvous server port**
 
 Default value: “4242”
 
-### Read only
+**Read only**
 
 Checkbox, OFF by default
 
 Check this box if you wish to restrict access to your translation memories. If the option is selected, other users will not be able to change or add new terms to the memories on the server.
 
-### Request dialog,
+**Request dialog**
 
 Checkbox, OFF by default
 
@@ -1125,65 +1006,75 @@ Related links:
 
 ## QA
 
-![QA pane](https://i.imgur.com/v6gi4wI.png)
+![QA pane](https://i.imgur.com/mJMOf3H.png)
 
 This pane features options related to CafeTran’s QA function (see QA menu).
 
-### Terms consistency check:
+**Terms consistency check**
 
 Drop-down menu. Choices: Prefix marching or Exact matching. Default: Prefix matching
 
 Select a method to check for the consistent usage of terms during the Quality Assurance phase. When the Prefix matching method is chosen, CafeTran analyzes prefixes of the used terms. In the Exact matching method, the program checks for the usage consistency of whole terms.
 
-### Length difference check (%):
+**Length difference check (%)**
 
 Drop-down menu. Choices: 0 to 100 (by increments of 5). Default: 50
 
 Check for the maximum difference in length between source and target segments.
 
-### Length difference check (chars):
+**Length difference check (chars)**
 
 Default value: 100
 
 Check for the maximum difference in number of characters between source and target segments.
 
-### Maximum segment length (chars):
+**Maximum segment length (chars)**
 
 Default value: 1000
 
 Check for the maximum number of characters in the target segments.
 
-### Prefix marching (%):
+**Prefix marching (%)**
 
 Drop-down menu. Choices: 10, 20, 30, 40, 50, 60, 70, 80, 90. Default: 50
 
 The field determines the minimal length of prefixes of the words processed during terms consistency check by Prefix matching function.
 
-### Don't spellcheck acronyms (chars):
+**Don't spellcheck acronyms (chars)**
 
 Checkbox. Default value: 3
 
 If this checkbox is enabled, QA step "Check spelling in target segments" ignores the words written in capital letters if they have less that the define number of characters. This is useful to avoid triggering the spell-checker for acronyms.
 
-### Regular expression:
+**Regular expression**
 
 Checkbox, OFF by default
 
 If you run a QA > Word lists check/filtering with Regular expression option ON, CafeTran will perform filtering based on the included regular expression.
 
-### Whole words:
+**Whole words**
 
 Checkbox, OFF by default
 
 If you run a QA > Word lists check with Whole words option ON, CafeTran will perform case-sensitive filtering.
 
-### Match case:
+**Match case**
 
 Checkbox, OFF by default
 
 If you run a QA > Word lists check, Match case option ON, CafeTran will perform case-sensitive filtering.
 
-### QA for checked segments:
+**QA for filtered segments**
+
+Checkbox, OFF by default
+
+This option allows you to run QA checks on filtered segments.
+
+With this option enabled, first, apply any filter (e.g regex based) you wish, and then perform a QA task.
+
+This option also allows exact matches for the QA selected translation memory to be checked for included fragments when running the QA > Consistency checks > Fragments consistency check (Memory).
+
+**QA for checked segments**
 
 Checkbox, OFF by default
 
@@ -1196,28 +1087,36 @@ Related links:
 
 ## MT SERVICES
 
-![MT services pane](https://i.imgur.com/yU1DoEY.png)
+![MT services pane](https://i.imgur.com/IswznYt.png)
 
 This pane features options related to Machine Translation. Individual options can also be set via the MT context menu (see [CafeTran Espresso - Menu and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface}).
 
-### Mask non-translatable fragments
+Note: You can set up the automatic insertion of Machine Translation results for an individual MT engine in its corresponding tab. In that case, CafeTran prioritizes the auto-insert thresholds set for the Memory matches and Auto-assembling in Preferences.
+
+**Mask non-translatable fragments**
 
 Checkbox, OFF by default
 
 All non-translatable fragments longer than 3 characters are masked before being submitted for Machine Translation - both via API and the Web interface. You can see the masking effect in MT tabs. The unmasked translation result is displayed in the Matchboard and after the transfer to the target segment. The masking feature does not work with the right-click “Create TMX memory” MT function.
 
-### Team auto-assembling with machine translation
+**Team auto-assembling with machine translation**
 
 CafeTran lets you adjust MT results with its own Auto-assembling function, replacing terms and fragments with the ones that you prefer, that is, those found in your translation memories and glossaries.
 
 Related links:
 [Auto-assembling with Machine Translation](https://cafetran.freshdesk.com/support/solutions/articles/6000160533-auto-assembling-with-machine-translation)
 
-### Team high-priority fragments only
+**Team high-priority fragments only**
 
 This option allows you to limit the Team feature (see below) to the high-priority fragments (such as those coming from translation memories or glossaries with High priority).
 
-### Online MT engines
+**Automatic fragments adjustment**
+
+With this option on, CafeTran replaces the MT fragments with the synonyms in your glossary/TM that are actually used in the current session. If the replacement takes place, the MT tabs show both the original MT result and the modified one. 
+
+<!--- TODO in order for this to work, you need to Auto-assembling --->
+
+### MT engines
 
 Here, you can enter the API keys to various MT services. Please note that CafeTran can also conduct free MT searches via its web interface (including DeepL, Google Translate, Microsoft [Bing] Translator and Youdao MT). The API access is recommended, however, for confidentiality reasons whenever possible, since different privacy terms often apply.
 
@@ -1226,73 +1125,89 @@ Related links:
 [Machine Translation with MT Web Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000186533-machine-translation-with-mt-web-resources),
 [Translating Confidential Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000163344-translating-confidential-documents)
 
-**Checkbox:**
+**_Checkbox:_**: Enables the MT engine.
 
-Enables the MT engine.
+**_APi key button:_**: Click the API key button to insert the API key for the corresponding MT service.
 
-**Language pairs:**
+![API key settings](https://i.imgur.com/mUm1kIO.png)
 
-Language pairs are usually picked up automatically when working on a project. They can be defined manually using the drop-down menus for source and target language.
+**_Language pairs:_**: Language pairs are usually picked up automatically when working on a project. They can be defined manually using the drop-down menus for source and target language.
 
-**Automatic:**
-
-If this option is enabled, CafeTran makes a query and displays the machine translation result automatically as the next source segment is displayed in the source language box. If the box is unchecked, you need to click the “Translate” link in the window of the chosen machine translation engine to make a query for the current source segment, or initiate a machine translation search via the Quick Search bar “Machine Tr.” button or keyboard shortcut (default: Ctrl+Shift+F9).
+**_Automatic:_** If this option is enabled, CafeTran makes a query and displays the machine translation result automatically as the next source segment is displayed in the source language box. If the box is unchecked, you need to click the “Translate” link in the window of the chosen machine translation engine to make a query for the current source segment, or initiate a machine translation search via the Quick Search bar “Machine Tr.” button or keyboard shortcut (default: Ctrl+Shift+F9).
 
 Note: You can stop or enable automatic MT search for each MT engine separately, via the context menu (right click) > Stop automatic MT service.
+
+You can enable automatic insertion of Machine Translation results via the context menu of the corresponding MT service tab, in the main translation interface.
 
 Related links:
 [Machine Translation](https://cafetran.freshdesk.com/support/solutions/folders/6000058185) (Solutions category),
 [Translating Confidential Documents](https://cafetran.freshdesk.com/support/solutions/articles/6000163344-translating-confidential-documents)
 
-#### DeepL:
+**DeepL**
 
-DeepL API key: Enter your [DeepL Pro](https://www.deepl.com/pro.html) API key.
+API parameters: Enter your [DeepL Pro](https://www.deepl.com/pro.html) API key.
 
 This is a paid translation API.
 
 Link:
-[https://www.deepl.com/pro.html](https://www.deepl.com/pro.html)
+[DeepL Pro](https://www.deepl.com/pro.html),
 
-#### Google Translate:
+[DeepL Pro FAQ](https://www.deepl.com/en/pro-faq.html)
 
-Google API key: Enter your Google Translate API key.
+**Google Translate**
 
-This is a paid translation API.
+API parameters: Enter your Google Translate API key.
+
+This is a paid translation API (first 500,000 characters per month free).
 
 Link:
 [https://cloud.google.com/translate/docs/getting-started](https://cloud.google.com/translate/docs/getting-started)
 
-#### MS Translator:
+**MS Translator**
 
-Microsoft API key: Enter your MS Translator API key.
+API parameters: Enter your MS Translator API key.
 
 Free tier offers 2M free characters per month. Paid tiers and options exist for more characters per month, if needed.
 
 Link:
-[https://www.microsoft.com/en-us/translator/getstarted.aspx](https://www.microsoft.com/en-us/translator/getstarted.aspx)
+[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/trial/)
 
-#### MyMemory:
+**MyMemory**
 
-MyMemory API parameters: Enter a valid [Translated.net](https://www.translated.net/en/) account email.
+API parameters: Enter a valid [Translated.net](https://www.translated.net/en/) account email.  If you leave this field empty, CafeTran will use a developer API key. There is no need to enter anything to use MyMemory in CafeTran.
+
+MyMemory uses a combination of Google Translate and Microsoft Translate for its suggestions. It also queries the [MyMemory](https://mymemory.translated.net/) public translation memory, returning TM matches. 
 
 Free, anonymous usage is limited to 1000 words/day.
 If you provide a valid email (“de” parameter), you enjoy 10,000 words/day.
 There is a 500 characters limit per queried segment.
 
 Links:
-[https://mymemory.translated.net/doc/cafetran.php](https://mymemory.translated.net/doc/cafetran.php)
-[https://mymemory.translated.net/doc/usagelimits.php#whitelist_note](https://mymemory.translated.net/doc/usagelimits.php#whitelist_note)
 
-#### Yandex Translate:
+[Use MyMemory directly from your CAT tool]( https://mymemory.translated.net/doc/cat.php),
 
-Yandex API key: Enter your Yandex API key
+[Mymemory - CafeTran](https://mymemory.translated.net/doc/cafetran.php),
+
+[MyMemory: API usage limits](https://mymemory.translated.net/doc/usagelimits.php#whitelist_note)
+
+**Yandex Translate**
+
+API parameters: Enter your Yandex API key
 
 Link:
-[https://tech.yandex.com/translate/](https://tech.yandex.com/translate/)
+[Yandex Translate API](https://tech.yandex.com/translate/)
 
-### Offline MT engines
+**IBM Watson**
 
-#### Slate Desktop:
+API parameters: Enter your IBM Watson Language Translator MT API key.
+
+An API key can be received at IBM website. During the registration at IBM site, choose Frankfurt as the deployment region/location.
+
+Link:
+
+[IBM Watson](https://www.ibm.com/watson/services/language-translator/)
+
+**Slate Desktop**
 
 Slate is a commercial offline MT solution.
 
@@ -1303,11 +1218,11 @@ Related links:
 
 ## WEB SERVICES
 
-![Web services pane](https://i.imgur.com/0s1fFJc.png)
+![Web services pane](https://i.imgur.com/izDdWOr.png)
 
 This pane allows you to enable a few Web services options. Network connectivity is required to use these features.
 
-### ProZ.com
+**ProZ.com**
 
 Checkbox.
 
@@ -1328,13 +1243,13 @@ Related links:
 [Proz.com Term Search Integration](https://cafetran.freshdesk.com/support/solutions/articles/6000118360-proz-com-term-search-integration),
 [ProZ.com options in CafeTran](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#proz-tab-and-context-menu)
 
-### WIWO automatic pop-up dialog
+**WIWO automatic pop-up dialog**
 
 Checkbox.
 
 WIWO (What translators are working on) is a feature activated when you use ProZ.com services. For more details: [https://www.proz.com/wiwo](https://www.proz.com/wiwo)
 
-### TM-Town
+**TM-Town**
 
 Checkbox.
 
@@ -1348,37 +1263,35 @@ Related links:
 
 ## APPEARANCE
 
-![Apperance pane](https://i.imgur.com/HHvYpo8.png)
+![Apperance pane](https://i.imgur.com/VvyMPcn.png)
 
 This pane includes a few appearance options. Many more are available in the View menu.
 
-### Look and Feel
+**Look and Feel**
 
-Radio checkbox: Choices: Metal Look and Feel, Nimbus Look and Feel, GTK (Linux)/Windows (Windows)/MacOS (OS X)
+Radio checkbox options: 
+
+- Metal Look and Feel, 
+- Nimbus Look and Feel, 
+- GTK (Linux)/Windows (Windows)/MacOS (OS X)
+
 Default choice: Nimbus Look and Feel.
 
 Related links:
 [Themes](https://cafetran.freshdesk.com/support/solutions/articles/6000115530-themes)
 
-### Large icons
+<!--- TODO link to SETTING UP CAFETRAN --->
 
-Checkbox, ON by default
+**Interface language**
 
-Note: Depending on your screen resolution, you might want to deselect this option.
+Checkbox options:
 
-### Monochromatic icons
-
-Checkbox, OFF by default
-
-### Interface language:
-
-Checkbox:
-English - United States (en-US), ON by Default
-Polish (pl-PL)
+- English - United States (en-US), ON by Default
+- Polish (pl-PL)
 
 ## KEYBOARD SHORTCUTS
 
-![Keyboard shortcuts pane](https://i.imgur.com/TDqXt6b.png)
+![Keyboard shortcuts pane](https://i.imgur.com/sX2sHUy.png)
 
 This pane is where you can review or set most keyboard shortcuts CafeTran uses.
 
@@ -1386,7 +1299,7 @@ This pane is where you can review or set most keyboard shortcuts CafeTran uses.
 
 Clicking any item of the list opens a **keyboard shortcuts window,** which allows you to change the shortcut to your liking.
 
-![Change keyboard shortcut](https://i.imgur.com/S2EZZjq.png)
+![Change keyboard shortcut](https://i.imgur.com/4oZi5AC.png)
 
 Don’t be afraid to customize them to your liking.
 
@@ -2026,17 +1939,4 @@ Hide all toolbars in the CafeTran Espresso interface. Toggles visibility for the
 
 Found in View > Toolbars > Hide toolbars.
 
-## LIST OF CHANGES
-
-- 20171107 File creation
-- 20171130 Updated for CafeTran Espresso 2018 - Forerunner - 20171130
-- 20180217 Updated for CafeTran Espresso 2018 - Akua, Migrated from Classeur.io to GitHub.com
-- 20180315 Updated
-- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
-- 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11
-- 20181113 Updated for CafeTran Espresso 2019 - Forerunner
-- 20190121 Updated for CafeTran Espresso 2019 - Croissant 10.0
-
-## Feedback
-
-You can send me feedback via a [ProZ message](https://www.proz.com/?sp=mailsend&eid_s=2042360). Please start your subject with the name of the document: “CafeTran - Preferences”.
+**Request focus in Quick search bar** Ctrl+Tab

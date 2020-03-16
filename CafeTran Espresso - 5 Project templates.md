@@ -4,16 +4,14 @@
 	- [TEMPLATES - A PRESENTATION](#templates-a-presentation)
 	- [CREATING, MANAGING AND USING TEMPLATES](#creating-managing-and-using-templates)
 	- [SOME USAGE EXAMPLES](#some-usage-examples)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
 
 <!-- /TOC -->
 
 # CAFETRAN ESPRESSO - PROJECT TEMPLATES
 
-*Updated for CafeTran Espresso 2019*
+*Updated for CafeTran Espresso 2020*
 
-An explanation of the project templates feature in CafeTran Espresso 2019.
+CafeTran Espresso's project templates feature, explained.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN/EL>FR translator).*
 
@@ -21,13 +19,13 @@ An explanation of the project templates feature in CafeTran Espresso 2019.
 
 ## TEMPLATES - A PRESENTATION
 
-In native projects, when you reopen a project from the Dashboard or the Project menu, CafeTran remembers various settings and resources used before, so that you can quickly pick up from where you left.
+In native CafeTran projects, when you reopen a project from the Dashboard or the Project menu, CafeTran remembers various settings and resources used before, so that you can quickly pick up from where you left.
 
 What if you want to apply these settings to future jobs, or quickly swap between different settings, to account for different project needs?
 
-Since Yeddi Update 9 (May 2017), CafeTran offers a templates feature which conveniently stores a variety of settings in an XML template file for easy reuse in new projects.
+Since Yeddi Update 9 (May 2017), CafeTran offers a project templates feature which conveniently stores a variety of settings in an XML file for easy reuse in new projects.
 
-If you often translate external projects that originate from other CAT tools, then then there is one additional compelling reason to use Translation Templates: the settings and resources previously used are NOT remembered when you reopen the external project, especially if you have opened a different CafeTran project in the meantime. CafeTran cannot currently save this information as it would render the external project unusable. The solution? Use project templates not only for new projects, but also for reopening existing external projects.
+If you often translate external projects that originate from other CAT tools, there is one more compelling reason to use Translation Templates: the settings and resources previously used are NOT remembered when you reopen the external project, especially if you have opened a different CafeTran project in the meantime. CafeTran cannot currently save this information as it would render the external project unusable. The solution? Use project templates not only for new projects, but also for reopening existing external projects.
 
 In their current form, project templates store information such as:
 
@@ -49,6 +47,8 @@ In their current form, project templates store information such as:
 - Billing information (applied rate for Statistics)
 - "Replace punctuation characters" and "Replace characters at source transfer" options
 - Options for QA checks
+- Segment skipping options
+- Term prefix settings
 
 To find out exactly what information is being stored in a project template, just create a project template in the Dashboard and open the resulting XML file with a text editor. Each line which includes <code>entry key="" value=""</code> represents a setting. There is no need to manually edit the XML files to use the templates feature.
 
@@ -128,14 +128,3 @@ As it can be easily understood, templates are versatile and can be used in a num
 - **Open/Reopen external projects**: use project templates each time you wish to open or reopen an external project (created in a different CAT tool). This way, you can find the same settings and resources as before.
 
 <!--- Note for same client projects: In this case (although not necessarily recommended), you can even create one CT project and then just add/remove documents keeping the same project resources. This solution will work for CafeTran projects. --->
-
-## LIST OF CHANGES
-
-- 20180307 File creation
-- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
-- 20180831 Updated for CafeTran Espresso 2018 - Akua Update 11
-- 20181113 Updated for CafeTran Espresso 2019 - Forerunner
-
-## Feedback
-
-You can send me feedback via a [ProZ message](https://www.proz.com/?sp=mailsend&eid_s=2042360). Please start your subject with the name of the document: “CafeTran - Templates.

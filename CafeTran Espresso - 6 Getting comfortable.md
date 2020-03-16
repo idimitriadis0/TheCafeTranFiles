@@ -1,32 +1,30 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [CAFETRAN ESPRESSO 2019 - GETTING COMFORTABLE](#cafetran-espresso-2019-getting-comfortable)
-	- [PART I | TAKING A TOUR](#part-i-taking-a-tour)
-		- [Intro](#intro)
-		- [New dummy project](#new-dummy-project)
-		- [Look and Feel & Large icons](#look-and-feel-large-icons)
-		- [Themes](#themes)
-		- [Colors](#colors)
-		- [Dashboard theme](#dashboard-theme)
-		- [Font face and size](#font-face-and-size)
-		- [Window layout](#window-layout)
-		- [Translation interface and Panes](#translation-interface-and-panes)
-		- [Detached windows](#detached-windows)
-		- [Toolbars](#toolbars)
-	- [PART 2 | Taking it further](#part-2-taking-it-further)
-		- [TAMING THE PREFERENCES](#taming-the-preferences)
-		- [TAMING THE INTERFACE AND MENUS](#taming-the-interface-and-menus)
-		- [MEMORIES AND TERMBASES/GLOSSARIES](#memories-and-termbasesglossaries)
-		- [TEMPLATES](#templates)
-		- [FILE FORMATS](#file-formats)
-	- [LIST OF CHANGES](#list-of-changes)
-	- [Feedback](#feedback)
+- [NEW USERS - SETTING UP CAFETRAN ESPRESSO](#new-users---setting-up-cafetran-espresso)
+  * [PART I | TAKING A TOUR](#part-i---taking-a-tour)
+    + [Intro](#intro)
+    + [New dummy project](#new-dummy-project)
+    + [Look and Feel & Large icons](#look-and-feel---large-icons)
+    + [Themes](#themes)
+    + [Colors](#colors)
+    + [Dashboard theme](#dashboard-theme)
+    + [Font face and size](#font-face-and-size)
+    + [Window layout](#window-layout)
+    + [Translation interface and Panes](#translation-interface-and-panes)
+    + [Detached windows](#detached-windows)
+    + [Toolbars](#toolbars)
+  * [PART 2 | Taking it further](#part-2---taking-it-further)
+    + [TAMING THE PREFERENCES](#taming-the-preferences)
+    + [TAMING THE INTERFACE AND MENUS](#taming-the-interface-and-menus)
+    + [MEMORIES AND TERMBASES/GLOSSARIES](#memories-and-termbases-glossaries)
+    + [TEMPLATES](#templates)
+    + [FILE FORMATS](#file-formats)
 
 <!-- /TOC -->
 
-# CAFETRAN ESPRESSO 2019 - GETTING COMFORTABLE
+# NEW USERS - SETTING UP CAFETRAN ESPRESSO
 
-*Updated for CafeTran Espresso 2019*
+*Updated for CafeTran Espresso 2020*
 
 Customizing CafeTran. An introduction.
 
@@ -82,7 +80,7 @@ Appearance can be refined further with Themes and Colors, so let’s do that nex
 <!--- TODO (we'll also see some examples of Look and Feel, Themes and window Layout in action). --->
 ### Themes
 
-![View > Themes submenu](https://i.imgur.com/2Movlv0.png)
+![View > Themes submenu](https://i.imgur.com/hBjyR4x.png)
 
 Next, go to View > Themes.
 
@@ -104,7 +102,7 @@ It goes well with the Windows/Mac OS/GTK Look and Feel theme, but does nicely on
 
 ### Colors
 
-![View > Colors submenu](https://i.imgur.com/D2ZE2e8.png)
+![View > Colors submenu](https://i.imgur.com/ms2felT.png)
 
 View > Colors allows you to customize colors for various interface elements.
 
@@ -120,7 +118,7 @@ Via the Dashboard menu button, select the Dark Dashboard theme and see if it sui
 
 ### Font face and size
 
-![View > Font submenu](https://i.imgur.com/HlSPRCn.png)
+![View > Font submenu](https://i.imgur.com/K5JK1B4.png)
 
 In View > Fonts, you can set the font face and size for various UI items.
 
@@ -132,7 +130,7 @@ Remember, you can easily make the source and target editor segment text bigger o
 
 ### Window layout
 
-![View > Window layout submenu](https://i.imgur.com/svkHea5.png)
+![View > Window layout submenu](https://i.imgur.com/yhv6eSv.png)
 
 Let’s now focus on the [Window layout](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#view--window-layout-submenu), one of the most important settings you can choose.
 
@@ -152,9 +150,7 @@ This degree of layout/appearance customizability is rarely found in other CAT to
 
 At this point, you might be asking yourself: What does each pane do? Let’s see:
 
-![CafeTran’s translation interface](https://i.imgur.com/1Bjrgft.png)
-
-<!--- TODO change the screenshot? --->
+![CafeTran’s translation interface](https://i.imgur.com/PpzeRs4.png)
 
 - **The Segments Grid**: This is where all the segmented text elements from the source file(s) are shown in sequenced order (or according to the Search and Filter options).
 - **The Source and Target segment editors**: The current Source and Target text boxes where you edit your translation. We’re at the heart of the action!
@@ -297,13 +293,3 @@ CafeTran handles many file formats natively and allows you to work on external p
 Of special interest if you intend to work on external bilingual files and packages (SDL Trados, MemoQ, Wordfast, etc.): Read the General notes in the [External Projects](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/4-File-formats#external-projects) section, as well as the section dedicated on the related CAT tool.
 
 And that concludes part II. This should give you a good head start!
-
-## LIST OF CHANGES
-
-- 20180316 File creation
-- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
-- 20181113 Updated for CafeTran Espresso 2019 - Forerunner
-
-## Feedback
-
-You can send me feedback via a [ProZ message](https://www.proz.com/?sp=mailsend&eid_s=2042360). Please start your subject with the name of the document: “CafeTran - Getting comfortable.

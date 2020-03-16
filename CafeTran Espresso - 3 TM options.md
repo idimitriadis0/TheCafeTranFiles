@@ -1,39 +1,33 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [CAFETRAN ESPRESSO - Translation Memories options](#cafetran-espresso-translation-memories-options)
-	- [TM context menu options](#tm-context-menu-options)
-		- [Browse memory](#browse-memory)
-		- [Memory type](#memory-type)
-		- [Priority](#priority)
-	- [TM options](#tm-options)
-		- [Memory type](#memory-type)
-		- [Language pair](#language-pair)
-		- [Options](#options)
-	- [TM filter options](#tm-filter-options)
-		- [Properties filter](#properties-filter)
-		- [Segment filters](#segment-filters)
-	- [Total Recall options](#total-recall-options)
-		- [Database - [name of database]](#database-name-of-database)
-	- [List of changes](#list-of-changes)
-	- [Feedback](#feedback)
+- [CAFETRAN ESPRESSO - Translation Memories options](#cafetran-espresso---translation-memories-options)
+  * [TM context menu options](#tm-context-menu-options)
+    + [Browse memory](#browse-memory)
+    + [Memory type](#memory-type)
+    + [Priority](#priority)
+  * [TM options](#tm-options)
+    + [Memory type](#memory-type-1)
+    + [Language pair](#language-pair)
+    + [Options](#options)
+  * [TM filter options](#tm-filter-options)
+    + [Properties filter](#properties-filter)
+    + [Segment filters](#segment-filters)
+  * [Total Recall options](#total-recall-options)
+    + [Database - [name of database]](#database----name-of-database-)
 
 <!-- /TOC -->
 
 # CAFETRAN ESPRESSO - Translation Memories options
 
-*Updated for CafeTran Espresso 2019*
+*Updated for CafeTran Espresso 2020*
 
 This document offers an overview of CafeTran’s Translation Memory options.
 
 Some memory-related settings can be found in [Edit > Preferences (Options) > Memory](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#memory).
 
-You can find additional information on [Working with Translation Memories](https://cafetran.freshdesk.com/support/solutions/folders/6000058172) In the official CafeTran Knowledge Base (Solutions).
+You can find additional information on [Working with Translation Memories](https://cafetran.freshdesk.com/support/solutions/folders/6000058172) in the official CafeTran Knowledge Base (Solutions).
 
-*Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN-FR/EL-FR translator).*
-
-*If you want to check out the latest CafeTran developments, review the [official update annoucements](https://cafetran.freshdesk.com/support/discussions/forums/6000148195) or the aggregated [ChangeLog](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/0-ChangeLog).*
-
-<!--- *Shortened link to this document:* --->
+*Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN/EL>FR translator).*
 
 ## TM context menu options
 
@@ -66,6 +60,8 @@ Note: If a memory is set as Read-only, you may not access its Options, unless yo
 ### Priority
 
 Quickly check or change the priority level for the TM, which can also be set via the TM Options (see below). This affects fuzzy matching and auto-assembling results.
+
+Term or Fragment Matches with higher or lower priority of the given glossary/memory have the brighter or darker shade of its highlight color.
 
 - **Low priority**
 - **Medium priority**
@@ -101,7 +97,11 @@ Suggestion: Tags count toward fuzzy match calculation, so this is a nice option 
 
 **Read-only** = Checkbox. This sets the memory as read-only. No segments are stored when adding segments to memory.
 
-Note: If a memory is set as Read-only, you may not access its Options, unless you close and reopen it.
+Notes: 
+
+- If a memory is set as Read-only, you may not access its Options, unless you close and reopen it.
+- When you open a TM in the read-only mode, CafeTran loads only the translation units in the specified language code pair to reduce the size in RAM.  Whereas opening in the write mode, it loads everything to preserve the TMX structure at saving.
+- To use the read-only, but still load all translation units stored in a TM, open the TM as "read and write ", with the "read-only" option disabled, and enable it once the TM is open (by right-clicking inside that TM and setting it to Read-only).
 
 **Fragments memory** = Checkbox. Fragments or subsegments are parts of segments and phrases. They can consist of one or more terms (which in turn can consist of one or more words). If you select this option, you can have the Translation Memory store terms and fragments.
 
@@ -223,13 +223,3 @@ All other TM and filter options are the same as those described above.
 Priority default option is set to Low instead of High, though, and the resulting memory is set as Read only.
 
 Note: Total Recall does not process tags.
-
-## List of changes
-
-- 20171117 File creation
-- 20180217 Migrated from Classeur.io to GitHub.com
-- 20180621 Updated for CafeTran Espresso 2018 - Akua Update 10
-
-## Feedback
-
-You can send me feedback via a [ProZ message](https://www.proz.com/?sp=mailsend&eid_s=2042360). Please start your subject with the name of the document: “CafeTran - TM options”.
