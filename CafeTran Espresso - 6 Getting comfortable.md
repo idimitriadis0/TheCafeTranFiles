@@ -4,7 +4,7 @@
   * [PART I | TAKING A TOUR](#part-i---taking-a-tour)
     + [Intro](#intro)
     + [New dummy project](#new-dummy-project)
-    + [Look and Feel & Large icons](#look-and-feel---large-icons)
+    + [Look and Feel](#look-and-feel)
     + [Themes](#themes)
     + [Colors](#colors)
     + [Dashboard theme](#dashboard-theme)
@@ -54,13 +54,11 @@ Enter a project name and select the folder which will contain your project(s).
 
 OK, let’s start getting comfortable.
 
-### Look and Feel & Large icons
+### Look and Feel
 
 First, go to Edit > Preferences (Options) > Appearance.
 
-Depending on your computer, you might want to uncheck the **Large icons**.
-
-From here, you can also select a global **Look and Feel** theme.
+From here, you can select a global **Look and Feel** theme.
 
 CafeTran offers three options:
 
