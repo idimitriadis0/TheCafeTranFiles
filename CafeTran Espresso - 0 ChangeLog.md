@@ -170,31 +170,18 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
   "{1}" = “{1}” to match and replace the double quotes with the curly ones in the terms found in the current segment.
 
   The matched patterns are displayed in the Matchboard with the PA label.
-
 - Display of auto-adjusted (AA label) fragments in the Matchboard.
-
 - New keyboard shortcut for placing the consecutive tags: type x followed by Esc key.
-
 - Cell segmentation option for the Excel filter.
-
 - Saving the ignored spelling mistakes in the project.
-
 - Option for the Prompter to use the segment editor font.
-
 - Workflow option to transfer automatically source segments with no letters to target segments.
-
 - Display of the notes in mxliff projects.
-
 - New Dashboard command in the Dashboard menu. It deselects the resources in the Dashboard.
-
 - The right-click Dashboard option to remove all the selected resources in the panel.
-
 - Fixed an import issue in the Excel filter.
-
 - Fixed a glossary path issue with non-Latin characters.
-
 - Some UI improvements.
-
 - Added Iloko, Hiligaynon and Tagalog languages.
 
 ## 2020 10.7.5 Doughnut (2020050)
