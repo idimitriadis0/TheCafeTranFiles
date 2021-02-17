@@ -1,6 +1,12 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+  * [10.8.2 Cornetto (20210118)](#1082-cornetto--20210118-)
+  * [10.8.1 Cornetto (20201007)](#1081-cornetto--20201007-)
+  * [10.8 Cornetto (20200916)](#108-cornetto--20200916-)
+  * [2020 10.7.5 Doughnut (2020050)](#2020-1075-doughnut--2020050-)
+  * [2020 10.7.4 Doughnut (20200409)](#2020-1074-doughnut--20200409-)
+  * [2020 10.7.3 Doughnut (20200402)](#2020-1073-doughnut--20200402-)
   * [2020 10.7.2 Doughnut (20200311)](#2020-1072-doughnut--20200311-)
   * [2020 10.7.1 Doughnut (20200127)](#2020-1071-doughnut--20200127-)
   * [2020 10.7 Doughnut (20200114)](#2020-107-doughnut--20200114-)
@@ -134,6 +140,87 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
+
+
+## 10.8.2 Cornetto (20210118)
+
+- Added the MT websites of ModernMT, Systran and MyMemory as web resources.*
+- The menu action (and the keyboard shortcut) in View > Segment editors > Request focus in target segment editor can cycle the focus between CT target segment editor and the source segment box on the MT resource webpage. This is convenient for those web resources that require focus in the source language box to trigger the automatic translation process.
+- Text shortcuts can also be inserted after typing a punctuation character.
+- Ms Excel filter allows for empty cells in target language column.
+- The tab character symbol is always visible in the segments editors.
+- Some minor fixes and improvements.
+
+\* The transfer of the source text for translation into the text boxes on the web pages of some MT service providers via the keyboard shortcut can work only after the focus is set on the given webpage (e.g via the mouse click).  
+
+## 10.8.1 Cornetto (20201007)
+
+- Recognition of previously-matched patterns inside term patterns - nested patterns.
+- Loading of multiple .sdltm memories from .sdlppx packages.
+- Fixed saving of glossaries with some unusual characters in the location path.
+
+## 10.8 Cornetto (20200916)
+
+- Term patterns. This new feature allows the user to create complex terms consisting of fixed and changeable parts both on the source and target language side. For example, see this simple term pattern in the glossary:
+
+  I like {1}=Me gusta {1}
+
+  If the source language segment includes the above pattern (e.g I like coffee very much), CafeTran will translate it into the target language provided that the variable part (e.g "coffee") can be found as the term or fragment in any of your glossaries, memories or lists of non-translatable fragments. See another example:
+
+  "{1}" = “{1}” to match and replace the double quotes with the curly ones in the terms found in the current segment.
+
+  The matched patterns are displayed in the Matchboard with the PA label.
+
+- Display of auto-adjusted (AA label) fragments in the Matchboard.
+
+- New keyboard shortcut for placing the consecutive tags: type x followed by Esc key.
+
+- Cell segmentation option for the Excel filter.
+
+- Saving the ignored spelling mistakes in the project.
+
+- Option for the Prompter to use the segment editor font.
+
+- Workflow option to transfer automatically source segments with no letters to target segments.
+
+- Display of the notes in mxliff projects.
+
+- New Dashboard command in the Dashboard menu. It deselects the resources in the Dashboard.
+
+- The right-click Dashboard option to remove all the selected resources in the panel.
+
+- Fixed an import issue in the Excel filter.
+
+- Fixed a glossary path issue with non-Latin characters.
+
+- Some UI improvements.
+
+- Added Iloko, Hiligaynon and Tagalog languages.
+
+## 2020 10.7.5 Doughnut (2020050)
+
+- Binding of project templates to external projects.
+- Automatic update of the current project template when a resource is added or removed, preference changed.
+- Automatic selection of the project template in the Dashboard together with the selection of the project.
+- Fixed an issue with the consistent display of details in (unfolded) hidden tags during automatic matching.
+- Display of the duplicate entries when browsing through read-only translation memories.
+- Matchboard font's bold style option.
+- "Translate" button action takes the current segment for MT search when there is no selection.
+- Hidden Dashboard menu during "Replace document" action.
+- Keyboard shortcut for ‘Show invisible characters" action (CTRL+SHIFT+V).
+
+## 2020 10.7.4 Doughnut (20200409)
+
+- Updates to CTE interface for ProZ.com API.
+- Updates to CTE interface for DeepL.com API to include new languages: Japanese, Chinese, Portuguese (Brazil) and Portuguese (Portugal).
+
+## 2020 10.7.3 Doughnut (20200402)
+
+- Separate setting of the Matchboard font - see the menu View > Font > Matchboard.
+- Added Kongo and Lingala languages.
+- Display of notes in .txlf files.
+- Various UI adjustments and fixes.
+
 ## 2020 10.7.2 Doughnut (20200311)
 
 - The border around the highlighted terms and fragments in the source segment editor.
@@ -239,9 +326,9 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 ## 2019 10.3 Croissant (20190323)
 
 -  Added punctuation to ideographic characters count in Statistics for CJK languages.
-- If the Human Translation (HT) and Edited Segment (*) labels are deactivated (in View > Segment Labels menu), the TM match percentage keeps being displayed in the grid even for edited/changed segments.
-- Added the "Additional word dividers" field to the Glossary options - see Preferences > Glossary tab.
-- Added a confirmation panel before the removal of the current document during the "Replace document" action.
+-  If the Human Translation (HT) and Edited Segment (*) labels are deactivated (in View > Segment Labels menu), the TM match percentage keeps being displayed in the grid even for edited/changed segments.
+-  Added the "Additional word dividers" field to the Glossary options - see Preferences > Glossary tab.
+-  Added a confirmation panel before the removal of the current document during the "Replace document" action.
 
 ## 2019 10.2.2 Croissant (20190313)
 
@@ -403,11 +490,11 @@ The new build (**2018100402**) has the Clone button grayed initially.
 - Automatic case adjustment (e.g to lower or upper case) during Auto-completion.
 - New tasks (in the Task menu): Bookmark segments and Unbookmark segments (e.g. for bookmarking filtered segments).
 - New Filter: Unbookmarked segments.
--  Task > TMX Memory > Remove TMX filtered units can also detect the same contents in the filtered project segments (not in the TMX edit mode), and remove such segments from the TMX Memory.
--  New Term Dialog can add multiple entries to the glossary - separated by the new line.
--  Export of filtered segments as a bilingual Word document. The return import is also possible into exactly the same filter only.
--  TMX Memory edit mode: Export and Import as a bilingual Word document.
--  Fixed some minor issues.
+- Task > TMX Memory > Remove TMX filtered units can also detect the same contents in the filtered project segments (not in the TMX edit mode), and remove such segments from the TMX Memory.
+- New Term Dialog can add multiple entries to the glossary - separated by the new line.
+- Export of filtered segments as a bilingual Word document. The return import is also possible into exactly the same filter only.
+- TMX Memory edit mode: Export and Import as a bilingual Word document.
+- Fixed some minor issues.
 
 The "Remove TMX filtered units" feature in latest build (**2018101001**) works with multilple TM selection too.
 
@@ -779,6 +866,7 @@ The new build of update 26 (201711101) is available for download with the follow
 - Fixed a tagging issue in the first segment of the project when “Hide segment boundary tags” is off.
 
 The new build of update 25 (2017102701) is available for download with the following:
+
 - some minor user interface enhancements to adjust to GTK look and feel on Linux.
 - simultaneous translating with the supported Machine Translation web resources (via the browser interface).
 - The Alt+V keyboard shortcut transferring MT from web page works for docked web MT resources too.
@@ -789,9 +877,10 @@ The new build of update 25 (2017102701) is available for download with the follo
 - Action to transfer the MT result from a web page to the target segment - see the menu Translate > Transfer MT from web page. This transfer action (via the keyboard shortcut) can also be used when editors binding is off.
 - Selection of the glossary during the manual Search when the glossary is joined to another resource under one tab.
 - Fixed automatic saving of sdlxliff files after deletion of target segments via the Task menu.
-Option to change the Google’s MT engine (from neural to phrase-based) after the right-click at Google MT panel.
+  Option to change the Google’s MT engine (from neural to phrase-based) after the right-click at Google MT panel.
 
 The new build of update 24 (2017101802) is available for download with the following fixes and improvements:
+
 - Fixed a color issue while selecting a text in the back themes on Mac OS - Mac look & feel.
 - Showing auto-propagation P mark for non-CafeTran projects - for the current session only.
 - Accepting .xlsm (Excel with macros) documents in the MS Excel filter.
@@ -806,11 +895,13 @@ The new build of update 24 (2017101802) is available for download with the follo
 - Basic order registering and invoicing feature moved from “Project Configuration” panel to the Statistics display.
 
 The new build of update 23 (2017101102) is available for download with the following fixes and improvements:
+
 - Saving the xliff file - in multi-file projects - which has been affected by cross-file auto-propagation automatically at exit.
 - Fixed some dialog overlapping issues on Mac OS.
 - Trimming of non-translatable fragments at masking them for Machine Translation services.
 
 The new build of update 23 (2017101201) is available for download with the following:
+
 - Added Euroglot as a web resource (see the Resources > Web menu) to CafeTran interface. This online resource requires login but there is a 10 minute free trial as too.
 
 
@@ -821,6 +912,7 @@ The new build of update 23 (2017101201) is available for download with the follo
 - Java 9 fixes an issue with garbled characters on some web resources (e.g. TM-Town login page) on Mac.
 
 The new build of update 22 (2017100301) is available for download with the following fixes and improvements:
+
 - Fixed an issue with the segments grid display after the “Segment with letters” filter is set.
 - Fixed an undo/redo editor’s issue related to Java 9 update.
 - Handling TMX translation memories which have the external Document Type Definition (DTD) set.
@@ -833,6 +925,7 @@ The new build of update 22 (2017100301) is available for download with the follo
 Due to a Java 8 issue on Mac OS, the DeepL web resource is not displayed properly in the internal web browser on Mac systems. The issue has been reported and is probably fixed in Java 9 (official release on 2017.09.21). I will update you on this Java release. Impatient and brave Mac users can already download and install early access builds of Java 9.
 
 The typical workflow with Machine Translation service as a web resource (which is not available via API yet) is as follows:
+
 - Choose MT web resources to work with via the menu Resources > Web or the Dashboard.
 - Select the MT web resource in the tab.
 - Click the Translate button in the source segment toolbar to copy the current source segment or a selected phrase to the source text box of the MT web resource.
@@ -840,18 +933,22 @@ The typical workflow with Machine Translation service as a web resource (which i
 - If the target language box of the resource is editable (e.g. DeepL), you can bind it to CafeTran’s target segment editor via Edit > Bind external editor. Then, just edit the translation and press the CTRL+A followed by CTRL+C keyboard shortcuts to transfer the translation and move on to the next segment.
 
 The new build of update 21 (2017090802) is available for download with the following improvements and fixes:
+
 - The editors binding via clipboard on Mac OS works with text areas inside the internal web browser (e.g DeepL web resource). Note that you can place the pipe character “|” in the bound editor to indicate the position of formatting tags.
 - Added the support for comments in .txml files.
 
 The new build of update 21 (2017091301) is available for download with the following:
+
 - Fixed the display of percentage in Fuzzy Matches in the Matchboard.
 - Fixed a fuzzy match duplication issue during auto-correction.
 
 The new build of update 21 (2017092301) is available for download with the following:
+
 - Fixed the cyclic text transfer via Clipboard in the Clipboard workflow.
 - Some polishing of the Dashboard interface.
 
 The new build of update 21 (2017092701) is available for download with the following:
+
 - Block to load multiple memory files which have the same name.
 - Interface font size for 1400-1900 resolution screens is two points larger by default.
 
@@ -862,6 +959,7 @@ The new build of update 21 (2017092701) is available for download with the follo
 - Automatic switching to the TM tab containing the result of the manual search in the translation memory.
 
 The new build (2017082901) of update 20 is available.
+
 - The TM tab should be selected during the manual search even when it contains more (joined) TMs.
 - Double-clicking on an auto-completion phrase inserts the phrase into the target segment editor.
 
@@ -874,6 +972,7 @@ The new build (2017082901) of update 20 is available.
 ## 2017 Yeddi Update 18 (20170731)
 
 The update 18 brings the following improvements:
+
 - A keyboard shortcut for “Delete segment” in translation memory edit mode.
 - Access to Preferences from the Dashboard menu.
 - Project > Export and Exchange > To TMX memory… and Memory > Import > Import project segments take the filter state into account during segments’ transfer. For example, the user can open a translation memory in the edit mode, create a range filter by typing segment’s numbers range (e.g. 1000-2000) in the Search field, and then transfer the filtered segments to the new translation memory.
@@ -885,11 +984,13 @@ In today’s build of update 18 - 2017080101, the Document note opens automatica
 ## 2017 Yeddi Update 17 (20170726)
 
 The update 17 includes some fixes and improvements released in the recent builds such as:
+
 - Fuzzy match auto-correction.
 - Clearer translation memory info tips when hovering the mouse over a hit in the Dashboard or TM pane.
 - Sorting matches by length in the Matchboard - the option available after right clicking at the Matchboard pane.
 
 The following new QA actions have been added:
+
 - Same source with different target check.
 - Same target with different source check.
 
@@ -902,13 +1003,14 @@ Furthermore, clicking at the number of occurrences of the phrase in the Frequent
 * The glossary option in Preferences to display the longest matches only.
 * Sorting by length filter action.
 * Fixed a display glitch with TM hits - numbers.
-Improved handling of regular expression errors in glossaries.
+  Improved handling of regular expression errors in glossaries.
 * Fixed a character escape error when loading tab-delimited glossaries to Total Recall.
 * Fixed some status setting and display issues with sdlxliff files.
 * **Automatic loading of HTML preview page in CafeTran projects after restart.**
 * Fixed a focus issue with the Export dialog.
 
 The new build (2017070601) of the update 16 tackles three issues:
+
 * Matchboard pop-up info hiding when the mouse is off the pop-up panel.
 * Regular expression errors handling during auto-assembling that might block the display of the results in the Matchboard.
 * Project > Export and Exchange > To Package… panel focus issue.
@@ -936,7 +1038,7 @@ That’s correct. There is no need for the right-click manual action now.
 ## 2017 Yeddi Update 14 (20170615)
 
 * Changed the size of the Autocompletion panel depending on the screen resolution.
-Adjusted the size of some buttons for UHD screens in Metal look and feel.
+  Adjusted the size of some buttons for UHD screens in Metal look and feel.
 * Fixed a tagging issue for embedded objects in MS Word filter.
 * Improved hiding of the initial and ending tags with adjacent space.
 
@@ -977,7 +1079,7 @@ The new build (2017060102) of update 12 is available for download. The file choo
 * Storing the source document location and rate information in the Project template.
 * New TMX memory task in the Task menu called “Split TMX units”. It splits translation units at a character or a phrase - set separately for source and target segments.
 * Exposing Save and Open file choosers to avoid losing them behind the main application window.
-Search and replace panel is not set as “always on top” now.
+  Search and replace panel is not set as “always on top” now.
 * Some little spring changes to the Dashboard theme.
 * Fixed the <> characters display issue when they are included in the searched phrase.
 
@@ -987,6 +1089,7 @@ The feature has been adjusted to the new API as the previous implementation caus
 ## 2017 Yeddi Update 10 (20170517)
 
 The update 10 is a maintenance update summing up a few builds released after the update 9. * Furthermore, the following fixes and improvements have been made:
+
 * “Replace all” also does the replacement in the target segment being edited. YES
 * Auto-correction (via CTRL+Space shortcut) of a spelling mistake at the cursor position instead of the position at the last red-underlined word.
 * Fixed an issue with the MS Excel filter when the translator uses an MS Excel glossary as a resource.
@@ -1004,6 +1107,7 @@ Default Scope search shortcut has been moved by default to : Ctrl+Shift+G (was C
 The templates implementation is a new feature and may be further refined in later updates. However in its current form, it gives the user the control over the organization of the template files the same way they manage their other documents in the system (e.g. choosing a folder, moving, renaming and deleting them). So the user can simply assign a folder for the .xml template files wherever he/she wishes and can even share them (e.g. via Dropbox). It also frees CafeTran from additional complexity of the interface such as more interface buttons, menus or a special database for templates. As for the .xml extension, I assume the low probability of mixing .xml templates files with other .xml files just in a folder assigned for templates. To put is simply, you are free to organize your .xml template files as you like. CafeTran can only create and access them. I don’t think any additional template file management features are necessary in CT interface.
 
 The new build of update 9 is available (2017051101) with two minor changes:
+
 * remembering projects’ location settings in project templates.
 * keeping target segment editor’s contents when joining current empty target segment with the next non-empty target segment.
 
@@ -1199,6 +1303,7 @@ The AutoNext function has been tested on each operating system in Google Chrome 
 Hopefully, this new feature will add yet another translation technique, boost and fun to your workflow.
 
 Second build 2016110903:
+
 1. The source segment locking reverted to the previous version because of the mentioned focus change issue.
 2. The Total Recall Search buttons are filled with their color now on Linux system.
 
@@ -1211,10 +1316,10 @@ The second build of this update brought back the ability to select the source se
 
 1. Sizing and highlighting improvements to the Matchboard.
 2. Added the following options to the Matchboard:
-    - sort matches alphabetically. If this option is disabled, CafeTran displays the matches sorted by their quality
-    - show fuzzy memory fragments
-    - show fuzzy glossary terms
-    - show auto-assembling result
+   - sort matches alphabetically. If this option is disabled, CafeTran displays the matches sorted by their quality
+   - show fuzzy memory fragments
+   - show fuzzy glossary terms
+   - show auto-assembling result
 
 The above options are accessed via the right-click at the Matchboard.
 
@@ -1320,6 +1425,7 @@ I lowered the resolution of my computer to 1280 to check and the toolbar texts t
 ## 2016 Ichiro Update 16 (20160831)
 
  The size and state of the Dashboard panels is maintained when you close the project.
+
 - Added support for .mqxlz files. These are zipped .mqxliff files which previously needed to be unzipped and zipped back after the translation. Now, these actions can be performed directly in CafeTran.
 - Ability to edit entries (segments or terms) in .txt tab-delimited files when they are loaded via the Memory interface.
 - Added the Search option for the ProZ.com users in the “What am I working on?” feature. It enables filtering out the messages containing specific words.
@@ -1330,6 +1436,7 @@ Tmx files and tab-delimited files have been loaded into CafeTran via two separat
 ## 2016 Ichiro Update 15 (20160823)
 
  Resizable TMs/Glossaries/Resources panels in the Project Dashboard.
+
 - Coffee house style for the Project Dashboard.
 - Highlighting of the words occurring in the changed order in fuzzy matches.
 - Option to hide all the tags in the current source segment.
@@ -1363,6 +1470,7 @@ You may have used some smaller screen such as 11 inches MacBook Air? Anyway, I h
 The Ichiro update 12 focuses on CafeTran interface to the new service available for ProZ.com and TM-Town.com users. It enables translators to share the information about their translation projects interactively. CafeTran users can view and post messages via CafeTran without the need to switch to their web browsers. There is also a filter option to view posts coming only from other CafeTran users and reply to such posts. Although ProZ.com emphasizes the promotional aspect of this feature for translators as well as the ability to track their projects history, designing the chat-like interface I focused on the social side of it. Hopefully, in the near future, translators will also be able to share the photos straight from CafeTran’s interface i.e. to show their picturesque translation scenery or the cafe where they enjoy having lunch, and perhaps invite other translators working nearby, in a sort of CafeTran spirit. As it is a new feature, I would be happy to receive any feedback on using it in CafeTran. Thanks!
 
 Other improvements in this update:
+
 - Improved the search function for single and multiple (i.e put in a folder) text files that do not have a specified separator between source and target entries - it is a useful extension of the glossary search. Added the highlighting of the found terms in such files too.
 - Minor interface changes such as margins, borders to columns and the look of the buttons in ProZ.com and TM-Town interface.
 - Increased the size of the Autocompletion pop-up panel for high resolution screens.
@@ -1370,6 +1478,7 @@ Other improvements in this update:
 ## 2016 Ichiro Update 11 (20160715)
 
 The Ichiro update 11 brings numerous improvements and fixes a few known issues:
+
 - Fixed a rounding issue in the translation speed display of the Statistics panel.
 - Added a new panel to the Project dashboard for “Other resources and services”.
 - Fixed an issue to the HTML filter (proper filtering of the <script> tag).
@@ -1404,6 +1513,7 @@ I left the CT running for more than one hour and noticed that speed per minute i
 ## 2016 Ichiro Update 8 (20160519)
 
 The Ichiro update 8 offers the following:
+
 - The new interface for the Frequent Words feature. It is faster, more intuitive and scalable for large projects.
 - Improvement to the algorithm which 'guesses' the translation of extracted subsegments - hits.
 - Total Recall in context improved to work for languages without a word separator.
@@ -1413,6 +1523,7 @@ The Ichiro update 8 offers the following:
 ## 2016 Ichiro Update 7 (20160505)
 
 The Ichiro update 7 offers the following:
+
 - Updated list of supported languages for Google Translate, MyMemory MT and Microsoft Translator Machine Translation services.
 - Fixed an minor issue with the filtering of AutoCad files on layers. The layer selection box did not pick for filtering the last layer in the list of layers.
 
@@ -1530,16 +1641,16 @@ Items in bold indicate important new features or important changes to existing f
 ## 2016 Harbinger – 2015-11-28
 
 1.  The new word/characters count in the Statistics function diplaying
-the speed of translation in CafeTran running session.
+    the speed of translation in CafeTran running session.
 2.  The new option for subsegment matching called “Subsegment hits
-threshold” to reduce the display of low-quality subsegment matches.
+    threshold” to reduce the display of low-quality subsegment matches.
     The default value is 3 which ensures the hits below this number are
-discarded.
+    discarded.
 3.  The machine translation panes get two new buttons to let the user
-transfer the MT translation to the target segment and repeat the
-query with the selected fragment in a more intuitive way.
+    transfer the MT translation to the target segment and repeat the
+    query with the selected fragment in a more intuitive way.
 4.  Localized formating of numbers can also take place when the numbers
-are inside parenthesis.
+    are inside parenthesis.
 5.  The fix in the typing of accented characters in Portuguese on Mac OS
     X.
 
@@ -1593,6 +1704,7 @@ Furthermore, I’ve added the following functionality to the auto-propagation fe
 The two auto-propagation options are on by default and can be turned off in the new Auto-propagation tab (see Edit > Preferences > Auto-propagation tab).
 
 Today I have uploaded one of the last updates before the official release of CafeTran Espresso 2016. The changes are as follows:
+
 - Significant simplification of the menu interface. The menus with the power features can be activated/deactivated now when you need them in your workflow. See the View menu.
 - The new Match bar can be floated (see the menu View > Toobars > Float Match bar). It can let translators use CafeTran resources and features while working in the other applications such MS Word, PowerPoint, Excel, etc.
 - The results of auto-assembling (subsegments, terms, fuzzy matches) can be directed to the system clipboard. See the menu Edit > Preferences > Auto-assembling > Copy matches to clipboard.
@@ -1601,6 +1713,7 @@ Today I have uploaded one of the last updates before the official release of Caf
 The update (build 2016010701) can be performed via the usual drag and drop with the same download file as described at the start of this thread.
 
 Thank you for your feedback! It helps me refine the UI elements. The preview is available for testing with the following changes:
+
 - Inclusive selection of the menus with advanced features.
 - Renaming Pretranslation function to Preliminary memory matching.
 - Project Glossary check box is back in the Project Configuration panel (for those who forget to check it in the Dashboard).
@@ -1651,7 +1764,7 @@ The update (build 2016010901) can be performed via the usual drag and drop with 
 - **\#1.** New **Match bar**. Can be hidden using **View \> Hide match bar**.
 - **\#2.** **Reversed suggestion of fragments/terms in the target segment pane** – triggered by pressing Shift key twice and the first letter of the source term in the target segment pane.
 - **\#3.** Transfer current tag (Alt+9 shortcut) now works on a selection the same way as mouse tag placement. Meaning, it is now possible to wrap a selection in tags with a keyboard shortcut or voice command!
--   **\#4.** New option in **Appearance \> View \> Colors** menu: "Hide match colors in the source segment". This allows you to switch off all highlighting in the source pane, if you prefer a cleaner workspace where you can focus only in the text.
+- **\#4.** New option in **Appearance \> View \> Colors** menu: "Hide match colors in the source segment". This allows you to switch off all highlighting in the source pane, if you prefer a cleaner workspace where you can focus only in the text.
 - **\#5.** Suppressing soft hyphens tags when importing MS Word documents.
 - **\#6.** Automatic creations of alternative translations during the bilingual import of the reviewed documents to compare the reviewed version and the original version of the segment and to filter out the reviewed changes. Meaning: it should now be possible to quickly identity any segments changed (in the bilingual review tables) by your proofreader/editor.
 - **2015-10-22** \#7. Minor interface changes to enable more intuitive location of the most frequently used buttons/actions both for new users and touch screen users.
@@ -1683,6 +1796,7 @@ The update (build 2016010901) can be performed via the usual drag and drop with 
 - **\#10.** **DEFAULT THEME CHANGED**: default toolbar colours changed from orange to green. If you preferred the old default toolbar colour (as I do) to the new light green one, go to: **View \> Appearance \> Colors \> Toolbars color**, and change the RGB colour to: ’EDD5A6’.
 
 ## 2015 Previous updates
+
 - **2015-09-01** Fixed a file drag and drop issue on Mac OS X which caused the freeze of the Project Configuration panel. The issue appeared after updating Java to 1.8.0\_60 version.
 - **2015-09-01** When opening a TMX file via the **Memory \> Open memory…** menu, the memory options stored in the TMX file are correctly replaced now with user’s options selected in the TM options panel.
 - **2015-08-08** Help texts connected to the tooltips of Mac OSX menus.
@@ -1947,7 +2061,7 @@ The update (build 2016010901) can be performed via the usual drag and drop with 
 - **2013-12-01** New: *QA \> Bracket check*: See screenshot [here](http://cafetran.wdfiles.com/local--files/pre-release-version/1-12-0.png).
 - **2013-11-29** CafeTran has a new Glossary tab under *Edit \> Options \> Glossary* and a **new metadata popup** will appear when you hover over a blue term in the glossary pane. See screenshot [here](http://cafetran.wdfiles.com/local--files/pre-release-version/metadata-popoup.png).
 - **2013-11-24** Added menu Task \> (Remove tasks on TMX files) can be performed on attached memories now. Two more tasks that can be performed now: *Remove TMX units with no letters* and *Remove filtered TMX units*.
--   **2013-11-24** Added menu *Edit \> Options \> Glossary* tab options. Added item 'Sort matches' (which sorts displayed source entries alphabetically in your glossary pane) and 'Number of fields to display'.
+- **2013-11-24** Added menu *Edit \> Options \> Glossary* tab options. Added item 'Sort matches' (which sorts displayed source entries alphabetically in your glossary pane) and 'Number of fields to display'.
 - **2013-11-24** **You can now increase/decrease the size of the fonts in the Translation Editor with the plus/minus icons in the tabbed pane toolbar.** The buttons used to change the font size of the text in the tabbed pane.
 - **2013-11-24** Previously, local files in metadata fields in text glossaries didn’t turn into clickable links if they had spaces in them. That is, 'C:\\Users\\Administrator\\Google Drive\\Text files\\Legal\\loss of dependency.pdf' wouldn’t work because it had spaces in it. This has been fixed. Local files with spaces are now clickable links, just like internet URLs.
 - **2013-11-16** Work on Java 7 support for OS X Mavericks has started. [New File Open/Save dialogues](http://cafetran.wikidot.com/new-file-open-save-dialogues) etc.
@@ -1968,7 +2082,7 @@ The update (build 2016010901) can be performed via the usual drag and drop with 
 - **2013-11-01** Pressing Ctrl is no longer needed to insert hits from the auto-completion list. That is, both F2 and auto-complete terms lists now use the same term insert shortcuts/system.
 - **2013-11-01** New alphabetical display of glossaries in New Term dialogue feature broke their priorities. Fixed.
 - **2013-11-01** Selecting a word in the source or target box and pressing Ctrl+Enter would replace all instances of the selected word in the default scope set in the Find & Replace dialogue (i.e., in all your project source segments, memory target segments, etc.) with the segment text from your current target box. Fixed.
--   **2013-10-30** *Memory \> Import \> Import Pretranslation…*
+- **2013-10-30** *Memory \> Import \> Import Pretranslation…*
 - **2013-10-30** New *Translate folder* check box in Project Info dialogue
 - **2013-10-30** Glossaries are now displayed alphabetically in the *New Term* dialogue. This is useful in connection with the new Alt+1, Alt+2, Alt+3, etc. shortcuts to add terms to one of your connected (selected) glossaries. Previously, they would be in any old order. Now they are displayed alphabetically, you can always use the same shortcuts to send terms to specific glossaries. Alt+1: send term to Phrases glossary. Alt+2: send term to General glossary. Alt+3: send term to project glossary, etc.
 - **2013-10-30** Import of edited notes from bilingual external review file back into CafeTran.
@@ -2062,3 +2176,4 @@ The update (build 2016010901) can be performed via the usual drag and drop with 
 ## Bilbo (Released on January 2013)
 
 ## Hobbit (Released on December 2012)
+
