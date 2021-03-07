@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+  * [10.8.3 Cornetto (20210226)](#1083-cornetto--20210226-)
   * [10.8.2 Cornetto (20210118)](#1082-cornetto--20210118-)
   * [10.8.1 Cornetto (20201007)](#1081-cornetto--20201007-)
   * [10.8 Cornetto (20200916)](#108-cornetto--20200916-)
@@ -140,7 +141,26 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
+## 10.8.3 Cornetto (20210226)
 
+* Improved display of formatting in the grid for external xliff files.
+* Display of Rendezvous memory server IP address in Preferences > Memory server tab.
+* Fixed processing of TM fragments in the Rendezvous TM server.
+* "Read only" and "Terms consistency check" glossary options set via the pop-up menu are preserved at program's exit.
+* Keeping the contents of the edited and unconfirmed segment after the return from the filter view.
+* Fixed a segmentation issue in the segments ending with the quotation marks.
+* Check for tab characters in TMX memories during the conversion to the glossary format.
+* Locale-specific conversion of numbers with the thousands (grouping) separator.
+* Conversion of non-translatable fragments to let the user adjust them to the target language equivalents. For example, to change dates from the US format to the international format, the following non-translatable can be defined:  
+      
+    |(\\d)(\\d)/(\\d)(\\d)/(\\d)(\\d)(\\d)(\\d)=(3)(4)-(1)(2)-(\\5)(\\6)(\\7)(\\8)  
+      
+    \- | the pipe character at the start indicates the non-translatable fragment pair is in a special format (a regular expression).
+    \- = is a separator between source and target language non-translatable fragments.  
+    \- \\d means a digit in the source fragment.  
+    \- () the characters to move or reorder need to be placed between brackets.  
+    \- Some punctuation characters (e.g the full stop) need to be preceded by the backslash in the source fragment.  
+    \- Reordering of characters in the target language fragment is controlled by the numbers in brackets. The numbers refer to the groups in brackets in the source fragment, counting from the left. All the other characters in the target fragment are in their usual form.
 
 ## 10.8.2 Cornetto (20210118)
 
@@ -170,18 +190,31 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
   "{1}" = “{1}” to match and replace the double quotes with the curly ones in the terms found in the current segment.
 
   The matched patterns are displayed in the Matchboard with the PA label.
+
 - Display of auto-adjusted (AA label) fragments in the Matchboard.
+
 - New keyboard shortcut for placing the consecutive tags: type x followed by Esc key.
+
 - Cell segmentation option for the Excel filter.
+
 - Saving the ignored spelling mistakes in the project.
+
 - Option for the Prompter to use the segment editor font.
+
 - Workflow option to transfer automatically source segments with no letters to target segments.
+
 - Display of the notes in mxliff projects.
+
 - New Dashboard command in the Dashboard menu. It deselects the resources in the Dashboard.
+
 - The right-click Dashboard option to remove all the selected resources in the panel.
+
 - Fixed an import issue in the Excel filter.
+
 - Fixed a glossary path issue with non-Latin characters.
+
 - Some UI improvements.
+
 - Added Iloko, Hiligaynon and Tagalog languages.
 
 ## 2020 10.7.5 Doughnut (2020050)
