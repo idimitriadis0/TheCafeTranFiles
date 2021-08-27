@@ -1,6 +1,7 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+  * [10.9 - Apple Charlotte (20210820)](#109---apple-charlotte--20210820-)
   * [10.8.3 Cornetto (20210226)](#1083-cornetto--20210226-)
   * [10.8.2 Cornetto (20210118)](#1082-cornetto--20210118-)
   * [10.8.1 Cornetto (20201007)](#1081-cornetto--20201007-)
@@ -126,7 +127,7 @@
   * [Bilbo (Released on January 2013)](#bilbo--released-on-january-2013-)
   * [Hobbit (Released on December 2012)](#hobbit--released-on-december-2012-)
 
-<!-- /TOC -->
+<<!-- /TOC -->
 
 # CafeTran Espresso ChangeLog
 
@@ -141,26 +142,67 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
 
+## 10.9 - Apple Charlotte (20210820)
+
+- First CafeTran release for Mac's Apple M1 chip architecture (https://www.cafetran.com/download-for-mac/).
+-  Updated libraries for Apple M1 chip.
+
+- Equals character in the non-translatable fragments can be escaped with the backslash.
+- Fixed an issue with the non-translatable fragments containing numbers.
+- Fixed the tagging issue in Adobe InDesign filter.
+- Single-click addition of the selected terms to the glossary or translation memory. It works as follows:
+
+1. Select a term in the source segment.
+
+2. Select its translation in the target segment.
+
+3. Click the chosen glossary or translation memory pane to add the new entry there.  
+
+ Skipped read-only resources during Search and Replace action.
+
+- Blocked Split and Join segments action during the translation of subtitles.
+- Fixed the whole segment deletion by Backspace when selecting the text with the boundary tags.
+- Updated interface to IBM Watson Machine Translation API. 
+  You need to set the API key and URL address for IBM Watson MT in CafeTran's Preferences > MT services tab > API key button. The API key and URL can be generated and copied from IBM website after signing up there.
+
+- Changing tabs divider orientation does not require restart.
+
+- Reduced width of the segment editor toolbars for smaller laptop screens in the compact windows layout.
+
+- Fixed the issue with the display of the converted non-translatable fragments in F4 pop-up panel.
+
+- Converted non-translatable fragments are shown in the auto-assembling result.
+
+- Automatic transfer of the number being the source segment to target segment editor if the segment is empty.
+
 ## 10.8.3 Cornetto (20210226)
 
 * Improved display of formatting in the grid for external xliff files.
+
 * Display of Rendezvous memory server IP address in Preferences > Memory server tab.
+
 * Fixed processing of TM fragments in the Rendezvous TM server.
+
 * "Read only" and "Terms consistency check" glossary options set via the pop-up menu are preserved at program's exit.
+
 * Keeping the contents of the edited and unconfirmed segment after the return from the filter view.
+
 * Fixed a segmentation issue in the segments ending with the quotation marks.
+
 * Check for tab characters in TMX memories during the conversion to the glossary format.
+
 * Locale-specific conversion of numbers with the thousands (grouping) separator.
+
 * Conversion of non-translatable fragments to let the user adjust them to the target language equivalents. For example, to change dates from the US format to the international format, the following non-translatable can be defined:  
       
-    |(\\d)(\\d)/(\\d)(\\d)/(\\d)(\\d)(\\d)(\\d)=(3)(4)-(1)(2)-(\\5)(\\6)(\\7)(\\8)  
-      
-    \- | the pipe character at the start indicates the non-translatable fragment pair is in a special format (a regular expression).
-    \- = is a separator between source and target language non-translatable fragments.  
-    \- \\d means a digit in the source fragment.  
-    \- () the characters to move or reorder need to be placed between brackets.  
-    \- Some punctuation characters (e.g the full stop) need to be preceded by the backslash in the source fragment.  
-    \- Reordering of characters in the target language fragment is controlled by the numbers in brackets. The numbers refer to the groups in brackets in the source fragment, counting from the left. All the other characters in the target fragment are in their usual form.
+  |(\\d)(\\d)/(\\d)(\\d)/(\\d)(\\d)(\\d)(\\d)=(3)(4)-(1)(2)-(\\5)(\\6)(\\7)(\\8)  
+
+  \- | the pipe character at the start indicates the non-translatable fragment pair is in a special format (a regular expression).
+  \- = is a separator between source and target language non-translatable fragments.  
+  \- \\d means a digit in the source fragment.  
+  \- () the characters to move or reorder need to be placed between brackets.  
+  \- Some punctuation characters (e.g the full stop) need to be preceded by the backslash in the source fragment.  
+  \- Reordering of characters in the target language fragment is controlled by the numbers in brackets. The numbers refer to the groups in brackets in the source fragment, counting from the left. All the other characters in the target fragment are in their usual form.
 
 ## 10.8.2 Cornetto (20210118)
 
@@ -2196,4 +2238,3 @@ The update (build 2016010901) can be performed via the usual drag and drop with 
 ## Bilbo (Released on January 2013)
 
 ## Hobbit (Released on December 2012)
-
