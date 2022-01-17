@@ -23,15 +23,15 @@
 
 # CAFETRAN ESPRESSO - PREFERENCES
 
-*Updated for CafeTran Espresso 2020 (10.7.2)*
+*Updated for CafeTran Espresso 11 Poppy Seed Roll (2022)*
+
+A handy tour of CafeTran Espresso's preferences.
 
 *Curated by [Jean Dimitriadis](https://www.proz.com/translator/2042360) (EN/EL>FR translator).*
 
 **ACCESSING PREFERENCES**
 
-You can access Preferences from the **Menu (Edit > Preferences)** (CafeTran > Preferences, for MacOS users) or directly from the **Dashboard** by clicking the button shown below and choosing Preferences.
-
-![Dashboard menu button](https://i.imgur.com/R2Kxc0J.png)
+You can access Preferences from the **Menu (Edit > Preferences)** (CafeTran > Preferences, for MacOS users) or directly from the **Dashboard** by clicking the button ≡ and choosing Preferences.
 
 **EXPORT/IMPORT/RESET PREFERENCES**
 
@@ -41,7 +41,7 @@ The corresponding buttons can be found in each Preferences pane.
 
 To reset CafeTran to its default preferences, use the Reset button also included in each Preferences pane. Resetting is applied to all CafeTran settings.
 
-![Export/Import/Reset Preferences](https://i.imgur.com/5FxAJA1.png)
+![Export/Import/Reset Preferences](https://i.imgur.com/CkpUKc4.png)
 
 **Reset the cookies for Internet resources**
 
@@ -55,7 +55,7 @@ Related links:
 
 ## GENERAL
 
-![General pane](https://i.imgur.com/PgJZTKs.png)
+![General pane](https://i.imgur.com/8SUq42f.png)
 
 General preferences pane allows you to set various CafeTran options and features, the most important probably being the Segmentation function.
 
@@ -80,7 +80,7 @@ This is where you can choose the database type or create a new TR database. Afte
 
 **Database connection button**
 
-![The Database information window](https://i.imgur.com/qxkynAD.png)
+![The Database information window](https://i.imgur.com/vJCgDpy.png)
 
 This button opens the Database information window, which allows you to view and edit the TR database information for the chosen Database type.
 
@@ -95,12 +95,7 @@ You can connect CafeTran to OpenOffice/LibreOffice’s interface and share its s
 
 Available applications: OpenOffice
 
-Related links:
-[Connecting to OpenOffice or LibreOffice](http://beijer.uk/cafetran-old-wiki/cafetran.wikidot.com/connecting-to-openoffice-or-libreoffice.html) (old unofficial wiki)
-
 **Applications connection button**
-
-![The Applications connection window](https://i.imgur.com/0Z9iIUh.png)
 
 Once you choose OpenOffice in the drop-down menu, you can click the Applications connection button, and then click the Class path button to specify the directory where OpenOffice/LibreOffice is installed on your computer. The field will be populated accordingly.
 
@@ -142,17 +137,21 @@ Related links:
 
 Path to the executable you wish to use when querying the Desktop search tool, or terminal command to apply and output within CafeTran.
 
-Additional checkbox: **Terminal tool**, OFF by default. Allows to output the search result of the command set above, in a separate tab.
+Additional checkbox: **Terminal tool**, OFF by default. Allows to output the search result of the terminal command set above, in a separate tab.
+
+ The resource query placeholder for the Desktop Search Tool command is {}. Terminal tools include, among others, ‘grep’ (Linux and Mac, also available for Windows), ‘mdfind’ (Mac spotlight in terminal). ‘find’ (Windows). Examples: grep {} /path/to/my/huge/memory.tmx, mdfind -onlyin /path/to/directory {}, find “{}” “C:\path\to\my\memory.tmx” **Note:** Use fgrep -h {} /Users/Hans/Dropbox/CafeTran/Prj/test/my_text.txt for faster searches, suppressing the file name display. See [http://cafetran.wikidot.com/using-spotlight-to-search-tms](https://web.archive.org/web/20150108071046/http://cafetran.wikidot.com/using-spotlight-to-search-tms)
+
+ You can also launch a search in a GUI desktop search tool. Example for Linux and its Recoll full-text search: /usr/bin/recoll -q {}
+
+ Setting this adds a Desktop button in the Quick search bar (see the Menu and Interface document).
 
 **Rate**
 
 To populate this field, click on the “Rate:” button. This is useful to calculate the total project cost for source or target segments. You can base the calculation to Words, Characters or All Characters.
 
-<!---TODO: Check what All characters does--->
-
 **Rate button**
 
-![Choose your rate window](https://i.imgur.com/S3LowtU.png)
+![Choose your rate window](https://i.imgur.com/mnzvP9v.png)
 
 Note: Rate can also easily be set/modified in **Statistics** (Project>Statistics>Project Statistics) from within your current project.
 
@@ -162,7 +161,7 @@ For a discussion related to rate calculation and Weighted Word Count (WWC), see 
 
 ### Segmentation
 
-This is where you set what rules CafeTran will use to segment the document(s) you translate. This section is **only for native projects**, not for bilingual files, which are usually already segmented.
+This is where you set what rules CafeTran will use to segment the document(s) you translate. This section is **only for native projects**, not for bilingual files, which are (usually) already segmented.
 
 **Drop-down menu**
 
@@ -195,14 +194,14 @@ Okapi Framework - [Ratel](http://okapiframework.org/wiki/index.php?title=Ratel) 
 
 **_A note on abbreviations and segmentation_.** In addition to fine-tuning segmentation through the SRX editor, you can also use CafeTran’s Abbreviations feature for segmentation purposes. Abbreviations will act as Exception rules, meaning that they will instruct CafeTran not to break the segments if it finds such abbreviations at document creation. This is found in Resources > Abbreviations. A project can also be scanned for abbreviations (You may need to remove and add the document back, since segmentation occurs only at project creation).
 
-Segmentation can further be adjusted manually by using the **Split** and **Join** features ( this works only for native CT projects. For external projects, CafeTran uses virtual Spit and Join).
+Segmentation can further be adjusted manually by using the **Split** and **Join** features (this works only for native CT projects. For external projects, CafeTran uses a virtual Spit and Join feature).
 
 Related links:
 
 [Navigate, Split and Join segments](https://cafetran.freshdesk.com/support/solutions/articles/6000108427-navigate-split-and-join-segments)
 
 **_Segmentation suggestion_**
-To access more already set language rules for segmentation, you may want to download and use OmegaT’s [SRX file](https://raw.githubusercontent.com/omegat-org/omegat/master/src/org/omegat/core/segmentation/defaultRules.srx).
+To access more already set language rules for segmentation, you may wish to download and use OmegaT’s [SRX file](https://raw.githubusercontent.com/omegat-org/omegat/master/src/org/omegat/core/segmentation/defaultRules.srx).
 Save the document directly from your browser and remove the .txt extension. Rename it as needed and place it in *cafetran/rules/segmentation* folder (This is on Windows and GNU/Linux. On a Mac, go to Applications and show the CafeTran.app package contents by right-clicking. The folder can be found in */Contents/Java/rules/segmentation*). It will be recognized after CT has been restarted.
 For a Trados-like segmentation, you may want to add the colon character (:) to the OmegaT’s Default rules and change Break:
 
@@ -324,7 +323,7 @@ Activation/deactivation of the Autopilot is done via the Action menu. After that
 
 ## DEFINITIONS
 
-![Definitions pane](https://i.imgur.com/k4Ed3TY.png)
+![Definitions pane](https://i.imgur.com/6eLr6De.png)
 
 Definitions pane allows you to specify some fields that can be applied to the Glossaries and Termbases (Memories for fragments) and Project configuration. It is optional in most scenarios, but useful for more information-rich terminology implementations.
 
@@ -351,7 +350,7 @@ The Definitions column names include the following fields:
 - Client column name:
 - Notes column name:
 - Reference column name: If this column name is set, the Reference field also features a button to attach a file location, an image or a link to serve as reference.
-- User’s column name (3x): Three custom column names
+- User’s column name (3x): Three custom column names.
 
 **Language column names**
 
@@ -360,9 +359,14 @@ Drop-down menus. Up to 8 different languages/variants can be set.
 This section concerns only Glossaries. CafeTran supports multilingual glossaries (glossaries that feature more than two languages/language variants). Here you can set the languages columns that will be present in new glossaries.
 
 CafeTran keeps track of all your working languages/language variants and adds them in this section.
-You may need to remove unnecessary languages/variants if you use various language pairs or do not intend to keep multilingual glossaries. When creating a new glossary, there is a Definitions button that allows you to easily set the required languages. This can also done via the glossary context menu (right-click) > Edit glossary if the glossary is already created.
 
-![Definitions button in New glossary window](https://i.imgur.com/TuqaMdz.png)
+You may need to remove unnecessary languages/variants if you use various language pairs or do not intend to keep multilingual glossaries. 
+
+Language columns should be set from left to right, before going to the next row. Don't leave a blank item before going to the next.
+
+When creating a new glossary, there is a Definitions button that allows you to easily set the required languages. This can also done via the glossary context menu (right-click) > Edit glossary if the glossary is already created.
+
+![Definitions button in New glossary window](https://i.imgur.com/eq4J1ns.png)
 
 Related links:
 [Multilingual Glossaries](https://cafetran.freshdesk.com/support/solutions/articles/6000113541-multilingual-glossaries)
@@ -371,7 +375,7 @@ Related links:
 
 ## WORKFLOW
 
-![Workflow pane](https://i.imgur.com/5BLFhSg.png)
+![Workflow pane](https://i.imgur.com/kymmZ4U.png)
 
 This pane includes some options related to various CafeTran workflows. Workflows can be selected from the drop-menu available in the Dashboard.
 
@@ -479,6 +483,12 @@ Checkbox, ON by default
 
 With this option ON, CafeTran automatically transfers source segments that contain non-translatable fragments and numbers only.
 
+**Transfer source segments with no letters to target**
+
+Checkbox, ON by default
+
+With this option ON, CafeTran automatically transfers segments that do not contain letters to the target segment.
+
 **Ignore segment status at bilingual document import**
 
 Checkbox, OFF by default
@@ -501,7 +511,7 @@ Note: This replacement option is a helper to "Transfer numbers to matches" featu
 
 ## PROMPTER
 
-![Prompter pane](https://i.imgur.com/VTN2aTm.png)
+![Prompter pane](https://i.imgur.com/yx342Fa.png)
 
 Prompter is CafeTran's auto-complete feature that uses text from various sources (Project segments, Memories [segment or fragment matches, fuzzies, hits], Glossaries, MT results, etc.). As you type the first characters of a word, CafeTran will often bring up the auto-completion menu, which allows you to quickly complete the word instead of typing it.
 
@@ -535,6 +545,12 @@ Checkbox, ON by default
 
 Option to toggle the overwriting during auto-completion.
 
+**Segment editor font**
+
+Checkbox, OFF by default
+
+Enable this option to make Prompter use the segment editor font.
+
 **Prompting starts at (char)**
 
 Default value: 3.
@@ -549,7 +565,7 @@ Minimum character length of words to be processed by the Auto-completion functio
 
 ## AUTO-ASSEMBLING
 
-![Auto-assembling pane](https://i.imgur.com/Dw8Q2bQ.png)
+![Auto-assembling pane](https://i.imgur.com/eHAYjfO.png)
 
 This pane allows you to set various auto-assembling options.
 
@@ -656,7 +672,7 @@ If enabled, auto-assembling replaces the punctuation characters as set in the fi
 
 ## AUTO-PROPAGATION
 
-![Auto-propagation pane](https://i.imgur.com/J7bfuyM.png)
+![Auto-propagation pane](https://i.imgur.com/pfJ2nX5.png)
 
 This pane lets you enable or disable various Auto-propagation options.
 
@@ -714,7 +730,7 @@ If this option is ON, the current segment status is also propagated during auto-
 
 ## GLOSSARY
 
-![Glossary pane](https://i.imgur.com/oZUE7xD.png)
+![Glossary pane](https://i.imgur.com/dOUqRgt.png)
 
 This pane features various options relevant to Glossaries (and Termbases - Memories for fragments).
 
@@ -729,9 +745,9 @@ Notes:
 
 The backslash character needs repeated to be escaped such as: <code>\\\\</code>
 
-<!--- TODO fix code --->
-
 Word dividers are single characters only.
+
+Note: If you want to add a character, say the colon or semicolon, as a word divider, you have to remove it from the Do not match field in Preferences>Memory tab and restart CafeTran Espresso.
 
 **Alternatives entries separator**
 
@@ -835,7 +851,7 @@ With this option enabled, CafeTran only shows the longest glossary match in the 
 
 ## MEMORY
 
-![Memory pane](https://i.imgur.com/PodGGjs.png)
+![Memory pane](https://i.imgur.com/Xf7UT7M.png)
 
 This pane lets you choose the assigned RAM for CafeTran and set various aspects related to Translation Memories behaviour.
 
@@ -957,7 +973,7 @@ Default value: 100
 
 Default value U+00A0
 
-Here you can insert additional Unicode characters that should be treated as spaces, which counts towards term recognition and auto-assembling.
+Here you can insert additional Unicode characters that should be treated as spaces, which counts towards term/match recognition and auto-assembling.
 
 **Do not match**
 
@@ -981,7 +997,7 @@ If enabled, CafeTran use word [stemming](https://en.wikipedia.org/wiki/Stemming)
 
 ## MEMORY SERVER
 
-![Memory server pane](https://i.imgur.com/V5RgycA.png)
+![Memory server pane](https://i.imgur.com/U5yxdNK.png)
 
 CafeTran can act as a Translation Memory server, accepting online connections and queries from other CafeTran users. In such a server mode it is possible to work in a team on a translation project. Checking the box activates the server mode. Change the default server port if the default port is already taken by another program on your computer.
 
@@ -997,16 +1013,20 @@ Check this box if you wish to restrict access to your translation memories. If t
 
 **Request dialog**
 
-Checkbox, OFF by default
+Checkbox, ON by default
 
 With this option enabled, every new connection to the server is signaled by the Request pop-up dialog.
 
 Related links:
 [Rendezvous Memory Server](https://cafetran.freshdesk.com/support/solutions/articles/6000163318-rendezvous-memory-server)
 
+**Name:** Displays the Rendezvous memory server name.
+
+**IP address:** Displays the Rendezvous memory server IP address.
+
 ## QA
 
-![QA pane](https://i.imgur.com/mJMOf3H.png)
+![QA pane](https://i.imgur.com/N30x92T.png)
 
 This pane features options related to CafeTran’s QA function (see QA menu).
 
@@ -1087,7 +1107,7 @@ Related links:
 
 ## MT SERVICES
 
-![MT services pane](https://i.imgur.com/IswznYt.png)
+![MT services pane](https://i.imgur.com/NfccXE6.png)
 
 This pane features options related to Machine Translation. Individual options can also be set via the MT context menu (see [CafeTran Espresso - Menu and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface}).
 
@@ -1174,11 +1194,10 @@ Link:
 
 **MyMemory**
 
-API parameters: Enter a valid [Translated.net](https://www.translated.net/en/) account email.  If you leave this field empty, CafeTran will use a developer API key. There is no need to enter anything to use MyMemory in CafeTran.
+API parameters: Enter a valid [Translated.net](https://www.translated.net/en/) account email.  If you leave this field empty, CafeTran will use a developer API key. There is no need to enter anything to use MyMemory in CafeTran for free.
 
 MyMemory uses a combination of Google Translate and Microsoft Translate for its suggestions. It also queries the [MyMemory](https://mymemory.translated.net/) public translation memory, returning TM matches. 
 
-Free, anonymous usage is limited to 1000 words/day.
 If you provide a valid email (“de” parameter), you enjoy 10,000 words/day.
 There is a 500 characters limit per queried segment.
 
@@ -1207,6 +1226,14 @@ Link:
 
 [IBM Watson](https://www.ibm.com/watson/services/language-translator/)
 
+**Amazon Translate**
+
+API parameters: Enter your Amazon Translate MT API Access key and API Secret key. Select the server location in the dropdown menu.
+
+Link:
+
+[Amazon Translate](https://aws.amazon.com/translate/)
+
 **Slate Desktop**
 
 Slate is a commercial offline MT solution.
@@ -1218,7 +1245,7 @@ Related links:
 
 ## WEB SERVICES
 
-![Web services pane](https://i.imgur.com/izDdWOr.png)
+![Web services pane](https://i.imgur.com/RDK2c0C.png)
 
 This pane allows you to enable a few Web services options. Network connectivity is required to use these features.
 
@@ -1261,9 +1288,21 @@ Related links:
 [Connect to TM-Town](https://cafetran.freshdesk.com/support/solutions/articles/6000115945-connect-to-tm-town),
 [CafeTran Espresso Integration](https://www.tm-town.com/blog/cafetran-espresso-integration) (TM-Town)
 
+**Amazon Polly (Text To Speech)**
+
+Text To Speech (TTS) integration in CafeTran enables the translators to listen to the currently-translated source language segment. It can be set either automatic or manual with the option to listen to target language segments (e.g during the review) as well. Amazon Polly supports over 30 languages and a selection of voices. It also offers the free tier for the first 12 months.
+
+To use it, paste the API access and secret keys in the respective fields (the API keys for Amazon Translate MT and Amazon Polly TTS are the same).
+
+When this is enabled and set up, CafeTran will show an additional Amazon Polly tab in the main translation interface, allowing you to manage the Text To Speech service (see the Menu and Interface document for more information).
+
+Link:
+
+[Amazon Polly](https://aws.amazon.com/polly/)
+
 ## APPEARANCE
 
-![Apperance pane](https://i.imgur.com/VvyMPcn.png)
+![Apperance pane](https://i.imgur.com/8qtMpea.png)
 
 This pane includes a few appearance options. Many more are available in the View menu.
 
@@ -1291,7 +1330,7 @@ Checkbox options:
 
 ## KEYBOARD SHORTCUTS
 
-![Keyboard shortcuts pane](https://i.imgur.com/sX2sHUy.png)
+![Keyboard shortcuts pane](https://i.imgur.com/ozwwlLE.png)
 
 This pane is where you can review or set most keyboard shortcuts CafeTran uses.
 
@@ -1299,11 +1338,17 @@ This pane is where you can review or set most keyboard shortcuts CafeTran uses.
 
 Clicking any item of the list opens a **keyboard shortcuts window,** which allows you to change the shortcut to your liking.
 
-![Change keyboard shortcut](https://i.imgur.com/4oZi5AC.png)
+![Change keyboard shortcut](https://i.imgur.com/EUmaU9u.png)
 
 Don’t be afraid to customize them to your liking.
 
-Below, you will find the **default keyboard shortcuts** (for GNU/Linux, Windows and Mac unless specified in parenthesis), along with their explanation. An additional section lists shortcuts found elsewhere:
+Below, you will find the **default keyboard shortcuts** (for GNU/Linux, Windows and MacOS unless specified in parenthesis), along with their explanation. An additional section lists shortcuts found elsewhere.
+
+On a Mac, some keyboard shortcuts might differ depending on the Look and Feel chosen. See related third party [shortcuts list](https://i.imgur.com/2xfyYwF.png).
+
+**Accept all**
+
+Accept all changes in the current segment
 
 **Add checked segment to memory and go to next segment**	Ctrl+Shift+Enter
 
@@ -1499,6 +1544,10 @@ Hide starting and ending tags for the current segment.
 
 Also in Action > Tags submenu.
 
+**Hide tag details** [Ctrl+Alt+T] [Mac: <!---TODO: --->]
+
+Also in Action > Tags submenu.
+
 **Hide source segment tags**	Ctrl+Alt+T (Mac: ⌃+⌥+T)
 
 Hide all the tags in the current source segment.
@@ -1510,6 +1559,12 @@ Also in Action > Tags submenu.
 Hide all toolbars in the CafeTran Espresso interface.
 
 Also in View > Toolbars submenu.
+
+**Highlight** [Not defined]
+
+Add Highlighting tags to selected target text.
+
+Also found in the Target segment editor buttons.
 
 **Insert auto-assembling**	Alt+4 (Mac: ⌃+⌥+4)
 
@@ -1707,6 +1762,10 @@ Also in Edit menu.
 
 Also in Edit menu.
 
+**Reject all**
+
+Reject all changes in the current segment.
+
 **Reload glossary**	Ctrl+Shift+L
 
 Reload the currently-selected glossary from disk.
@@ -1797,6 +1856,10 @@ Also in View menu.
 
 Also in Edit menu and with right click or context menu button on red underlined word.
 
+**Show invisible characters** [Ctlr+Shift+V]
+
+Also available in Edit menu > invisible characters and as a Source segment editor button.
+
 **Split segment** Alt+S (Mac: ⌃+⌥+S)
 
  Split the currently-selected segment into two. The segment will be split at the current cursor location in the source segment editor above.
@@ -1847,6 +1910,12 @@ Search Total Recall target segments for contents of current selection in the sou
 
 Also in Edit > Find at cursor submenu and through the dedicated TR target button in the Quick search bar.
 
+**Transfer Amazon Translate MT** [Not defined]
+
+Transfer Amazon Translate MT result to the target segment editor.
+
+Also in Translate menu.
+
 **Transfer current tag**	Alt+9 (Mac: ⌃+⌥+9)
 
 Transfer the current tag in the list of tags from the source segment to the target segment.
@@ -1862,6 +1931,12 @@ Also in Translate menu.
 **Transfer Google MT** Alt+K (Mac: ⌃+⌥+K)
 
 Transfer Google Translate MT result to the target segment editor.
+
+Also in Translate menu.
+
+**Transfer IBM Watson MT** [Not defined]
+
+Transfer IBM Watson MT result to the target segment editor.
 
 Also in Translate menu.
 
@@ -1940,3 +2015,29 @@ Hide all toolbars in the CafeTran Espresso interface. Toggles visibility for the
 Found in View > Toolbars > Hide toolbars.
 
 **Request focus in Quick search bar** Ctrl+Tab
+
+**Copy**	Ctrl+C (⌘+C)
+
+**Paste**	Ctrl+V (⌘+V)
+
+**Cut**	Ctrl+X (⌘+X)
+
+**Select all**	Ctlr+A (⌘+X)
+
+**Undo**	Ctrl+Y (⌘+Y)
+
+**Redo**	Ctrl+Z (⌘+Z)
+
+**Find and replace**	Ctrl+F (⌘+F)
+
+**Move to top of line**	Fn+Left (⌘+Left)
+
+**Move to end of line**	Fn+Right (⌘+Right)
+
+**Move to top of sentence**	Fn+Up (⌘+Up)
+
+**Move to end of sentence**	Fn+Down (⌘+Down)
+
+**Move to top of next term**	Ctrl+Right (Alt+Right)
+
+**Move to top of previous term**	Ctrl+Left (Alt+Left)

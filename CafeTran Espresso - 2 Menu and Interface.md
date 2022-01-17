@@ -8,6 +8,7 @@
     + [Dashboard’s Resources](#dashboard-s-resources)
       - [Local resources](#local-resources)
       - [TM-Town resources](#tm-town-resources)
+    + [Dashboard's context menu](#dashboard-s-context-menu)
     + [Customizing the Dashboard](#customizing-the-dashboard)
   * [1.2 New project/Project configuration dialog](#12-new-project-project-configuration-dialog)
     + [Document settings tab](#document-settings-tab)
@@ -16,6 +17,7 @@
     + [Filter options tab](#filter-options-tab)
   * [1.3 Main translation interface](#13-main-translation-interface)
     + [Segments grid icons](#segments-grid-icons)
+    + [Documents button](#documents-button)
     + [Source segment editor icons](#source-segment-editor-icons)
     + [Source segment editor context menu](#source-segment-editor-context-menu)
     + [Target segment editor icons](#target-segment-editor-icons)
@@ -24,12 +26,14 @@
     + [Matchboard context menu](#matchboard-context-menu)
     + [Tabbed panel](#tabbed-panel)
     + [Tabbed panel tab context menu](#tabbed-panel-tab-context-menu)
-    + [Memory context menu and Options](#memory-context-menu-and-options)
-    + [Glossary context menu](#glossary-context-menu)
-    + [MT engines context menu](#mt-engines-context-menu)
+    + [Memory tab and context menu](#memory-tab-and-context-menu)
+    + [Glossary tab and context menu](#glossary-tab-and-context-menu)
+    + [MT tab and context menu](#mt-tab-and-context-menu)
     + [Google MT context menu](#google-mt-context-menu)
     + [ProZ tab and context menu](#proz-tab-and-context-menu)
     + [TM-Town tab and context menu](#tm-town-tab-and-context-menu)
+    + [Amazon Polly (Text to Speech) tab](#amazon-polly--text-to-speech--tab)
+    + [(Track) Changes tab](#-track--changes-tab)
     + [Quick search bar](#quick-search-bar)
     + [Advanced Search (Find and Replace) window](#advanced-search--find-and-replace--window)
 - [2. Menu items](#2-menu-items)
@@ -39,6 +43,7 @@
   * [Edit menu](#edit-menu)
     + [Edit > Find at cursor submenu](#edit---find-at-cursor-submenu)
     + [Edit > Target segment submenu](#edit---target-segment-submenu)
+    + [Edit > Track changes submenu](#edit---track-changes-submenu)
     + [Edit > Invisible characters submenu](#edit---invisible-characters-submenu)
   * [View menu](#view-menu)
     + [View > Window layout submenu](#view---window-layout-submenu)
@@ -58,6 +63,7 @@
       - [CafeTran Statuses explained](#cafetran-statuses-explained)
     + [Filter > Origin submenu](#filter---origin-submenu)
     + [Filter > Sort submenu](#filter---sort-submenu)
+    + [Filter > Repetitions submenu](#filter---repetitions-submenu)
   * [QA menu](#qa-menu)
     + [QA > Word lists submenu](#qa---word-lists-submenu)
     + [QA > Consistency checks submenu](#qa---consistency-checks-submenu)
@@ -87,11 +93,11 @@
 
 # CAFETRAN ESPRESSO - MENU AND INTERFACE
 
-*Updated for CafeTran Espresso 2020 (10.7.2)*
+*Updated for CafeTran Espresso 11 Poppy Seed Roll (2022)*
 
 A trip to CafeTran’s interface and menus.
 
-By default, help tips are enabled in View > Toolbars submenu.
+By default, help tips are enabled in View > Toolbars submenu. The description appears as a tooltip when you hover the cursor and/or on the status bar (at the bottom of the CafeTran window).
 
 # 1. Interface
 
@@ -109,7 +115,7 @@ The Dashboard is the first screen you see when you launch CafeTran. This is wher
 
 **Start new project (New)** = Button. (Select language pair first, and then:) Click to start the creation of the new project.
 
-You will be asked to browse to a source document (or folder containing the source documents if you have checked the option “Multiple document project” in the Dashboard menu). Alternatively, you can simply Drag and drop the document or folder on the Dashboard.
+You will be asked to browse to a source document (or folder containing the source documents if you have checked the option “Multiple document project” in the Dashboard menu ≡). Alternatively, you can simply Drag and drop the document or folder on the Dashboard.
 
 This will open the New project configuration dialog (see below).
 
@@ -123,30 +129,30 @@ This will open the New project configuration dialog (see below).
 
 Note: If you haven’t created a project yet, this button is not displayed.
 
-**Dashboard menu button** = This is a button you will use much, since it allows you to access additional project options and settings (see below for Dashboard menu options).
-
-![Dashboard menu button](https://i.imgur.com/R2Kxc0J.png)
+**Dashboard menu button ≡** = This is a button you will use much, since it allows you to access additional project options and settings (see below for Dashboard menu options).
 
 ### Dashboard menu options
 
-![Dashboard context menu](https://i.imgur.com/Qky4lTe.png)
+![Dashboard context menu](https://i.imgur.com/3bzXA6L.png)
 
-Clicking the Dashboard menu button allows you to access additional project options and settings:
+Clicking the Dashboard menu button ≡ allows you to access additional project options and settings:
 
 - **Project type** = **Submenu**. Choose how you’d like to use CafeTran Espresso for your new project (see submenu items below).
 - **Multiple document project** = Check this menu item to choose a folder, instead of a single document, so all documents within are added as source documents.
 - **Recent project templates** = Quickly access recently used Project Templates. Learn more about [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
 - **Open project template** = Open an already saved project template. You will be asked to select which template file to open. Learn more about [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
-- **Save project template** = Save a project template as an XML file. You will be asked to select a file location. Suggestion: Create a “templates” folder in *cafetran* or *cafetran/projects* folder and save your templates there. Learn more about [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
+- **Save in project template** = Save the current state in a project template as an XML file. You will be asked to select a file location. Suggestion: Create a “templates” folder in *cafetran* or *cafetran/projects* folder and save your templates there. Learn more about [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates). <!---TODO: --->
+- **Remove current project template** = Self-explanatory.
 - **Choose your rate** = You can set your rate for statistics calculations here. Can also be set in Preferences and in the Statistics tab of an open project.
 - **Remove working language pair** = All source and target languages you select in the Dashboard’s corresponding drop-down menus are added at the very start of the available language/language variant list, so that you can easily re-use your working languages. If you wish to remove a working language pair, set the pair you want to remove in the drop-down menus, and then use this option.
 - **Dark Dashboard** = Toggle the alternative dark Dashboard theme.
 - **Preferences** = Open CafeTran’s Preferences/Options
+- **New Dashboard** = <!---TODO: --->
 - **Close Dashboard** = Close the Dashboard and show CafeTran’s main translation interface and menus, with no projects loaded.
 
 #### Dashboard menu options > Project type submenu
 
-![Dashboard menu > Project type](https://i.imgur.com/dhmJ973.png)
+![Dashboard menu > Project type](https://i.imgur.com/ECkuTvd.png)
 
 This submenu is the workflow selector. It allows you to choose how you’d like to use CafeTran Espresso for your new project. Here are the options/workflows:
 
@@ -177,6 +183,12 @@ By right clicking a Translation memory (except Project memory), a Glossary (Proj
 
 If you enable TM Town (see Preferences > Web services), CafeTran also displays a new tab, allowing you to check TM-Town’s available resources and options (via the context menu).
 
+### Dashboard's context menu
+
+![Dashboard's context menu](https://i.imgur.com/w1hYHcu.png)
+
+When you right-click on one of the checkbox items (resources) in the Dashboard, you have a choice to Remove that resource, Remove all selected resources, and (under Free web resources and images) Edit the selected resource info.
+
 ### Customizing the Dashboard
 
 CafeTran Espresso currently offers two reversed themes: the standard theme and the Dark Dashboard.
@@ -188,8 +200,6 @@ GNU/Linux>Windows: *cafetran/graphics/backgrounds*
 Mac users: */Applications/CafeTran.app* [Right click>Show package contents]*/Contents/Java/graphics/backgrounds*
 
 Note: The replaced images are likely to be replaced with every update.
-
-Tip: Simply renaming texture.jpg and texture2.jpg results in a nice Dark Dashboard theme.
 
 ## 1.2 New project/Project configuration dialog
 
@@ -211,7 +221,7 @@ Common to all tabs are the following items:
 
 ### Document settings tab
 
-![New project configuration > Document settings](https://i.imgur.com/VxZLe0o.png)
+![New project configuration > Document settings](https://i.imgur.com/Cy4oDMr.png)
 
 **Source language** = Here you can select or adjust the source language for the project. This field is prepopulated according to the source language chosen in the Dashboard.
 
@@ -223,13 +233,13 @@ For more information on the supported (and unsupported) file types, see the [Caf
 
 ### Memory & glossary tab
 
-![New project configuration > Memory & glossary tab](https://i.imgur.com/PqrdCYU.png)
+![New project configuration > Memory & glossary tab](https://i.imgur.com/C4UAZW1.png)
 
 Here you can check or uncheck the active Memories and Glossaries. Memory options can also be set by clicking the gear icon.
 
 ### Project properties tab
 
-![New project configuration > Project properties tab](https://i.imgur.com/y58ilUz.png)
+![New project configuration > Project properties tab](https://i.imgur.com/tes48oo.png)
 
 Additional XML property fields to be stored in the XLIFF project file. The field titles can be changed to whatever you prefer.
 
@@ -239,7 +249,7 @@ If you have set a TXT file for Client and/or Subject in Preferences > Definition
 
 ### Filter options tab
 
-![Filter options tab](https://i.imgur.com/NbBrblA.png)
+![Filter options tab](https://i.imgur.com/1x08FNi.png)
 
 Filter options tab offers additional options. Filter options are only available for some file formats.
 
@@ -249,14 +259,15 @@ For example, the screenshot above shows the **Excel filter** options:
  - **Import target column** allows you to specify from which column you wish to import content in the translated segments
  - **Import notes column** allows you to specify which column you wish to import as Notes
  - **Export column** allows you to specify to which column you want to export your translation
+ - **No segmentation in cells** check-box. If enabled, this option treats each cell as a segment, overriding any segmentation settings.
 
 ## 1.3 Main translation interface
 
-![CafeTran’s translation interface](https://i.imgur.com/PpzeRs4.png)
+![CafeTran’s translation interface](https://i.imgur.com/AzlMd6W.png)
 
 CafeTran’s translation interface is highly customizable.
 
-Here’s a quick overview of the main UI elements:
+Here’s a quick overview of the main UI elements and their terminology:
 
 <!--- TODO EXPAND --->
 
@@ -267,16 +278,11 @@ Here’s a quick overview of the main UI elements:
   - **Matchboard**: An important CafeTran feature, the Matchboard conveniently aggregates matches/results from various resources (memory segments and fragments, glossary entries, Machine Translation suggestions, etc.) in one place. Technically, it is still a Tab, so you can dock it anywhere, just like one.
 - **Quick Search bar**: Found at the top, just below the Menu, it allows you to quickly query different resources and conduct various searches (these can be launched via keyboard shortcuts as well) in Project or TM Source and Target segments, glossaries, MT engines, web resources, etc. Additional search and filtering settings (and the all important Find and Replace operations) are accessible via the standard Ctrl+F (or Cmd+F) command, which brings up the (Advanced) Search window. More filtering actions can be performed via the Filter menu.
 
-For more information, read on or see the
-[User Interface](https://cafetran.freshdesk.com/support/solutions/folders/6000058196) Solutions category.
-
-<!--- TODO Add link to usage document --->
-
-<!--- TODO Add link to  ## Customizing CafeTran's Translation interface  --->
+For more information, read on or see the [User Interface](https://cafetran.freshdesk.com/support/solutions/folders/6000058196) Solutions category. The [Getting comfortable](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/6-Getting-comfortable) reference document also discusses how you can customize CafeTran's interface to your liking.
 
 ### Segments grid icons
 
-![Segments grid icons](https://i.imgur.com/QIf6QZm.png)
+![Segments grid icons](https://i.imgur.com/4XGEf7S.png)
 
  - **Export/Finalize** = Export a translated copy of the source document. The Export button becomes Finalize if you are working on an external bilingual file format.
  - **Progress bar(s)** = The first bar displays the character-based progress. The second optional progress bar displays the segment-based progress. The first can be enabled in Project > Statistics > Automatic update of project statistics.
@@ -285,15 +291,28 @@ For more information, read on or see the
  - **Next page** = Navigate to the next page of segment pairs in the grid.
  - **Last page** = Navigate to the last page of segment pairs in the grid.
    Note: The number of segments per page can be set in Preferences > General > Project page size (units) field.
-- **Documents** = Open a dialog listing all project source documents, and choose which one to actively display within CafeTran. This icon is only displayed if the project contains (or contained) more than one document.
+- **Documents** = Open a dialog listing all project source documents, and choose which one to actively display within CafeTran. This icon is only displayed if the project contains (or contained) more than one document. See below for more information.
 - **Segments filter** = Toggle the usage of the segments filter, which enables displaying only the segment pairs matching the criteria specified in the Filter menu above. This icon is only displayed if a filter is active.
+
+### Documents button
+
+![Documents](https://i.imgur.com/qpGFQRo.png)
+
+In multidocument projects, clicking the Documents button in the Segments grid opens a window listing all the documents in the project.
+
+**Glue all documents virtually** = Virtually merge all documents in one view (the grid still shows where a document stops and the next one starts), allowing project-wide concordance searches and search/replace operations. 
+
+If already on glued view, this becomes **Unglue a document**.
+
+Note: Even without this setting, Auto-propagation to other documents occurs when enabled in Preferences > Auto-propagation.
+
+**Numbered documents list** = All the documents of the project are listed in this view, with the current working document marked. To jump to another document, simply click on it or use the arrow keys and press Enter.
 
 ### Source segment editor icons
 
-![Source segment editor icons](https://i.imgur.com/h6LtL3Z.png)
+![Source segment editor icons](https://i.imgur.com/VmdadYZ.png)
 
-1. **Quick search** = Toggle the Quick search bar on/off.
-2. **Increase font size** = Increase the font size in the source and target segment editors.
+1. **Increase font size** = Increase the font size in the source and target segment editors.
 3. **Decrease font size** = Decrease the font size in the source and target segment editors.
 4. **Change case** = Cycles through multiple capitalization schemes for the target segment: first upper-cased, all lower-case, all upper-case.
 5. **Undo** = Undo the previous edit actions in the target segment.
@@ -301,13 +320,17 @@ For more information, read on or see the
 7. **Cut** = Cut currently-selected text to clipboard.
 8. **Copy** = Copy currently-selected text to clipboard.
 9. **Paste** = Paste clipboard contents.
-10. **Show invisible characters** = Display non-printable characters, such as spaces and line breaks.
-11. **Translate selected segment** = Repeat resource search for full source segment, or for a highlighted portion.
-12. **Transfer MT from web page** = Transfer the MT target result from the web page interface to the target segment editor.
+10. **Show invisible characters** = Toggle the display of non-printable characters, such as spaces and line breaks. Preferences can be found in Edit>Invisible characters.
+10. **Translate selected segment** = Repeat resource search for full source segment, or for a highlighted portion. When there is no selection, CafeTran takes the current segment for MT search.
+    This button and keyboard shortcut transfers the source segment or selection to the open Web Machine Translation. 
+    Note: The transfer of the source text for translation into the text boxes on the web pages of some MT service providers via the keyboard shortcut can work only after the focus is set on the given webpage (e.g via the mouse click). To do so, you can use the menu action (and the keyboard shortcut) in View > Segment editors > Request focus in target segment editor, which cycles the focus between CT target segment editor and the source segment box on the MT resource webpage. 
+    Tip: If the MT translation is not initiated after this action, try adding a space at the end of the text in the source text box.
+    To then transfer the web MT suggestion to the target segment editor, you can use the next action, Transfer MT from web page.
+12. **Transfer MT from web page** = Transfer the MT target result from the web page interface to the target segment editor. This replaces any existing text in the editor.
 
 ### Source segment editor context menu
 
-![Source segment editor context menu](https://i.imgur.com/iP64bO4.png)
+![Source segment editor context menu](https://i.imgur.com/FfbEtfF.png)
 
  - **Ask KudoZ question** = Ask a KudoZ (ProZ terminology) question directly via CafeTran. Requires a ProZ.con sign-in.
  - **Ask selection to non-translatable fragments** = Quickly add the selected text to the Non-translatables file. Non-translatables can be easily transferred via the F4 menu.
@@ -321,18 +344,42 @@ For more information, read on or see the
 
 ### Target segment editor icons
 
-![Target segment editor icons](https://i.imgur.com/hFsWKC0.png)
+![Target segment editor icons](https://i.imgur.com/bgIhw8x.png)
 
 1. **Add segment to memory and go to next segment** = Add your translation of this segment to your translation memories, and move on to the next segment in the source document.
+
 2. **Move to the previous segment** = Move to the previous segment in the source document (without modifying your translation memories).
+
 3. **Move to the next segment** = Move to the next segment in the source document (without modifying your translation memories).
+
 4. **Join segments** = Merge the contents of the next source segment into the currently-selected segment. The next segment will also be eliminated.
+
 5. **Split segments** = Split the currently-selected segment into two. The segment will be split at the current cursor location in the source segment editor above.
+
 6. **Transfer to target segment editor** = Transfer the contents of the source segment editor (or the current selection) directly to the target segment editor.
+
 7. **Mouse tag placement** = When enabled, tags can be added to the target segment simply by left-clicking where you’d like to place a tag. If you select a word or a word string, it is enclosed by two tags.
+
 8. **Add fragment to memory** = Create a new translation memory fragment. Any highlighted portion of the source/target segments will be preset in the resulting “New fragment” dialog.
+
+   You can "Skip new term window" by enabling, this option in Preferences > Glossary, which extends to "Add fragment to memory".
+   An additional method for adding selected fragments to the fragments-enabled translation memory by single-click works as follows: 
+
+   1. Select a term in the source segment.
+   2. Select its translation in the target segment.
+   3. Click the chosen glossary or translation memory pane to add the new entry there
+
 9. **Add term to glossary** = Create a new glossary entry. Any highlighted portion of the source/target segments will be preset in the resulting “New term” dialog.
+
+   You can "Skip new term window" by enabling, this option in Preferences > Glossary.
+   An additional method for adding selected terms to the glossary by single-click works as follows: 
+
+   1. Select a term in the source segment.
+   2. Select its translation in the target segment.
+   3. Click the chosen glossary or translation memory pane to add the new entry there.  
+
 10. **Add segment note** = Add an annotation about this segment; it will appear below the segment in the grid pane, marked with an “N”.
+
 11. **Select segment status** = Drop-down menu. Choose a segment status for the translated segments. Choices: Translate, Check, Lock, Version, Approve. Default: Translate.
 
 Additional items (not pictured): **AutoNext** (checkbox) when using Edit > Bind external editor, **Timer icon ON/OFF**  to enable Autopilot (Action > Autopilot).
@@ -341,7 +388,7 @@ Note on the **Split/Merge feature**: CafeTran Espresso allows **virtual joining 
 
 ### Target segment editor context menu
 
-![Target segment editor context men](https://i.imgur.com/4AxiSyD.png)
+![Target segment editor context men](https://i.imgur.com/6SpsVNT.png)
 
 Accessible via right click or the context menu keyboard shortcut.
 
@@ -360,7 +407,7 @@ Accessible via right click or the context menu keyboard shortcut.
   13. **Highlight** = Wrap selected text with highlight tags.
   14. **Alternative spellings** = If you open the context menu while on a word underlined by the spell checker, you also get alternative spelling suggestions.
   15. **Add to dictionary** = Last option adds the word to the custom user’s spelling dictionary.
-  16. **Ignore** = Ignore this spelling mistake for the current session.
+  16. **Ignore** = Ignore this spelling mistake for the current session/project.
 ### Matchboard (and Matchbar)
 
 ![Matchboard](https://i.imgur.com/oad9rN9.png)
@@ -385,24 +432,27 @@ The Matchboard can be docked or floated as any other tab.
 
 ### Matchboard context menu
 
-![Matchboard context menu](https://i.imgur.com/Cb1rtyx.png)
+![Matchboard context menu](https://i.imgur.com/dGQdGrV.png)
 
-You can select which results and matches to display in the Matchboard, along with some sorting options and an option to shorten match information.
+In this context menu, you can manage what (and how it) is displayed in the Matchboard.
+
+You can select which results and matches to display in the Matchboard, along with some sorting options and an option to shorten match information to save screen estate.
+
+- Sorting matches can be done **alphabetically**, **by quality**, **by length** and **by order in segment**. Pick whichever makes more sense. 
+- Fuzzy source segments helps compare the source segments for fuzzy TM matches. This can also be done by using the F1 key or opening the TM tab).
 
 ### Tabbed panel
 
 ![Tabbed panel](https://i.imgur.com/PgsAEqc.png)
 
-The tabbed panel is home to different resources organized in tabs. These can be Translation memories, Glossaries, MT engines, Statistics, the Matchboard, web resources as well as web services such as ProZ or TM-Town, but also Notepad documents, Images, HTML and website previews, the internal PDF viewer and the Frequent words.
+The tabbed panel is home to different resources organized in tabs. These can be Translation memories, Glossaries, MT engines, Statistics, the Matchboard, web resources (including web MT services) as well as web services such as ProZ or TM-Town, but also Notepad documents, Images, HTML and website previews, the internal PDF viewer and  Frequent words, Track changes and Amazon Polly Text To Speech.
 
 The resources can be re-organized in various ways or docked to other panes, as described below. If tabs take more than one row, double-clicking any tab toggles the wrapping of tabs in one row. Options are displayed for each tab when right-clicking to bring the context menu.
 ### Tabbed panel tab context menu
 
-![Tabbed panel tab context menu](https://i.imgur.com/NvaDnMz.png)
+![Tabbed panel tab context menu](https://i.imgur.com/Ag7cpUh.png)
 
 Many of these items are also available via the View > Tabs submenu, which features some additional tab actions (such as select next or previous tab).
-
-<!--- TODO LATER show this in practice --->
 
 - **Dock tab to window vertically - right** = Dock the currently-selected tab to a permanently-visible position at the right-hand side of the main window.
 - **Dock tab to window vertically - left** = Dock the currently-selected tab to a permanently-visible position at the left-hand side of the main window.
@@ -420,11 +470,11 @@ Many of these items are also available via the View > Tabs submenu, which featur
 - **Close other tabs** = Close all resource tabs, besides the one currently-selected.
 - **Close tab** = Close the currently-active resource tab.
 
-### Memory context menu and Options
+### Memory tab and context menu
 
-![Memory context menu](https://i.imgur.com/JGYTX2r.png)
+![Memory context menu](https://i.imgur.com/t28hEPS.png) 
 
-The TM context menu can be accessed by right-clicking inside the pane of a specific Translation Memory.
+The TM context menu can be accessed by right-clicking inside the pane of a specific Translation Memory tab.
 
  - **Forward** = Browse the selected memory Forward. TMX units are displayed in pages, based on the number of segments defined in Preferences (Options) > General > Project page size (units) [default value is 50]. You can achieve the same with the Forward button in the Quick search bar.
  - **Back** = Browse the selected memory Back. TMX units are displayed in pages, based on the number of segments defined in Preferences (Options) > General > Project page size (units) [default value is 50]. You can achieve the same with the Back button in the Quick search bar.
@@ -443,9 +493,9 @@ The TM context menu can be accessed by right-clicking inside the pane of a speci
 
 Memory options are explained in detail in a separate document: “[CafeTran TM options](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/3-TM-options)”.
 
-### Glossary context menu
+### Glossary tab and context menu
 
-![Glossary context menu](https://i.imgur.com/7O8sZsF.png)
+![Glossary context menu](https://i.imgur.com/Gqg163C.png)
 
 This is the context menu you get when right-clicking inside a glossary tab. It allows you to quickly change various glossary options
 
@@ -465,9 +515,17 @@ This is the context menu you get when right-clicking inside a glossary tab. It a
 - **Stop automatic matching** = If enabled, the glossary entries will not be matched automatically against the source text of the current segment. This also affects the matchboard results. You will still be able to search the glossary manually.
 - **Terms consistency check** = If enabled, the glossary will be used for the self-titled QA check, allowing you to check for segment pairs that do not have terms consistent with glossary entries.
 
-### MT engines context menu
+Relate links:
 
-![MT engines context menu](https://i.imgur.com/A3zOojh.png)
+[Working with Glossaries](https://cafetran.freshdesk.com/support/solutions/folders/6000058179) (category)
+
+### MT tab and context menu
+
+![MT engines context menu](https://i.imgur.com/3aopMvw.png)
+
+When enabled, each MT service has a separate tab in the tabbed interface, where the MT suggestions appear (along with the Matchboard, by default).
+
+To insert the displayed MT suggestion, you can left click on it.
 
 Note: Some of the MT-related preferences can be set in Preferences > MT services.
 
@@ -482,7 +540,7 @@ Related links:
 
 ### Google MT context menu
 
-![Google MT context menu](https://i.imgur.com/LQchkjE.png)
+![Google MT context menu](https://i.imgur.com/BgwCfRM.png)
 
 The Google MT engine context menu additionally allows you to choose between Neutral Machine Translation and Phrase-Based Machine Translation.
 
@@ -494,7 +552,7 @@ The Google MT engine context menu additionally allows you to choose between Neut
 
 In default view, the ProZ.com tab shows your ProZ.com user information, as well as the above buttons, allowing you to browse KudoZ questions, Ask a KudoZ question, Search ProZ resources for the selected source term, or Share information about what you are working on to promote the work you do and track your project history over time.
 
-![ProZ context menu](https://i.imgur.com/Yvz27sM.png)
+![ProZ context menu](https://i.imgur.com/kES8l8r.png)
 
 If you right-click within the ProZ.com tab, you can access its context menu options:
 
@@ -524,7 +582,7 @@ TM-Town is a web service for translators helping them match with their clients. 
 
 TM-Towns tab interface displays the above buttons, allowing you to browse your MT-Town Documents, Upload the currently open project TMs or glossaries, initiate a segments or a terms search, display your TM-Town details, and open your TM-Town account in a browser.
 
-![TM-Town context menu](https://i.imgur.com/hBJibN2.png)
+![TM-Town context menu](https://i.imgur.com/B6zkqKD.png)
 
 If you right-click within the TM-Town tab, you can access its context menu options:
 
@@ -540,6 +598,53 @@ If you right-click within the TM-Town tab, you can access its context menu optio
 
 Related links:
 [Connect to TM-Town](https://cafetran.freshdesk.com/support/solutions/articles/6000115945-connect-to-tm-town)
+
+### Amazon Polly (Text to Speech) tab
+
+![Amazon Polly tab](https://i.imgur.com/x0nBYtc.png)
+
+This tab is appears when Edit (CafeTran Espresso) > Preferences > Web services > Amazon Polly (Text To Speech) is set up and enabled.
+
+Text To Speech (TTS) integration in CafeTran enables the translators to listen to the currently-translated source language segment.
+
+It can be set either automatic or manual with the option to listen to source or target language segments (e.g during the review). Amazon Polly supports over 30 languages and a selection of voices. It also offers the free tier for the first 12 months. Please check [here](https://aws.amazon.com/polly/) for details. 
+
+After receiving the API secret and access keys from Amazon, you need to paste them in CafeTran's Preferences > Web services tab > Amazon Polly (TTS) > the API key button > the API Access and Secret key fields.
+
+**Voice** (drop-down menu): Select the TTS voice (and) language.
+**Engine** (drop-down menu): Select the engine type (standard voices or neural voices).
+**Language** (drop-down menu): Select if you want to TTS show occur on the source or the target segments. 
+**Stop** (checkbox): Stop the automatic TTS.
+**Speak** (button): Manually execute TTS on the current segment.
+
+### (Track) Changes tab
+
+<!---TODO: Add screeenshot --->
+
+This tab appears when Edit > Track changes > Manage is enabled. It lets you conveniently see the tracked changes (additions and deletions) and Accept or Reject edits made to the current target segment.
+
+This feature works for native, Trados and possibly other external projects, making it possible to work on Trados reviewer assignments.
+
+**Change** column: Content of the addition (+) or deletion (-).
+**Author** column: Author name. In CafeTran, this can be set in Preferences > General > User ID.
+**Date** column: Recorded date of the change.
+
+Selecting a specific row highlights the edit in the target segment editor. Changes can be further edited in the editor. Just add or remove content between the + or - tags.
+
+Changes made in the current segment will show up in this table when you visit the segment after moving to another one.
+
+**Action buttons:**
+
+**Accept** = Accept the selected change
+**Reject** = Reject the selected change
+**Accept all** = Accept all changes in the current segment
+**Reject all** = Reject all changes in the current segment
+
+**Checkboxes**:
+
+**Go** = Go to next segment once all changes have been accepted/rejected in the current segment.
+**Translate** = Work in the translate mode while tracking changes. The translate mode is the default mode. Modes can be selected in the target segments editor drop-down menu.
+**Record** = Record changes in the current segment. By activating this option, CafeTran will track the edits that are made.
 
 ### Quick search bar
 
@@ -574,7 +679,7 @@ Related links:
 
 ### Advanced Search (Find and Replace) window
 
-![Find and replace window](https://i.imgur.com/FPaE46j.png)
+![Find and replace window](https://i.imgur.com/uppQvHY.png)
 
 In addition to the Quick search bar and various keyboard shortcuts for querying different resources, CafeTran offers a powerful and advanced Find and Replace feature, available via the Ctrl + F (or Cmd + F in OS X) shortcut.
 
@@ -629,7 +734,7 @@ Related links:
 
 ## Project menu
 
-![Project menu](https://i.imgur.com/yEEPOMU.png)
+![Project menu](https://i.imgur.com/WfuUWO5.png)
 
 **Project > New project** = Create a new translation project. The current active project will be closed, and the Project Dashboard will be displayed.
 
@@ -671,13 +776,15 @@ Here you can export your documents, export and import bilingual documents, and c
 
 ### Project > Statistics submenu
 
-![Project > Statistics submenu](https://i.imgur.com/Ex9oS0Q.png)
+![Project > Statistics submenu](https://i.imgur.com/k53alOu.png)
 
 Add a new tab displaying statistics about the current project.
 
 **Project > Statistics > Project statistics** = Display general project statistics (see screenshot below).
 
 ![Project statistics](https://i.imgur.com/j97H1wX.png)
+
+CafeTran also shows statistics for checked vs unchecked, approved and approved segments (not pictured here).
 
 The **STOP/START button** allows you to pause or resume your session progress.
 
@@ -706,7 +813,7 @@ Suggestion: This is a nice option to keep enabled as it provides better sense of
 
 ### Project > Export and exchange submenu
 
-![Project > Export and exchange submenu](https://i.imgur.com/Pez46aw.png)
+![Project > Export and exchange submenu](https://i.imgur.com/RKIdET7.png)
 
 Here you can export your documents, export and import bilingual documents, and convert to various formats for exchange or save a package.
 
@@ -766,7 +873,7 @@ Note: the option Filter > Source and Target segments preview also determines the
 
 ## Edit menu
 
-![Edit menu](https://i.imgur.com/qHPcSft.png)
+![Edit menu](https://i.imgur.com/5BTdB6o.png)
 
 **Edit > Find** = Open the “Find and replace” dialog, which provides extensive options for searching resources and segments.
 
@@ -797,6 +904,8 @@ Related links:
 
 **Edit > Target segment** = **Submenu**. Text manipulation operations for the current target segment (see submenu items below).
 
+**Edit > Track changes** = **Submenu**. Manage the track changes feature (see submenu items below).
+
 **Edit > Invisible characters** = **Submenu**. Choose how to display the special/non-printable characters, such as spaces, non-breaking spaces and carriage returns.
 
 **Edit > Show Unicode number** = Toggle the display of the Unicode value of the character to the right of the cursor, at the top right of the CafeTran interface. This feature can be used to identify characters, like special spaces, etc.
@@ -813,6 +922,10 @@ Related links:
 
 **Edit > Spell checker** = Choose a spell checker dictionary. Links are also provided to download dictionaries. See also [Installing a Spell Checking Dictionary](https://cafetran.freshdesk.com/support/solutions/articles/6000110210-installing-a-spell-checking-dictionary).
 
+Two of the best places to download CafeTran-compatible spellchecking dictionaries are [FreeOffice](https://www.freeoffice.com/en/download/dictionaries) and [MemoQ](https://hunspell.memoq.com) Hunspell dictionaries.
+
+Tip: Consider installing spellchecking dictionaries both for your source and target languages. Source language dictionaries can be used for catching plurals, declenchions, and other alternative forms of a word in glossary matches.
+
 **Edit > Edit user’s spelling dictionary** = Edit your custom spelling dictionary.
 
 **Edit > Show alternative spelling** = Display a list of possible alternate spellings or replacements for the word immediately surrounding or preceding the cursor.
@@ -823,7 +936,7 @@ Related links:
 
 ### Edit > Find at cursor submenu
 
-![Edit > Find at cursor submenu](https://i.imgur.com/o4UI1Sl.png)
+![Edit > Find at cursor submenu](https://i.imgur.com/Qdojz5c.png)
 
 Search resources for selected contents in the source (or target) segment editor (see below).
 
@@ -855,13 +968,11 @@ For more information on the Default scope, see the Quick search bar and the Adva
 
 ### Edit > Target segment submenu
 
-![Edit > Target segment submenu](https://i.imgur.com/jgh8k7Y.png)
-
-<!---TODO LATER explain how to manually write these tags--->
+![Edit > Target segment submenu](https://i.imgur.com/Bmvg8Vy.png)
 
 **Edit > Target segment > Bold** = Wrap selected text with bold tags.
 
-**Edit > Target segment > Italic** = Wrap selected text with italics tags.
+**Edit > Target segment > Italic** = Wrap selected text with italics tags. Uses the "i" tag.
 
 **Edit > Target segment > Underline** = Wrap selected text with underline tags.
 
@@ -872,6 +983,8 @@ For more information on the Default scope, see the Quick search bar and the Adva
 **Edit > Target segment > Highlight** = Wrap selected text with highlight tags.
 
 Note: In compatible native Projects (Word, Excel, etc.), the above tags can also be entered manually, by typing the corresponding letter and pressing the ESC key. You need to do this at the beginning and the end of the selected text, to wrap it with these double tags.
+
+For bold and italic, you can also press the corresponding tag letter after having selected text in the target segment editor.
 
 Bold = Type B, then press ESC.
 Italic = Type I, then press ESC.
@@ -920,9 +1033,18 @@ Also through Change to title case icon in Source segment editors.
 
 **Edit > Target segment > Automatic case adjustment** = This feature tries to adjust the case of the target segment while typing.
 
+### Edit > Track changes submenu
+![Track changes submenu](https://i.imgur.com/72f1itl.png)
+
+**Edit > Track changes > Manage** = When enabled, CafeTran opens the Changes tab, where you can manage the track changes feature. See the (Track) Changes tab section for more details.
+
+**Edit > Track changes > Accept all** = Accept all changes in the current segment. 
+
+**Edit > Track changes > Reject all** = Reject all changes in the current segment.
+
 ### Edit > Invisible characters submenu
 
-![Edit > Invisible characters submenu](https://i.imgur.com/2HUeS6O.png)
+![Edit > Invisible characters submenu](https://i.imgur.com/9kwWEW2.png)
 
 **Edit > Invisible characters > Show invisible characters** = Toggle the display of special/non-printable characters, such as spaces, non-breaking spaces, and carriage returns.
 
@@ -934,7 +1056,7 @@ Also as a button above the source segment editor.
 
 ## View menu
 
-![View menu](https://i.imgur.com/7y7PddA.png)
+![View menu](https://i.imgur.com/ACpG9fA.png)
 
 **Show menus:** By default some menus are hidden, to reduce complexity. Consider toggling their visibility, depending on your needs.
 
@@ -978,7 +1100,7 @@ Hidden if already set to Detached.
 
 ### View > Window layout submenu
 
-![View > Window layout submenu](https://i.imgur.com/yhv6eSv.png)
+![View > Window layout submenu](https://i.imgur.com/014A6TB.png)
 
 Choose between the available Window layout options, which determine how the main sections of the interface are arranged: the segment grid, the segment editors, and the tabbed pane. Of course, these can be further customized.
 
@@ -1001,7 +1123,7 @@ Related links:
 
 ### View > Segment editors submenu
 
-![View > Segment editors submenu](https://i.imgur.com/2KOrXNw.png)
+![View > Segment editors submenu](https://i.imgur.com/DZlolAq.png)
 
 Settings specific to the segment editors/
 
@@ -1027,11 +1149,11 @@ Hidden if already set to Vertical.--->
 
 **View > Segment editors > Cycle focus with tab key** = Toggle whether the tab key will cycle segment editor focus.
 
-**View > Segment editors > Request focus in target segment editor** = Focus the target segment editor.
+**View > Segment editors > Request focus in target segment editor** = Focus the target segment editor. Request focus in target segment editor can also cycle the focus between CT target segment editor and the source segment box on the MT resource webpage. This is convenient for those web resources that require focus in the source language box to trigger the automatic translation process.
 
 ### View > Themes submenu
 
-![View > Themes submenu](https://i.imgur.com/hBjyR4x.png)
+![View > Themes submenu](https://i.imgur.com/pQTTy8m.png)
 
 General interface themes for CafeTran (in addition to the Look and feel theme chosen in Preferences > Appearance). Changing a theme will require a program restart.
 
@@ -1041,35 +1163,40 @@ Additionally:
 
 Related links:
 [Themes](https://cafetran.freshdesk.com/support/solutions/articles/6000115530-themes)
-<!--- TODO LATER, link to usage --->
 
 ### View > Colors submenu
 
-![View _ Colors submenu](https://i.imgur.com/ms2felT.png)
+![View _ Colors submenu](https://i.imgur.com/aTlVdrQ.png)
+
 Set the colors of various CafeTran interface elements.
 
-<!--- TODO LATER Add color information --->
+Selecting a setting to change opens a dialog where you can pick a color from different tabs/color spaces: Swatches (color palettes), HSV (hue, saturation, value), HSL (hue, saturation, lightness), RGB (red, green, blue), CMYK (cyan, magenta, yellow, black). Choosing the RBG tab lets you set the Hex color code.
+
+<!--- TODO LATER Add more color information --->
+<!---TODO: New screeshot--->
 
 - Background: Click on a pane, then change the background color for that pane.
-- Editor background
-- Grid background
-- Font color
-- Selection
-- Segment color
-- Highlight color: change the default yellow highlight color
-- Term match color
-- Term match font color
+- Editor background: Set the background color of the source and target segment editors.
+- Grid background: Set the backgroud color of the grid.
+- Font color: Set the color of the font used.
+- Selection: Set the highlighting color when text is selected
+- Segment color 
+- Highlight color: Change the default yellow highlight color
+- Term match color: Set the background color for term matches (brown by default)
+- Term match font color: Set the font for term matches
 - Subsegment match color
 - Subsegment match font color
 - No subsegment match font color
-- Hide memory match colors in the source segment
-- Hide glossary match colors in the source segment
-- Tags color
-- Non-translatable fragments
-- Searchbar color
-- Dashboard color: choose a color for Dashboard panels
-- Icons color: change the color of toolbar icons
-- Set default colors: Reset the colors to default.
+- Hide memory match colors in the source segment: See below
+- Hide glossary match colors in the source segment: See below
+- Tags color: Set the font color of tags (red by default)
+- Non-translatable fragments: Set the background color of non-translatables (purple by default)
+- Added text color: Set the color for additions (tracked changes) 
+- Deleted text color: Set the color for deletions (tracked changes)
+- Searchbar color: Set the color of the Quick Search bar.
+- Dashboard color: Choose a color for the Dashboard panels
+- Icons color: Change the color of the toolbar icons
+- Set default colors: Reset the colors to default
 
 <!--- TODO LATER, link to usage --->
 
@@ -1079,9 +1206,11 @@ Additionally:
 
 ### View > Font submenu
 
-![View > Font submenu](https://i.imgur.com/K5JK1B4.png)
+![View > Font submenu](https://i.imgur.com/sJIxhAN.png)
 
 Set the font face and size for various CafeTran interface elements.
+
+If your source/target language are not displaying correctly, apply a font that is compatible with your languages script.
 
 <!--- TODO LATER Add fonts information --->
 
@@ -1090,7 +1219,7 @@ Set the font face and size for various CafeTran interface elements.
 
 ### View > Tabs submenu
 
-![View > Tabs submenu](https://i.imgur.com/t329NfE.png)
+![View > Tabs submenu](https://i.imgur.com/8CpvPDo.png)
 
 Many of the items found in this submenu are also available in the Tabbed panel context menu (see Tabbed panel section within this document).
 
@@ -1128,7 +1257,7 @@ Many of the items found in this submenu are also available in the Tabbed panel c
 
 ### View > Toolbars submenu
 
-![View > Toolbars submenu](https://i.imgur.com/udkTVw9.png)
+![View > Toolbars submenu](https://i.imgur.com/9e3PIpv.png)
 
 **View > Toolbars > Reverse source segment toolbar** = Toggle whether the source segment toolbar is displayed on the top or bottom of the source segment editor.
 
@@ -1142,7 +1271,7 @@ Many of the items found in this submenu are also available in the Tabbed panel c
 
 ### View > Segment labels submenu
 
-![View > Segment labels submenu](https://i.imgur.com/qpKiGnY.png)
+![View > Segment labels submenu](https://i.imgur.com/oDxX6vH.png)
 
 This submenu allows you to toggle the visibility of various segment labels in the grid.
 
@@ -1160,7 +1289,7 @@ There are also new filters corresponding to the new states (See Filter > Origin 
 
 ## Action menu
 
-![Action menu](https://i.imgur.com/qt2P4xR.png)
+![Action menu](https://i.imgur.com/fS8AVwZ.png)
 
 **Action > Add segment to memory and go to next segment** = Add your translation of this segment to your translation memories, and move on to the next segment in the source document.
 
@@ -1200,7 +1329,7 @@ Note on the **Split/Merge feature**: CafeTran Espresso allows **virtual joining 
 
 ### Action > Tags submenu
 
-![Action > Tags submenu](https://i.imgur.com/iTZExfA.png)
+![Action > Tags submenu](https://i.imgur.com/bcCgAIT.png)
 
 Operations related to segment tags.
 
@@ -1214,9 +1343,10 @@ Operations related to segment tags.
 
 **Action > Tags > Automatic transfer of remaining tags** = Automatically transfer all remaining untransferred tags from the source segment to the target segment.
 
-**Action > Tags > Hide tag details** = Sort source segments by length startinghidden in tags and the details of tags in external projects.
+**Action > Tags > Hide tag details** = Display non-translatable fragments hidden in tags and the details of tags in external projects. 
+Note: To hide non-translatable fragments behind tags (both literal phrases and regular expressions), just append the ^ character to your non-translatable fragment to hide it behind the tag and let it transfer to the target segment like the regular tags. To disable hiding of tags temporarily, use the menu Resource > Non-translatable fragments > Show hidden non-translatable fragments.
 
-**Action > Tags > Hide segment boundary tags** = Hide starting and ending tags for the current segment.
+**Action > Tags > Hide segment boundary tags** = Hide starting and ending tags for the current segment. 
 
 **Action > Tags > Merge adjacent tags** = Merge adjacent tags and treat them as one tag.
 
@@ -1225,7 +1355,7 @@ Operations related to segment tags.
 
 ### Action > Skip submenu
 
-![Action > Skip submenu](https://i.imgur.com/WxqMf93.png)
+![Action > Skip submenu](https://i.imgur.com/nHAYn3c.png)
 
 Define which segments will be skipped while traversing through the segment pairs.
 
@@ -1249,7 +1379,7 @@ Define which segments will be skipped while traversing through the segment pairs
 
 ## Translate menu
 
-![Translate menu](https://i.imgur.com/Fh7eSKZ.png)
+![Translate menu](https://i.imgur.com/zjo1zqD.png)
 
 **Translate > Translate selected fragment** = Perform a resource search for the full source segment, or for a highlighted portion.
 
@@ -1283,6 +1413,8 @@ Define which segments will be skipped while traversing through the segment pairs
 
 **Translate > Transfer IBM Watson MT** = Transfer IBM Watson Language Translator MT result to the target segment editor.
 
+**Translate > Transfer Amazon Translate MT** = Transfer Amazon Translate MT result to the target segment editor.
+
 **Translate > Suggest phrase** = Suggest a a term or phrase at the caret position in the target segment (opens the Auto-complete menu, if available).
 
 **Translate > Insert all exact matches** = Search all source segments for exact translation matches in your resources. If any exist, copy them into the target segments. See also [Insert All Exact Matches](https://cafetran.freshdesk.com/support/solutions/articles/6000114797-insert-all-exact-matches).
@@ -1295,7 +1427,9 @@ Define which segments will be skipped while traversing through the segment pairs
 
 ## Filter menu
 
-![Filter menu](https://i.imgur.com/oanOShI.png)
+![Filter menu](https://i.imgur.com/8pWaoqv.png)
+
+<!---TODO: New screenshot --->
 
 **Filter > Segments filter** = Toggle the usage of the segments filter, which enables displaying only the segment pairs matching the criteria below. Can also be done via the dedicated shortcut and the FIlter icon in the Segments grid.
 
@@ -1331,13 +1465,9 @@ Define which segments will be skipped while traversing through the segment pairs
 
 **Filter > Unbookmarked segments** = Include segments which haven’t been bookmarked.
 
-**Filter > Repeated and propagated all segments** = Include all segments which are exactly the same as at least one other segment.
+**Filter > Repetitions** = **Submenu**. This submenu features filtering actions on repeated and propagated segments (see submenu items below).
 
-**Filter > Repeated and propagated first segments** =  Include first segments only which are exactly the same as at least one other segment.
-
-**Filter > Repeated and propagated for the current segment** = Include the segments that are the same as the current segment.
-
-Note: You can also hold the CTRL key while clicking at a segment in the grid to activate this filter.
+**Filter > Tracked changes** = Filter segments with tracked changes.
 
 **Filter > Alternative translations** = Include segments which have alternative translations.
 
@@ -1347,7 +1477,7 @@ Note: You can also hold the CTRL key while clicking at a segment in the grid to 
 
 ### Filter > Status submenu
 
-![Filter > Status submenu](https://i.imgur.com/NhoEvIq.png)
+![Filter > Status submenu](https://i.imgur.com/ZnLcEUl.png)
 
 **Filter > Status > Translated segments** = Include segments which have been translated.
 
@@ -1387,7 +1517,7 @@ Other statuses (applied only via the Task menu):
 
 ### Filter > Origin submenu
 
-![Filter > Matches submenu](https://i.imgur.com/CCjkhql.png)
+![Filter > Matches submenu](https://i.imgur.com/L4ChzZH.png)
 
 **Filter > Origin > Human Translation (HT)** = Include segments created by the human translator.
 
@@ -1409,7 +1539,7 @@ Other statuses (applied only via the Task menu):
 
 ### Filter > Sort submenu
 
-![Filter > Sort submenu](https://i.imgur.com/0sKJuPA.png)
+![Filter > Sort submenu](https://i.imgur.com/yiiFWxc.png)
 
 **Filter > Sort > Sort alphabetically** = Sort the current segment-filtered subset by source segment alphabetical order.
 
@@ -1417,13 +1547,27 @@ Other statuses (applied only via the Task menu):
 
 **Filter > Sort > Sort by length (long first)**=Sort source segments by length starting from the longest segment.
 
+### Filter > Repetitions submenu
+
+<!---TODO: Add screeenshot--->
+
+**Filter > Repeated and propagated all segments** = Include all segments which are exactly the same as at least one other segment.
+
+**Filter > Repeated and propagated first segments** =  Include first segments only which are the same as at least one other segment.
+
+**Filter > Repeated and propagated for the current segment** = Include the segments that are the same as the current segment.
+
+Note: You can also hold the CTRL key while clicking at a segment in the grid to activate this filter.
+
 ## QA menu
 
-![QA menu](https://i.imgur.com/32sFU5o.png)
+![QA menu](https://i.imgur.com/lcj1AKy.png)
 
 CafeTran offers a rich QA feature that allows you to check your translation to catch and correct various types of mistakes. Results are conveniently filtered, categorized and highlighted. Some QA-related settings are found in the Preferences > QA tab.
 
 Note: When you press the Export or Finalize button, you have the choice to Perform a QA check before exporting, which launches the QA Check all window (see below).
+
+**Filtered QA**: If you launch QA checks from a filtered view (se  Filter menu), QA is conducted on filtered segments only.
 
 Related links:
 [Check Errors](https://cafetran.freshdesk.com/support/solutions/articles/6000112731-check-errors)
@@ -1478,7 +1622,7 @@ Word lists can be created manually or via the CafeTran “record/list selected w
 
 ### QA > Word lists submenu
 
-![QA > Word lists submenu](https://i.imgur.com/NJZUQxD.png)
+![QA > Word lists submenu](https://i.imgur.com/JEnhX5y.png)
 
 The Word lists QA feature gives you the opportunity to search for words (or lack of them) in your project segments (either source or target). They can be used as a multiple-word search function prepared by the user in the form of a simple text file filled with words.
 
@@ -1500,7 +1644,7 @@ Note: Make sure the Edit > Edit source segments option is enabled.
 
 ### QA > Consistency checks submenu
 
-![QA > Consistency checks submenu](https://i.imgur.com/Kigug0q.png)
+![QA > Consistency checks submenu](https://i.imgur.com/AfmIdGp.png)
 
 These QA items allow you to conduct various consistency checks.
 
@@ -1516,15 +1660,25 @@ Note: By default, full segments (exact matches) are not checked for included fra
 
 ### QA > Check all window
 
-![QA check all window](https://i.imgur.com/2PP0sq6.png)
+![QA check all window](https://i.imgur.com/ySAxBZv.png)
 
 The QA check all window allows you to select which QA steps to run in one operation. Results are conveniently filtered, categorized and highlighted.
 
 It can be run via QA > Check all or through the “Perform QA before exporting” dialog button when pressing the Export or Finalize buttons.
 
+**LanguageTool**
+
+CafeTran does not offer grammar checks, as these are language dependent. It does offer a way to check each segment in the LanguageTool website, but this may not be practical. In that case you may consider the solution below:
+
+**QA with LanguageTool and CheckMate**
+
+ You can perform additional grammar checks with LanguageTool and CheckMate as described [here](https://cafetran.freshdesk.com/support/discussions/topics/6000053997).
+
 ## Task menu
 
-![Task menu](https://i.imgur.com/J6Drjx4.png)
+![Task menu](https://i.imgur.com/CnKBMBJ.png)
+
+<!---TODO: New screeenshot---> 
 
 **Task > Frequent words** = **Submenu**. Calculate and extract the most frequent words and display results in a new tab according to different criteria (see submenu items below).
 
@@ -1568,7 +1722,9 @@ Note: The “Remove target segments” feature is designed to work with CafeTran
 
 **Task > Bookmark segments** = Bookmark segments in the project or set view context (e.g. set by a filter).
 
-**Task > Unbookmark segments** = Remove bookmarks from selected segments.
+**Task > Accept all tracked changes** = Accept all tracked changes in the project or filter.
+
+**Task > Reject all tracked changes** = Reject all tracked changes in the project or filter.
 
 **Task > Trim leading spaces in target segments** = Remove any leading whitespace in all target segments.
 
@@ -1576,7 +1732,7 @@ Note: The “Remove target segments” feature is designed to work with CafeTran
 
 ### Task > Frequent words submenu
 
-![Task > Frequent words submenu](https://i.imgur.com/4rrWK4J.png)
+![Task > Frequent words submenu](https://i.imgur.com/5OCHJ59.png)
 
 This feature allows you to perform a statistical analysis based on word frequency. Additionally to the Task > Frequent words submenu options explained below, a right click inside the Frequent words tab brings a pop-up menu setting the minimal and maximal fragment length (see Task > Frequent words context menu below). Frequent words feature is activated automatically at the start of the project when “Extract frequent words from current segment” option is on.
 
@@ -1597,7 +1753,7 @@ Related links:
 
 #### Task > Frequent words context menu
 
-![Task > Frequent words context menu](https://i.imgur.com/3I9x5Gs.png)
+![Task > Frequent words context menu](https://i.imgur.com/HmWP4xT.png)
 
 You can access the following Frequent words options by right clicking inside the Frequent words tab.
 
@@ -1609,7 +1765,7 @@ You can access the following Frequent words options by right clicking inside the
 
 ### Task > TMX memory submenu
 
-![Task > TMX memory submenu](https://i.imgur.com/kcrmLGC.png)
+![Task > TMX memory submenu](https://i.imgur.com/7f7qfa9.png)
 
  Here you can run various maintenance tasks on the selected TMX memory or the one currently being edited (if in the Edit translation memory worklow). 
 
@@ -1635,7 +1791,7 @@ Note: Remove TMX filtered units can also detect the same contents in the filtere
 
 ## Resources menu
 
-![Resources menu](https://i.imgur.com/bTIl4A4.png)
+![Resources menu](https://i.imgur.com/J1SSYkB.png)
 
 **Resources > Simultaneous web search** = Toggle whether all web resources are searched simultaneously, or if only the currently-selected web resource should be searched.
 
@@ -1647,8 +1803,9 @@ CafeTran offers some already set up resources, although you can add many more.
 
 Some web resources of note:
 
-- MT engines with Web interface (DeepL, Google Translator, Bing Translator, Youdao MT). CafeTran conveniently allows you to easily query the MT web interface via the Translate button (or shortcut) and then transfer the MT web result to the target segment editor via the Transfer button (or shortcut).
+- MT engines with Web interface (DeepL, Google Translator, Bing Translator, ModernMT, Systran, Youdao MT). CafeTran conveniently allows you to easily query the MT web interface via the Translate button (or shortcut) and then transfer the MT web result to the target segment editor via the Transfer button (or shortcut).
 - Linguee (bilingual concordancer in a available in a multitude of language pairs)
+- MyMemory (a public TM).
 - YouTube (useful if translating subtitles)
 - Resources > Web > Examples offer various other examples of resources, such as Google search, KudoZ, Wikipedia, monolingual dictionaries (such as Wordnet and Merriam-Webster), Pons, etc.
 - LanguageTool: linguistic QA resource. The Translate and Transfer buttons for querying and transferring MT web results work for this QA web resource as well.
@@ -1697,7 +1854,7 @@ Note: If you have trouble using the internal PDF viewer, you should try using an
 
 ### Add/Edit resource window
 
-![Add/Edit resource window](https://i.imgur.com/7sBES2y.png)
+![Add/Edit resource window](https://i.imgur.com/bHSRyBr.png)
 
 This is the window that allows you to add or edit a web resource information. If you add a new resource, it will ask you where you want to save the .res configuration file.
 
@@ -1729,7 +1886,7 @@ Related links:
 
 ### Resources > Notepad submenu
 
-![Resources > Notepad submenu](https://i.imgur.com/rZmYWQg.png)
+![Resources > Notepad submenu](https://i.imgur.com/FCHp3Ex.png)
 
 Notepads allow you to create general-purpose text documents in the tabbed pane (see below for submenu items).
 
@@ -1753,11 +1910,13 @@ Notepads allow you to create general-purpose text documents in the tabbed pane (
 
 ### Resources > Non-translatable fragments submenu
 
-![Resources > Non-translatable fragments submenu](https://i.imgur.com/tt9sc9i.png)
+![Resources > Non-translatable fragments submenu](https://i.imgur.com/lxvvkjv.png)
 
 Non-translatable fragments are text items like proper names, brand names, etc., that should be transferred as such in the target language (see below for submenu items).
 
 Non-translatables appear by default with a violet color background on the source segment and can be easily inserted via the F4 keyboard shortcut.
+
+CafeTran supports hiding non-translatable fragments (both literal phrases and regular expressions) behind a tag. See the menu action Show hidden non-translatable fragments below for an explanation.
 
 Note: You can also use non-translatables to mask confidential terms before being submitted them for Machine Translation. See Mask non-translatable fragments option in “CafeTran Preferences > MT services”.
 
@@ -1780,14 +1939,14 @@ See Non-translatable fragments options in “CafeTran Preferences > General”.
 
 ### Resources > Text shortcuts submenu
 
-![Resources > Text shortcuts submenu](https://i.imgur.com/V4pUegf.png)
+![Resources > Text shortcuts submenu](https://i.imgur.com/supNg2W.png)
 
 Text shortcuts are any shortened fragments or acronyms that can expand to their full form after typing.
 
 Additional reference:
 See Text shortcuts options in “CafeTran Preferences > General”.
 
-**Resources > Text shortcuts > Add selection to text shortcuts** = Add a selected fragment of the segment to text shortcuts. It will create a text shortcut for the fragment.
+**Resources > Text shortcuts > Add selection to text shortcuts** = Add a selected fragment of the segment to text shortcuts. It will create a text shortcut for the fragment. Note: Text shortcuts can also be inserted after typing a punctuation character.
 
 **Resources > Text shortcuts > List text shortcuts** = List all created text shortcuts.
 
@@ -1799,7 +1958,7 @@ If the above two options are on, they get activated automatically with French as
 
 ### Resources > Abbreviations submenu
 
-![Resources > Abbreviations submenu](https://i.imgur.com/7CB2gA1.png)
+![Resources > Abbreviations submenu](https://i.imgur.com/ndwbH2D.png)
 
 Abbreviations can improve segmentation of the source text. CafeTran joins segments at abbreviations automatically.
 
@@ -1814,7 +1973,7 @@ See Segmentation options in “Preferences > General”.
 
 ## Memory menu
 
-![Memory menu](https://i.imgur.com/cUrYKCb.png)
+![Memory menu](https://i.imgur.com/24f9E6y.png)
 
 **Memory > New memory** = Open the “New memory” dialog.
 
@@ -1828,7 +1987,7 @@ See Segmentation options in “Preferences > General”.
 
 **Memory > Close memory** = Close the currently-selected translation memory in the tabbed pane. You can also right-click a translation memory tab and select “Close tab”.
 
-**Memory > Import files in folder** =  Merge all translation memory files in a folder into one translation memory and open it in CafeTran. See also [Joining Translation Memories](https://cafetran.freshdesk.com/support/solutions/articles/6000176661-joining-translation-memories).
+**Memory > Import files in folder** =  Toggle (if enabled, a tick is added to the menu). Merge all translation memory files in a folder into one translation memory and open it in CafeTran when performing an Memory > Import action. After enabling this option, open the Memory menu once again and perform the intented Memroy > Import action. See also [Joining Translation Memories](https://cafetran.freshdesk.com/support/solutions/articles/6000176661-joining-translation-memories).
 
 **Memory > Import** = **Submenu**. Import various file formats as a usable translation memory (see below for submenu items).
 
@@ -1856,7 +2015,7 @@ See also “CafeTran Preferences > Memory server”.
 
 ### Memory > Import submenu
 
-![Memory > Import submenu](https://i.imgur.com/UqgpAP9.png)
+![Memory > Import submenu](https://i.imgur.com/TejA1om.png)
 
 Import various file formats as a usable translation memory.
 
@@ -1892,7 +2051,7 @@ This allows you to import Wordfast TMs, but can also serve to import CafeTran Gl
 
 ### Memory > Export submenu
 
-![Memory > Export submenu](https://i.imgur.com/l7nQEBR.png)
+![Memory > Export submenu](https://i.imgur.com/cI830Gm.png)
 
 Ttranslation memory export functions.
 
@@ -1904,7 +2063,7 @@ Note: This allows you, for example, to export a converted SDLTB termbase to the 
 
 ### New fragment window
 
-![New fragment dialog](https://i.imgur.com/RzgZ9co.png)
+![New fragment dialog](https://i.imgur.com/XsemKAq.png)
 
 This is the window that opens when you use the Add fragment to memory button or shortcut. In Preferences > Glossary, you can choose to Skip new term window (shortcut) or Skip new term window (button), which also applies to fragments.
 
@@ -1918,21 +2077,21 @@ This is the window that opens when you use the Add fragment to memory button or 
 
 ## Glossary menu
 
-![Glossary menu](https://i.imgur.com/VDEHrBD.png)
+![Glossary menu](https://i.imgur.com/5Xqh0lT.png)
 
 **Glossary > Glossaries** = Contains a listing of all currently-available glossaries.
 
 Already used glossaries will appear under this submenu.
 
-**Glossary > New glossary** = Create a new glossary. You will be asked to choose a filename for the glossary, and then presented with several options for the new glossary file (see below for **New Glossary window**).
+**Glossary > New glossary** = Create a new glossary. You will be asked to choose a filename for the glossary, and then presented with several options for the new glossary file (see below for **New Glossary window**). For more info, see [Create new glossary](https://cafetran.freshdesk.com/support/solutions/articles/6000114093-create-a-new-glossary) article.
 
-**Glossary > Add glossary** = Add an existing glossary to the project. You will be prompted to browse for the glossary file, and then presented with several options which may be edited.
+**Glossary > Add glossary** = Add an existing glossary to the project. You will be prompted to browse for the glossary file, and then presented with several options which may be edited. For more info, see [Add a glossary](https://cafetran.freshdesk.com/support/solutions/articles/6000114517-add-a-glossary) article.
 
 **Glossary > Join glossary** = Join entries from a tab-delimited glossary file to the currently-selected glossary.
 
 **Glossary > Glossaries folder** = Toggle ON to merge all glossary files in a folder into one glossary when using Glossary > Add glossary.
 
-**Glossary > Import MS Excel glossary** = Import entries from a MS Excel glossary file to the currently-selected glossary.
+**Glossary > Import MS Excel glossary** = Import entries from a MS Excel glossary file to the currently-selected glossary. For more info, see [Import Excel Glossary](https://cafetran.freshdesk.com/support/solutions/articles/6000117021-import-excel-glossary) article.
 
 **Glossary > Merge alternative translations** = Merge alternative translations in separate entries into one entry.
 
@@ -1959,7 +2118,7 @@ Related links:
 
 ### New glossary window
 
-![New glossary dialog](https://i.imgur.com/o6q7x7d.png)
+![New glossary dialog](https://i.imgur.com/eq4J1ns.png)
 
 This is the window that opens when you add a new glossary (Glossary > New glossary), after you select a filename and location, or when you choose Glossary > Edit Glossary info. Glossary options can be changed later in the glossary context menu.
 
@@ -1976,7 +2135,7 @@ This is the window that opens when you add a new glossary (Glossary > New glossa
 
 ### New term window
 
-![New term dialog](https://i.imgur.com/9LCFCBu.png)
+![New term dialog](https://i.imgur.com/6xCnuN3.png)
 
 This is the window that opens when you use the Add term to glossary button or shortcut. In Preferences > Glossary, you can choose to Skip new term window (shortcut) or Skip new term window (button).
 
@@ -1991,7 +2150,7 @@ This is the window that opens when you use the Add term to glossary button or sh
 
 ## Total Recall menu
 
-![Total Recall memu](https://i.imgur.com/mw1LcIr.png)
+![Total Recall memu](https://i.imgur.com/OLABJkI.png)
 
 In addition to TMX Translation Memory files, CafeTran offers an advanced Translation Memory database feature called **Total Recall** (TR).
 
@@ -2022,7 +2181,7 @@ Related links:
 
 ### Total Recall > Import submenu
 
-![Total Recall > Import submenu](https://i.imgur.com/PsEwnUu.png)
+![Total Recall > Import submenu](https://i.imgur.com/fJnUeCs.png)
 
 Load TMX or tab-delimited files created in other tools to Total Recall.
 
@@ -2032,7 +2191,7 @@ Load TMX or tab-delimited files created in other tools to Total Recall.
 
 ## Help menu
 
-![Help menu](https://i.imgur.com/WzxgXOw.png)
+![Help menu](https://i.imgur.com/Rt78cDH.png)
 
 **Help > Contents** = Launch the CafeTran Espresso online documentation in your browser.
 
@@ -2044,7 +2203,7 @@ Load TMX or tab-delimited files created in other tools to Total Recall.
 
 **Help > About** = Open the About dialog.
 
-![About dialog](https://i.imgur.com/hUrmGea.png)
+![About dialog](https://i.imgur.com/SXk2Ojy.png)
 
 CafeTran product information:
 
@@ -2065,3 +2224,4 @@ Buttons:
  - **Purchase license:** Opens a URL to purchase a CafeTran license.
  - **Import licence file:** Import your .ctlic file. See also [Import License](https://cafetran.freshdesk.com/support/solutions/articles/6000207769-import-license).
  - **Close:** Close this window.
+

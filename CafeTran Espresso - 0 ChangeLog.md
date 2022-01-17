@@ -1,6 +1,8 @@
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [CafeTran Espresso ChangeLog](#cafetran-espresso-changelog)
+  * [11.0 - Poppy Seed Roll (20211203)](#110---poppy-seed-roll--20211203-)
+  * [10.9.1 - Apple Charlotte (20211002)](#1091---apple-charlotte--20211002-)
   * [10.9 - Apple Charlotte (20210820)](#109---apple-charlotte--20210820-)
   * [10.8.3 Cornetto (20210226)](#1083-cornetto--20210226-)
   * [10.8.2 Cornetto (20210118)](#1082-cornetto--20210118-)
@@ -127,7 +129,7 @@
   * [Bilbo (Released on January 2013)](#bilbo--released-on-january-2013-)
   * [Hobbit (Released on December 2012)](#hobbit--released-on-december-2012-)
 
-<<!-- /TOC -->
+<!-- /TOC -->
 
 # CafeTran Espresso ChangeLog
 
@@ -141,6 +143,25 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 <!--- Shortened link to this document: --->
 
 **Important! Do not update before exporting your current projects. Please complete all your translation projects in your current CafeTran version before updating.**
+
+
+## 11.0 - Poppy Seed Roll (20211203)
+
+- Tracking Changes. This new feature is available via the Edit >  Track Changes > Manage menu. See the Changes tab after activation.  There, you can Accept and Reject changes to the current target segment.
+- Filtering on tracked changes via the Filter menu.
+- Accepting or rejecting all tracked changes in one task via the Task menu.
+- Color settings for the changes in the View > Colors > Added/Deleted text color.
+- New bright and dark image-based themes - see the View > Themes menu.
+- Fixed spoken segments synchronization issue in Amazon Polly Text to Speech implementation.
+- Fixed an issue with the spell checker dictionaries. It affects  CafeTran on Mac with Apple M1 chip only - reinstallation is required.
+
+## 10.9.1 - Apple Charlotte (20211002)
+
+- Added interface to Amazon Polly (Text to Speech) web service available via the API key. Text To Speech (TTS) integration in CafeTran enables the translators to listen to the currently-translated source language segment. It can be set either automatic or manual with the option to listen to target language segments (e.g during the review) as well. Amazon Polly supports over 30 languages and a selection of voices. It also offers the free tier for the first 12 months. Please check [here](https://aws.amazon.com/polly/) for details. After receiving the API secret and access keys from Amazon, you need to paste them in CafeTran's Preferences > Web services tab > Amazon Polly (TTS) > the API key button > the API Access and Secret key fields.
+- Added interface to Amazon Translate MT available via the API key (the API keys for Amazon Translate MT and Amazon Polly TTS are the same).
+- Marking of term patterns in source segment editor.
+- Adjustments for some special characters in the Prompter function.
+- Improved handling of xliff files created in other tools.
 
 ## 10.9 - Apple Charlotte (20210820)
 
@@ -213,7 +234,7 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - The tab character symbol is always visible in the segments editors.
 - Some minor fixes and improvements.
 
-\* The transfer of the source text for translation into the text boxes on the web pages of some MT service providers via the keyboard shortcut can work only after the focus is set on the given webpage (e.g via the mouse click).  
+\* The transfer of the source text for translation into the text boxes on the web pages of some MT service providers via the keyboard shortcut canterm patterns work only after the focus is set on the given webpage (e.g via the mouse click).  
 
 ## 10.8.1 Cornetto (20201007)
 
@@ -597,7 +618,7 @@ The new update (**2018111601**) of CafeTran 2019 Forerunner is available for dow
 
 - highlighting punctuation characters in TM exact matches which are defined in "Do not match" option.
 - replacing background color with strike-through line for the missing words at the comparison between the current segment and fuzzy matches.
-- new "R" symbol in the grid for repeated segments regardless of their propagation status.
+- 4"R" symbol in the grid for repeated segments regardless of their propagation status.
 - marking segments edited in the current session - see the red asterisk in the grid.
 - showing the origin of the translation in the grid:
   - Machine Translation - see the MT symbol.
@@ -2119,7 +2140,7 @@ The update (build 2016010901) can be performed via the usual drag and drop with 
 - **2013-12-03** *Cancel* button in font dialogues renamed to *Exit*.
 - **2013-12-01** Non-breaking spaces, etc. are now visible in the *New Term* dialogue box.
 - **2013-12-01** **‘Subterm entry’ now possible in New Term dialogue!** It is now also possible to add a term pair to your glossary from inside the New Term dialogue. Imagine that you are adding a long term pair to your glossary, and you notice that it itself contains another potential term (a ‘subterm’, so to speak). Just select the source and target term as you would in the Translation Editor, and it will be added to the same (selected) glossaries as the original term you opened the New Term dialogue to enter. Select 'Satz' and 'zin' in the *New Term* dialogue box, and both *Satz=zin* and *Dieser Satz=Deze zin* are added to the glossary. See screenshot [here](http://cafetran.wdfiles.com/local--files/pre-release-version/1-12-1.png).
-- **2013-12-01** **Full integration with operating system searching tools.** Terminal output is displayed in the tabbed pane in CafeTran and matches are highlighted. Set: Terminal Tool option in *Edit \> Options*. The placeholder is for the Desktop Search Tool command is {}. ‘grep’ (Linux and Mac. Also available for Windows), ‘mdfind’ (Mac spotlight in terminal). ‘find’ (Windows) Examples: grep {} /path/to/my/huge/memory.tmx, mdfind -onlyin /path/to/directory {}, find “{}” “C:\\path\\to\\my\\memory.tmx” **Note:** Use fgrep -h {} /Users/Hans/Dropbox/CafeTran/Prj/test/my\_text.txt for faster searches, suppressing the file name display. See [http://cafetran.wikidot.com/using-spotlight-to-search-tms](http://cafetran.wikidot.com/using-spotlight-to-search-tms)
+- **2013-12-01** **Full integration with operating system searching tools.** Terminal output is displayed in the tabbed pane in CafeTran and matches are highlighted. Set: Terminal Tool option in *Edit \> Options*. The placeholder is for the Desktop Search Tool command is {}. ‘grep’ (Linux and Mac. Also available for Windows), ‘mdfind’ (Mac spotlight in terminal). ‘find’ (Windows) Examples: grep {} /path/to/my/huge/memory.tmx, mdfind -onlyin /path/to/directory {}, find “{}” “C:\\path\\to\\my\\memory.tmx” **Note:** Use fgrep -h {} /Users/Hans/Dropbox/CafeTran/Prj/test/my\_text.txt for faster searches, suppressing the file name display. See [http://cafetran.wikidot.com/using-spotlight-to-search-tms](https://web.archive.org/web/20150108071046/http://cafetran.wikidot.com/using-spotlight-to-search-tms)
 - **2013-12-01** New: *QA \> Bracket check*: See screenshot [here](http://cafetran.wdfiles.com/local--files/pre-release-version/1-12-0.png).
 - **2013-11-29** CafeTran has a new Glossary tab under *Edit \> Options \> Glossary* and a **new metadata popup** will appear when you hover over a blue term in the glossary pane. See screenshot [here](http://cafetran.wdfiles.com/local--files/pre-release-version/metadata-popoup.png).
 - **2013-11-24** Added menu Task \> (Remove tasks on TMX files) can be performed on attached memories now. Two more tasks that can be performed now: *Remove TMX units with no letters* and *Remove filtered TMX units*.

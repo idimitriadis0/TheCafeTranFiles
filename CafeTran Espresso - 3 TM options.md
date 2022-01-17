@@ -19,11 +19,13 @@
 
 # CAFETRAN ESPRESSO - Translation Memories options
 
-*Updated for CafeTran Espresso 2020*
+*Updated for CafeTran Espresso 11 Poppy Seed Roll (2022)*
 
 This document offers an overview of CafeTran’s Translation Memory options.
 
-Some memory-related settings can be found in [Edit > Preferences (Options) > Memory](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#memory).
+Some memory-related settings can be found in [Edit (CafeTran) > Preferences > Memory](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/1-Preferences#memory).
+
+Translation Memory-related actions can be found in the [Memory menu](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#memory-menu).
 
 You can find additional information on [Working with Translation Memories](https://cafetran.freshdesk.com/support/solutions/folders/6000058172) in the official CafeTran Knowledge Base (Solutions).
 
@@ -31,9 +33,9 @@ You can find additional information on [Working with Translation Memories](https
 
 ## TM context menu options
 
-![TM context menu](https://i.imgur.com/7lHc8Yr.png)
+![Memory context menu](https://i.imgur.com/t28hEPS.png) 
 
-The TM context menu can be accessed by right-clicking inside the pane of a specific Translation Memory.
+The TM context menu can be accessed by right-clicking inside the pane of a specific Translation Memory tab.
 
 ### Browse memory
 
@@ -79,7 +81,7 @@ Term or Fragment Matches with higher or lower priority of the given glossary/mem
 
 ## TM options
 
-![Memory options window](https://i.imgur.com/NgRXi7r.png)
+![Memory options window](https://i.imgur.com/zOoTtWn.png)
 
 The TM options dialog offers many important settings for your Translation Memories.
 
@@ -175,7 +177,7 @@ If the inflection of a word is too high for automatic prefix matching you can en
 
 ## TM filter options
 
-![Memory filter options window](https://i.imgur.com/bLU4Xcn.png)
+![Memory filter options window](https://i.imgur.com/uV7lT4X.png)
 
 Memory filter options are only available in the dialog before opening the Memory. Once opened, the button is grayed out.
 
@@ -205,7 +207,7 @@ If you have set a TXT file for Client and/or Subject in Preferences > Definition
 
 ## Total Recall options
 
-![Total Recall options window](https://i.imgur.com/e86VYJq.png)
+![Total Recall options window](https://i.imgur.com/wbAfn8h.png)
 
 ### Database - [name of database]
 
@@ -223,3 +225,5 @@ All other TM and filter options are the same as those described above.
 Priority default option is set to Low instead of High, though, and the resulting memory is set as Read only.
 
 Note: Total Recall does not process tags.
+
+For Total Recall menu options, see the [Menu and Interface](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#total-recall-menu) document.
