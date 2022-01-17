@@ -1,26 +1,3 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CAFETRAN ESPRESSO - PREFERENCES](#cafetran-espresso---preferences)
-  * [GENERAL](#general)
-    + [Segmentation](#segmentation)
-  * [DEFINITIONS](#definitions)
-  * [WORKFLOW](#workflow)
-  * [PROMPTER](#prompter)
-  * [AUTO-ASSEMBLING](#auto-assembling)
-  * [AUTO-PROPAGATION](#auto-propagation)
-  * [GLOSSARY](#glossary)
-  * [MEMORY](#memory)
-  * [MEMORY SERVER](#memory-server)
-  * [QA](#qa)
-  * [MT SERVICES](#mt-services)
-    + [MT engines](#mt-engines)
-  * [WEB SERVICES](#web-services)
-  * [APPEARANCE](#appearance)
-  * [KEYBOARD SHORTCUTS](#keyboard-shortcuts)
-    + [Miscellaneous keyboard shortcuts](#miscellaneous-keyboard-shortcuts)
-
-<!-- /TOC -->
-
 # CAFETRAN ESPRESSO - PREFERENCES
 
 *Updated for CafeTran Espresso 11 Poppy Seed Roll (2022)*
@@ -31,7 +8,7 @@ A handy tour of CafeTran Espresso's preferences.
 
 **ACCESSING PREFERENCES**
 
-You can access Preferences from the **Menu (Edit > Preferences)** (CafeTran > Preferences, for MacOS users) or directly from the **Dashboard** by clicking the button ≡ and choosing Preferences.
+You can access Preferences from the **Menu (Edit > Preferences)** or from the CafeTran menu for MacOS users, or directly from the **Dashboard** by clicking the button ≡ and choosing Preferences.
 
 **EXPORT/IMPORT/RESET PREFERENCES**
 
@@ -1170,9 +1147,7 @@ API parameters: Enter your [DeepL Pro](https://www.deepl.com/pro.html) API key.
 This is a paid translation API.
 
 Link:
-[DeepL Pro](https://www.deepl.com/pro.html),
-
-[DeepL Pro FAQ](https://www.deepl.com/en/pro-faq.html)
+[DeepL Pro](https://www.deepl.com/pro.html), [DeepL Pro FAQ](https://www.deepl.com/en/pro-faq.html).
 
 **Google Translate**
 
@@ -1181,7 +1156,7 @@ API parameters: Enter your Google Translate API key.
 This is a paid translation API (first 500,000 characters per month free).
 
 Link:
-[https://cloud.google.com/translate/docs/getting-started](https://cloud.google.com/translate/docs/getting-started)
+[Google Cloud  - Getting started](https://cloud.google.com/translate/docs/getting-started)
 
 **MS Translator**
 
@@ -1201,20 +1176,14 @@ MyMemory uses a combination of Google Translate and Microsoft Translate for its 
 If you provide a valid email (“de” parameter), you enjoy 10,000 words/day.
 There is a 500 characters limit per queried segment.
 
-Links:
-
-[Use MyMemory directly from your CAT tool]( https://mymemory.translated.net/doc/cat.php),
-
-[Mymemory - CafeTran](https://mymemory.translated.net/doc/cafetran.php),
-
-[MyMemory: API usage limits](https://mymemory.translated.net/doc/usagelimits.php#whitelist_note)
+Links: [Use MyMemory directly from your CAT tool]( https://mymemory.translated.net/doc/cat.php), [Mymemory - CafeTran](https://mymemory.translated.net/doc/cafetran.php), 
+[MyMemory: API usage limits](https://mymemory.translated.net/doc/usagelimits.php#whitelist_note).
 
 **Yandex Translate**
 
 API parameters: Enter your Yandex API key
 
-Link:
-[Yandex Translate API](https://tech.yandex.com/translate/)
+Link: [Yandex Translate API](https://tech.yandex.com/translate/)
 
 **IBM Watson**
 
@@ -1222,17 +1191,13 @@ API parameters: Enter your IBM Watson Language Translator MT API key.
 
 An API key can be received at IBM website. During the registration at IBM site, choose Frankfurt as the deployment region/location.
 
-Link:
-
-[IBM Watson](https://www.ibm.com/watson/services/language-translator/)
+Link: [IBM Watson](https://www.ibm.com/watson/services/language-translator/)
 
 **Amazon Translate**
 
 API parameters: Enter your Amazon Translate MT API Access key and API Secret key. Select the server location in the dropdown menu.
 
-Link:
-
-[Amazon Translate](https://aws.amazon.com/translate/)
+Link: [Amazon Translate](https://aws.amazon.com/translate/)
 
 **Slate Desktop**
 
@@ -1240,8 +1205,7 @@ Slate is a commercial offline MT solution.
 
 CafeTran is compatible with its connector utility.
 
-Related links:
-[https://slate.rocks/](https://slate.rocks/)
+Related links: [https://slate.rocks/](https://slate.rocks/)
 
 ## WEB SERVICES
 
@@ -1268,7 +1232,7 @@ Related links:
 [Signing in to ProZ.com account](https://cafetran.freshdesk.com/support/solutions/articles/6000158973-signing-in-to-proz-com-account),
 [Automatic Search of ProZ.com Resources](https://cafetran.freshdesk.com/support/solutions/articles/6000175423-automatic-search-of-proz-com-resources),
 [Proz.com Term Search Integration](https://cafetran.freshdesk.com/support/solutions/articles/6000118360-proz-com-term-search-integration),
-[ProZ.com options in CafeTran](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#proz-tab-and-context-menu)
+[ProZ.com options in CafeTran](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/2-Menu-and-Interface#proz-tab-and-context-menu).
 
 **WIWO automatic pop-up dialog**
 
@@ -1296,9 +1260,7 @@ To use it, paste the API access and secret keys in the respective fields (the AP
 
 When this is enabled and set up, CafeTran will show an additional Amazon Polly tab in the main translation interface, allowing you to manage the Text To Speech service (see the Menu and Interface document for more information).
 
-Link:
-
-[Amazon Polly](https://aws.amazon.com/polly/)
+Link: [Amazon Polly](https://aws.amazon.com/polly/)
 
 ## APPEARANCE
 
@@ -1316,8 +1278,7 @@ Radio checkbox options:
 
 Default choice: Nimbus Look and Feel.
 
-Related links:
-[Themes](https://cafetran.freshdesk.com/support/solutions/articles/6000115530-themes)
+Related links: [Themes](https://cafetran.freshdesk.com/support/solutions/articles/6000115530-themes)
 
 <!--- TODO link to SETTING UP CAFETRAN --->
 
@@ -1544,7 +1505,7 @@ Hide starting and ending tags for the current segment.
 
 Also in Action > Tags submenu.
 
-**Hide tag details** [Ctrl+Alt+T] [Mac: <!---TODO: --->]
+**Hide tag details** [Ctrl+Alt+T] 
 
 Also in Action > Tags submenu.
 

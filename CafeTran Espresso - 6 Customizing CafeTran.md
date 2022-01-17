@@ -1,27 +1,3 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [NEW USERS - CUSTOMIZING CAFETRAN ESPRESSO](#new-users---customizing-cafetran-espresso)
-  * [PART I | TAKING A TOUR](#part-i---taking-a-tour)
-    + [New project](#new-project)
-    + [Look and Feel](#look-and-feel)
-    + [Themes](#themes)
-    + [Colors](#colors)
-    + [Dashboard theme](#dashboard-theme)
-    + [Font face and size](#font-face-and-size)
-    + [Window layout](#window-layout)
-    + [Translation interface and Panes](#translation-interface-and-panes)
-      - [Help tooltips](#help-tooltips)
-    + [Detached windows](#detached-windows)
-    + [Toolbars](#toolbars)
-  * [PART 2 | Taking it further](#part-2---taking-it-further)
-    + [TAMING THE PREFERENCES](#taming-the-preferences)
-    + [TAMING THE INTERFACE AND MENUS](#taming-the-interface-and-menus)
-    + [MEMORIES AND TERMBASES/GLOSSARIES](#memories-and-termbases-glossaries)
-    + [PROJECT TEMPLATES](#project-templates)
-    + [FILE FORMATS](#file-formats)
-
-<!-- /TOC -->
-
 # NEW USERS - CUSTOMIZING CAFETRAN ESPRESSO
 
 *Updated for CafeTran Espresso 11 Poppy Seed Roll (2022)*

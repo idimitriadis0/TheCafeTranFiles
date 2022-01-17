@@ -1,96 +1,3 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CAFETRAN ESPRESSO - MENU AND INTERFACE](#cafetran-espresso---menu-and-interface)
-- [1. Interface](#1-interface)
-  * [1.1 Project Dashboard](#11-project-dashboard)
-    + [Dashboard menu options](#dashboard-menu-options)
-      - [Dashboard menu options > Project type submenu](#dashboard-menu-options---project-type-submenu)
-    + [Dashboard’s Resources](#dashboard-s-resources)
-      - [Local resources](#local-resources)
-      - [TM-Town resources](#tm-town-resources)
-    + [Dashboard's context menu](#dashboard-s-context-menu)
-    + [Customizing the Dashboard](#customizing-the-dashboard)
-  * [1.2 New project/Project configuration dialog](#12-new-project-project-configuration-dialog)
-    + [Document settings tab](#document-settings-tab)
-    + [Memory & glossary tab](#memory---glossary-tab)
-    + [Project properties tab](#project-properties-tab)
-    + [Filter options tab](#filter-options-tab)
-  * [1.3 Main translation interface](#13-main-translation-interface)
-    + [Segments grid icons](#segments-grid-icons)
-    + [Documents button](#documents-button)
-    + [Source segment editor icons](#source-segment-editor-icons)
-    + [Source segment editor context menu](#source-segment-editor-context-menu)
-    + [Target segment editor icons](#target-segment-editor-icons)
-    + [Target segment editor context menu](#target-segment-editor-context-menu)
-    + [Matchboard (and Matchbar)](#matchboard--and-matchbar-)
-    + [Matchboard context menu](#matchboard-context-menu)
-    + [Tabbed panel](#tabbed-panel)
-    + [Tabbed panel tab context menu](#tabbed-panel-tab-context-menu)
-    + [Memory tab and context menu](#memory-tab-and-context-menu)
-    + [Glossary tab and context menu](#glossary-tab-and-context-menu)
-    + [MT tab and context menu](#mt-tab-and-context-menu)
-    + [Google MT context menu](#google-mt-context-menu)
-    + [ProZ tab and context menu](#proz-tab-and-context-menu)
-    + [TM-Town tab and context menu](#tm-town-tab-and-context-menu)
-    + [Amazon Polly (Text to Speech) tab](#amazon-polly--text-to-speech--tab)
-    + [(Track) Changes tab](#-track--changes-tab)
-    + [Quick search bar](#quick-search-bar)
-    + [Advanced Search (Find and Replace) window](#advanced-search--find-and-replace--window)
-- [2. Menu items](#2-menu-items)
-  * [Project menu](#project-menu)
-    + [Project > Statistics submenu](#project---statistics-submenu)
-    + [Project > Export and exchange submenu](#project---export-and-exchange-submenu)
-  * [Edit menu](#edit-menu)
-    + [Edit > Find at cursor submenu](#edit---find-at-cursor-submenu)
-    + [Edit > Target segment submenu](#edit---target-segment-submenu)
-    + [Edit > Track changes submenu](#edit---track-changes-submenu)
-    + [Edit > Invisible characters submenu](#edit---invisible-characters-submenu)
-  * [View menu](#view-menu)
-    + [View > Window layout submenu](#view---window-layout-submenu)
-    + [View > Segment editors submenu](#view---segment-editors-submenu)
-    + [View > Themes submenu](#view---themes-submenu)
-    + [View > Colors submenu](#view---colors-submenu)
-    + [View > Font submenu](#view---font-submenu)
-    + [View > Tabs submenu](#view---tabs-submenu)
-    + [View > Toolbars submenu](#view---toolbars-submenu)
-    + [View > Segment labels submenu](#view---segment-labels-submenu)
-  * [Action menu](#action-menu)
-    + [Action > Tags submenu](#action---tags-submenu)
-    + [Action > Skip submenu](#action---skip-submenu)
-  * [Translate menu](#translate-menu)
-  * [Filter menu](#filter-menu)
-    + [Filter > Status submenu](#filter---status-submenu)
-      - [CafeTran Statuses explained](#cafetran-statuses-explained)
-    + [Filter > Origin submenu](#filter---origin-submenu)
-    + [Filter > Sort submenu](#filter---sort-submenu)
-    + [Filter > Repetitions submenu](#filter---repetitions-submenu)
-  * [QA menu](#qa-menu)
-    + [QA > Word lists submenu](#qa---word-lists-submenu)
-    + [QA > Consistency checks submenu](#qa---consistency-checks-submenu)
-    + [QA > Check all window](#qa---check-all-window)
-  * [Task menu](#task-menu)
-    + [Task > Frequent words submenu](#task---frequent-words-submenu)
-      - [Task > Frequent words context menu](#task---frequent-words-context-menu)
-    + [Task > TMX memory submenu](#task---tmx-memory-submenu)
-  * [Resources menu](#resources-menu)
-    + [Add/Edit resource window](#add-edit-resource-window)
-    + [Resources > Notepad submenu](#resources---notepad-submenu)
-    + [Resources > Non-translatable fragments submenu](#resources---non-translatable-fragments-submenu)
-    + [Resources > Text shortcuts submenu](#resources---text-shortcuts-submenu)
-    + [Resources > Abbreviations submenu](#resources---abbreviations-submenu)
-  * [Memory menu](#memory-menu)
-    + [Memory > Import submenu](#memory---import-submenu)
-    + [Memory > Export submenu](#memory---export-submenu)
-    + [New fragment window](#new-fragment-window)
-  * [Glossary menu](#glossary-menu)
-    + [New glossary window](#new-glossary-window)
-    + [New term window](#new-term-window)
-  * [Total Recall menu](#total-recall-menu)
-    + [Total Recall > Import submenu](#total-recall---import-submenu)
-  * [Help menu](#help-menu)
-
-<!-- /TOC -->
-
 # CAFETRAN ESPRESSO - MENU AND INTERFACE
 
 *Updated for CafeTran Espresso 11 Poppy Seed Roll (2022)*
@@ -141,13 +48,13 @@ Clicking the Dashboard menu button ≡ allows you to access additional project o
 - **Multiple document project** = Check this menu item to choose a folder, instead of a single document, so all documents within are added as source documents.
 - **Recent project templates** = Quickly access recently used Project Templates. Learn more about [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
 - **Open project template** = Open an already saved project template. You will be asked to select which template file to open. Learn more about [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates).
-- **Save in project template** = Save the current state in a project template as an XML file. You will be asked to select a file location. Suggestion: Create a “templates” folder in *cafetran* or *cafetran/projects* folder and save your templates there. Learn more about [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates). <!---TODO: --->
+- **Save in project template** = Save the current state in a project template as an XML file. You will be asked to select a file location. Suggestion: Create a “templates” folder in *cafetran* or *cafetran/projects* folder and save your templates there. Learn more about [Project Templates](https://github.com/idimitriadis0/TheCafeTranFiles/wiki/5-Project-templates). 
 - **Remove current project template** = Self-explanatory.
 - **Choose your rate** = You can set your rate for statistics calculations here. Can also be set in Preferences and in the Statistics tab of an open project.
 - **Remove working language pair** = All source and target languages you select in the Dashboard’s corresponding drop-down menus are added at the very start of the available language/language variant list, so that you can easily re-use your working languages. If you wish to remove a working language pair, set the pair you want to remove in the drop-down menus, and then use this option.
 - **Dark Dashboard** = Toggle the alternative dark Dashboard theme.
 - **Preferences** = Open CafeTran’s Preferences/Options
-- **New Dashboard** = <!---TODO: --->
+- **New Dashboard** =
 - **Close Dashboard** = Close the Dashboard and show CafeTran’s main translation interface and menus, with no projects loaded.
 
 #### Dashboard menu options > Project type submenu
@@ -515,9 +422,7 @@ This is the context menu you get when right-clicking inside a glossary tab. It a
 - **Stop automatic matching** = If enabled, the glossary entries will not be matched automatically against the source text of the current segment. This also affects the matchboard results. You will still be able to search the glossary manually.
 - **Terms consistency check** = If enabled, the glossary will be used for the self-titled QA check, allowing you to check for segment pairs that do not have terms consistent with glossary entries.
 
-Relate links:
-
-[Working with Glossaries](https://cafetran.freshdesk.com/support/solutions/folders/6000058179) (category)
+Relate links: [Working with Glossaries](https://cafetran.freshdesk.com/support/solutions/folders/6000058179) (category)
 
 ### MT tab and context menu
 
@@ -612,9 +517,13 @@ It can be set either automatic or manual with the option to listen to source or 
 After receiving the API secret and access keys from Amazon, you need to paste them in CafeTran's Preferences > Web services tab > Amazon Polly (TTS) > the API key button > the API Access and Secret key fields.
 
 **Voice** (drop-down menu): Select the TTS voice (and) language.
+
 **Engine** (drop-down menu): Select the engine type (standard voices or neural voices).
+
 **Language** (drop-down menu): Select if you want to TTS show occur on the source or the target segments. 
+
 **Stop** (checkbox): Stop the automatic TTS.
+
 **Speak** (button): Manually execute TTS on the current segment.
 
 ### (Track) Changes tab
@@ -626,7 +535,9 @@ This tab appears when Edit > Track changes > Manage is enabled. It lets you conv
 This feature works for native, Trados and possibly other external projects, making it possible to work on Trados reviewer assignments.
 
 **Change** column: Content of the addition (+) or deletion (-).
+
 **Author** column: Author name. In CafeTran, this can be set in Preferences > General > User ID.
+
 **Date** column: Recorded date of the change.
 
 Selecting a specific row highlights the edit in the target segment editor. Changes can be further edited in the editor. Just add or remove content between the + or - tags.
@@ -636,14 +547,19 @@ Changes made in the current segment will show up in this table when you visit th
 **Action buttons:**
 
 **Accept** = Accept the selected change
+
 **Reject** = Reject the selected change
+
 **Accept all** = Accept all changes in the current segment
+
 **Reject all** = Reject all changes in the current segment
 
 **Checkboxes**:
 
 **Go** = Go to next segment once all changes have been accepted/rejected in the current segment.
+
 **Translate** = Work in the translate mode while tracking changes. The translate mode is the default mode. Modes can be selected in the target segments editor drop-down menu.
+
 **Record** = Record changes in the current segment. By activating this option, CafeTran will track the edits that are made.
 
 ### Quick search bar
@@ -2029,7 +1945,7 @@ Suggestion: This stands as an excellent maintenance step to perform at the end o
 
 Suggestion:
 The entries are added to the imported to the last added TM. This feature will be improved in the future. For now, use Memory > Import tab delimited memory instead.
-Reference: [https://cafetran.freshdesk.com/support/discussions/topics/6000050974](https://cafetran.freshdesk.com/support/discussions/topics/6000050974)
+Reference: [forum discussion](https://cafetran.freshdesk.com/support/discussions/topics/6000050974)
 
 **Memory > Import > Import MS Excel memory** = Import entries from the MS Excel file to the translation memory.
 

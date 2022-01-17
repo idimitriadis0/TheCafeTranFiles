@@ -1,4 +1,4 @@
-# CAFETRAN ESPRESSO - PROJECT TEMPLATED
+# CAFETRAN ESPRESSO - PROJECT TEMPLATES
 
 CafeTran Espresso's project templates feature, explained.
 

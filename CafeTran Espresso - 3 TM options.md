@@ -1,22 +1,3 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-- [CAFETRAN ESPRESSO - Translation Memories options](#cafetran-espresso---translation-memories-options)
-  * [TM context menu options](#tm-context-menu-options)
-    + [Browse memory](#browse-memory)
-    + [Memory type](#memory-type)
-    + [Priority](#priority)
-  * [TM options](#tm-options)
-    + [Memory type](#memory-type-1)
-    + [Language pair](#language-pair)
-    + [Options](#options)
-  * [TM filter options](#tm-filter-options)
-    + [Properties filter](#properties-filter)
-    + [Segment filters](#segment-filters)
-  * [Total Recall options](#total-recall-options)
-    + [Database - [name of database]](#database----name-of-database-)
-
-<!-- /TOC -->
-
 # CAFETRAN ESPRESSO - Translation Memories options
 
 *Updated for CafeTran Espresso 11 Poppy Seed Roll (2022)*
@@ -121,8 +102,7 @@ To overcome this issue of huge memories, you can perform the preliminary memory 
 
 Also see Preferences > Memory > Switch to preliminary matching threshold in “CafeTran Preferences”.
 
-Related links:
-[Preliminary Memory Matching](https://cafetran.freshdesk.com/support/solutions/articles/6000059860-preliminary-memory-matching)
+Related links: [Preliminary Memory Matching](https://cafetran.freshdesk.com/support/solutions/articles/6000059860-preliminary-memory-matching)
 
 ### Language pair
 
@@ -214,8 +194,6 @@ If you have set a TXT file for Client and/or Subject in Preferences > Definition
 **Recall in context (hits per word)** = Checkbox and number field. This value sets the linguistic filter which analyses the current project, bringing back only the segments that contain words of the source document present in the project. The value determines the maximum number of the segments which are to be recalled for one word of the source document being translated. Checking out the “Recall in context” box lifts the filter completely and recalls all segments from the Total Recall table to the working memory.
 
 Default value: 1000.
-
-<!--- TODO add usage Note: --->
 
 Related links:
 [Recalling Segments in the Project Context](https://cafetran.freshdesk.com/support/solutions/articles/6000054018-recalling-segments-in-the-project-context)
