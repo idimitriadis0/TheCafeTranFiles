@@ -22,6 +22,17 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
 - Fixed spoken segments synchronization issue in Amazon Polly Text to Speech implementation.
 - Fixed an issue with the spell checker dictionaries. It affects  CafeTran on Mac with Apple M1 chip only - reinstallation is required.
 
+The 11.0.1 update to CafeTran adds the following:
+
+  - the support for Cornish (kw-GB) language.
+- a case-insensitive QA translation consistency check.
+- tags protection in locked fragments.
+- fixed an issue with quotes in IBM Watson API implementation.
+
+  
+
+You can update following the steps in the announcement post above
+
 ## 10.9.1 - Apple Charlotte (20211002)
 
 - Added interface to Amazon Polly (Text to Speech) web service available via the API key. Text To Speech (TTS) integration in CafeTran enables the translators to listen to the currently-translated source language segment. It can be set either automatic or manual with the option to listen to target language segments (e.g during the review) as well. Amazon Polly supports over 30 languages and a selection of voices. It also offers the free tier for the first 12 months. Please check [here](https://aws.amazon.com/polly/) for details. After receiving the API secret and access keys from Amazon, you need to paste them in CafeTran's Preferences > Web services tab > Amazon Polly (TTS) > the API key button > the API Access and Secret key fields.
@@ -91,6 +102,12 @@ Entries from 20130701 through to 20151128 have been curated by [Michael Beijer](
   \- () the characters to move or reorder need to be placed between brackets.  
   \- Some punctuation characters (e.g the full stop) need to be preceded by the backslash in the source fragment.  
   \- Reordering of characters in the target language fragment is controlled by the numbers in brackets. The numbers refer to the groups in brackets in the source fragment, counting from the left. All the other characters in the target fragment are in their usual form.
+
+  The new build of the 10.8.3 update has the following changes:
+
+-   fixes an issue with the transfer of some non-translatable fragments.
+-   updates the links to online spell-checker glossaries.
+-   adds the Sicilian language to the list of supported languages.
 
 ## 10.8.2 Cornetto (20210118)
 

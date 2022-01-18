@@ -112,7 +112,7 @@ Project templates cannot be saved or opened from the main translation interface.
 - In the Dashboard, check that all resources you wish to reuse are present, and that they are ticked.
 - Dashboard menu button ≡ > Save in project template.
 
-*Note: You can use your file manager to access the templates folder, rename you XML files and organize them in subfolders if you wish so.*
+*Note: You can use your file manager to access the templates folder, rename you XML files, and organize them in subfolders if you wish so. You can also make a copy for a different client/project/language pair and easily build your project template library*
 
 *Advanced users may tweak XML settings by editing the XML file directly, but this is not recommended. Just use CafeTran Espresso to create and save templates.*
 

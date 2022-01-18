@@ -424,6 +424,14 @@ This is the context menu you get when right-clicking inside a glossary tab. It a
 
 Relate links: [Working with Glossaries](https://cafetran.freshdesk.com/support/solutions/folders/6000058179) (category)
 
+### Term Editor panel
+
+![Term Editor panel](https://i.imgur.com/MmI8Qvr.png)
+
+When you click on a source language term inside the Glossary tab pane, the Term Editor panel is displayed, which allows you to edit the individual glossary entry, or delete it.
+
+**Clone** button: If you edit the source and/or target term, the Clone button becomes active. Clicking on this button allows you to save the edited term pair while keeping the original entry.
+
 ### MT tab and context menu
 
 ![MT engines context menu](https://i.imgur.com/3aopMvw.png)
@@ -2056,6 +2064,8 @@ This is the window that opens when you add a new glossary (Glossary > New glossa
 ![New term dialog](https://i.imgur.com/6xCnuN3.png)
 
 This is the window that opens when you use the Add term to glossary button or shortcut. In Preferences > Glossary, you can choose to Skip new term window (shortcut) or Skip new term window (button).
+
+Glossary terms can also be added by selecting the source and target term and clicking inside the glossary tab pane.
 
 - **Glossaries** section lists all the open and enabled (not read-only) glossaries available. You can uncheck the glossaries you don’t wish to use for this term. The button ads the term only to that glossary and closes the window.
 - **Memories** button allows you to switch to the TMs that are set to store Fragments. To save a glossary entry first, before switching to Memories, press CTRL and click the New term button, to store the glossary entry, and create a clone entry that you can then use to store as a Fragment by pressing the Memories button.
