@@ -39,7 +39,7 @@ To help you assess the usefulness of using project templates, here are some of t
 - Segment skipping options (Action menu > Skip)
 - Window layout
 
-As you see, only few of these settings relate to ones found in the Preferences. Likewise, the Theme setting are not stored (though they were in the past).
+As you see, only few of these settings relate to ones found in the Preferences. Likewise, the Theme settings are not stored (though they were in the past).
 
 *Note: To find out exactly what information is being stored in a project template, just create one in Dashboard and open the resulting XML file with a text editor. Each line which includes <code>entry key="" value=""</code> represents a setting. However, there is absolutely no need to manually edit the XML files to use the templates feature.*
 
@@ -55,23 +55,25 @@ Here are drop-down menu items related to project templates:
 - **Open project templates** = Open an already saved project template. You will be asked to select which template file to open.
 - **Save in project template** = Save the current state in a project template as an .xml file. You will be asked to select a location and file name. The Save dialogue filters only .xml files. 
 - **Remove current project template** = Self-explanatory. But how can you tell which is that? The current project template is indicated in the upper-left section of the Dashboard, just above the Total Recall column.
-- To which we can add another Dashboard menu item, not picture above: **New Dashboard**. This command removes the current project template. After that, you can work either without any project templates, or treat it as the entry point to create a new project template from the modified Dashboard state.
+- To which we can add another, not pictured above: **New Dashboard**. This command removes the current project template. After that, you can work either without any project templates, or treat it as the entry point to create a new project template from the modified Dashboard state.
 
 ### How to save the current state in a project template
 
-If you are happy with the current configuration and wish to store it for reuse in the future, just select "Save in a new template" in the Dashboard menu and select a save location and a file name in the dialog that opens.
+If you are happy with the current configuration and wish to store it for reuse in the future, after closing your project, just select "Save in a new template" in the Dashboard menu and chose a save location and a file name in the dialog that opens.
 
 Simple. But **here's the trick**:
 
 We know that CafeTran trackes and saves automatically the latest settings in whichever project template is currently used.
 
-To save the current state for future reuse, without modifying any further, you should stop using the project template once you have saved it.
+To save the current state for future reuse, without modifying it any further, you should stop using the project template after saving it.
 
 There are two methods to do that:
-- Save a second project template (with a different name) just after saving the first one ( the "master" template, so to speak) and continue using that.
+- Save a second project template (with a different name) just after saving the first one ( the "master" project template, so to speak) and continue using that.
 - Apply the Dashboard menu ≡ actions "Remove current project template" or "New Dashboard" to unload the project template.
 
 Any further modifications will not be stored in the (first) saved project template.
+
+At any moment, you can then open(load) the saved project template to restore and reuse the saved state.
 
 ### Where to save project templates
 
@@ -81,9 +83,9 @@ Consider creating a separate “templates” folder in *cafetran* or *cafetran/p
 
 ### Preparing to create a project template
 
-A project template is about storing the current state in order to reuse in the future, so you may wish to give a little thought on the configuration you want to save.
+A project template is about storing CafeTran's current state in order to reuse in the future, so you may wish to give a little thought on the configuration you want to save.
 
-Of course, this depends on the intended use case (see the next section for such examples).
+Of course, this also depends on the intended use case (see the next section for such examples).
 
 Here are some items that you might want to consider before saving or updating a template.
 
@@ -100,13 +102,13 @@ Here are some items that you might want to consider before saving or updating a 
 - **Actions from an open project:** In addition to the above actions, you can save the template after closing a project which features the desired settings (if no project has the required characteristics, you can simply create a new one).
 	 - From an open project (or by closing the Dashboard), you can **add web resources** to the Dashboard (all open resources will be displayed there upon closing the project), see explanations above (Actions from the Dashboard > Resources).
 	  - The layout can be set from the View menu.
-	  - The **docked, joined or floating state of tabs** is also remembered when you save a template, which can be very convenient. However, note that the tabs order cannot be saved, and the different tabs may need to be rearranged on each new project. If a joined or docked resource is missing, the joined or docked resources are displayed separately in the tabbed pane.
+	  - The **docked, joined or floating state of tabs** is also remembered when you save a template, which can be very convenient. However, note that the tabs order cannot be saved, and the different tabs may need to be rearranged on each new project. If a joined or docked resource is missing, the joined or docked resources are displayed separately in the tabbed pane. Interface elements can also be adjusted by handlebars.
 	  - The default **project location** and the **source file directory** saved in the template are those of the last open/created project.
 	  - **Rate** can also be set via the Statistics (Project > Statistics).
 
 Project templates cannot be saved or opened from the main translation interface. These actions are only accessed via the Dashboard, so:
 
-- Once you have the project state you wish to save, close the project (Project > Close project) or exit CafeTran (Project > Exit) and reopen the program.
+- Once you have the project state you wish to save, close the project (Project > Close project) or exit CafeTran (Project > Exit) and restart the program.
 - In the Dashboard, check that all resources you wish to reuse are present, and that they are ticked.
 - Dashboard menu button ≡ > Save in project template.
 
@@ -124,4 +126,4 @@ Here are some of the main use cases:
 
 - **Different language pairs**: Resources are likely to be different from one language pair to another. You can create templates for each language pair, each time featuring only the relevant resources.
 
-- **Different workflow/layout:** Different project types (Dashboard menu ≡ > Project type) require a different configuration of the UI elements, and so do some workflows. For example, you might want to save a carefully crafted layout for translating and its twin for reviewing (all MT and resources disabled, big Grid -layout 6-, focus on the text, no distraction). Or one for when you are home with your dual screen setup (where you chose to float some panel on the second screen) and one for when you are on the road, or to keep the CafeTran metaphor real, in a cafe.
+- **Different workflow/layout:** Different project types (Dashboard menu ≡ > Project type) require a different configuration of the UI elements, and so do some workflows. For example, you might want to save a carefully crafted layout for translating and its twin for reviewing (all MT and resources disabled, big Grid -layout 6-, focus on the text, no distraction). Or one for when you are home with your dual screen setup (where you chose to float some panel on the second screen) and one for when you are on the road, or to stay within the CafeTran metaphor, in a cafe.
