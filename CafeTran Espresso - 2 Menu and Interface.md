@@ -1638,6 +1638,8 @@ Note: The “Remove target segments” feature is designed to work with CafeTran
 
 **Task > Bookmark segments** = Bookmark segments in the project or set view context (e.g. set by a filter).
 
+**Task > Remove bookmarks** = Remove bookmarks from selected segments.
+
 **Task > Accept all tracked changes** = Accept all tracked changes in the project or filter.
 
 **Task > Reject all tracked changes** = Reject all tracked changes in the project or filter.
