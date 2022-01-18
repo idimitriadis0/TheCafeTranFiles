@@ -54,7 +54,7 @@ Here are drop-down menu items related to project templates:
 - **Recent project templates** = Your recently used templates will be shown here.
 - **Open project templates** = Open an already saved project template. You will be asked to select which template file to open.
 - **Save in project template** = Save the current state in a project template as an .xml file. You will be asked to select a location and file name. The Save dialogue filters only .xml files. 
-- **Remove current project template** = Self-explanatory. But how can you tell which is that? The current project template is indicated in the upper-left section of the Dashboard, just above the Total Recall column.
+- **Remove current project template** = Self-explanatory. But how can you tell which is that? The currently used project template is indicated in the upper section of the Dashboard.
 - To which we can add another, not pictured above: **New Dashboard**. This command removes the current project template. After that, you can work either without any project templates, or treat it as the entry point to create a new project template from the modified Dashboard state.
 
 ### How to save the current state in a project template
@@ -63,7 +63,7 @@ If you are happy with the current configuration and wish to store it for reuse i
 
 Simple. But **here's the trick**:
 
-We know that CafeTran trackes and saves automatically the latest settings in whichever project template is currently used.
+We know that CafeTran tracks and saves automatically the latest settings in whichever project template is currently used.
 
 To save the current state for future reuse, without modifying it any further, you should stop using the project template after saving it.
 
@@ -126,4 +126,4 @@ Here are some of the main use cases:
 
 - **Different language pairs**: Resources are likely to be different from one language pair to another. You can create templates for each language pair, each time featuring only the relevant resources.
 
-- **Different workflow/layout:** Different project types (Dashboard menu ≡ > Project type) require a different configuration of the UI elements, and so do some workflows. For example, you might want to save a carefully crafted layout for translating and its twin for reviewing (all MT and resources disabled, big Grid -layout 6-, focus on the text, no distraction). Or one for when you are home with your dual screen setup (where you chose to float some panel on the second screen) and one for when you are on the road, or to stay within the CafeTran metaphor, in a cafe.
+- **Different workflow/layout/stage:** Different project types (Dashboard menu ≡ > Project type) require a different configuration of the UI elements, and so do some workflows. For example, you might want to save a carefully crafted layout for translating and its twin for reviewing (all MT and resources disabled, big Grid -layout 6-, focus on the text, no distraction). Or one for when you are home with your dual screen setup (where you chose to float some panel on the second screen) and one for when you are on the road, or to stay within the CafeTran metaphor, in a cafe.
